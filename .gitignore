@@ -1,0 +1,21 @@
+# Credentials and local signing material must never be published.
+signing/
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+.env
+.env.*
+# Generated / private delivery artifacts
+build/
+dist/
+_site/
+node_modules/
+test-results/
+playwright-report/
+docs/export-test.json
+docs/*preview.png
+docs/*validation-output.txt
+*.idsig
+*.log
