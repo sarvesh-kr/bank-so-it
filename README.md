@@ -30,11 +30,13 @@ These are original practice questions and worked drills informed by published an
 ## Deploy on GitHub Pages
 
 1. Put this project in a public GitHub repository with the default branch named **main**.
-2. Open **Settings → Pages → Build and deployment → Source → GitHub Actions**.
-3. Push to `main`, or run **Actions → Test and deploy GitHub Pages → Run workflow**.
+2. Open **Settings → Pages → Build and deployment → Source → Deploy from a branch**. Choose **main** and **/ (root)**, then save.
+3. The ready-to-host web files are checked in at the repository root. GitHub publishes them after each push to `main`.
 4. After the deployment succeeds, open the URL shown by GitHub Pages, normally `https://OWNER.github.io/REPOSITORY/`.
 
-The workflow rebuilds and validates the question bank, runs core and browser/offline tests, and publishes only `_site/`. Pull requests run the checks without deploying. All web paths are relative, so repository subdirectories and custom domains work.
+The workflow rebuilds and validates the question bank, runs core and browser/offline tests, and checks that the published files match the shared source. Branch hosting is published by GitHub independently of these checks, so run the checks before merging changes. If you prefer deployment only after tests pass, choose **GitHub Actions** as the Pages source instead; the workflow detects that setting and publishes `_site/`. Pull requests run checks without deploying.
+
+For a friend's separate Pages site, fork or copy the repository into their account and enable Pages there. All web paths are relative: a repository subdirectory and a custom-domain root both work. Set a custom domain in that repository's **Settings → Pages**, configure the DNS records GitHub documents, and enable HTTPS when available. Keep its `CNAME` specific to that repository. Personal progress is separate on each domain; export a progress backup before moving and restore it on the new site.
 
 [GitHub documents Pages availability and publishing setup here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site). Public repositories support Pages on GitHub Free. See [deployment details](docs/DEPLOYMENT.md).
 
@@ -76,6 +78,7 @@ npm ci
 python3 tools/build_bank.py
 npm test
 npm run build:web
+npm run publish:pages
 npx playwright install chromium
 npm run test:pages
 python3 -m http.server 8000 --directory _site
@@ -89,13 +92,13 @@ Open `http://localhost:8000/`. HTTPS or localhost is required for service worker
 - `app/src/main/java/` — Android WebView shell, private storage and system file picker.
 - `content/*.txt` — original concept/scenario questions.
 - `tools/build_bank.py` — deterministic generation plus executable SQL/Bash answer checks.
-- `tools/build_web.py` — explicit public-file allowlist for `_site/`.
+- `tools/build_web.py` — explicit public-file allowlist for `_site/`; `npm run publish:pages` refreshes the root files for branch hosting.
 - `web/sw.template.js` — service-worker template, versioned by build content.
 - `downloads/` — the signed APK published with the site.
 - `.github/workflows/` — Pages testing/deployment and optional APK build.
 - `tests/` — content, scoring, backup and browser tests.
 
-The checked-in bank JSON lets the APK and browser share the same data. Edit `content/` or the generator for permanent bank changes, regenerate it, and commit the changes. Rebuild the APK and replace the file under `downloads/` when you want the APK to include those changes too. In-app edits stay private to that installation until exported/imported.
+The checked-in bank JSON lets the APK and browser share the same data. Edit `content/` or the generator for permanent bank changes, regenerate it, run `npm run publish:pages`, and commit the source and refreshed root files together. Edit UI source under `app/src/main/assets/`, rather than editing generated root copies. Rebuild the APK and replace the file under `downloads/` when you want the APK to include those changes too. In-app edits stay private to that installation until exported/imported.
 
 ## Question import format
 

@@ -6,12 +6,15 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+  pages: read
 concurrency:
   group: pages-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   test-and-build:
     runs-on: ubuntu-latest
+    outputs:
+      deploy-with-actions: ${{ steps.pages.outputs.result }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -25,6 +28,7 @@ jobs:
       - run: python3 tools/build_bank.py
       - run: npm test
       - run: npm run build:web
+      - run: python3 tools/build_web.py --check-root
       - run: npx playwright install --with-deps chromium
       - run: npm run test:pages
       - uses: actions/upload-artifact@v4
@@ -37,8 +41,23 @@ jobs:
         if: github.event_name != 'pull_request'
         with:
           path: _site
+      - name: Check Pages publishing source
+        id: pages
+        if: github.event_name != 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            try {
+              const {data} = await github.rest.repos.getPages(context.repo);
+              core.info(`Pages source: ${data.build_type}`);
+              return data.build_type === 'workflow';
+            } catch (error) {
+              if (![403, 404].includes(error.status)) throw error;
+              core.notice('Pages source is not accessible. For branch hosting, select main / (root) in Settings > Pages.');
+              return false;
+            }
   deploy:
-    if: github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && needs.test-and-build.outputs.deploy-with-actions == 'true'
     needs: test-and-build
     runs-on: ubuntu-latest
     permissions:

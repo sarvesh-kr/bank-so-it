@@ -7,6 +7,7 @@
     "test": "node --test tests/core.test.js tests/backup.test.js",
     "test:ui": "node tests/ui.test.js && node tests/expiry.test.js",
     "build:web": "python3 tools/build_web.py",
+    "publish:pages": "python3 tools/build_web.py --publish-root",
     "build:apk": "bash tools/build_apk.sh",
     "test:pages": "node tests/pages.test.js"
   },
