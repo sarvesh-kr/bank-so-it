@@ -1,22 +1,29 @@
 # Hosting and maintenance
 
-## GitHub Pages
+## GitHub Pages via Actions
 
-This is a static client-side app. The generated web files are checked in at the repository root for **Deploy from a branch → main → / (root)** hosting. Run `npm run publish:pages` after editing the shared assets or rebuilding the bank, and commit the refreshed root files. The build copies only its public-file allowlist and preserves source files and any custom-domain `CNAME`. Branch hosting also makes the public source tree available over HTTP; no signing keys, credentials or personal backups belong in this public repository.
+Repository: **sarvesh-kr/rrb-it-practice**. Custom subdomain: **so.sarvesh.si**. The repository owner has configured Pages with `build_type: workflow`, the custom domain, and HTTPS enforcement.
 
-Alternatively, set the repository's Pages source to **GitHub Actions** to publish only `_site/`. The workflow detects the configured source: it validates branch-hosted files in either mode, and runs its deployment job only for the Actions source. It has `contents: read` and `pages: read` for building and grants `pages: write` plus `id-token: write` only to the deployment job. With Actions hosting, pushes to `main` deploy after checks pass; pull requests run checks without deployment. Branch publishing is independent of the validation workflow. Repository creation, pushing workflow files and enabling Pages require the corresponding GitHub integration permissions, even if login succeeds.
+The app is static. The workflow builds a fresh `_site/` artifact from the shared Android/browser assets and publishes only that artifact. The artifact contains the UI, 950-question bank, versioned service worker, icons, install manifest and signed APK. Root-level generated web copies are no longer needed or checked in.
 
-To enable Pages using an already authorized GitHub CLI:
+### Owner setup
 
-```sh
-gh api --method POST repos/OWNER/REPOSITORY/pages -f build_type=workflow
-```
+1. Under Settings → Pages, select **GitHub Actions** as the source.
+2. Set the custom domain to **so.sarvesh.si**. Its DNS CNAME should point to **sarvesh-kr.github.io**. Do not point it to the former owner's hostname or include a URL path. Domain verification can also be managed in the owning account's Pages settings.
+3. Enable **Enforce HTTPS** after certificate provisioning. The certificate and HTTPS were already enabled when this flow was configured.
+4. If the `github-pages` environment requires review or restricts branches, allow `main` and have the designated reviewer approve deployments. The workflow does not change these protections.
 
-If Pages is already configured, change its source in Settings → Pages instead. GitHub may take a few minutes to publish the first deployment.
+Actions hosting uses the domain configured in Pages settings; no repository `CNAME` file is required. If one is added later, the build preserves it in the artifact, but it does not replace the Pages setting. DNS and repository settings remain administrator tasks; ordinary collaborators do not need admin access to submit code or trigger authorized workflows.
+
+### Publishing changes
+
+Pushes to `main` and manual runs on `main` build, test and deploy. Pull requests and manual runs on other branches only validate. The workflow has `contents: read` for checkout and grants `pages: write` plus `id-token: write` only to the deployment job. It uses the built-in Actions token; no personal token, SSH deploy key or Android signing secret is needed for the web deployment.
+
+After a transfer, update local remotes with `git remote set-url origin https://github.com/sarvesh-kr/rrb-it-practice.git`. The workflow resolves the repository dynamically and contains no hardcoded owner. Check workflow runs in Actions; the deployment job shows the published URL. A missing Pages configuration fails visibly rather than silently skipping publication. If the job waits for approval, an authorized environment reviewer must approve it. If a Pages API call returns 403, the owner should check workflow permissions and repository policy.
 
 ## Storage and offline behavior
 
-A collaborator can fork or copy this repository and enable Pages in their own account. To use a custom domain, set it under that repository's Settings → Pages and follow GitHub's DNS instructions. Enable HTTPS once GitHub provisions the certificate. The app uses relative URLs and needs no hardcoded hostname or repository name. The build preserves and includes that repository's `CNAME` without caching it in the service worker. Do not merge another host's `CNAME` into your own deployment. Moving domains creates a separate browser storage origin; export progress on the old site, then restore it on the new one.
+A collaborator can fork or copy this repository and enable Pages in their own account. To use a custom domain, set it under that repository's Settings → Pages and follow GitHub's DNS instructions. Enable HTTPS once GitHub provisions the certificate. The app uses relative URLs and needs no hardcoded hostname or repository name. Actions reads the custom domain from Pages settings. An optional repository `CNAME` is included without being cached by the service worker; do not merge another host's `CNAME` into your own deployment. Moving domains creates a separate browser storage origin; export progress on the old site, then restore it on the new one.
 
 - IndexedDB stores one current state record, scoped to the Pages project path. Two apps under different paths on the same `OWNER.github.io` origin use different databases.
 - The APK uses its existing native AtomicFile storage instead of IndexedDB.
@@ -28,9 +35,9 @@ A collaborator can fork or copy this repository and enable Pages in their own ac
 ## Update questions or code
 
 1. Edit the shared source under `app/src/main/assets/`, original questions under `content/`, or the drill generator under `tools/`.
-2. Run `python3 tools/build_bank.py`, `npm test`, `npm run publish:pages` and `npm run test:pages`.
+2. Run `python3 tools/build_bank.py`, `npm test`, `npm run build:web` and `npm run test:pages`.
 3. Commit and push to `main`.
-4. Branch hosting publishes the root files when pushed. Actions hosting publishes `_site/` after tests pass.
+4. Actions publishes `_site/` after tests pass, preserving the configured custom domain.
 5. For an APK update, increment Android `versionCode`, rebuild using the original private signing key, and replace `downloads/RRB-IT-Practice-Lite.apk` in the repository.
 
 No APK rebuild is necessary for a browser-only update. APK users can import new question packs without rebuilding the APK.
