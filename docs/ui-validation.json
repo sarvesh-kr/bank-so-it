@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "steps": [
+    "Home: 1150 questions and eight subjects",
+    "Practice: correct, wrong, unanswered, locked feedback, bookmark, flag, resume, score",
+    "Timed test: hidden answers, preset, automatic submission on deadline",
+    "Editor: add subject and question, persists in the bank",
+    "Import: malformed rejected, valid merged, HTML inert",
+    "Export: complete edited bank is valid JSON",
+    "Restart: custom subjects and questions retained",
+    "Layouts fit 320px, 390px and 768px widths",
+    "No browser JS or CSP errors"
+  ]
+}

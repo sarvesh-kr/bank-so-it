@@ -1,0 +1,37 @@
+{
+  "total": 1150,
+  "subjects": {
+    "network": 250,
+    "dbms": 250,
+    "os": 100,
+    "dsa": 250,
+    "linux": 100,
+    "dw_dm": 65,
+    "cloud_ai_ml": 65,
+    "se_bank_it": 70
+  },
+  "kinds": {
+    "concept": 665,
+    "worked-drill": 305,
+    "executed-SQL": 150,
+    "executed-shell": 30
+  },
+  "difficulty": {
+    "Easy": 213,
+    "Moderate": 868,
+    "Hard": 69
+  },
+  "checks": [
+    "Exact requested counts",
+    "Unique IDs and stems",
+    "Five distinct options per question",
+    "Valid answer indices",
+    "Explanations present",
+    "150 SQL answers executed in SQLite",
+    "30 shell answers executed in Bash"
+  ],
+  "studyScope": {
+    "core": 692,
+    "extended": 458
+  }
+}

@@ -1,80 +1,44 @@
-# Validation record
+# Validation record — 19 October 2026
 
-Build date: 18 October 2026.
+## Current question-bank update
 
-## Question bank
+- 1,150 unique questions across eight subjects; five distinct choices and a valid answer index for each.
+- 65 warehousing/mining, 65 cloud/AI/ML and 70 software engineering/banking IT additions.
+- 692 focused-revision questions; 458 optional-depth or extra-drill questions.
+- All original 950 project records retain their IDs, stems, choices, answer indices and explanations. Only study metadata was added to those records.
+- Generation executes 150 SQL answers in SQLite and 30 shell answers in Bash, and regenerates 305 numerical/trace answers.
+- Per-question evidence and review limits are documented in [CONTENT_AUDIT.md](CONTENT_AUDIT.md). Automated checks do not certify conceptual accuracy independently.
 
-- Exact totals: Networks & Cybersecurity 250, DBMS & SQL 250, OS 100, DSA 250, Linux & Shell 100.
-- 950 unique IDs and unique complete stems.
-- Every question has five distinct options, a valid zero-based correct index, a topic, level and explanation.
-- 150 SQL-output answers computed by executing the stated queries against their stated datasets in SQLite.
-- 30 shell-output answers computed by executing the stated scripts in Bash with C locale.
-- Numerical and trace drills compute their keys and working from the stated inputs.
-- Correct option positions vary, and session creation shuffles options while preserving the answer text.
-- Original conceptual content was reviewed while authoring but has not had independent human expert review. Difficulty labels are editorial estimates.
+## Checks completed
 
-## Pure quiz logic tests
+- `python3 tools/build_bank.py`: bank generation and structural checks passed.
+- `python3 tools/audit_bank.py --attachment audit/attachment-original.json`: 1,150 production ledger rows and 1,150 input dispositions generated.
+- `npm test`: all 11 core/backup tests passed, including focused/all filtering, legacy pack compatibility, metadata preservation, eight-subject sampling, scoring and invalid imports.
+- `npm run build:web`: generated a static site of approximately 828 KB including the existing APK; audit CSVs and raw input are not included in the site.
+- `CHROME_PATH=/usr/bin/chromium npm run test:pages`: passed. Each new subject supports a scored attempt; coverage selection changes eligible counts. Also checked root/subpath hosting, offline reload, scoring/review, IndexedDB persistence, backup/restore, path isolation, cached APK, simulated native storage and responsive layouts.
+- `CHROME_PATH=/usr/bin/chromium npm run test:ui`: passed editing, imports, inert HTML handling, exports, timer expiry, one-time submission after restart, progress persistence and responsive layouts.
+- JavaScript syntax and Git whitespace checks passed. Home screenshot inspected.
 
-Seven tests passed in `tests/core.test.js`:
+## Android 1.2 release
 
-1. Bank validation and exact subject counts.
-2. Sampling 1, 20, 40, 50 and all 950 questions without repeats; balanced subjects and preserved answer mapping.
-3. Rejection of invalid requested counts.
-4. Correct/incorrect/unanswered scoring, negative totals, optional zero penalty and zero-attempt accuracy.
-5. Subject, topic, difficulty, unseen, latest-wrong and bookmark filters.
-6. Rejection of malformed answer keys, duplicate IDs/options, missing subjects/explanations and reserved IDs.
-7. Merge-by-ID updates while retaining unrelated questions and leaving the base bank unchanged.
+The old APK download was replaced with a newly signed 152,751-byte Android 1.2 APK (version code 3), as requested. APK Signature Schemes v2 and v3 pass verification. All embedded assets match the updated shared source, including 1,150 questions, eight subjects and focused revision. See [android-release.json](android-release.json) for the APK and public certificate fingerprints.
 
-## Browser interaction tests
+The release uses a new signing identity. Old installations require exporting progress, uninstalling the old APK, installing 1.2 and restoring the backup. The private key is excluded from Git and retained in a private backup. GitHub denied repository-secrets access (HTTP 403), so Actions signing secrets have not been configured. The Android workflow now fails if persistent signing secrets are absent rather than silently creating another key.
 
-Passed in Chromium through Playwright:
-
-- Home loads 950 questions and five subjects.
-- Practice selects correct/wrong answers, reveals explanations, locks checked answers, bookmarks and flags.
-- Unfinished attempt survives a reload and resumes with its selected answers.
-- Navigator indicates answered and flagged questions.
-- Results correctly score one correct, one wrong and one blank as 0.75/3.
-- Review distinguishes selected wrong answers from the correct answer.
-- Timed preset is 40 questions / 30 minutes; Test mode hides explanations before submission.
-- Timer expiry submits saved answers.
-- Expired persisted attempts submit exactly once after reopening, without duplicating progress.
-- Invalid custom question counts are rejected.
-- Adding a subject and question updates the bank and survives a reload.
-- Malformed JSON packs are rejected; valid packs merge.
-- Imported HTML is displayed as inert text, not executable content.
-- Exported bank is valid JSON with all custom questions.
-- Layouts fit 320, 390 and 768 CSS-pixel widths without horizontal overflow.
-- Research/about and progress pages load.
-- No browser JavaScript or content-security-policy errors in the tested flows.
-
-## Android artifact
-
-- Compiled against Android API 35, minimum API 24 (Android 7.0).
-- APK Signature Scheme v2 and v3 verification passes.
-- Release APK is not marked debuggable.
-- No `uses-permission` declarations, including no Internet permission.
-- Architecture-neutral Java bytecode and assets; no bundled native libraries or browser engine.
-- The exported activity, label, version, screen support and SDK metadata were inspected with Android build tools.
-
-Native emulator verification is recorded separately in `android-smoke.txt` when available. Browser checks alone do not verify every Android file-picker or device-specific behavior. No physical-phone or Play Store certification testing was performed.
+No physical-device or emulator test was completed for this release. Signature, archive-content and browser/shared-interface checks do not replace device testing.
 
 ## Reproduce
 
 ```sh
 python3 tools/build_bank.py
-node --test tests/core.test.js
-# Serve app/src/main/assets on localhost:8765, then:
-node tests/ui.test.js
-node tests/expiry.test.js
-bash tools/build_apk.sh
+python3 tools/audit_bank.py
+npm test
+npm run build:web
+CHROME_PATH=/usr/bin/chromium npm run test:pages
+# In another terminal for the UI suite:
+python3 -m http.server 8765 --bind 127.0.0.1 --directory _site
+# Then:
+CHROME_PATH=/usr/bin/chromium npm run test:ui
 ```
 
-For a non-default Chromium installation, set `CHROME_PATH` to its executable. The app uses Android's existing System WebView, which should be kept up to date.
-
-## Web / GitHub Pages edition 1.1
-
-The shared UI now includes IndexedDB browser storage, install manifest/icons, a scope-specific service worker, offline APK download, and versioned progress backup/restore. The native shell keeps its AtomicFile storage and uses the same question and interface assets.
-
-Ten core/backup tests passed. The Pages browser test starts a local server under `/rrb-it-practice/` and verifies all 950 questions, relative-path loading, manifest scope, service-worker control, an offline reload with a saved attempt, correct/wrong/blank scoring and review, progress export/restore and reload, separate state under another project path, offline APK fetch, responsive widths, and a simulated Android JavaScript storage bridge. No browser JavaScript errors were observed in that run. Malformed backups are rejected and completed scores are recomputed from stored answers.
-
-The signing key and private delivery archives were excluded from the staged repository. The new APK was rebuilt and signature-verified. The simulated bridge check is not an actual Android device test; the earlier native-runtime limitation still applies.
+Reuse the new Android 1.2 release key for future upgrades. Keep the private signing backup safe.

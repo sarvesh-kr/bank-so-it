@@ -1,14 +1,15 @@
 # RRB IT Practice
 
-A small offline MCQ app for **IBPS RRB Officer Scale II — IT**. The web app and Android APK use the **same interface, question bank and scoring logic**.
+A small offline MCQ app for **IBPS RRB Officer Scale II — IT**. The web app and Android APK use the **shared interface, question-bank source and scoring logic**.
 
 The web version runs entirely on **GitHub Pages**: no server, database service, API key or paid hosting is required. After one successful online visit it works offline and can be installed from a supported browser. All personal data stays in your browser/device.
 
 ## Practice features
 
-- **950 original MCQs**, each with five choices, a correct answer and an explanation.
+- **1,150 practice MCQs**, each with five choices, a correct answer and an explanation.
 - Subject-wise or mixed tests; choose 20, 40, 50, all eligible questions, or any custom count.
 - Subtopic, difficulty, unseen, wrong-answer and bookmark filters.
+- **Focused revision (692 questions)** by default; choose **All questions** to include 458 optional-depth or extra-drill items.
 - Practice mode with immediate feedback, or Test mode with answers hidden until submission.
 - Optional timer and −0.25 penalty; a focused 40-question / 30-minute preset.
 - Question navigator, review flags, bookmarks, saved unfinished sessions and detailed results.
@@ -23,9 +24,16 @@ The web version runs entirely on **GitHub Pages**: no server, database service, 
 | Operating Systems | 100 |
 | Data Structures & Algorithms | 250 |
 | Linux & Shell Basics | 100 |
-| **Total** | **950** |
+| Data Warehousing & Data Mining | 65 |
+| Cloud, AI & ML Basics | 65 |
+| Software Engineering & Banking IT | 70 |
+| **Total** | **1,150** |
 
-These are original practice questions and worked drills informed by published analyses, not official previous-year questions. The preset covers the five starter subjects; the wider IT syllabus includes other areas. See [research and content approach](docs/RESEARCH.md).
+These are original practice questions and worked drills informed by published analyses, not official previous-year questions. The preset covers the eight included subjects; the wider IT syllabus includes other areas. See [research and content approach](docs/RESEARCH.md).
+
+See the [content audit](docs/CONTENT_AUDIT.md) for corrections, study priorities, sources and review limits.
+
+**Android 1.2:** the APK bundles all 1,150 questions and focused revision. It uses a new private release key. Existing 1.1 users must export progress, uninstall the old APK, install 1.2 and restore their backup. Future releases should reuse this new key.
 
 ## Deploy on GitHub Pages
 
@@ -69,7 +77,7 @@ bash tools/build_apk.sh
 
 The result is `dist/RRB-IT-Practice-Lite.apk`. A private signing key is generated under ignored `signing/` if none exists. **Keep this key private and retain it for future upgrades.** Keys, passwords, private source archives and local progress are excluded from this repository. Increase the manifest's `versionCode` when distributing upgrades.
 
-An optional **Build Android APK** workflow is available. For stable signed upgrades, configure repository secrets `ANDROID_KEYSTORE_BASE64` (the original JKS encoded as Base64) and `ANDROID_KEYSTORE_PASSWORD`; the key alias is `rrb-it-personal`. Without those secrets, the workflow creates a temporary key and its APK cannot upgrade the existing signed installation. Signing secrets are never needed by the Pages workflow.
+An optional **Build Android APK** workflow is available. For stable signed upgrades, configure repository secrets `ANDROID_KEYSTORE_BASE64` (the original JKS encoded as Base64) and `ANDROID_KEYSTORE_PASSWORD`; the key alias is `rrb-it-personal`. The workflow fails if either secret is missing, preventing accidental changes to the release signing identity. Signing secrets are never needed by the Pages workflow.
 
 ## Develop and test
 
