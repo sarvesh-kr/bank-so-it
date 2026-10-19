@@ -1,6 +1,6 @@
 # Exam research and content approach
 
-Research date: 18 October 2026. Target: IBPS RRB Officer Scale II, Specialist Cadre, Information Technology.
+Research date: 19 October 2026. Target: IBPS RRB Officer Scale II, Specialist Cadre, Information Technology.
 
 ## What was checked
 
@@ -12,7 +12,7 @@ Research date: 18 October 2026. Target: IBPS RRB Officer Scale II, Specialist Ca
 
 The five requested subjects are delivered in exactly the requested quantities. A balance of core definitions, conceptual distinctions, operational bank-IT scenarios and short calculations/traces is intended to suit degree-level professional-knowledge revision. Difficulty tags are editorial estimates, not empirical item statistics. No exact future question distribution or selection outcome is predicted.
 
-The timed preset is **focused practice from these five subjects**. It is not a full professional-knowledge syllabus mock. Programming/C/C++/Python, OOP, software engineering, web technologies and architecture remain possible future additions; other exam papers are outside this app's initial scope.
+The timed preset is **focused practice from these eight subjects**. It is not a full professional-knowledge syllabus mock. Programming/C/C++/Python, OOP, web technologies and architecture remain possible future additions; other exam papers are outside this app's initial scope.
 
 All stems and explanations in this bank are original practice material. None are represented as official or verbatim previous-year questions. Broad computer-science facts were not copied from an exam publisher's bank.
 
@@ -26,8 +26,11 @@ All stems and explanations in this bank are original practice material. None are
 | Data Structures & Algorithms | 250 | Complexity, arrays/lists, stacks/queues, trees/heaps, hashing, sorting, graphs, greedy/DP, recursion, strings, operation traces and calculations |
 | Linux & Shell Basics | 100 | Files, text tools, permissions, processes, storage, systemd, network commands, quoting, redirection, control flow, cron, safe shell use and executable Bash outputs |
 
-The bank contains 465 concept/scenario questions and 485 skill drills (305 numerical/trace exercises, 150 SQL outputs, 30 shell outputs). Drill families deliberately use different datasets to reinforce a skill. Sampling cycles through subjects and families to reduce clustering in short sessions. A five-subject mixed test of 40 contains eight questions from each subject when each subject has enough eligible questions; this is a practice-balancing choice, not an asserted IBPS weight.
+The bank contains 665 concept/scenario questions and 485 skill drills (305 numerical/trace exercises, 150 SQL outputs, 30 shell outputs). Drill families deliberately use different datasets to reinforce a skill. Sampling cycles through subjects and families to reduce clustering in short sessions. An eight-subject mixed test of 40 contains five questions from each subject when each subject has enough eligible questions; this is a practice-balancing choice, not an asserted IBPS weight.
 
 SQL questions state their data and are executed using SQLite during generation; queries use broadly supported constructs, including window functions. SQL row order is explicitly specified where relevant. Shell outputs are executed in Bash with C locale. Both answer text and shuffled answer index are retained. Numerical questions state assumptions such as byte addressing, zero-based indices and conventional IPv4 exclusions.
 
 Automated validation checks counts, unique stems/IDs, five distinct options, valid answer indices and nonempty explanations. It does not amount to independent human expert review of every conceptual item. Questions can be edited in the app if you want a different emphasis or wording.
+
+
+Added 65 warehousing/mining, 65 cloud/AI/ML and 70 software engineering/banking IT questions, rewritten from the supplied topic bank. See [CONTENT_AUDIT.md](CONTENT_AUDIT.md) for primary references, corrections, per-item disposition files and review limits. Default focused revision excludes specialist depth and repeated drill variants; this is an editorial priority, not a prediction of IBPS weighting.

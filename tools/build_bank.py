@@ -5,6 +5,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 OUT=ROOT/'app/src/main/assets'
 rng=random.Random(20261018)
 SUBJECTS=[('network','Computer Networks & Cybersecurity',250),('dbms','DBMS & SQL',250),('os','Operating Systems',100),('dsa','Data Structures & Algorithms',250),('linux','Linux & Shell Basics',100)]
+ADDITIONAL_SUBJECTS=[('dw_dm','Data Warehousing & Data Mining',65),('cloud_ai_ml','Cloud, AI & ML Basics',65),('se_bank_it','Software Engineering & Banking IT',70)]
 questions=[]
 
 def add(subject,topic,difficulty,stem,answer,wrong,explanation,kind='concept',family=None):
@@ -242,19 +243,52 @@ for i,(script,why) in enumerate(scripts):
     rng.shuffle(candidates)
     add('linux','Shell output','Moderate','In Bash, what is the standard output of this script? Ignore the final newline; line breaks inside an option are significant.\n'+script,ans,candidates,why+' Output: '+repr(out)+'.','executed-shell',f'shell-output-{i+1}')
 
+# Append additions after the original generation so existing IDs, option orders
+# and random-number consumption remain stable for saved progress and imports.
+for sid,_,_ in ADDITIONAL_SUBJECTS:
+    for line in (ROOT/'content'/f'{sid}.txt').read_text().splitlines():
+        if not line or line.startswith('#'):continue
+        p=line.split('¦'); assert len(p)==9,(sid,len(p),line)
+        topic,diff,stem,ans,*rest=p
+        add(sid,topic,diff,stem,ans,rest[:4],rest[4])
+SUBJECTS += ADDITIONAL_SUBJECTS
+
+# Editorial study priorities, not predictions of official exam weights.
+optional_ids={
+    'dbms': {23,64,87,89},
+    'os': {21,66,67,70},
+    'dsa': {32,33,40,78,79,80,81,83,85,99},
+    'dw_dm': {17,18,24,33,38,40,42,43,44,47,52,53,56,57,58},
+    'cloud_ai_ml': {9,27,33,36,39,40,41,42,45,54,56,57,59,61,62,64,65},
+    'se_bank_it': {18,23,40,42,43,49,50,51,52},
+}
+optional_families={'stop-wait','hamming','nyquist','fragment-count','page-table-entries'}
+seen_drills=set()
+for q in questions:
+    number=int(q['id'].rsplit('-',1)[1])
+    depth=number in optional_ids.get(q['subject'],set()) or q['family'] in optional_families
+    family=(q['subject'],q['family'])
+    repeat=q['kind']!='concept' and family in seen_drills
+    if q['kind']!='concept':seen_drills.add(family)
+    q['studyScope']='extended' if depth or repeat else 'core'
+    q['studyReason']='Optional specialist depth' if depth else 'Extra variant of a covered skill' if repeat else 'Foundation or representative practice'
+    if q['subject'] in {s[0] for s in ADDITIONAL_SUBJECTS}:
+        q['sourceId']=f"{q['subject']}_{number}"
+
 counts=collections.Counter(q['subject'] for q in questions)
 for sid,title,target in SUBJECTS:assert counts[sid]==target,(sid,counts[sid],target)
-assert len({q['id'] for q in questions})==950
-assert len({q['question'] for q in questions})==950
+assert len({q['id'] for q in questions})==1150
+assert len({q['question'] for q in questions})==1150
 for q in questions:
     assert len(q['options'])==5 and len(set(q['options']))==5
     assert 0<=q['answer']<5 and len(q['explanation'])>20
-bank={'schemaVersion':1,'version':'2026.10.18','title':'RRB IT Practice Lite','subjects':[{'id':sid,'name':title} for sid,title,_ in SUBJECTS],'questions':questions}
+bank={'schemaVersion':1,'version':'2026.10.19','title':'RRB IT Practice Lite','subjects':[{'id':sid,'name':title} for sid,title,_ in SUBJECTS],'questions':questions}
 OUT.mkdir(parents=True,exist_ok=True)
 (ROOT/'dist').mkdir(exist_ok=True)
 (ROOT/'docs').mkdir(exist_ok=True)
 (OUT/'bank.json').write_text(json.dumps(bank,ensure_ascii=False,separators=(',',':')))
 (ROOT/'dist/question-bank.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2))
 report={'total':len(questions),'subjects':dict(counts),'kinds':dict(collections.Counter(q['kind'] for q in questions)),'difficulty':dict(collections.Counter(q['difficulty'] for q in questions)),'checks':['Exact requested counts','Unique IDs and stems','Five distinct options per question','Valid answer indices','Explanations present','150 SQL answers executed in SQLite','30 shell answers executed in Bash']}
+report['studyScope']=dict(collections.Counter(q['studyScope'] for q in questions))
 (ROOT/'docs/bank-validation.json').write_text(json.dumps(report,indent=2))
 print(json.dumps(report,indent=2))

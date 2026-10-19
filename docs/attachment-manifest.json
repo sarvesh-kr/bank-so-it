@@ -1,0 +1,8 @@
+{
+  "extracted_json_sha256": "2c6071ba2af8e17f2f2dd4a1f3811f3b16b76f1cb5ad5d8aad1037747d1f1888",
+  "input_items": 1150,
+  "rewritten_additions": 200,
+  "excluded_input_items": 950,
+  "specific_concerns_recorded": 46,
+  "scope_note": "Disposition for every input item; excluded original answers are not independently certified."
+}

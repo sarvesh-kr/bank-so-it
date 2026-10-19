@@ -19,3 +19,6 @@ docs/*preview.png
 docs/*validation-output.txt
 *.idsig
 *.log
+
+# Local source snapshots and assistant checkpoints; public audit is in docs/.
+audit/

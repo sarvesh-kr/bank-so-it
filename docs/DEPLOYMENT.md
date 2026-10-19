@@ -4,7 +4,7 @@
 
 Repository: **sarvesh-kr/rrb-it-practice**. Custom subdomain: **so.sarvesh.si**. The repository owner has configured Pages with `build_type: workflow`, the custom domain, and HTTPS enforcement.
 
-The app is static. The workflow builds a fresh `_site/` artifact from the shared Android/browser assets and publishes only that artifact. The artifact contains the UI, 950-question bank, versioned service worker, icons, install manifest and signed APK. Root-level generated web copies are no longer needed or checked in.
+The app is static. The workflow builds a fresh `_site/` artifact from the shared Android/browser assets and publishes only that artifact. The artifact contains the UI, 1,150-question bank, versioned service worker, icons, install manifest and signed APK. Root-level generated web copies are no longer needed or checked in.
 
 ### Owner setup
 

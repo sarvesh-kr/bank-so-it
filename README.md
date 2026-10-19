@@ -1,14 +1,15 @@
 # RRB IT Practice
 
-A small offline MCQ app for **IBPS RRB Officer Scale II — IT**. The web app and Android APK use the **same interface, question bank and scoring logic**.
+A small offline MCQ app for **IBPS RRB Officer Scale II — IT**. The web app and Android APK use the **shared interface, question-bank source and scoring logic**.
 
 The web version runs entirely on **GitHub Pages**: no server, database service, API key or paid hosting is required. After one successful online visit it works offline and can be installed from a supported browser. All personal data stays in your browser/device.
 
 ## Practice features
 
-- **950 original MCQs**, each with five choices, a correct answer and an explanation.
+- **1,150 practice MCQs**, each with five choices, a correct answer and an explanation.
 - Subject-wise or mixed tests; choose 20, 40, 50, all eligible questions, or any custom count.
 - Subtopic, difficulty, unseen, wrong-answer and bookmark filters.
+- **Focused revision (692 questions)** by default; choose **All questions** to include 458 optional-depth or extra-drill items.
 - Practice mode with immediate feedback, or Test mode with answers hidden until submission.
 - Optional timer and −0.25 penalty; a focused 40-question / 30-minute preset.
 - Question navigator, review flags, bookmarks, saved unfinished sessions and detailed results.
@@ -23,9 +24,16 @@ The web version runs entirely on **GitHub Pages**: no server, database service, 
 | Operating Systems | 100 |
 | Data Structures & Algorithms | 250 |
 | Linux & Shell Basics | 100 |
-| **Total** | **950** |
+| Data Warehousing & Data Mining | 65 |
+| Cloud, AI & ML Basics | 65 |
+| Software Engineering & Banking IT | 70 |
+| **Total** | **1,150** |
 
-These are original practice questions and worked drills informed by published analyses, not official previous-year questions. The preset covers the five starter subjects; the wider IT syllabus includes other areas. See [research and content approach](docs/RESEARCH.md).
+These are original practice questions and worked drills informed by published analyses, not official previous-year questions. The preset covers the eight included subjects; the wider IT syllabus includes other areas. See [research and content approach](docs/RESEARCH.md).
+
+See the [content audit](docs/CONTENT_AUDIT.md) for corrections, study priorities, sources and review limits.
+
+**Existing APK:** the signed download still bundles the earlier 950-question bank. Download `bank.json` from the web app and use **My bank → Import pack** in the APK to update its questions. The new study-coverage filter requires a rebuild with the existing release signing key, which is not present in this workspace.
 
 ## Deploy on GitHub Pages
 
