@@ -1,0 +1,18 @@
+{
+  "version": "1.2",
+  "versionCode": 3,
+  "bytes": 152751,
+  "sha256": "fe44a42126b730d589c73544d4a5d725285a93e3700c64f461cf76d5a0bcfc1c",
+  "certificateSha256": "99b48912f61bdd5fda05c058add7f9d96cac200c5ee1875211f5eb624a0b5ceb",
+  "questions": 1150,
+  "subjects": 8,
+  "signatureSchemes": [
+    "v2",
+    "v3"
+  ],
+  "sharedAssetsMatch": true,
+  "newSigningIdentity": true,
+  "actionsSigningSecretsConfigured": false,
+  "actionsSecretsBlocker": "GitHub HTTP 403: Resource not accessible by integration",
+  "nativeDeviceTested": false
+}

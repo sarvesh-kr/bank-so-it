@@ -19,11 +19,13 @@
 - `CHROME_PATH=/usr/bin/chromium npm run test:ui`: passed editing, imports, inert HTML handling, exports, timer expiry, one-time submission after restart, progress persistence and responsive layouts.
 - JavaScript syntax and Git whitespace checks passed. Home screenshot inspected.
 
-## Android release limitation
+## Android 1.2 release
 
-The existing APK signature was verified. Its SHA-256 signing-certificate fingerprint is `d3396225849a80c79e30f4d3f1bc886177f9ac6fa618b335ea24dcc46dca0adc`.
+The old APK download was replaced with a newly signed 152,751-byte Android 1.2 APK (version code 3), as requested. APK Signature Schemes v2 and v3 pass verification. All embedded assets match the updated shared source, including 1,150 questions, eight subjects and focused revision. See [android-release.json](android-release.json) for the APK and public certificate fingerprints.
 
-No new APK was signed: the original signing key is unavailable. The existing download still has the earlier embedded bank/UI. It accepts the updated question pack through My bank → Import pack, but the new study-coverage UI requires an application rebuild with the existing signing key. No claim of a new device/emulator run is made. The simulated native browser bridge is not a physical Android test.
+The release uses a new signing identity. Old installations require exporting progress, uninstalling the old APK, installing 1.2 and restoring the backup. The private key is excluded from Git and retained in a private backup. GitHub denied repository-secrets access (HTTP 403), so Actions signing secrets have not been configured. The Android workflow now fails if persistent signing secrets are absent rather than silently creating another key.
+
+No physical-device or emulator test was completed for this release. Signature, archive-content and browser/shared-interface checks do not replace device testing.
 
 ## Reproduce
 
@@ -39,4 +41,4 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory _site
 CHROME_PATH=/usr/bin/chromium npm run test:ui
 ```
 
-Use the existing release signing key when rebuilding the Android application. Do not substitute a new key for an update to an installed release.
+Reuse the new Android 1.2 release key for future upgrades. Keep the private signing backup safe.

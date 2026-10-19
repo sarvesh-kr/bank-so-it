@@ -33,7 +33,7 @@ These are original practice questions and worked drills informed by published an
 
 See the [content audit](docs/CONTENT_AUDIT.md) for corrections, study priorities, sources and review limits.
 
-**Existing APK:** the signed download still bundles the earlier 950-question bank. Download `bank.json` from the web app and use **My bank → Import pack** in the APK to update its questions. The new study-coverage filter requires a rebuild with the existing release signing key, which is not present in this workspace.
+**Android 1.2:** the APK bundles all 1,150 questions and focused revision. It uses a new private release key. Existing 1.1 users must export progress, uninstall the old APK, install 1.2 and restore their backup. Future releases should reuse this new key.
 
 ## Deploy on GitHub Pages
 
@@ -77,7 +77,7 @@ bash tools/build_apk.sh
 
 The result is `dist/RRB-IT-Practice-Lite.apk`. A private signing key is generated under ignored `signing/` if none exists. **Keep this key private and retain it for future upgrades.** Keys, passwords, private source archives and local progress are excluded from this repository. Increase the manifest's `versionCode` when distributing upgrades.
 
-An optional **Build Android APK** workflow is available. For stable signed upgrades, configure repository secrets `ANDROID_KEYSTORE_BASE64` (the original JKS encoded as Base64) and `ANDROID_KEYSTORE_PASSWORD`; the key alias is `rrb-it-personal`. Without those secrets, the workflow creates a temporary key and its APK cannot upgrade the existing signed installation. Signing secrets are never needed by the Pages workflow.
+An optional **Build Android APK** workflow is available. For stable signed upgrades, configure repository secrets `ANDROID_KEYSTORE_BASE64` (the original JKS encoded as Base64) and `ANDROID_KEYSTORE_PASSWORD`; the key alias is `rrb-it-personal`. The workflow fails if either secret is missing, preventing accidental changes to the release signing identity. Signing secrets are never needed by the Pages workflow.
 
 ## Develop and test
 

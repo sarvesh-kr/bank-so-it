@@ -15,7 +15,15 @@ BUILD="$ROOT_DIR/build"
 mkdir -p "$BUILD/classes" "$BUILD/dex" "$ROOT_DIR/dist" "$ROOT_DIR/signing"
 python3 "$ROOT_DIR/tools/build_bank.py"
 "$BT/aapt" package -f -m -M "$ROOT_DIR/app/src/main/AndroidManifest.xml" -S "$ROOT_DIR/app/src/main/res" -A "$ROOT_DIR/app/src/main/assets" -I "$PLATFORM" -F "$BUILD/resources.apk"
-javac --release 8 -encoding UTF-8 -classpath "$PLATFORM" -d "$BUILD/classes" "$ROOT_DIR/app/src/main/java/in/rrbpractice/lite/MainActivity.java"
+if command -v javac >/dev/null; then
+  javac --release 8 -encoding UTF-8 -classpath "$PLATFORM" -d "$BUILD/classes" "$ROOT_DIR/app/src/main/java/in/rrbpractice/lite/MainActivity.java"
+elif [ -n "${ECJ_JAR:-}" ] && [ -f "$ECJ_JAR" ]; then
+  # Optional compiler for environments with a JRE and Eclipse compiler only.
+  java -jar "$ECJ_JAR" -source 8 -target 8 -proc:none -encoding UTF-8 -classpath "$PLATFORM" -d "$BUILD/classes" "$ROOT_DIR/app/src/main/java/in/rrbpractice/lite/MainActivity.java"
+else
+  echo 'Install a JDK with javac, or set JAVA_HOME and ECJ_JAR for a JRE/Eclipse compiler build.' >&2
+  exit 1
+fi
 find "$BUILD/classes" -name '*.class' -print > "$BUILD/classes.list"
 "$BT/d8" --release --min-api 24 --lib "$PLATFORM" --output "$BUILD/dex" @"$BUILD/classes.list"
 cp "$BUILD/resources.apk" "$BUILD/unsigned.apk"
