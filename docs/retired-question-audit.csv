@@ -1,0 +1,471 @@
+id,subject,topic,decision,reason,computed_answer_evidence,original_source_commit
+cloud_ai_ml-008,cloud_ai_ml,Containers and deployment,retired,Container/VM distinction is already tested in operating systems,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-009,cloud_ai_ml,Containers and deployment,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-014,cloud_ai_ml,Cloud resilience,retired,Availability calculation is already represented in network drills,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-018,cloud_ai_ml,Cloud security,retired,Zero trust is already tested in network security,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-027,cloud_ai_ml,Model training,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-033,cloud_ai_ml,Model evaluation,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-039,cloud_ai_ml,Model training,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-041,cloud_ai_ml,Neural network awareness,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-042,cloud_ai_ml,Neural network awareness,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-045,cloud_ai_ml,Model governance,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-054,cloud_ai_ml,Containers and deployment,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-056,cloud_ai_ml,Model training,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-057,cloud_ai_ml,Model training,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-059,cloud_ai_ml,Model governance,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-061,cloud_ai_ml,Language processing,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-062,cloud_ai_ml,Language processing,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-064,cloud_ai_ml,AI methods,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+cloud_ai_ml-065,cloud_ai_ml,AI methods,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-064,dbms,Concurrency,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-083,dbms,Warehousing,retired,Covered by the dedicated OLAP question in warehousing,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-084,dbms,Warehousing,retired,Covered by the dedicated star-schema question,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-085,dbms,Warehousing,retired,Covered by the dedicated ETL question,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-116,dbms,Aggregate COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-117,dbms,Non-NULL COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-118,dbms,Filtered SUM,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-119,dbms,NULL filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-120,dbms,DISTINCT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-121,dbms,HAVING,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-122,dbms,Range filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-123,dbms,COALESCE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-124,dbms,LEFT JOIN,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-125,dbms,Unmatched rows,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-126,dbms,Correlated EXISTS,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-127,dbms,Ranking,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-128,dbms,CASE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-129,dbms,Scalar subquery,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-130,dbms,NOT IN and NULL,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-131,dbms,Aggregate COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-132,dbms,Non-NULL COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-133,dbms,Filtered SUM,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-134,dbms,NULL filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-135,dbms,DISTINCT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-136,dbms,HAVING,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-137,dbms,Range filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-138,dbms,COALESCE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-139,dbms,LEFT JOIN,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-140,dbms,Unmatched rows,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-141,dbms,Correlated EXISTS,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-142,dbms,Ranking,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-143,dbms,CASE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-144,dbms,Scalar subquery,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-145,dbms,NOT IN and NULL,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-146,dbms,Aggregate COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-147,dbms,Non-NULL COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-148,dbms,Filtered SUM,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-149,dbms,NULL filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-150,dbms,DISTINCT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-151,dbms,HAVING,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-152,dbms,Range filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-153,dbms,COALESCE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-154,dbms,LEFT JOIN,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-155,dbms,Unmatched rows,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-156,dbms,Correlated EXISTS,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-157,dbms,Ranking,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-158,dbms,CASE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-159,dbms,Scalar subquery,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-160,dbms,NOT IN and NULL,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-161,dbms,Aggregate COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-162,dbms,Non-NULL COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-163,dbms,Filtered SUM,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-164,dbms,NULL filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-165,dbms,DISTINCT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-166,dbms,HAVING,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-167,dbms,Range filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-168,dbms,COALESCE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-169,dbms,LEFT JOIN,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-170,dbms,Unmatched rows,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-171,dbms,Correlated EXISTS,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-172,dbms,Ranking,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-173,dbms,CASE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-174,dbms,Scalar subquery,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-175,dbms,NOT IN and NULL,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-176,dbms,Aggregate COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-177,dbms,Non-NULL COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-178,dbms,Filtered SUM,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-179,dbms,NULL filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-180,dbms,DISTINCT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-181,dbms,HAVING,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-182,dbms,Range filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-183,dbms,COALESCE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-184,dbms,LEFT JOIN,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-185,dbms,Unmatched rows,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-186,dbms,Correlated EXISTS,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-187,dbms,Ranking,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-188,dbms,CASE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-189,dbms,Scalar subquery,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-190,dbms,NOT IN and NULL,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-191,dbms,Aggregate COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-192,dbms,Non-NULL COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-193,dbms,Filtered SUM,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-194,dbms,NULL filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-195,dbms,DISTINCT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-196,dbms,HAVING,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-197,dbms,Range filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-198,dbms,COALESCE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-199,dbms,LEFT JOIN,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-200,dbms,Unmatched rows,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-201,dbms,Correlated EXISTS,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-202,dbms,Ranking,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-203,dbms,CASE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-204,dbms,Scalar subquery,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-205,dbms,NOT IN and NULL,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-206,dbms,Aggregate COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-207,dbms,Non-NULL COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-208,dbms,Filtered SUM,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-209,dbms,NULL filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-210,dbms,DISTINCT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-211,dbms,HAVING,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-212,dbms,Range filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-213,dbms,COALESCE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-214,dbms,LEFT JOIN,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-215,dbms,Unmatched rows,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-216,dbms,Correlated EXISTS,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-217,dbms,Ranking,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-218,dbms,CASE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-219,dbms,Scalar subquery,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-220,dbms,NOT IN and NULL,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-221,dbms,Aggregate COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-222,dbms,Non-NULL COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-223,dbms,Filtered SUM,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-224,dbms,NULL filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-225,dbms,DISTINCT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-226,dbms,HAVING,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-227,dbms,Range filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-228,dbms,COALESCE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-229,dbms,LEFT JOIN,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-230,dbms,Unmatched rows,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-231,dbms,Correlated EXISTS,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-232,dbms,Ranking,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-233,dbms,CASE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-234,dbms,Scalar subquery,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-235,dbms,NOT IN and NULL,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-236,dbms,Aggregate COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-237,dbms,Non-NULL COUNT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-238,dbms,Filtered SUM,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-239,dbms,NULL filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-240,dbms,DISTINCT,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-241,dbms,HAVING,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-242,dbms,Range filtering,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-243,dbms,COALESCE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-244,dbms,LEFT JOIN,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-245,dbms,Unmatched rows,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-246,dbms,Correlated EXISTS,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-247,dbms,Ranking,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-248,dbms,CASE,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-249,dbms,Scalar subquery,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dbms-250,dbms,NOT IN and NULL,retired,Repeated numerical/dataset variant,executed-SQL,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-032,dsa,Trees,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-033,dsa,Trees,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-040,dsa,Hashing,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-078,dsa,Strings,retired,Specialist string algorithm; original wording also overstates avoidance of character rechecks,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-079,dsa,Strings,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-080,dsa,Strings,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-081,dsa,Advanced structures,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-083,dsa,Advanced structures,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-116,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-117,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-118,dsa,Tree counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-119,dsa,Graph counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-120,dsa,Stack traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-121,dsa,Queue traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-122,dsa,Prefix sums,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-123,dsa,Dynamic programming,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-124,dsa,BST traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-125,dsa,Sorting traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-126,dsa,Hashing traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-127,dsa,Heap indexing,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-128,dsa,Search counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-129,dsa,Shortest paths,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-130,dsa,Recursion counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-131,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-132,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-133,dsa,Tree counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-134,dsa,Graph counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-135,dsa,Stack traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-136,dsa,Queue traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-137,dsa,Prefix sums,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-138,dsa,Dynamic programming,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-139,dsa,BST traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-140,dsa,Sorting traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-141,dsa,Hashing traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-142,dsa,Heap indexing,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-143,dsa,Search counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-144,dsa,Shortest paths,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-145,dsa,Recursion counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-146,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-147,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-148,dsa,Tree counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-149,dsa,Graph counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-150,dsa,Stack traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-151,dsa,Queue traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-152,dsa,Prefix sums,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-153,dsa,Dynamic programming,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-154,dsa,BST traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-155,dsa,Sorting traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-156,dsa,Hashing traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-157,dsa,Heap indexing,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-158,dsa,Search counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-159,dsa,Shortest paths,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-160,dsa,Recursion counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-161,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-162,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-163,dsa,Tree counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-164,dsa,Graph counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-165,dsa,Stack traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-166,dsa,Queue traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-167,dsa,Prefix sums,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-168,dsa,Dynamic programming,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-169,dsa,BST traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-170,dsa,Sorting traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-171,dsa,Hashing traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-172,dsa,Heap indexing,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-173,dsa,Search counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-174,dsa,Shortest paths,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-175,dsa,Recursion counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-176,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-177,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-178,dsa,Tree counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-179,dsa,Graph counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-180,dsa,Stack traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-181,dsa,Queue traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-182,dsa,Prefix sums,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-183,dsa,Dynamic programming,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-184,dsa,BST traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-185,dsa,Sorting traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-186,dsa,Hashing traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-187,dsa,Heap indexing,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-188,dsa,Search counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-189,dsa,Shortest paths,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-190,dsa,Recursion counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-191,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-192,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-193,dsa,Tree counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-194,dsa,Graph counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-195,dsa,Stack traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-196,dsa,Queue traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-197,dsa,Prefix sums,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-198,dsa,Dynamic programming,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-199,dsa,BST traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-200,dsa,Sorting traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-201,dsa,Hashing traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-202,dsa,Heap indexing,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-203,dsa,Search counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-204,dsa,Shortest paths,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-205,dsa,Recursion counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-206,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-207,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-208,dsa,Tree counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-209,dsa,Graph counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-210,dsa,Stack traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-211,dsa,Queue traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-212,dsa,Prefix sums,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-213,dsa,Dynamic programming,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-214,dsa,BST traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-215,dsa,Sorting traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-216,dsa,Hashing traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-217,dsa,Heap indexing,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-218,dsa,Search counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-219,dsa,Shortest paths,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-220,dsa,Recursion counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-221,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-222,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-223,dsa,Tree counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-224,dsa,Graph counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-225,dsa,Stack traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-226,dsa,Queue traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-227,dsa,Prefix sums,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-228,dsa,Dynamic programming,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-229,dsa,BST traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-230,dsa,Sorting traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-231,dsa,Hashing traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-232,dsa,Heap indexing,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-233,dsa,Search counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-234,dsa,Shortest paths,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-235,dsa,Recursion counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-236,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-237,dsa,Loop analysis,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-238,dsa,Tree counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-239,dsa,Graph counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-240,dsa,Stack traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-241,dsa,Queue traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-242,dsa,Prefix sums,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-243,dsa,Dynamic programming,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-244,dsa,BST traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-245,dsa,Sorting traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-246,dsa,Hashing traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-247,dsa,Heap indexing,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-248,dsa,Search counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-249,dsa,Shortest paths,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dsa-250,dsa,Recursion counts,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-017,dw_dm,Dimensional modelling,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-018,dw_dm,Dimensional modelling,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-024,dw_dm,Dimension history,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-038,dw_dm,Association rules,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-040,dw_dm,Data preparation,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-042,dw_dm,Dimensional modelling,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-043,dw_dm,Dimensional modelling,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-044,dw_dm,Dimensional modelling,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-047,dw_dm,OLAP operations,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-052,dw_dm,Data mining foundations,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-053,dw_dm,Data mining foundations,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-056,dw_dm,Clustering,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+dw_dm-058,dw_dm,Data preparation,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-071,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-072,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-076,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-077,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-079,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-081,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-082,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-087,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-088,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-091,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-093,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-095,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-097,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+linux-098,linux,Shell output,retired,Repetitive shell-output example; the concept or a representative trace is retained,executed-shell,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-139,network,Transport calculations,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-143,network,Error control,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-144,network,Channel capacity,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-145,network,IP fragmentation,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-147,network,Service ports,retired,Same SSH-port fact already tested; other conventional ports are covered in the revision sheet,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-151,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-152,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-153,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-154,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-155,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-156,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-157,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-158,network,IPv6,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-159,network,IPv6,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-160,network,IP forwarding,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-161,network,Transmission,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-162,network,Transmission,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-163,network,Transport calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-164,network,Transport calculations,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-165,network,Transport calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-166,network,Error control,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-167,network,Error control,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-168,network,Error control,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-169,network,Channel capacity,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-170,network,IP fragmentation,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-171,network,TCP sequence numbers,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-172,network,Service ports,retired,Same SSH-port fact already tested; other conventional ports are covered in the revision sheet,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-173,network,Recovery planning,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-174,network,Recovery planning,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-175,network,Availability,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-176,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-177,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-178,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-179,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-180,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-181,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-182,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-183,network,IPv6,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-184,network,IPv6,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-185,network,IP forwarding,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-186,network,Transmission,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-187,network,Transmission,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-188,network,Transport calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-189,network,Transport calculations,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-190,network,Transport calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-191,network,Error control,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-192,network,Error control,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-193,network,Error control,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-194,network,Channel capacity,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-195,network,IP fragmentation,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-196,network,TCP sequence numbers,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-197,network,Service ports,retired,Same SSH-port fact already tested; other conventional ports are covered in the revision sheet,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-198,network,Recovery planning,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-199,network,Recovery planning,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-200,network,Availability,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-201,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-202,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-203,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-204,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-205,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-206,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-207,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-208,network,IPv6,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-209,network,IPv6,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-210,network,IP forwarding,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-211,network,Transmission,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-212,network,Transmission,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-213,network,Transport calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-214,network,Transport calculations,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-215,network,Transport calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-216,network,Error control,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-217,network,Error control,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-218,network,Error control,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-219,network,Channel capacity,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-220,network,IP fragmentation,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-221,network,TCP sequence numbers,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-222,network,Service ports,retired,Same SSH-port fact already tested; other conventional ports are covered in the revision sheet,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-223,network,Recovery planning,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-224,network,Recovery planning,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-225,network,Availability,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-226,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-227,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-228,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-229,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-230,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-231,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-232,network,Subnetting,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-233,network,IPv6,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-234,network,IPv6,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-235,network,IP forwarding,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-236,network,Transmission,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-237,network,Transmission,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-238,network,Transport calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-239,network,Transport calculations,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-240,network,Transport calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-241,network,Error control,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-242,network,Error control,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-243,network,Error control,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-244,network,Channel capacity,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-245,network,IP fragmentation,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-246,network,TCP sequence numbers,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-247,network,Service ports,retired,Same SSH-port fact already tested; other conventional ports are covered in the revision sheet,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-248,network,Recovery planning,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-249,network,Recovery planning,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+network-250,network,Availability,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-021,os,Synchronization,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-063,os,Protection,retired,Least privilege is already tested in network security,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-066,os,Scheduling,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-067,os,Synchronization,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-070,os,Processes,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-075,os,Page-table sizing,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-077,os,Scheduling calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-078,os,Paging calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-079,os,Paging calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-080,os,Page replacement traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-081,os,Page-table sizing,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-082,os,Banker calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-083,os,Scheduling calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-084,os,Paging calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-085,os,Paging calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-086,os,Page replacement traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-087,os,Page-table sizing,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-088,os,Banker calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-089,os,Scheduling calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-090,os,Paging calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-091,os,Paging calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-092,os,Page replacement traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-093,os,Page-table sizing,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-094,os,Banker calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-095,os,Scheduling calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-096,os,Paging calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-097,os,Paging calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-098,os,Page replacement traces,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-099,os,Page-table sizing,retired,Specialist depth beyond the final-revision scope,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+os-100,os,Banker calculations,retired,Repeated numerical/dataset variant,worked-drill,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+se_bank_it-024,se_bank_it,Reliability,retired,Availability calculation is already represented in network drills,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+se_bank_it-040,se_bank_it,Agile basics,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+se_bank_it-042,se_bank_it,Test techniques,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+se_bank_it-043,se_bank_it,Test techniques,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+se_bank_it-049,se_bank_it,Software design,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+se_bank_it-050,se_bank_it,Software design,retired,Specialist depth beyond the final-revision scope,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+se_bank_it-060,se_bank_it,Banking channel security,retired,Two-factor authentication is already tested in network security,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff
+se_bank_it-067,se_bank_it,Payment controls,retired,Maker/checker separation is already tested in network security,Technical review; item not published,693275acdf059ef83e274cfdbb59d5679f8ce4ff

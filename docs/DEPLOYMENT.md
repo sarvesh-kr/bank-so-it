@@ -2,9 +2,9 @@
 
 ## GitHub Pages via Actions
 
-Repository: **sarvesh-kr/rrb-it-practice**. Custom subdomain: **so.sarvesh.si**. The repository owner has configured Pages with `build_type: workflow`, the custom domain, and HTTPS enforcement.
+Repository: **sarvesh-kr/bank-so-it**. Custom subdomain: **so.sarvesh.si**. The repository owner has configured Pages with `build_type: workflow`, the custom domain, and HTTPS enforcement.
 
-The app is static. The workflow builds a fresh `_site/` artifact from the shared Android/browser assets and publishes only that artifact. The artifact contains the UI, 1,150-question bank, versioned service worker, icons, install manifest and signed APK. Root-level generated web copies are no longer needed or checked in.
+The app is static. The workflow builds a fresh `_site/` artifact from the shared Android/browser assets and publishes only that artifact. The artifact contains the UI, 816-question bank, versioned service worker, icons, install manifest and signed APK. Root-level generated web copies are no longer needed or checked in.
 
 ### Owner setup
 
@@ -19,7 +19,7 @@ Actions hosting uses the domain configured in Pages settings; no repository `CNA
 
 Pushes to `main` and manual runs on `main` build, test and deploy. Pull requests and manual runs on other branches only validate. The workflow has `contents: read` for checkout and grants `pages: write` plus `id-token: write` only to the deployment job. It uses the built-in Actions token; no personal token, SSH deploy key or Android signing secret is needed for the web deployment.
 
-After a transfer, update local remotes with `git remote set-url origin https://github.com/sarvesh-kr/rrb-it-practice.git`. The workflow resolves the repository dynamically and contains no hardcoded owner. Check workflow runs in Actions; the deployment job shows the published URL. A missing Pages configuration fails visibly rather than silently skipping publication. If the job waits for approval, an authorized environment reviewer must approve it. If a Pages API call returns 403, the owner should check workflow permissions and repository policy.
+After a transfer, update local remotes with `git remote set-url origin https://github.com/sarvesh-kr/bank-so-it.git`. The workflow resolves the repository dynamically and contains no hardcoded owner. Check workflow runs in Actions; the deployment job shows the published URL. A missing Pages configuration fails visibly rather than silently skipping publication. If the job waits for approval, an authorized environment reviewer must approve it. If a Pages API call returns 403, the owner should check workflow permissions and repository policy.
 
 ## Storage and offline behavior
 
@@ -28,7 +28,7 @@ A collaborator can fork or copy this repository and enable Pages in their own ac
 - IndexedDB stores one current state record, scoped to the Pages project path. Two apps under different paths on the same `OWNER.github.io` origin use different databases.
 - The APK uses its existing native AtomicFile storage instead of IndexedDB.
 - Progress backups have a versioned format and are validated before replacing local state. Restoring is explicit; publishing a new site never restores or overwrites personal progress.
-- A service worker precaches an explicit asset list. Each project has its own cache prefix. Updates install into a new versioned cache and wait for activation; they do not mix changed question files with an old UI during an open session.
+- A service worker precaches an explicit asset list. Each project has its own cache prefix. Updates cache the complete release before automatic activation. The browser checks for releases on load and on return to a tab. It saves progress before reloading; active tests, setup screens and question edits defer reloading until you leave. Offline visits retain the last cached release. Legacy cache namespaces are cleaned only within the same app scope.
 - Offline data is prepared only after a successful first online visit. A browser can clear or evict stored data. Export backups when progress is important.
 - The app stores no GitHub credentials and cannot commit personal edits to the repository. Export a question pack or update the source if a bank change should be shared with everyone.
 
@@ -38,9 +38,9 @@ A collaborator can fork or copy this repository and enable Pages in their own ac
 2. Run `python3 tools/build_bank.py`, `npm test`, `npm run build:web` and `npm run test:pages`.
 3. Commit and push to `main`.
 4. Actions publishes `_site/` after tests pass, preserving the configured custom domain.
-5. For an APK update, increment Android `versionCode`, rebuild using the original private signing key, and replace `downloads/RRB-IT-Practice-Lite.apk` in the repository.
+5. For an APK update, increment Android `versionCode`, rebuild using the original private signing key, and replace `downloads/Bank-SO-IT.apk` in the repository.
 
-No APK rebuild is necessary for a browser-only update. APK users can import new question packs without rebuilding the APK.
+The release check deliberately requires the published APK to match shared assets; rebuild and replace it whenever shared UI or bank assets change. APK users can import new question packs without rebuilding the APK.
 
 ## Android signing
 

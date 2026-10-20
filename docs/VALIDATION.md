@@ -1,44 +1,26 @@
-# Validation record — 19 October 2026
+# Bank SO IT validation — 20 October 2026
 
-## Current question-bank update
+## Question quality
 
-- 1,150 unique questions across eight subjects; five distinct choices and a valid answer index for each.
-- 65 warehousing/mining, 65 cloud/AI/ML and 70 software engineering/banking IT additions.
-- 692 focused-revision questions; 458 optional-depth or extra-drill questions.
-- All original 950 project records retain their IDs, stems, choices, answer indices and explanations. Only study metadata was added to those records.
-- Generation executes 150 SQL answers in SQLite and 30 shell answers in Bash, and regenerates 305 numerical/trace answers.
-- Per-question evidence and review limits are documented in [CONTENT_AUDIT.md](CONTENT_AUDIT.md). Automated checks do not certify conceptual accuracy independently.
+The current bank contains 816 questions across 11 subjects. The review assigned a retain, correct or retire decision to all 1,150 previous records, retired 470, corrected or clarified 163 retained items, and added 136 foundations. Each shipped stem, five-option set, answer and explanation has a reviewed content hash and references. See [CONTENT_AUDIT.md](CONTENT_AUDIT.md), [the per-item ledger](question-audit.csv) and [retirement decisions](retired-question-audit.csv).
 
-## Checks completed
+The independent checker verifies 88 current results: 40 worked calculations/traces, 15 SQL results, 16 Bash outputs, 10 Python outputs and seven further calculations. All 485 computed results in the previous bank were also checked. SQL and scripts are executed; other small cases are independently calculated or enumerated. Technical relevance and conceptual interpretation received a model-assisted review using cited documentation and authored textbooks. This is not independent human expert certification or an authenticated past paper.
 
-- `python3 tools/build_bank.py`: bank generation and structural checks passed.
-- `python3 tools/audit_bank.py --attachment audit/attachment-original.json`: 1,150 production ledger rows and 1,150 input dispositions generated.
-- `npm test`: all 11 core/backup tests passed, including focused/all filtering, legacy pack compatibility, metadata preservation, eight-subject sampling, scoring and invalid imports.
-- `npm run build:web`: generated a static site of approximately 828 KB including the existing APK; audit CSVs and raw input are not included in the site.
-- `CHROME_PATH=/usr/bin/chromium npm run test:pages`: passed. Each new subject supports a scored attempt; coverage selection changes eligible counts. Also checked root/subpath hosting, offline reload, scoring/review, IndexedDB persistence, backup/restore, path isolation, cached APK, simulated native storage and responsive layouts.
-- `CHROME_PATH=/usr/bin/chromium npm run test:ui`: passed editing, imports, inert HTML handling, exports, timer expiry, one-time submission after restart, progress persistence and responsive layouts.
-- JavaScript syntax and Git whitespace checks passed. Home screenshot inspected.
+## Completed checks
 
-## Android 1.2 release
+- Bank generation, reviewed-hash enforcement and independent answer checks passed.
+- All 15 core/backup tests passed, including retirements, stale stock imports, reference validation, answer shuffling, scoring, sampling and legacy/new backup compatibility.
+- Pages browser tests passed for scored attempts in the added subjects, quick revision/search/references, offline reload and practice, saved answers, results/review, progress backup/restore, separate project storage, cached APK, root/subpath hosting and responsive layouts.
+- The automatic-update integration test starts with the actual pinned pre-update client from commit `693275a`. Loading it discovers the new release without a manual action. Progress, bookmarks, unfinished answers and original question snapshots survive the transition. New clients defer reloading during tests and question edits; leaving those screens applies the release automatically. The latest cached version works offline. Cache cleanup preserves sibling applications. The server also simulates a fresh HTTP asset cache to check that release downloads bypass stale browser entries.
+- UI and expiry tests cover editing/import/export, inert imported HTML, saved sessions, timer expiry and exactly-once submission after restarting an expired test. Layouts and screenshots were inspected.
+- JavaScript syntax and Git whitespace checks passed.
 
-The old APK download was replaced with a newly signed 152,751-byte Android 1.2 APK (version code 3), as requested. APK Signature Schemes v2 and v3 pass verification. All embedded assets match the updated shared source, including 1,150 questions, eight subjects and focused revision. See [android-release.json](android-release.json) for the APK and public certificate fingerprints.
+The static site is approximately 893 KB including its APK. Test tooling, raw source inputs, audit ledgers and signing material are excluded from the deployed site.
 
-The release uses a new signing identity. Old installations require exporting progress, uninstalling the old APK, installing 1.2 and restoring the backup. The private key is excluded from Git and retained in a private backup. GitHub denied repository-secrets access (HTTP 403), so Actions signing secrets have not been configured. The Android workflow now fails if persistent signing secrets are absent rather than silently creating another key.
+## Android 2.0
 
-No physical-device or emulator test was completed for this release. Signature, archive-content and browser/shared-interface checks do not replace device testing.
+The public download is [Bank-SO-IT.apk](../downloads/Bank-SO-IT.apk): 160,943 bytes, version code 4, with all 816 questions and the same interface as the web app. APK Signature Schemes v2 and v3 verify. Every embedded shared asset matches source. [android-release.json](android-release.json) records its checksum and public signing-certificate fingerprint.
 
-## Reproduce
+The existing Android 1.2 key and application ID are retained for in-place upgrades. The private key, password and backup remain excluded from Git. The signing certificate's original subject and internal storage identifiers are compatibility identifiers; the displayed app, downloads, exports, manifest and documentation use Bank SO IT. New backups use the new product format and old backups remain accepted.
 
-```sh
-python3 tools/build_bank.py
-python3 tools/audit_bank.py
-npm test
-npm run build:web
-CHROME_PATH=/usr/bin/chromium npm run test:pages
-# In another terminal for the UI suite:
-python3 -m http.server 8765 --bind 127.0.0.1 --directory _site
-# Then:
-CHROME_PATH=/usr/bin/chromium npm run test:ui
-```
-
-Reuse the new Android 1.2 release key for future upgrades. Keep the private signing backup safe.
+Native interactions were tested through a simulated Android bridge in Chromium. A physical device/emulator installation has not been tested. GitHub denied access to configure signing secrets, so the optional Android workflow still requires its owner to supply the existing key via repository secrets; the published APK was signed locally. Pages deployment does not require these secrets.

@@ -61,7 +61,7 @@ for k in range(5):
     km=100*(k+1); ms=km/200
     add('network','Transmission','Moderate',f'A signal travels {km} km at 200,000 km/s. What is its one-way propagation delay?',f'{ms:g} ms',[f'{ms*2:g} ms',f'{ms/2:g} ms',f'{ms*10:g} ms',f'{ms/10:g} ms'],f'Delay = distance/speed = {km}/200,000 seconds = {ms:g} ms.','worked-drill','propagation')
     mbps=10*(k+1); rtt=20
-    num('network','Transport calculations','Moderate',f'For a {mbps} Mbps link and {rtt} ms round-trip time, what is the bandwidth-delay product in bytes? Use decimal units.',mbps*1000000*rtt//1000//8,f'{mbps}×1,000,000×0.020 bits ÷ 8 = {mbps*2500} bytes. This is the bandwidth multiplied by RTT.','bandwidth-delay')
+    num('network','Transport calculations','Moderate',f'Using bandwidth × RTT for TCP window sizing, what is the product in bytes for a {mbps} Mbps link and {rtt} ms round-trip time? Use decimal units.',mbps*1000000*rtt//1000//8,f'{mbps}×1,000,000×0.020 bits ÷ 8 = {mbps*2500} bytes. This is the bandwidth multiplied by RTT.','bandwidth-delay')
     tx=k+1; rt=2*tx*(k+1); util=100*tx/(tx+rt)
     add('network','Transport calculations','Hard',f'A stop-and-wait sender takes {tx} ms to transmit a data frame. Round-trip propagation is {rt} ms; ACK transmission and processing are negligible. What is sender utilization?',f'{util:.2f}%',[f'{util/2:.2f}%',f'{min(100,util*2):.2f}%',f'{100-util:.2f}%','100.00%','5.00%'],f'One cycle takes transmission plus round-trip propagation: {tx}+{rt} ms. Utilization = {tx}/({tx}+{rt})×100 = {util:.2f}%.','worked-drill','stop-wait')
     window=8000*(k+2); payload=1000
@@ -136,7 +136,7 @@ for variant in range(10):
             extras=['1, 1; 2, 2; 4, 3; 5, 4; 6, 5','1, 3; 2, 2; 4, 1; 5, 2; 6, 5','1, 2; 2, 1; 4, 3; 5, 1; 6, 4','1, 4; 2, 3; 4, 1; 5, 2; 6, 5']+extras
         else:
             rng.shuffle(extras)
-        stem=table+'\n'+('branches(code) contains A, B, C, D.\n' if 'branches' in sql else '')+'What is the result? Rows are separated by semicolons.\n'+sql
+        stem='Using SQLite and the following data:\n'+table+'\n'+('branches(code) contains A, B, C, D.\n' if 'branches' in sql else '')+'What is the result? Rows are separated by semicolons.\n'+sql
         add('dbms',topic,'Hard' if topic in ['Ranking','NOT IN and NULL','Correlated EXISTS'] else 'Moderate',stem,ans,extras,reason+' Result: '+ans+'.','executed-SQL',topic)
     db.close()
 
@@ -253,42 +253,72 @@ for sid,_,_ in ADDITIONAL_SUBJECTS:
         add(sid,topic,diff,stem,ans,rest[:4],rest[4])
 SUBJECTS += ADDITIONAL_SUBJECTS
 
-# Editorial study priorities, not predictions of official exam weights.
-optional_ids={
-    'dbms': {23,64,87,89},
-    'os': {21,66,67,70},
-    'dsa': {32,33,40,78,79,80,81,83,85,99},
-    'dw_dm': {17,18,24,33,38,40,42,43,44,47,52,53,56,57,58},
-    'cloud_ai_ml': {9,27,33,36,39,40,41,42,45,54,56,57,59,61,62,64,65},
-    'se_bank_it': {18,23,40,42,43,49,50,51,52},
-}
-optional_families={'stop-wait','hamming','nyquist','fragment-count','page-table-entries'}
-seen_drills=set()
-for q in questions:
-    number=int(q['id'].rsplit('-',1)[1])
-    depth=number in optional_ids.get(q['subject'],set()) or q['family'] in optional_families
-    family=(q['subject'],q['family'])
-    repeat=q['kind']!='concept' and family in seen_drills
-    if q['kind']!='concept':seen_drills.add(family)
-    q['studyScope']='extended' if depth or repeat else 'core'
-    q['studyReason']='Optional specialist depth' if depth else 'Extra variant of a covered skill' if repeat else 'Foundation or representative practice'
-    if q['subject'] in {s[0] for s in ADDITIONAL_SUBJECTS}:
-        q['sourceId']=f"{q['subject']}_{number}"
+# Quality-first release: retired items never enter any practice or revision pool.
+legacy_counts=collections.Counter(q['subject'] for q in questions)
+for sid,_,target in SUBJECTS:assert legacy_counts[sid]==target
+baseline=json.loads((ROOT/'content/review/baseline-manifest.json').read_text())
+assert set(baseline)=={q['id'] for q in questions}
+retired=json.loads((ROOT/'content/review/retirements.json').read_text())
+assert set(retired)<=set(baseline)
+questions[:]=[q for q in questions if q['id'] not in retired]
+
+# Preserve source IDs and append new IDs after the previous subject maximum.
+# The add() helper normally counts rows, so use a stable sequence override here.
+new_subjects=[('programming','Programming & OOP'),('architecture','Computer Fundamentals & Architecture'),('web','Web Technology')]
+def append_content(sid,path):
+    for line in path.read_text().splitlines():
+        if not line or line.startswith('#'):continue
+        parts=line.split('¦');assert len(parts)==9,(path,line)
+        topic,diff,stem,answer,*rest=parts
+        add(sid,topic,diff,stem,answer,rest[:4],rest[4])
+        maximum=max([int(qid.rsplit('-',1)[1]) for qid,v in baseline.items() if v['subject']==sid]+[0])
+        if maximum:
+            additions=sum(q['subject']==sid and q['id'] not in baseline for q in questions[:-1])
+            questions[-1]['id']=f'{sid}-{maximum+additions+1:03}'
+for sid,_ in new_subjects:append_content(sid,ROOT/'content'/f'{sid}.txt')
+for sid in ['network','dbms','os','se_bank_it']:append_content(sid,ROOT/'content'/f'supplement_{sid}.txt')
+python_cases=[
+ ('print(7 // 2)','3',['3.5','4','2','1'],'Positive integer floor division gives 3, not 3.5.'),
+ ('print(7 % 3)','1',['2','3','0','2.3333333333333335'],'The remainder is 1 because 7 = 2×3 + 1.'),
+ ('print(2 + 3 * 4)','14',['20','24','9','18'],'Multiplication is evaluated before addition: 2 + 12 = 14.'),
+ ('print(list(range(1, 6, 2)))','[1, 3, 5]',['[1, 3, 5, 6]','[1, 2, 3, 4, 5]','[2, 4, 6]','[1, 3]'],'The range starts at 1, steps by 2 and excludes stop value 6.'),
+ ('s = "BANK"; print(s[1:3])','AN',['BAN','ANK','BA','NK'],'Indices 1 and 2 are included; stop index 3 is excluded.'),
+ ('a = [1, 2]; b = a; b.append(3); print(len(a))','3',['2','1','4','0'],'a and b refer to the same list, so appending through b changes its length to 3.'),
+ ('d = {"a": 1, "a": 2}; print(d["a"])','2',['1','[1, 2]','3','None'],'The later value replaces the earlier value for the same dictionary key.'),
+ ('print("7" + "3")','73',['10','21','7 3','[7, 3]'],'Both operands are strings, so + concatenates them.'),
+ ('print(bool(""))','False',['True','None','0','SyntaxError'],'An empty string has false truth value; print displays the Boolean False.'),
+ ('print([x * 2 for x in [1, 2, 3]])','[2, 4, 6]',['[1, 2, 3, 1, 2, 3]','[1, 4, 9]','[2, 3, 4]','[6, 4, 2]'],'The comprehension multiplies each input element by two in input order.'),
+]
+for script,answer,wrong,explanation in python_cases:
+    output=subprocess.check_output(['python3','-I','-c',script],text=True).rstrip('\n')
+    assert output==answer
+    add('programming','Python output','Moderate','In Python 3, what is printed?\n'+script,answer,wrong,explanation,'executed-python','python-output-'+str(len(questions)))
 
 counts=collections.Counter(q['subject'] for q in questions)
-for sid,title,target in SUBJECTS:assert counts[sid]==target,(sid,counts[sid],target)
-assert len({q['id'] for q in questions})==1150
-assert len({q['question'] for q in questions})==1150
+all_subjects=[(sid,name) for sid,name,_ in SUBJECTS]+new_subjects
+assert len({q['id'] for q in questions})==len(questions)
+assert len({q['question'] for q in questions})==len(questions)
 for q in questions:
     assert len(q['options'])==5 and len(set(q['options']))==5
     assert 0<=q['answer']<5 and len(q['explanation'])>20
-bank={'schemaVersion':1,'version':'2026.10.19','title':'RRB IT Practice Lite','subjects':[{'id':sid,'name':title} for sid,title,_ in SUBJECTS],'questions':questions}
+    q['studyScope']='core'
+    q['studyReason']='Curated degree-level foundation or representative exam-style application'
+    if q['difficulty']=='Hard':q['difficulty']='Moderate'
+
+# References are selected by subject/topic and may be further narrowed by ID.
+from review_sources import references_for
+for q in questions:
+    q['references']=references_for(q)
+    assert q['references'],q['id']
+bank={'schemaVersion':1,'version':'2.0.0','title':'Bank SO IT','subjects':[{'id':sid,'name':name} for sid,name in all_subjects],
+      'retiredQuestionIds':sorted(retired),'questions':questions}
 OUT.mkdir(parents=True,exist_ok=True)
 (ROOT/'dist').mkdir(exist_ok=True)
 (ROOT/'docs').mkdir(exist_ok=True)
 (OUT/'bank.json').write_text(json.dumps(bank,ensure_ascii=False,separators=(',',':')))
 (ROOT/'dist/question-bank.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2))
-report={'total':len(questions),'subjects':dict(counts),'kinds':dict(collections.Counter(q['kind'] for q in questions)),'difficulty':dict(collections.Counter(q['difficulty'] for q in questions)),'checks':['Exact requested counts','Unique IDs and stems','Five distinct options per question','Valid answer indices','Explanations present','150 SQL answers executed in SQLite','30 shell answers executed in Bash']}
-report['studyScope']=dict(collections.Counter(q['studyScope'] for q in questions))
-(ROOT/'docs/bank-validation.json').write_text(json.dumps(report,indent=2))
+report={'total':len(questions),'subjects':dict(counts),'retired':len(retired),'kinds':dict(collections.Counter(q['kind'] for q in questions)),
+'difficulty':dict(collections.Counter(q['difficulty'] for q in questions)),
+'checks':['Unique IDs and stems','Five distinct options per question','Valid answer indices','Explanations and references present','Legacy ID retirement prevents duplicate reintroduction','SQL answers executed in SQLite during generation','Shell answers executed in Bash during generation','Python answers executed in Python 3 during generation']}
+(ROOT/'docs/bank-validation.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

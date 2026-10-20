@@ -6,7 +6,7 @@ const safeID=v=>typeof v==='string'&&v.length<=100&&/^[a-zA-Z0-9_-]+$/.test(v)&&
 const number=(v,label,min=0)=>{if(!Number.isFinite(v)||v<min)throw Error('Invalid '+label);return v;};
 const integer=(v,label,min=0)=>{number(v,label,min);if(!Number.isInteger(v))throw Error('Invalid '+label);return v;};
 function validate(input){
- record(input,'Backup');if(input.format!=='rrb-it-practice-backup'||input.schemaVersion!==1)throw Error('Unsupported progress backup.');
+ record(input,'Backup');if(!['bank-so-it-backup','rrb-it-practice-backup'].includes(input.format)||input.schemaVersion!==1)throw Error('Unsupported progress backup.');
  const catalog=C.validatePack({schemaVersion:1,subjects:input.subjects,questions:[]}).subjects;
  const s=record(input.state,'Backup state'),custom=C.validatePack(s.custom);
  const progress={},bookmarks={};

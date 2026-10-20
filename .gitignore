@@ -22,3 +22,5 @@ docs/*validation-output.txt
 
 # Local source snapshots and assistant checkpoints; public audit is in docs/.
 audit/
+__pycache__/
+*.pyc

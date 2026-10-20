@@ -1,0 +1,361 @@
+{
+  "passed": true,
+  "questions": 816,
+  "retired": 470,
+  "independent_answer_checks": 88,
+  "proofs": {
+    "network-126": {
+      "method": "worked-drill",
+      "independent_result": "254"
+    },
+    "network-127": {
+      "method": "worked-drill",
+      "independent_result": "255.255.255.0"
+    },
+    "network-128": {
+      "method": "worked-drill",
+      "independent_result": "10.1.3.128"
+    },
+    "network-129": {
+      "method": "worked-drill",
+      "independent_result": "192.168.30.95"
+    },
+    "network-130": {
+      "method": "worked-drill",
+      "independent_result": "172.16.2.190"
+    },
+    "network-131": {
+      "method": "worked-drill",
+      "independent_result": "2"
+    },
+    "network-132": {
+      "method": "worked-drill",
+      "independent_result": "/27"
+    },
+    "network-133": {
+      "method": "worked-drill",
+      "independent_result": "2001:db8:1::a0"
+    },
+    "network-134": {
+      "method": "worked-drill",
+      "independent_result": "65536"
+    },
+    "network-135": {
+      "method": "worked-drill",
+      "independent_result": "29"
+    },
+    "network-136": {
+      "method": "worked-drill",
+      "independent_result": "0.4 ms"
+    },
+    "network-137": {
+      "method": "worked-drill",
+      "independent_result": "0.5 ms"
+    },
+    "network-138": {
+      "method": "worked-drill",
+      "independent_result": "25000"
+    },
+    "network-140": {
+      "method": "worked-drill",
+      "independent_result": "16"
+    },
+    "network-141": {
+      "method": "worked-drill",
+      "independent_result": "3"
+    },
+    "network-142": {
+      "method": "worked-drill",
+      "independent_result": "0"
+    },
+    "network-146": {
+      "method": "worked-drill",
+      "independent_result": "1200"
+    },
+    "network-148": {
+      "method": "worked-drill",
+      "independent_result": "5"
+    },
+    "network-149": {
+      "method": "worked-drill",
+      "independent_result": "17"
+    },
+    "network-150": {
+      "method": "worked-drill",
+      "independent_result": "100"
+    },
+    "dbms-101": {
+      "method": "executed-SQL",
+      "independent_result": "5"
+    },
+    "dbms-102": {
+      "method": "executed-SQL",
+      "independent_result": "4"
+    },
+    "dbms-103": {
+      "method": "executed-SQL",
+      "independent_result": "300"
+    },
+    "dbms-104": {
+      "method": "executed-SQL",
+      "independent_result": "3"
+    },
+    "dbms-105": {
+      "method": "executed-SQL",
+      "independent_result": "3"
+    },
+    "dbms-106": {
+      "method": "executed-SQL",
+      "independent_result": "A; B"
+    },
+    "dbms-107": {
+      "method": "executed-SQL",
+      "independent_result": "2; 4; 5"
+    },
+    "dbms-108": {
+      "method": "executed-SQL",
+      "independent_result": "825"
+    },
+    "dbms-109": {
+      "method": "executed-SQL",
+      "independent_result": "6"
+    },
+    "dbms-110": {
+      "method": "executed-SQL",
+      "independent_result": "D"
+    },
+    "dbms-111": {
+      "method": "executed-SQL",
+      "independent_result": "A; B; C"
+    },
+    "dbms-112": {
+      "method": "executed-SQL",
+      "independent_result": "1, 3; 2, 2; 4, 1; 5, 2"
+    },
+    "dbms-113": {
+      "method": "executed-SQL",
+      "independent_result": "3"
+    },
+    "dbms-114": {
+      "method": "executed-SQL",
+      "independent_result": "4"
+    },
+    "dbms-115": {
+      "method": "executed-SQL",
+      "independent_result": "(no rows)"
+    },
+    "dsa-101": {
+      "method": "worked-drill",
+      "independent_result": "10"
+    },
+    "dsa-102": {
+      "method": "worked-drill",
+      "independent_result": "3"
+    },
+    "dsa-103": {
+      "method": "worked-drill",
+      "independent_result": "7"
+    },
+    "dsa-104": {
+      "method": "worked-drill",
+      "independent_result": "10"
+    },
+    "dsa-105": {
+      "method": "worked-drill",
+      "independent_result": "8"
+    },
+    "dsa-106": {
+      "method": "worked-drill",
+      "independent_result": "5"
+    },
+    "dsa-107": {
+      "method": "worked-drill",
+      "independent_result": "12"
+    },
+    "dsa-108": {
+      "method": "worked-drill",
+      "independent_result": "6"
+    },
+    "dsa-109": {
+      "method": "worked-drill",
+      "independent_result": "2, 5, 7, 10, 15"
+    },
+    "dsa-110": {
+      "method": "worked-drill",
+      "independent_result": "[1, 5, 4, 2, 3]"
+    },
+    "dsa-111": {
+      "method": "worked-drill",
+      "independent_result": "3"
+    },
+    "dsa-112": {
+      "method": "worked-drill",
+      "independent_result": "3"
+    },
+    "dsa-113": {
+      "method": "worked-drill",
+      "independent_result": "2"
+    },
+    "dsa-114": {
+      "method": "worked-drill",
+      "independent_result": "7"
+    },
+    "dsa-115": {
+      "method": "worked-drill",
+      "independent_result": "4"
+    },
+    "os-071": {
+      "method": "worked-drill",
+      "independent_result": "3.67 ms"
+    },
+    "os-072": {
+      "method": "worked-drill",
+      "independent_result": "2"
+    },
+    "os-073": {
+      "method": "worked-drill",
+      "independent_result": "125"
+    },
+    "os-074": {
+      "method": "worked-drill",
+      "independent_result": "7"
+    },
+    "os-076": {
+      "method": "worked-drill",
+      "independent_result": "6"
+    },
+    "linux-073": {
+      "method": "executed-shell",
+      "independent_result": "13"
+    },
+    "linux-074": {
+      "method": "executed-shell",
+      "independent_result": "3"
+    },
+    "linux-075": {
+      "method": "executed-shell",
+      "independent_result": "2"
+    },
+    "linux-078": {
+      "method": "executed-shell",
+      "independent_result": "3"
+    },
+    "linux-080": {
+      "method": "executed-shell",
+      "independent_result": "fallback"
+    },
+    "linux-083": {
+      "method": "executed-shell",
+      "independent_result": "7"
+    },
+    "linux-084": {
+      "method": "executed-shell",
+      "independent_result": "2\n4\n6"
+    },
+    "linux-085": {
+      "method": "executed-shell",
+      "independent_result": "3"
+    },
+    "linux-086": {
+      "method": "executed-shell",
+      "independent_result": "done"
+    },
+    "linux-089": {
+      "method": "executed-shell",
+      "independent_result": "2\n3\n12"
+    },
+    "linux-090": {
+      "method": "executed-shell",
+      "independent_result": "a\nb\na"
+    },
+    "linux-092": {
+      "method": "executed-shell",
+      "independent_result": "alpha\nalpine"
+    },
+    "linux-094": {
+      "method": "executed-shell",
+      "independent_result": "10\n20"
+    },
+    "linux-096": {
+      "method": "executed-shell",
+      "independent_result": "6"
+    },
+    "linux-099": {
+      "method": "executed-shell",
+      "independent_result": "[a b][c]"
+    },
+    "linux-100": {
+      "method": "executed-shell",
+      "independent_result": "x\ny"
+    },
+    "programming-051": {
+      "method": "executed-python",
+      "independent_result": "3"
+    },
+    "programming-052": {
+      "method": "executed-python",
+      "independent_result": "1"
+    },
+    "programming-053": {
+      "method": "executed-python",
+      "independent_result": "14"
+    },
+    "programming-054": {
+      "method": "executed-python",
+      "independent_result": "[1, 3, 5]"
+    },
+    "programming-055": {
+      "method": "executed-python",
+      "independent_result": "AN"
+    },
+    "programming-056": {
+      "method": "executed-python",
+      "independent_result": "3"
+    },
+    "programming-057": {
+      "method": "executed-python",
+      "independent_result": "2"
+    },
+    "programming-058": {
+      "method": "executed-python",
+      "independent_result": "73"
+    },
+    "programming-059": {
+      "method": "executed-python",
+      "independent_result": "False"
+    },
+    "programming-060": {
+      "method": "executed-python",
+      "independent_result": "[2, 4, 6]"
+    },
+    "architecture-004": {
+      "method": "independent conceptual calculation",
+      "independent_result": "10"
+    },
+    "architecture-005": {
+      "method": "independent conceptual calculation",
+      "independent_result": "1101"
+    },
+    "architecture-022": {
+      "method": "independent conceptual calculation",
+      "independent_result": "65536"
+    },
+    "architecture-023": {
+      "method": "independent conceptual calculation",
+      "independent_result": "8"
+    },
+    "dw_dm-033": {
+      "method": "independent conceptual calculation",
+      "independent_result": "24"
+    },
+    "dw_dm-064": {
+      "method": "independent conceptual calculation",
+      "independent_result": "75%"
+    },
+    "cloud_ai_ml-032": {
+      "method": "independent conceptual calculation",
+      "independent_result": "75%"
+    }
+  },
+  "lint": []
+}
