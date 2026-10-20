@@ -1,36 +1,11 @@
-# Exam research and content approach
+# Bank SO IT preparation scope
 
-Research date: 19 October 2026. Target: IBPS RRB Officer Scale II, Specialist Cadre, Information Technology.
+Checked 20 October 2026. Bank SO IT provides bank specialist IT practice. The initial exam-alignment review targets the IT **professional-knowledge** paper, with degree-level foundations and applied bank-IT scenarios. Reasoning, quantitative aptitude, language and financial-awareness papers are outside this bank.
 
-## What was checked
+The [RRB-specific preparation outline](https://www.ixambee.com/exams/ibps-rrb-officer-scale-ii-exam-syllabus) includes DBMS/SQL, networks, operating systems, algorithms, programming/OOP, software engineering, web technology, architecture and warehousing/mining. Basic cloud/AI and banking IT controls round out contemporary awareness. This is an indicative provider outline, not an official granular syllabus or topic-weight specification.
 
-- [BankersAdda: 29 September 2024 Scale II exam analysis](https://www.bankersadda.com/ibps-rrb-officer-scale-2-exam-analysis-2024/): the indexed recalled-paper analysis described the IT section as moderate and mentioned sorting, graphs, record-removal commands, IP addresses, application protocols, cyberattacks and OS segmentation, along with programming questions. These are candidate-recalled themes, not an official question paper or a reliable topic-frequency table. The article's full page returned HTTP 403 during this build; its relevant indexed extract was available.
-- [ixamBee: Scale II pattern and syllabus](https://www.ixambee.com/exams/ibps-rrb-officer-scale-ii-exam-syllabus): professional knowledge 40 questions / 40 marks / 30 minutes; five choices; one-quarter wrong-answer penalty. Its IT outline includes databases, networks, OS, structures, programming and other areas. This is a preparation provider's interpretation, not an official topic-weight specification.
-- [IBPS official notices](https://www.ibps.in/): attempted to retrieve the [2026 CRP RRBs XV notification](https://www.ibps.in/wp-content/uploads/CRP-RRBs-XV-notification.pdf) and the [2025 notification](https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV_Final_AD_1.9.25.pdf). Those PDF requests failed in the research tool. The preset is therefore corroborated by secondary pattern summaries, rather than claimed as directly verified against the current official PDF. Check the current call-letter handout and any IBPS corrigenda.
+The [2024 candidate-recalled Scale II analysis](https://www.bankersadda.com/ibps-rrb-officer-scale-2-exam-analysis-2024/) describes moderate technical knowledge and mentions SQL, addressing/protocols/security, OS, sorting and graphs, as well as programming. It supports concise fundamentals and short applications. The accessible material is not a complete authenticated paper. The 2025 report gives broad difficulty feedback but was not used to invent exact IT topic counts. Scale I SO and GBO computer-awareness papers were not substituted for the original RRB-specific analysis. Rebranding does not make this evidence an authenticated syllabus or paper analysis for every Bank SO IT recruitment.
 
-## How that shaped this bank
+The [official 2025 notice](https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV_Final_AD_1.9.25.pdf) is indexed with the Specialist Cadre professional-knowledge examination table. Attempts to retrieve its full PDF failed. The current official notice/handout must govern actual timing, marking and any changes. The app offers a 40-question, 30-minute, +1/−0.25 revision preset. Equal subject sampling gives broad coverage rather than predicted IBPS weighting.
 
-The five requested subjects are delivered in exactly the requested quantities. A balance of core definitions, conceptual distinctions, operational bank-IT scenarios and short calculations/traces is intended to suit degree-level professional-knowledge revision. Difficulty tags are editorial estimates, not empirical item statistics. No exact future question distribution or selection outcome is predicted.
-
-The timed preset is **focused practice from these eight subjects**. It is not a full professional-knowledge syllabus mock. Programming/C/C++/Python, OOP, web technologies and architecture remain possible future additions; other exam papers are outside this app's initial scope.
-
-All stems and explanations in this bank are original practice material. None are represented as official or verbatim previous-year questions. Broad computer-science facts were not copied from an exam publisher's bank.
-
-## Coverage
-
-| Subject | Questions | Coverage |
-|---|---:|---|
-| Computer Networks & Cybersecurity | 250 | Models, Ethernet, VLANs, routing, IP/IPv6, transport, DNS/DHCP, wireless, error control, subnetting, security principles, cryptography, threats, web controls, incident/recovery planning |
-| DBMS & SQL | 250 | Keys and constraints, ER, normalization, joins, NULL, aggregates, window functions, transactions, concurrency, indexes, recovery, warehousing, distributed databases, executable SQL outputs |
-| Operating Systems | 100 | Processes/threads, scheduling, IPC, synchronization, deadlock, paging, replacement, filesystems, storage, protection, virtualization |
-| Data Structures & Algorithms | 250 | Complexity, arrays/lists, stacks/queues, trees/heaps, hashing, sorting, graphs, greedy/DP, recursion, strings, operation traces and calculations |
-| Linux & Shell Basics | 100 | Files, text tools, permissions, processes, storage, systemd, network commands, quoting, redirection, control flow, cron, safe shell use and executable Bash outputs |
-
-The bank contains 665 concept/scenario questions and 485 skill drills (305 numerical/trace exercises, 150 SQL outputs, 30 shell outputs). Drill families deliberately use different datasets to reinforce a skill. Sampling cycles through subjects and families to reduce clustering in short sessions. An eight-subject mixed test of 40 contains five questions from each subject when each subject has enough eligible questions; this is a practice-balancing choice, not an asserted IBPS weight.
-
-SQL questions state their data and are executed using SQLite during generation; queries use broadly supported constructs, including window functions. SQL row order is explicitly specified where relevant. Shell outputs are executed in Bash with C locale. Both answer text and shuffled answer index are retained. Numerical questions state assumptions such as byte addressing, zero-based indices and conventional IPv4 exclusions.
-
-Automated validation checks counts, unique stems/IDs, five distinct options, valid answer indices and nonempty explanations. It does not amount to independent human expert review of every conceptual item. Questions can be edited in the app if you want a different emphasis or wording.
-
-
-Added 65 warehousing/mining, 65 cloud/AI/ML and 70 software engineering/banking IT questions, rewritten from the supplied topic bank. See [CONTENT_AUDIT.md](CONTENT_AUDIT.md) for primary references, corrections, per-item disposition files and review limits. Default focused revision excludes specialist depth and repeated drill variants; this is an editorial priority, not a prediction of IBPS weighting.
+[CONTENT_AUDIT.md](CONTENT_AUDIT.md) records the 816-question coverage map, corrections, retirement decisions, primary references and review evidence. Every shipped item has a matching reviewed content hash; changes require a renewed content review. The original fixed per-subject quotas were superseded by the user's request for accurate, efficient final revision.

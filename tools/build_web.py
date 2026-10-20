@@ -12,15 +12,15 @@ OUT.mkdir()
 files=['index.html','style.css','core.js','app.js','storage.js','backup.js','platform.js','bank.json','manifest.webmanifest','icon-192.png','icon-512.png']
 for name in files:shutil.copyfile(ASSETS/name,OUT/name)
 (OUT/'downloads').mkdir(exist_ok=True)
-release=ROOT/'downloads/RRB-IT-Practice-Lite.apk'
-if not release.exists():raise SystemExit('Missing downloads/RRB-IT-Practice-Lite.apk; build and copy the signed APK first.')
-shutil.copyfile(release,OUT/'downloads/RRB-IT-Practice-Lite.apk')
-files.append('downloads/RRB-IT-Practice-Lite.apk')
+release=ROOT/'downloads/Bank-SO-IT.apk'
+if not release.exists():raise SystemExit('Missing downloads/Bank-SO-IT.apk; build and copy the signed APK first.')
+shutil.copyfile(release,OUT/'downloads/Bank-SO-IT.apk')
+files.append('downloads/Bank-SO-IT.apk')
 (OUT/'.nojekyll').write_text('')
-(OUT/'scope.json').write_text('{"app":"rrb-it-practice"}')
+(OUT/'scope.json').write_text('{"app":"bank-so-it"}')
 files.append('scope.json')
-digest=hashlib.sha256(b''.join((OUT/f).read_bytes() for f in sorted(files))).hexdigest()[:16]
 template=(ROOT/'web/sw.template.js').read_text()
+digest=hashlib.sha256(b''.join((OUT/f).read_bytes() for f in sorted(files))+template.encode()).hexdigest()[:16]
 (OUT/'sw.js').write_text(template.replace('__BUILD_HASH__',digest).replace('__PRECACHE__',json.dumps(files)))
 (OUT/'build.json').write_text(json.dumps({'version':digest,'questions':len(json.loads((OUT/'bank.json').read_text())['questions'])}))
 # A custom domain configured in GitHub Settings remains specific to this repository.

@@ -1,37 +1,38 @@
 {
-  "total": 1150,
+  "total": 816,
   "subjects": {
-    "network": 250,
-    "dbms": 250,
-    "os": 100,
-    "dsa": 250,
-    "linux": 100,
-    "dw_dm": 65,
-    "cloud_ai_ml": 65,
-    "se_bank_it": 70
+    "network": 152,
+    "dbms": 118,
+    "os": 73,
+    "dsa": 107,
+    "linux": 86,
+    "dw_dm": 52,
+    "cloud_ai_ml": 47,
+    "se_bank_it": 68,
+    "programming": 60,
+    "architecture": 33,
+    "web": 20
   },
+  "retired": 470,
   "kinds": {
-    "concept": 665,
-    "worked-drill": 305,
-    "executed-SQL": 150,
-    "executed-shell": 30
+    "concept": 735,
+    "worked-drill": 40,
+    "executed-SQL": 15,
+    "executed-shell": 16,
+    "executed-python": 10
   },
   "difficulty": {
-    "Easy": 213,
-    "Moderate": 868,
-    "Hard": 69
+    "Easy": 254,
+    "Moderate": 562
   },
   "checks": [
-    "Exact requested counts",
     "Unique IDs and stems",
     "Five distinct options per question",
     "Valid answer indices",
-    "Explanations present",
-    "150 SQL answers executed in SQLite",
-    "30 shell answers executed in Bash"
-  ],
-  "studyScope": {
-    "core": 692,
-    "extended": 458
-  }
+    "Explanations and references present",
+    "Legacy ID retirement prevents duplicate reintroduction",
+    "SQL answers executed in SQLite during generation",
+    "Shell answers executed in Bash during generation",
+    "Python answers executed in Python 3 during generation"
+  ]
 }

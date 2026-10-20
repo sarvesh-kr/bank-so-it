@@ -1,13 +1,19 @@
 'use strict';
-const PREFIX='rrb-practice:'+self.registration.scope+':';
+const PREFIX='bank-so-it:'+self.registration.scope+':';
+const LEGACY_PREFIX='rrb-practice:'+self.registration.scope+':';
 const CACHE=PREFIX+'__BUILD_HASH__';
 const SCOPE=self.registration.scope;
 const FILES=__PRECACHE__;
 const urls=FILES.map(file=>new URL(file,SCOPE).href);
-self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(urls)));});
+self.addEventListener('install',event=>{event.waitUntil((async()=>{
+ // Revalidate every release asset, even if the browser's HTTP cache is fresh.
+ await (await caches.open(CACHE)).addAll(urls.map(url=>new Request(url,{cache:'reload'})));
+ // Also activates updates for older clients that only offered a manual button.
+ await self.skipWaiting();
+})());});
 self.addEventListener('activate',event=>{event.waitUntil((async()=>{
  // Scope-specific metadata prevents this project from deleting another Pages app's cache.
- for(const key of await caches.keys())if(key.startsWith(PREFIX)&&key!==CACHE){const cache=await caches.open(key);if(await cache.match(new URL('scope.json',SCOPE).href))await caches.delete(key);}
+ for(const key of await caches.keys())if((key.startsWith(PREFIX)||key.startsWith(LEGACY_PREFIX))&&key!==CACHE){const cache=await caches.open(key);if(await cache.match(new URL('scope.json',SCOPE).href))await caches.delete(key);}
  await self.clients.claim();
 })());});
 self.addEventListener('message',event=>{if(event.data&&event.data.type==='ACTIVATE_UPDATE')self.skipWaiting();});

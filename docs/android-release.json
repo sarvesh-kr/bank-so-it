@@ -1,18 +1,20 @@
 {
-  "version": "1.2",
-  "versionCode": 3,
-  "bytes": 152751,
-  "sha256": "fe44a42126b730d589c73544d4a5d725285a93e3700c64f461cf76d5a0bcfc1c",
+  "version": "2.0",
+  "versionCode": 4,
+  "bytes": 160943,
+  "sha256": "29198d75dbd0957d1e15dda26762fa932d2f0f5322137df9135439bf29a2324e",
   "certificateSha256": "99b48912f61bdd5fda05c058add7f9d96cac200c5ee1875211f5eb624a0b5ceb",
-  "questions": 1150,
-  "subjects": 8,
+  "questions": 816,
+  "subjects": 11,
   "signatureSchemes": [
     "v2",
     "v3"
   ],
   "sharedAssetsMatch": true,
-  "newSigningIdentity": true,
+  "newSigningIdentity": false,
   "actionsSigningSecretsConfigured": false,
   "actionsSecretsBlocker": "GitHub HTTP 403: Resource not accessible by integration",
-  "nativeDeviceTested": false
+  "nativeDeviceTested": false,
+  "displayName": "Bank SO IT",
+  "download": "downloads/Bank-SO-IT.apk"
 }
