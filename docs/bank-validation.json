@@ -1,7 +1,7 @@
 {
-  "total": 816,
+  "total": 864,
   "subjects": {
-    "network": 152,
+    "network": 200,
     "dbms": 118,
     "os": 73,
     "dsa": 107,
@@ -13,17 +13,17 @@
     "architecture": 33,
     "web": 20
   },
-  "retired": 470,
+  "retired": 622,
   "kinds": {
-    "concept": 735,
-    "worked-drill": 40,
+    "concept": 793,
+    "worked-drill": 30,
     "executed-SQL": 15,
     "executed-shell": 16,
     "executed-python": 10
   },
   "difficulty": {
-    "Easy": 254,
-    "Moderate": 562
+    "Easy": 359,
+    "Moderate": 505
   },
   "checks": [
     "Unique IDs and stems",

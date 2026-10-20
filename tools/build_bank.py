@@ -259,7 +259,8 @@ for sid,_,target in SUBJECTS:assert legacy_counts[sid]==target
 baseline=json.loads((ROOT/'content/review/baseline-manifest.json').read_text())
 assert set(baseline)=={q['id'] for q in questions}
 retired=json.loads((ROOT/'content/review/retirements.json').read_text())
-assert set(retired)<=set(baseline)
+after_baseline=json.loads((ROOT/'content/review/retired-after-baseline.json').read_text())
+assert set(retired)<=set(baseline)|set(after_baseline)
 questions[:]=[q for q in questions if q['id'] not in retired]
 
 # Preserve source IDs and append new IDs after the previous subject maximum.
@@ -289,10 +290,16 @@ python_cases=[
  ('print(bool(""))','False',['True','None','0','SyntaxError'],'An empty string has false truth value; print displays the Boolean False.'),
  ('print([x * 2 for x in [1, 2, 3]])','[2, 4, 6]',['[1, 2, 3, 1, 2, 3]','[1, 4, 9]','[2, 3, 4]','[6, 4, 2]'],'The comprehension multiplies each input element by two in input order.'),
 ]
-for script,answer,wrong,explanation in python_cases:
+# Keep the first reviewed Python family IDs stable when another topic is replaced.
+for case_number,(script,answer,wrong,explanation) in enumerate(python_cases,start=806):
     output=subprocess.check_output(['python3','-I','-c',script],text=True).rstrip('\n')
     assert output==answer
-    add('programming','Python output','Moderate','In Python 3, what is printed?\n'+script,answer,wrong,explanation,'executed-python','python-output-'+str(len(questions)))
+    add('programming','Python output','Moderate','In Python 3, what is printed?\n'+script,answer,wrong,explanation,'executed-python','python-output-'+str(case_number))
+
+# Versioned topic replacement; legacy generation above keeps other subjects byte-stable.
+from build_network import load_network
+questions[:]=load_network()+[q for q in questions if q['subject']!='network']
+assert not {q['id'] for q in questions}&set(retired)
 
 counts=collections.Counter(q['subject'] for q in questions)
 all_subjects=[(sid,name) for sid,name,_ in SUBJECTS]+new_subjects
@@ -308,9 +315,9 @@ for q in questions:
 # References are selected by subject/topic and may be further narrowed by ID.
 from review_sources import references_for
 for q in questions:
-    q['references']=references_for(q)
+    q['references']=q.get('references') or references_for(q)
     assert q['references'],q['id']
-bank={'schemaVersion':1,'version':'2.0.0','title':'Bank SO IT','subjects':[{'id':sid,'name':name} for sid,name in all_subjects],
+bank={'schemaVersion':1,'version':'2.1.0','title':'Bank SO IT','subjects':[{'id':sid,'name':name} for sid,name in all_subjects],
       'retiredQuestionIds':sorted(retired),'questions':questions}
 OUT.mkdir(parents=True,exist_ok=True)
 (ROOT/'dist').mkdir(exist_ok=True)

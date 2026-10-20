@@ -1,19 +1,21 @@
 {
   "previous_bank": 1150,
-  "previous_items_retained": 680,
-  "retired": 470,
-  "added": 136,
-  "current_bank": 816,
+  "previous_items_retained": 535,
+  "retired": 622,
+  "retired_from_original_baseline": 615,
+  "retired_after_original_baseline": 7,
+  "added": 329,
+  "current_bank": 864,
   "changes": {
-    "retained": 517,
-    "corrected or clarified": 163,
-    "added": 136
+    "added": 329,
+    "retained": 414,
+    "corrected or clarified": 121
   },
   "reviewer": "Codex technical content review",
-  "computed_checks_current": 88,
+  "computed_checks_current": 78,
   "computed_checks_previous": 485,
   "subjects": {
-    "network": 152,
+    "network": 200,
     "dbms": 118,
     "os": 73,
     "dsa": 107,

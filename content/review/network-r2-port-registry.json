@@ -1,0 +1,176 @@
+{
+  "retrievedOn": "2026-10-20",
+  "source": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+  "sourceSha256": "b6afeefdc6b2c616f9a515d57819a558ebe33250b59b2700b3afc4a4ba1923f2",
+  "note": "Registration alone does not prove actual transport behaviour; RFC references and conventional service roles were also reviewed.",
+  "rows": [
+    {
+      "Service Name": "ftp",
+      "Port Number": "21",
+      "Transport Protocol": "tcp",
+      "Description": "File Transfer Protocol [Control]",
+      "Reference": "[RFC 959]"
+    },
+    {
+      "Service Name": "ssh",
+      "Port Number": "22",
+      "Transport Protocol": "tcp",
+      "Description": "The Secure Shell (SSH) Protocol",
+      "Reference": "[RFC 4251]"
+    },
+    {
+      "Service Name": "telnet",
+      "Port Number": "23",
+      "Transport Protocol": "tcp",
+      "Description": "Telnet",
+      "Reference": "[RFC 854]"
+    },
+    {
+      "Service Name": "smtp",
+      "Port Number": "25",
+      "Transport Protocol": "tcp",
+      "Description": "Simple Mail Transfer",
+      "Reference": "[RFC-ietf-emailcore-rfc5321bis-43]"
+    },
+    {
+      "Service Name": "domain",
+      "Port Number": "53",
+      "Transport Protocol": "udp",
+      "Description": "Domain Name Server",
+      "Reference": ""
+    },
+    {
+      "Service Name": "domain",
+      "Port Number": "53",
+      "Transport Protocol": "tcp",
+      "Description": "Domain Name Server",
+      "Reference": ""
+    },
+    {
+      "Service Name": "bootps",
+      "Port Number": "67",
+      "Transport Protocol": "udp",
+      "Description": "Bootstrap Protocol Server",
+      "Reference": ""
+    },
+    {
+      "Service Name": "bootpc",
+      "Port Number": "68",
+      "Transport Protocol": "udp",
+      "Description": "Bootstrap Protocol Client",
+      "Reference": ""
+    },
+    {
+      "Service Name": "http",
+      "Port Number": "80",
+      "Transport Protocol": "tcp",
+      "Description": "World Wide Web HTTP",
+      "Reference": "[RFC 9110]"
+    },
+    {
+      "Service Name": "https",
+      "Port Number": "443",
+      "Transport Protocol": "tcp",
+      "Description": "http protocol over TLS/SSL",
+      "Reference": "[RFC 9110]"
+    },
+    {
+      "Service Name": "pop3",
+      "Port Number": "110",
+      "Transport Protocol": "tcp",
+      "Description": "Post Office Protocol - Version 3",
+      "Reference": ""
+    },
+    {
+      "Service Name": "imap",
+      "Port Number": "143",
+      "Transport Protocol": "tcp",
+      "Description": "Internet Message Access Protocol",
+      "Reference": "[RFC 3501]; [RFC 9051]"
+    },
+    {
+      "Service Name": "ntp",
+      "Port Number": "123",
+      "Transport Protocol": "udp",
+      "Description": "Network Time Protocol",
+      "Reference": "[RFC 5905]"
+    },
+    {
+      "Service Name": "snmp",
+      "Port Number": "161",
+      "Transport Protocol": "udp",
+      "Description": "SNMP",
+      "Reference": ""
+    },
+    {
+      "Service Name": "snmptrap",
+      "Port Number": "162",
+      "Transport Protocol": "udp",
+      "Description": "SNMPTRAP",
+      "Reference": ""
+    },
+    {
+      "Service Name": "ms-wbt-server",
+      "Port Number": "3389",
+      "Transport Protocol": "tcp",
+      "Description": "MS WBT Server",
+      "Reference": ""
+    },
+    {
+      "Service Name": "ms-wbt-server",
+      "Port Number": "3389",
+      "Transport Protocol": "udp",
+      "Description": "MS WBT Server",
+      "Reference": ""
+    },
+    {
+      "Service Name": "tftp",
+      "Port Number": "69",
+      "Transport Protocol": "udp",
+      "Description": "Trivial File Transfer",
+      "Reference": ""
+    },
+    {
+      "Service Name": "ldap",
+      "Port Number": "389",
+      "Transport Protocol": "tcp",
+      "Description": "Lightweight Directory Access Protocol",
+      "Reference": ""
+    },
+    {
+      "Service Name": "microsoft-ds",
+      "Port Number": "445",
+      "Transport Protocol": "tcp",
+      "Description": "Microsoft-DS",
+      "Reference": ""
+    },
+    {
+      "Service Name": "imaps",
+      "Port Number": "993",
+      "Transport Protocol": "tcp",
+      "Description": "IMAP over TLS protocol",
+      "Reference": "[RFC 3501]; [RFC 8314]; [RFC 9051]"
+    },
+    {
+      "Service Name": "pop3s",
+      "Port Number": "995",
+      "Transport Protocol": "tcp",
+      "Description": "POP3 over TLS protocol",
+      "Reference": "[RFC 8314]"
+    },
+    {
+      "Service Name": "ldaps",
+      "Port Number": "636",
+      "Transport Protocol": "tcp",
+      "Description": "ldap protocol over TLS/SSL (was sldap)",
+      "Reference": ""
+    },
+    {
+      "Service Name": "submission",
+      "Port Number": "587",
+      "Transport Protocol": "tcp",
+      "Description": "Message Submission",
+      "Reference": "[RFC 6409]"
+    }
+  ]
+}
