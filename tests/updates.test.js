@@ -47,33 +47,39 @@ const server=http.createServer((req,res)=>{const pathname=new URL(req.url,'http:
   assert.equal(await page.evaluate(()=>Object.keys(state.progress).length),1);
   const cacheKeys=await page.evaluate(()=>caches.keys());assert(cacheKeys.includes(snapshot.other));assert(!cacheKeys.some(key=>key.includes(scope)&&key.startsWith('rrb-practice:')));
   assert.equal(await page.locator('[data-action="update-web"]').count(),0);
-  // A running new client must preserve an in-progress question while an update activates.
+  // Activating a release does not restart the current page or apply on navigation.
   await page.locator('[data-action="resume"]').click();
   const answer=(snapshot.question.answer+1)%5;
   await page.locator('[data-action="answer"][data-index="'+answer+'"]').click();
   revision('during-test');
-  await page.evaluate(async()=>{const r=await navigator.serviceWorker.getRegistration();await r.update();});
-  await page.waitForFunction(async()=>{const keys=await caches.keys();return keys.some(key=>key.endsWith('test-during-test'));});
-  // An explicit worker round-trip establishes that the controller has switched.
-  await page.waitForFunction(async()=>{const r=await navigator.serviceWorker.getRegistration();return r.active&&r.active.state==='activated'&&!r.installing;});
+  await page.evaluate(async()=>{await(await navigator.serviceWorker.getRegistration()).update();});
+  await page.waitForFunction(async()=>{const r=await navigator.serviceWorker.getRegistration();return r.active&&r.active.state==='activated'&&!r.installing&&(await caches.keys()).some(key=>key.endsWith('test-during-test'));});
   assert.equal(await page.evaluate(()=>document.body.dataset.releaseProbe),'migration');
   assert.equal(await page.evaluate(()=>screen),'quiz');
   assert.equal(await page.evaluate(()=>state.active.answers[0]),answer);
   await page.locator('[data-action="save-exit"]').click();
+  assert.equal(await page.evaluate(()=>document.body.dataset.releaseProbe),'migration');
+  await page.locator('[data-action="resume"]').click();
+  // Reload directly from a test; no finish/exit action is needed to get the release.
+  await page.reload();
   await page.waitForFunction(()=>document.body.dataset.releaseProbe==='during-test'&&typeof state!=='undefined'&&state&&state.active);
   assert.equal(await page.evaluate(()=>state.active.answers[0]),answer);
-  // Editors also defer reloads until unsaved text is saved or explicitly discarded.
   await page.locator('#nav [data-screen="library"]').click();await page.locator('[data-action="add-question"]').click();
-  await page.locator('#editStem').fill('Unsaved question retained during update');
+  await page.locator('#editStem').fill('Unsaved question retained until user reloads');
   revision('during-edit');await page.evaluate(async()=>{await(await navigator.serviceWorker.getRegistration()).update();});
   await page.waitForFunction(async()=>{const r=await navigator.serviceWorker.getRegistration();return r.active&&r.active.state==='activated'&&!r.installing&&(await caches.keys()).some(key=>key.endsWith('test-during-edit'));});
-  assert.equal(await page.locator('#editStem').inputValue(),'Unsaved question retained during update');
+  assert.equal(await page.locator('#editStem').inputValue(),'Unsaved question retained until user reloads');
   assert.equal(await page.evaluate(()=>document.body.dataset.releaseProbe),'during-test');
-  await page.locator('#nav [data-screen="home"]').click();
+  // Reload directly from the editor, with no screen-specific waiting policy.
+  await page.reload();
   await page.waitForFunction(()=>document.body.dataset.releaseProbe==='during-edit'&&typeof state!=='undefined'&&state&&state.active);
+  // A single reload must also discover a release not already prepared in background.
+  revision('on-reload');await page.reload();
+  await page.waitForFunction(()=>document.body.dataset.releaseProbe==='on-reload'&&typeof state!=='undefined'&&state&&state.active);
+  assert.equal(await page.evaluate(()=>state.active.answers[0]),answer);
   await context.setOffline(true);await page.reload();await page.waitForSelector('.subjects');
-  assert.equal(await page.evaluate(()=>document.body.dataset.releaseProbe),'during-edit');assert.equal(await page.evaluate(()=>state.active.answers[0]),answer);
+  assert.equal(await page.evaluate(()=>document.body.dataset.releaseProbe),'on-reload');assert.equal(await page.evaluate(()=>state.active.answers[0]),answer);
   assert.deepEqual(errors,[]);
-  console.log('PASS: real legacy-client migration, automatic updates on load, saved progress and question snapshots, quiz/editor reload deferral, offline latest release and cache isolation.');
+  console.log('PASS: real legacy-client migration, updates on user reload, saved progress and question snapshots, no forced restart or navigation-triggered reload, offline latest release and cache isolation.');
  }finally{await browser.close();server.close();fs.rmSync(root,{recursive:true,force:true});}
 })().catch(error=>{console.error(error);server.close();fs.rmSync(root,{recursive:true,force:true});process.exitCode=1;});
