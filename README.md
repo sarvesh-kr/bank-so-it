@@ -36,7 +36,7 @@ Each retained stem, five-option set, key and explanation received a technical re
 
 The quality review retired 470 former items, corrected/clarified 163 retained items and added 136 fundamentals. Old stock imports cannot overwrite reviewed built-ins or restore retired items; use the editor for personal changes. Earlier session reviews are retained, while current-bank statistics exclude retired questions.
 
-**Android 2.0** bundles the same curated bank and quick revision. It reuses the Android 1.2 release key, so 1.2 installations can update in place. Export a progress backup before installing updates. Installations predating the 1.2 key change still need export, uninstall, reinstall and restore.
+**Android 2.0.1** bundles the same curated bank and quick revision. It reuses the Android 1.2 release key, so 1.2 installations can update in place. Export a progress backup before installing updates. Installations predating the 1.2 key change still need export, uninstall, reinstall and restore.
 
 ## Deploy on GitHub Pages
 
@@ -57,7 +57,7 @@ Collaborators can push code or submit pull requests; the owner or an administrat
 
 Open the Pages URL online once. In **My bank**, the app indicates when offline practice is ready. Install via the browser's **Install app** menu, or **Share → Add to Home Screen** on iPhone/iPad. You can also keep using it in an ordinary tab.
 
-The app checks for updates automatically when opened online and when returning to a tab. Once a new release is cached, it saves progress and reloads automatically. During a test, session setup or question edit, reloading waits until you leave that screen. There is no Apply update button. Offline visits use the last downloaded release. Saved progress is separate from the offline cache and is retained across updates.
+Open or reload the app online to load the latest release. A release discovered while the page is already open does not restart it or apply when you leave a test or editor. Reloading applies the update regardless of the current screen; no Apply update button is needed. Offline visits use the last downloaded release. Saved progress is separate from the offline cache and is retained across updates.
 
 Progress is local and **does not automatically sync** with GitHub, another browser, another device or the APK. Use **My bank → Back up progress**, then **Restore backup** on the destination. Clearing site data or uninstalling the Android app removes its local records. Browsers can also evict local storage; retain backups for important progress. Question-bank export includes questions only; a progress backup includes your personal records.
 
