@@ -1,3 +1,4 @@
+# Legacy generation input only. Current shipped network questions: content/curated/network-r2.txt.
 # subtopic¦difficulty¦question¦correct¦wrong1¦wrong2¦wrong3¦wrong4¦explanation
 Models¦Easy¦Which OSI layer is primarily responsible for routing packets between different networks?¦Network¦Data link¦Session¦Presentation¦Physical¦The network layer provides logical addressing and routing; routers forward IP packets at this layer.
 Models¦Easy¦Which OSI layer handles framing and link-local MAC addressing?¦Data link¦Transport¦Application¦Session¦Network¦The data-link layer packages data into frames and uses link-layer addresses such as Ethernet MAC addresses.

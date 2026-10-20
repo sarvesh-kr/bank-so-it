@@ -38,7 +38,7 @@ const server=http.createServer((req,res)=>{const pathname=new URL(req.url,'http:
   revision('migration');
   // Merely loading the old cached client must discover and activate the new release.
   await page.reload();
-  await page.waitForFunction(()=>document.body.dataset.releaseProbe==='migration'&&typeof bank!=='undefined'&&bank&&bank.questions.length===816);
+  await page.waitForFunction(()=>document.body.dataset.releaseProbe==='migration'&&typeof bank!=='undefined'&&bank&&bank.questions.length===864);
   assert.equal(await page.title(),'Bank SO IT');assert.equal(await page.locator('.brand').innerText(),'Bank SO IT');
   assert.equal(await page.evaluate(()=>state.active.id),'legacy-attempt');
   assert.deepEqual(await page.evaluate(()=>state.active.questions[0]),snapshot.question);

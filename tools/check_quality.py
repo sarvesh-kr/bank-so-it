@@ -20,6 +20,7 @@ def numerical(q):
     if f=='network-address':return dotted(ipv4(t)[0])
     if f=='broadcast-address':return dotted(ipv4(t)[1])
     if f=='last-host':return dotted(ipv4(t)[1]-1)
+    if f=='host-range':return dotted(ipv4(t)[0]+1)+' through '+dotted(ipv4(t)[1]-1)
     if f=='subnet-count':
         child,parent=map(int,re.findall(r'/(\d+)',t));return str(1<<(child-parent))
     if f=='minimum-host-capacity':
@@ -147,10 +148,14 @@ def fingerprint(q):
 
 def check():
     bank=json.loads((ROOT/'app/src/main/assets/bank.json').read_text())
+    from check_network import check_network
+    check_network(bank)
     decisions=json.loads((ROOT/'content/review/retirements.json').read_text())
     baseline=json.loads((ROOT/'content/review/baseline-manifest.json').read_text())
     current={q['id'] for q in bank['questions']}
-    assert set(baseline)==(current&set(baseline))|set(decisions)
+    assert set(baseline)==(current&set(baseline))|(set(decisions)&set(baseline))
+    extra=json.loads((ROOT/'content/review/retired-after-baseline.json').read_text())
+    assert set(decisions)<=set(baseline)|set(extra)
     assert not current&set(decisions)
     assert len(current)==len(bank['questions'])
     proofs={};lint=[]

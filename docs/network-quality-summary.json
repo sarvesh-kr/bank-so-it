@@ -1,0 +1,22 @@
+{
+  "questions": 200,
+  "coverage": {
+    "OSI & TCP/IP models": 16,
+    "Network devices & media": 14,
+    "Frames, packets & headers": 13,
+    "IP addressing & NAT": 20,
+    "Subnetting": 12,
+    "TCP, UDP & communication": 10,
+    "Services & ports": 22,
+    "Bandwidth & network fundamentals": 8,
+    "TLS, cryptography & encoding": 21,
+    "Firewalls & protective controls": 14,
+    "Common attacks": 20,
+    "Malware & virus types": 16,
+    "CIA & general security": 14
+  },
+  "subnet_calculations": 10,
+  "port_questions_verified": 16,
+  "registry_rows": 24,
+  "review_scope": "User-provided bank SO IT topics; no exact previous-paper frequencies asserted."
+}

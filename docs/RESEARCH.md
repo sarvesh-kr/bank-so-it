@@ -8,4 +8,6 @@ The [2024 candidate-recalled Scale II analysis](https://www.bankersadda.com/ibps
 
 The [official 2025 notice](https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV_Final_AD_1.9.25.pdf) is indexed with the Specialist Cadre professional-knowledge examination table. Attempts to retrieve its full PDF failed. The current official notice/handout must govern actual timing, marking and any changes. The app offers a 40-question, 30-minute, +1/−0.25 revision preset. Equal subject sampling gives broad coverage rather than predicted IBPS weighting.
 
-[CONTENT_AUDIT.md](CONTENT_AUDIT.md) records the 816-question coverage map, corrections, retirement decisions, primary references and review evidence. Every shipped item has a matching reviewed content hash; changes require a renewed content review. The original fixed per-subject quotas were superseded by the user's request for accurate, efficient final revision.
+[CONTENT_AUDIT.md](CONTENT_AUDIT.md) records the 864-question coverage map, corrections, retirement decisions, primary references and review evidence. Every shipped item has a matching reviewed content hash; changes require a renewed content review. The original fixed per-subject quotas were superseded by the user's request for accurate, efficient final revision.
+
+The [network R2 revision](NETWORK_AUDIT.md) follows the user’s explicit topic list rather than a claimed prediction of previous-paper frequencies. It supplies 200 focused items with ten short subnet calculations. The other 664 questions are unchanged in that revision.

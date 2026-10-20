@@ -1,3 +1,4 @@
+# Legacy generation input only. Current shipped network questions: content/curated/network-r2.txt.
 Security foundations¦Easy¦Which CIA-triad property addresses unauthorized alteration of data?¦Integrity¦Confidentiality¦Availability¦Anonymity¦Compression¦Integrity protects against improper modification. Confidentiality limits disclosure and availability concerns access when needed.
 Protocols¦Moderate¦Which transports does standard DNS support on port 53?¦Both UDP and TCP¦UDP only¦TCP only¦ICMP only¦ARP only¦DNS supports UDP and TCP. TCP is used for cases such as zone transfers and retrying some responses that do not fit the permitted UDP response size.
 Service ports¦Easy¦What is the conventional TCP control port for FTP?¦21¦20¦22¦25¦53¦FTP control normally uses TCP 21. Active-mode FTP data commonly uses TCP 20; passive data connections use separately negotiated ports.

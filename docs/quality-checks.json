@@ -1,88 +1,48 @@
 {
   "passed": true,
-  "questions": 816,
-  "retired": 470,
-  "independent_answer_checks": 88,
+  "questions": 864,
+  "retired": 622,
+  "independent_answer_checks": 78,
   "proofs": {
-    "network-126": {
+    "network-r2-065": {
       "method": "worked-drill",
       "independent_result": "254"
     },
-    "network-127": {
+    "network-r2-066": {
       "method": "worked-drill",
-      "independent_result": "255.255.255.0"
+      "independent_result": "62"
     },
-    "network-128": {
+    "network-r2-067": {
+      "method": "worked-drill",
+      "independent_result": "255.255.255.224"
+    },
+    "network-r2-068": {
+      "method": "worked-drill",
+      "independent_result": "255.255.255.128"
+    },
+    "network-r2-069": {
+      "method": "worked-drill",
+      "independent_result": "192.168.10.64"
+    },
+    "network-r2-070": {
       "method": "worked-drill",
       "independent_result": "10.1.3.128"
     },
-    "network-129": {
+    "network-r2-071": {
       "method": "worked-drill",
-      "independent_result": "192.168.30.95"
+      "independent_result": "192.168.10.127"
     },
-    "network-130": {
+    "network-r2-072": {
       "method": "worked-drill",
-      "independent_result": "172.16.2.190"
+      "independent_result": "192.168.1.33 through 192.168.1.62"
     },
-    "network-131": {
+    "network-r2-073": {
       "method": "worked-drill",
-      "independent_result": "2"
+      "independent_result": "4"
     },
-    "network-132": {
+    "network-r2-074": {
       "method": "worked-drill",
-      "independent_result": "/27"
-    },
-    "network-133": {
-      "method": "worked-drill",
-      "independent_result": "2001:db8:1::a0"
-    },
-    "network-134": {
-      "method": "worked-drill",
-      "independent_result": "65536"
-    },
-    "network-135": {
-      "method": "worked-drill",
-      "independent_result": "29"
-    },
-    "network-136": {
-      "method": "worked-drill",
-      "independent_result": "0.4 ms"
-    },
-    "network-137": {
-      "method": "worked-drill",
-      "independent_result": "0.5 ms"
-    },
-    "network-138": {
-      "method": "worked-drill",
-      "independent_result": "25000"
-    },
-    "network-140": {
-      "method": "worked-drill",
-      "independent_result": "16"
-    },
-    "network-141": {
-      "method": "worked-drill",
-      "independent_result": "3"
-    },
-    "network-142": {
-      "method": "worked-drill",
-      "independent_result": "0"
-    },
-    "network-146": {
-      "method": "worked-drill",
-      "independent_result": "1200"
-    },
-    "network-148": {
-      "method": "worked-drill",
-      "independent_result": "5"
-    },
-    "network-149": {
-      "method": "worked-drill",
-      "independent_result": "17"
-    },
-    "network-150": {
-      "method": "worked-drill",
-      "independent_result": "100"
+      "independent_result": "/26"
     },
     "dbms-101": {
       "method": "executed-SQL",
