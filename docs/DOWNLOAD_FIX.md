@@ -12,13 +12,15 @@ The earlier browser suite checked APK bytes using `fetch()` and tested generated
 
 Known static assets take precedence over application navigation. Only the app's root URL falls back to its cached shell; its index file is already an explicitly cached asset. Unknown paths retain network/404 behavior and fail offline rather than receiving an unrelated HTML document. Query strings do not change a known file into an app route.
 
-Navigation requests for the APK and question pack receive explicit attachment filenames and correct MIME types. JSON fetches used by app startup retain normal semantics. Rebuilt responses remove transport encoding and length headers because Fetch exposes decoded bytes. The APK link also declares its filename explicitly. A stale question-count value was removed from the page description.
+Navigation requests for the APK and question pack receive explicit attachment filenames and correct MIME types. JSON fetches used by app startup retain normal semantics. WebKit may display a directly opened JSON document despite the attachment header; it must show the actual question pack, never app HTML. The My bank question-pack link retains its download attribute and is tested as a file download in both engines. Rebuilt responses remove transport encoding and length headers because Fetch exposes decoded bytes. The APK link also declares its filename explicitly. A stale question-count value was removed from the page description.
+
+The My bank buttons now fetch the selected file through the worker, validate the response, and save a local Blob with the intended filename. This avoids WebKit’s native-URL offline download limitation. APK responses must begin with ZIP/APK magic bytes, and question packs must pass the shared pack validator. HTML responses and failed HTTP requests show an error instead of saving a fake file.
 
 Question content, scoring and saved progress are unchanged. The signed Android 2.6.1 build retains the existing signing identity and contains matching shared assets.
 
 ## Regression and wider checks
 
-[downloads.test.js](../tests/downloads.test.js) uses a compressed-response static server and exercises the actual My bank anchors with and without the download attribute. Each downloaded APK/JSON file must match the served artifact's SHA-256 and expected filename. The matrix covers Chromium and WebKit, root and repository-subpath hosting, online and offline operation: **32 file downloads**. It also verifies CSS document navigation, real missing-file errors and app reloads.
+[downloads.test.js](../tests/downloads.test.js) uses a compressed-response static server and exercises the actual My bank anchors with and without the download attribute. Every downloaded APK/JSON file must match the served artifact's SHA-256 and expected filename. The matrix covers Chromium and WebKit, root and repository-subpath hosting, online and offline operation: **32 actual button downloads**. Separate raw URL navigation checks bypass the app handler and verify APK downloads and exact JSON delivery (WebKit may display a directly opened JSON document). The suite also checks CSS document navigation, real missing-file 404s, reloads and rejection of an injected HTTP-200 HTML response at the APK URL.
 
 The regression was run against the actual pre-fix worker template from commit `e308ae7b8fcb398351f7b4598d851b446c096e18` and failed on the navigation-style APK download, then passed with the fix. Download tests are now a required step before Pages deployment.
 
