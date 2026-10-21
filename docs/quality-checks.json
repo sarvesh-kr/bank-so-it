@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "questions": 946,
-  "retired": 740,
-  "independent_answer_checks": 111,
+  "questions": 973,
+  "retired": 813,
+  "independent_answer_checks": 116,
   "proofs": {
     "dbms-r2-062": {
       "method": "worked-dbms",
@@ -196,6 +196,273 @@
       "method": "worked-dbms",
       "independent_result": "4 TB"
     },
+    "os-r2-043": {
+      "method": "independent OS simulation/calculation",
+      "independent_result": "5 time units",
+      "details": {
+        "CPU_ticks": [
+          "P1",
+          "P1",
+          "P1",
+          "P1",
+          "P1",
+          "P1",
+          "P2",
+          "P2",
+          "P2",
+          "P3"
+        ],
+        "first_start": {
+          "P1": 0,
+          "P2": 6,
+          "P3": 9
+        },
+        "completion": {
+          "P1": 6,
+          "P2": 9,
+          "P3": 10
+        }
+      }
+    },
+    "os-r2-044": {
+      "method": "independent OS simulation/calculation",
+      "independent_result": "6 time units",
+      "details": {
+        "CPU_ticks": [
+          "P3",
+          "P3",
+          "P2",
+          "P2",
+          "P2",
+          "P1",
+          "P1",
+          "P1",
+          "P1",
+          "P1",
+          "P1"
+        ],
+        "first_start": {
+          "P3": 0,
+          "P2": 2,
+          "P1": 5
+        },
+        "completion": {
+          "P3": 2,
+          "P2": 5,
+          "P1": 11
+        }
+      }
+    },
+    "os-r2-045": {
+      "method": "independent OS simulation/calculation",
+      "independent_result": "7",
+      "details": {
+        "CPU_ticks": [
+          "P1",
+          "P1",
+          "P2",
+          "P2",
+          "P1",
+          "P1",
+          "P2",
+          "P1"
+        ],
+        "completion": {
+          "P2": 7,
+          "P1": 8
+        }
+      }
+    },
+    "os-r2-046": {
+      "method": "independent OS simulation/calculation",
+      "independent_result": "7",
+      "details": {
+        "CPU_ticks": [
+          "P1",
+          "P2",
+          "P3",
+          "P3",
+          "P2",
+          "P2",
+          "P2",
+          "P1",
+          "P1",
+          "P1",
+          "P1",
+          "P1",
+          "P1",
+          "P1"
+        ],
+        "completion": {
+          "P3": 4,
+          "P2": 7,
+          "P1": 14
+        }
+      }
+    },
+    "os-r2-069": {
+      "method": "independent OS simulation/calculation",
+      "independent_result": "P2, P1, P3",
+      "details": {
+        "Need": [
+          2,
+          1,
+          2
+        ],
+        "all_safe_sequences": [
+          "P2, P1, P3",
+          "P2, P3, P1"
+        ]
+      }
+    },
+    "os-r2-079": {
+      "method": "independent OS simulation/calculation",
+      "independent_result": "7268",
+      "details": {
+        "frame": 7,
+        "page_bytes": 1024,
+        "offset": 100
+      }
+    },
+    "os-r2-080": {
+      "method": "independent OS simulation/calculation",
+      "independent_result": "2 KiB",
+      "details": {
+        "allocated_pages": 3,
+        "required_KiB": 10,
+        "allocated_KiB": 12
+      }
+    },
+    "os-r2-089": {
+      "method": "independent OS simulation/calculation",
+      "independent_result": "5",
+      "details": {
+        "reference_trace": [
+          {
+            "page": 1,
+            "fault": true,
+            "ordered_frames": [
+              1
+            ]
+          },
+          {
+            "page": 2,
+            "fault": true,
+            "ordered_frames": [
+              1,
+              2
+            ]
+          },
+          {
+            "page": 3,
+            "fault": true,
+            "ordered_frames": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "page": 1,
+            "fault": false,
+            "ordered_frames": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "page": 4,
+            "fault": true,
+            "ordered_frames": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "page": 1,
+            "fault": true,
+            "ordered_frames": [
+              3,
+              4,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    "os-r2-090": {
+      "method": "independent OS simulation/calculation",
+      "independent_result": "4",
+      "details": {
+        "reference_trace": [
+          {
+            "page": 1,
+            "fault": true,
+            "ordered_frames": [
+              1
+            ]
+          },
+          {
+            "page": 2,
+            "fault": true,
+            "ordered_frames": [
+              1,
+              2
+            ]
+          },
+          {
+            "page": 3,
+            "fault": true,
+            "ordered_frames": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "page": 1,
+            "fault": false,
+            "ordered_frames": [
+              2,
+              3,
+              1
+            ]
+          },
+          {
+            "page": 4,
+            "fault": true,
+            "ordered_frames": [
+              3,
+              1,
+              4
+            ]
+          },
+          {
+            "page": 1,
+            "fault": false,
+            "ordered_frames": [
+              3,
+              4,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    "os-r2-100": {
+      "method": "independent OS simulation/calculation",
+      "independent_result": "50 tracks",
+      "details": {
+        "head_path": [
+          50,
+          56,
+          70,
+          40
+        ]
+      }
+    },
     "network-r2-065": {
       "method": "worked-drill",
       "independent_result": "254"
@@ -295,26 +562,6 @@
     "dsa-115": {
       "method": "worked-drill",
       "independent_result": "4"
-    },
-    "os-071": {
-      "method": "worked-drill",
-      "independent_result": "3.67 ms"
-    },
-    "os-072": {
-      "method": "worked-drill",
-      "independent_result": "2"
-    },
-    "os-073": {
-      "method": "worked-drill",
-      "independent_result": "125"
-    },
-    "os-074": {
-      "method": "worked-drill",
-      "independent_result": "7"
-    },
-    "os-076": {
-      "method": "worked-drill",
-      "independent_result": "6"
     },
     "linux-073": {
       "method": "executed-shell",

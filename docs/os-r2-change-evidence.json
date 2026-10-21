@@ -1,0 +1,10 @@
+{
+  "sourceCommit": "7d7afbb42e9b0a3d415c32b3c7a249e3d432c84d",
+  "previousOS": 73,
+  "replacementOS": 100,
+  "retiredInThisRevision": 73,
+  "otherQuestions": 873,
+  "otherBeforeSha256": "fcf4f251c37bc51b72e7be1f4632de34450439ebe818f78d98ad0a0735f87f0c",
+  "otherAfterSha256": "fcf4f251c37bc51b72e7be1f4632de34450439ebe818f78d98ad0a0735f87f0c",
+  "otherQuestionsUnchanged": true
+}

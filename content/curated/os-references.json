@@ -1,0 +1,154 @@
+{
+  "intro": [
+    "Arpaci-Dusseau and Arpaci-Dusseau, OSTEP: introduction to operating systems",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf"
+  ],
+  "cpu": [
+    "OSTEP: limited direct execution, protection, system calls and interrupts",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf"
+  ],
+  "structures": [
+    "University of Illinois Chicago: operating-system structures",
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/2_Structures.html"
+  ],
+  "virtualization": [
+    "OSTEP: virtual machine monitors",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf"
+  ],
+  "processes": [
+    "OSTEP: processes and process states",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"
+  ],
+  "process-api": [
+    "OSTEP: fork, exec and the process API",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf"
+  ],
+  "process-notes": [
+    "University of Illinois Chicago: processes, scheduling and IPC",
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/3_Processes.html"
+  ],
+  "wait": [
+    "Linux man-pages: wait, zombies, orphans and reparenting",
+    "https://man7.org/linux/man-pages/man2/wait.2.html"
+  ],
+  "threads": [
+    "OSTEP: threads and concurrency",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"
+  ],
+  "thread-notes": [
+    "University of Illinois Chicago: user/kernel threads and mapping models",
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/4_Threads.html"
+  ],
+  "pipe": [
+    "Linux man-pages: pipes and byte-stream semantics",
+    "https://man7.org/linux/man-pages/man7/pipe.7.html"
+  ],
+  "socket": [
+    "Linux man-pages: socket communication endpoints",
+    "https://man7.org/linux/man-pages/man2/socket.2.html"
+  ],
+  "scheduling": [
+    "OSTEP: CPU scheduling, turnaround, response, SJF and Round Robin",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"
+  ],
+  "mlfq": [
+    "OSTEP: multilevel feedback queues",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"
+  ],
+  "locks": [
+    "OSTEP: locks, mutual exclusion and spinning",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"
+  ],
+  "sync-notes": [
+    "University of Illinois Chicago: critical sections, synchronization and monitors",
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6_Synchronization.html"
+  ],
+  "mutex": [
+    "POSIX pthread_mutex_lock: mutex ownership and unlocking",
+    "https://man7.org/linux/man-pages/man3/pthread_mutex_lock.3p.html"
+  ],
+  "semaphores": [
+    "OSTEP: semaphores and bounded-buffer synchronization",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"
+  ],
+  "conditions": [
+    "OSTEP: condition variables, wait and predicate loops",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"
+  ],
+  "priority-inheritance": [
+    "Linux kernel: RT-mutexes and priority inheritance",
+    "https://docs.kernel.org/locking/rt-mutex.html"
+  ],
+  "deadlocks": [
+    "University of Illinois Chicago: deadlocks, safety and Banker's algorithm",
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/7_Deadlocks.html"
+  ],
+  "concurrency-bugs": [
+    "OSTEP: concurrency bugs and deadlock prevention",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"
+  ],
+  "addressing": [
+    "OSTEP: address translation and protection",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"
+  ],
+  "paging": [
+    "OSTEP: paging, page tables and internal fragmentation",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"
+  ],
+  "tlb": [
+    "OSTEP: translation lookaside buffers",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf"
+  ],
+  "free-space": [
+    "OSTEP: free-space management, fit policies and fragmentation",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf"
+  ],
+  "segmentation": [
+    "OSTEP: segmentation",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"
+  ],
+  "vm": [
+    "OSTEP: demand paging and page-fault handling",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf"
+  ],
+  "replacement": [
+    "OSTEP: replacement policies, locality, thrashing and Belady's anomaly",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf"
+  ],
+  "files": [
+    "OSTEP: files, directories, permissions and links",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf"
+  ],
+  "file-implementation": [
+    "OSTEP: file-system implementation and allocation structures",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"
+  ],
+  "io": [
+    "OSTEP: I/O devices, interrupts, DMA and buffering",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"
+  ],
+  "io-notes": [
+    "University of Illinois Chicago: I/O buffering, caching and spooling",
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/13_IOSystems.html"
+  ],
+  "disks": [
+    "OSTEP: hard disk drives and scheduling",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf"
+  ],
+  "disk-notes": [
+    "University of Illinois Chicago: mass storage and disk scheduling",
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/10_MassStorage.html"
+  ],
+  "realtime": [
+    "Linux kernel: deadline scheduling and hard real-time tasks",
+    "https://docs.kernel.org/scheduler/sched-deadline.html"
+  ],
+  "fork": [
+    "Linux man-pages: fork and copy-on-write pages",
+    "https://man7.org/linux/man-pages/man2/fork.2.html"
+  ],
+  "schedule-notes": [
+    "University of Illinois Chicago: CPU scheduling and priorities",
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/5_CPU_Scheduling.html"
+  ]
+}

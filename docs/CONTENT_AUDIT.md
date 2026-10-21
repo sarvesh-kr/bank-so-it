@@ -1,8 +1,8 @@
 # Exam-focused quality audit — 21 October 2026
 
-The current bank contains **946 questions across 11 subjects**. The [DBMS R2 audit](DBMS_AUDIT.md) replaces 118 older DBMS/SQL items with **200 newly curated questions** following the user’s topic map. The other 746 items are unchanged. The preceding [network R2 audit](NETWORK_AUDIT.md) replaced 152 networking/cybersecurity items with 200; that topic remains unchanged in this release.
+The current bank contains **973 questions across 11 subjects**. The [OS R2 audit](OS_AUDIT.md) replaces 73 older OS items with **100 newly curated questions** following the user’s topic map. The other 873 records are unchanged, including the 200-question [DBMS](DBMS_AUDIT.md) and [network](NETWORK_AUDIT.md) revisions.
 
-The earlier cross-subject review began with 1,150 questions and produced an 816-item bank: 680 retained and 136 additions, with 470 retirements and 163 retained items corrected or clarified. Those figures describe that earlier release. The current ledger contains 740 retirements across the revisions, including fourteen IDs added after the original baseline.
+The earlier cross-subject review began with 1,150 questions and produced an 816-item bank: 680 retained and 136 additions, with 470 retirements and 163 retained items corrected or clarified. Those figures describe that earlier release. The current ledger contains 813 retirements across the revisions, including seventeen IDs added after the original baseline.
 
 ## Review criteria
 
@@ -26,7 +26,7 @@ Bank SO IT covers foundational bank specialist IT knowledge. The initial exam-al
 |---|---:|
 | Networks & Cybersecurity | 200 |
 | DBMS & SQL | 200 |
-| Operating Systems | 73 |
+| Operating Systems | 100 |
 | Data Structures & Algorithms | 107 |
 | Linux & Shell | 86 |
 | Warehousing & Mining | 52 |
@@ -35,20 +35,20 @@ Bank SO IT covers foundational bank specialist IT knowledge. The initial exam-al
 | Programming & OOP | 60 |
 | Computer Fundamentals & Architecture | 33 |
 | Web Technology | 20 |
-| **Total** | **946** |
+| **Total** | **973** |
 
 The new areas cover C/C++/Java/Python fundamentals, OOP, exceptions, short Python outputs, CPU/registers/buses, representation and logic, memory hierarchy, HTML/CSS/JavaScript/DOM, HTTP, origins, JSON and XML. The app's Quick revision page provides searchable answer/explanation cards and a subject coverage selector. These are the mapped core areas of the selected IT preparation outline, not a guarantee of every possible future question.
 
 ## Evidence for every item
 
-- [question-audit.csv](question-audit.csv): all 946 shipped stems, five options, selected answers, explanations, references, review decisions and reviewed hashes.
-- [retired-question-audit.csv](retired-question-audit.csv): all 740 retired IDs, topics and reasons, linked to the previous production commit.
+- [question-audit.csv](question-audit.csv): all 973 shipped stems, five options, selected answers, explanations, references, review decisions and reviewed hashes.
+- [retired-question-audit.csv](retired-question-audit.csv): all 813 retired IDs, topics and reasons, linked to the previous production commit.
 - [baseline-answer-checks.json](baseline-answer-checks.json): independently checked all 485 computed answers in the previous production bank: 305 numerical/trace, 150 SQL and 30 Bash answers.
-- [quality-checks.json](quality-checks.json): 111 checks in the current bank: 32 SQL executions, six relational-algebra evaluations, ten normalization/tree/RAID results, 30 other numerical/trace results, 16 Bash outputs, 10 Python outputs and seven further calculations.
+- [quality-checks.json](quality-checks.json): 116 checks in the current bank: ten OS scheduling/safety/memory/replacement/disk results, 32 SQL executions, six relational-algebra evaluations, ten normalization/tree/RAID results, 25 other numerical/trace results, 16 Bash outputs, 10 Python outputs and seven further calculations.
 - [quality-audit-summary.json](quality-audit-summary.json): counts and dispositions.
 - [review-register.json](../content/review/review-register.json): exact content hashes approved in this technical review. CI rejects an item changed after review or missing from the register.
 
-The independent checker executes all displayed SQL datasets and constraint-error cases, evaluates algebra as sets, enumerates functional-dependency closures and candidate keys, reruns scripts, enumerates small search/path/subarray cases and computes numeric results without trusting the selected key. These checks establish the stated computed results. Conceptual uniqueness, interpretation and relevance require the documented technical review; an automated five-option/index check alone does not establish them.
+The OS checker simulates displayed scheduling, Banker, page-replacement and disk inputs and calculates the two memory examples. The independent checker also executes all displayed SQL datasets and constraint-error cases, evaluates algebra as sets, enumerates functional-dependency closures and candidate keys, reruns scripts, enumerates small search/path/subarray cases and computes numeric results without trusting the selected key. These checks establish the stated computed results. Conceptual uniqueness, interpretation and relevance require the documented technical review; an automated five-option/index check alone does not establish them.
 
 The old attachment-disposition files concern the earlier HTML import and remain historical records. This audit concerns the production bank at commit `693275acdf059ef83e274cfdbb59d5679f8ce4ff`, then the revised bank. Excluded answers in the original uploaded HTML are not endorsed by this audit.
 

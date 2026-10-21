@@ -152,6 +152,8 @@ def check():
     check_network(bank)
     from check_dbms import check_dbms
     dbms_proofs=check_dbms(bank)
+    from check_os import check_os
+    os_proofs=check_os(bank)
     decisions=json.loads((ROOT/'content/review/retirements.json').read_text())
     baseline=json.loads((ROOT/'content/review/baseline-manifest.json').read_text())
     current={q['id'] for q in bank['questions']}
@@ -160,7 +162,7 @@ def check():
     assert set(decisions)<=set(baseline)|set(extra)
     assert not current&set(decisions)
     assert len(current)==len(bank['questions'])
-    proofs=dict(dbms_proofs);lint=[]
+    proofs={**dbms_proofs,**os_proofs};lint=[]
     for q in bank['questions']:
         assert len(q['options'])==len(set(q['options']))==5,q['id']
         assert q['references'] and all(r['url'].startswith('https://') and r['title'] for r in q['references'])
