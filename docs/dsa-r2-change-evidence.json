@@ -1,0 +1,10 @@
+{
+  "sourceCommit": "d5b77faafa23f9606afdca6f946ac532c36a0c1d",
+  "previousDSA": 107,
+  "replacementDSA": 150,
+  "retiredInThisRevision": 107,
+  "otherQuestions": 866,
+  "otherBeforeSha256": "df557e3f743938267fa97c1763095f81d1f57d00e4d25221b75bef028d8d4223",
+  "otherAfterSha256": "df557e3f743938267fa97c1763095f81d1f57d00e4d25221b75bef028d8d4223",
+  "otherQuestionsUnchanged": true
+}
