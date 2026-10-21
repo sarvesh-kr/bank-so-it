@@ -33,8 +33,8 @@ const files=[{file:'downloads/Bank-SO-IT.apk',name:'Bank-SO-IT.apk'},{file:'bank
         // rather than honoring the HTML download attribute.
         const link=page.locator('a.download-link').filter({hasText:item.file.endsWith('.apk')?'Download Android APK':'Download latest question pack'});
         await link.evaluate((a,{item,navigation})=>{a.href=item.file+(navigation?'?download=1':'');if(navigation)a.removeAttribute('download');else a.download=item.name;},{item,navigation});
-        if(process.env.BANK_DOWNLOAD_DEBUG)console.log('Download',engine,scope,offline,navigation,item.file);
-        const waiting=page.waitForEvent('download');await link.click();const download=await waiting;
+        console.log('Download',engine,scope,offline,navigation,item.file);
+        const waiting=page.waitForEvent('download');await link.click();let download;try{download=await waiting;}catch(error){console.error('Download state',engine,scope,offline,navigation,item.file,page.url(),await page.locator('body').innerText());fs.mkdirSync('test-results',{recursive:true});await page.screenshot({path:'test-results/download-failure.png'});throw error;}
         assert.equal(await download.failure(),null,engine+': download failed');
         const raw=fs.readFileSync(await download.path());assert.equal(download.suggestedFilename(),item.name);
         assert.equal(digest(raw),item.hash,`${engine} ${scope} offline=${offline} navigation=${navigation}: wrong downloaded bytes for ${item.file}`);
