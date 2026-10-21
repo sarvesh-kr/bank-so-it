@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "questions": 1016,
-  "retired": 920,
-  "independent_answer_checks": 126,
+  "questions": 1005,
+  "retired": 1006,
+  "independent_answer_checks": 127,
   "proofs": {
     "dbms-r2-062": {
       "method": "worked-dbms",
@@ -840,6 +840,91 @@
         ]
       }
     },
+    "linux-r2-024": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "alice\nbob",
+      "script": "printf 'alice:10\\nbob:20\\n' | cut -d: -f1"
+    },
+    "linux-r2-025": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "dog dog",
+      "script": "printf 'cat cat\\n' | sed 's/cat/dog/g'"
+    },
+    "linux-r2-026": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "IT\nHR",
+      "script": "printf 'IT 7\\nHR 3\\n' | awk '{print $1}'"
+    },
+    "linux-r2-037": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "640",
+      "script": "touch sample\nchmod u=rw,g=r,o= sample\nstat -c '%a' sample"
+    },
+    "linux-r2-038": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "644",
+      "script": "umask 022\n: > sample\nstat -c '%a' sample"
+    },
+    "linux-r2-039": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "750",
+      "script": "umask 027\nmkdir sampledir\nstat -c '%a' sampledir"
+    },
+    "linux-r2-055": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "$name\nBank",
+      "script": "name=Bank\nprintf '%s\\n' '$name' \"$name\""
+    },
+    "linux-r2-056": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "<one>\n<two words>",
+      "script": "set -- one 'two words'\nprintf '<%s>\\n' \"$@\""
+    },
+    "linux-r2-058": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "1",
+      "script": "false\nprintf '%s\\n' \"$?\""
+    },
+    "linux-r2-063": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "3",
+      "script": "a=7\nb=2\nprintf '%s\\n' \"$((a / b))\""
+    },
+    "linux-r2-066": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "empty",
+      "script": "s=\nif [ -z \"$s\" ]; then\n  printf 'empty\\n'\nelse\n  printf 'set\\n'\nfi"
+    },
+    "linux-r2-068": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "6",
+      "script": "total=0\nfor n in 1 2 3; do\n  total=$((total + n))\ndone\nprintf '%s\\n' \"$total\""
+    },
+    "linux-r2-069": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "3",
+      "script": "n=0\nwhile [ \"$n\" -lt 3 ]; do\n  n=$((n + 1))\ndone\nprintf '%s\\n' \"$n\""
+    },
+    "linux-r2-070": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "work",
+      "script": "day=Mon\ncase \"$day\" in\n  Mon|Tue) printf 'work\\n' ;;\n  *) printf 'other\\n' ;;\nesac"
+    },
+    "linux-r2-071": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "7",
+      "script": "status() { return 7; }\nstatus\nprintf '%s\\n' \"$?\""
+    },
+    "linux-r2-072": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "2:shell basics",
+      "script": "set -- linux 'shell basics'\nprintf '%s:%s\\n' \"$#\" \"$2\""
+    },
+    "linux-r2-075": {
+      "method": "Bash/GNU execution in an isolated temporary directory",
+      "independent_result": "2",
+      "script": "printf 'pear\\napple\\npear\\n' | sort | uniq | wc -l"
+    },
     "network-r2-065": {
       "method": "worked-drill",
       "independent_result": "254"
@@ -879,70 +964,6 @@
     "network-r2-074": {
       "method": "worked-drill",
       "independent_result": "/26"
-    },
-    "linux-073": {
-      "method": "executed-shell",
-      "independent_result": "13"
-    },
-    "linux-074": {
-      "method": "executed-shell",
-      "independent_result": "3"
-    },
-    "linux-075": {
-      "method": "executed-shell",
-      "independent_result": "2"
-    },
-    "linux-078": {
-      "method": "executed-shell",
-      "independent_result": "3"
-    },
-    "linux-080": {
-      "method": "executed-shell",
-      "independent_result": "fallback"
-    },
-    "linux-083": {
-      "method": "executed-shell",
-      "independent_result": "7"
-    },
-    "linux-084": {
-      "method": "executed-shell",
-      "independent_result": "2\n4\n6"
-    },
-    "linux-085": {
-      "method": "executed-shell",
-      "independent_result": "3"
-    },
-    "linux-086": {
-      "method": "executed-shell",
-      "independent_result": "done"
-    },
-    "linux-089": {
-      "method": "executed-shell",
-      "independent_result": "2\n3\n12"
-    },
-    "linux-090": {
-      "method": "executed-shell",
-      "independent_result": "a\nb\na"
-    },
-    "linux-092": {
-      "method": "executed-shell",
-      "independent_result": "alpha\nalpine"
-    },
-    "linux-094": {
-      "method": "executed-shell",
-      "independent_result": "10\n20"
-    },
-    "linux-096": {
-      "method": "executed-shell",
-      "independent_result": "6"
-    },
-    "linux-099": {
-      "method": "executed-shell",
-      "independent_result": "[a b][c]"
-    },
-    "linux-100": {
-      "method": "executed-shell",
-      "independent_result": "x\ny"
     },
     "programming-051": {
       "method": "executed-python",

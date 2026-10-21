@@ -301,7 +301,8 @@ from build_network import load_network
 from build_dbms import load_dbms
 from build_os import load_os
 from build_dsa import load_dsa
-questions[:]=load_network()+load_dbms()+load_os()+load_dsa()+[q for q in questions if q['subject'] not in {'network','dbms','os','dsa'}]
+from build_linux import load_linux
+questions[:]=load_network()+load_dbms()+load_os()+load_dsa()+load_linux()+[q for q in questions if q['subject'] not in {'network','dbms','os','dsa','linux'}]
 assert not {q['id'] for q in questions}&set(retired)
 
 counts=collections.Counter(q['subject'] for q in questions)
@@ -320,7 +321,7 @@ from review_sources import references_for
 for q in questions:
     q['references']=q.get('references') or references_for(q)
     assert q['references'],q['id']
-bank={'schemaVersion':1,'version':'2.4.0','title':'Bank SO IT','subjects':[{'id':sid,'name':name} for sid,name in all_subjects],
+bank={'schemaVersion':1,'version':'2.5.0','title':'Bank SO IT','subjects':[{'id':sid,'name':name} for sid,name in all_subjects],
       'retiredQuestionIds':sorted(retired),'questions':questions}
 OUT.mkdir(parents=True,exist_ok=True)
 (ROOT/'dist').mkdir(exist_ok=True)
@@ -329,6 +330,6 @@ OUT.mkdir(parents=True,exist_ok=True)
 (ROOT/'dist/question-bank.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2))
 report={'total':len(questions),'subjects':dict(counts),'retired':len(retired),'kinds':dict(collections.Counter(q['kind'] for q in questions)),
 'difficulty':dict(collections.Counter(q['difficulty'] for q in questions)),
-'checks':['Unique IDs and stems','Five distinct options per question','Valid answer indices','Explanations and references present','Legacy ID retirement prevents duplicate reintroduction','SQL answers executed in SQLite during generation','Shell answers executed in Bash during generation','Python answers executed in Python 3 during generation']}
+'checks':['Unique IDs and stems','Five distinct options per question','Valid answer indices','Explanations and references present','Legacy ID retirement prevents duplicate reintroduction','SQL answers executed in SQLite during generation','Published Bash examples executed in isolated directories by the quality checker','Python answers executed in Python 3 during generation']}
 (ROOT/'docs/bank-validation.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

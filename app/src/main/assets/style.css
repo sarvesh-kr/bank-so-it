@@ -2,4 +2,4 @@
 
 .download-link{display:inline-block;margin-top:12px;font-size:13px;font-weight:650}.platform-status{margin-top:12px}
 
-.revision-card{margin-top:12px}.revision-card>summary{cursor:pointer;white-space:pre-wrap;line-height:1.5}.sources summary{cursor:pointer}.sources a{overflow-wrap:anywhere}
+.revision-card{margin-top:12px}.revision-card>summary{cursor:pointer;white-space:pre-wrap;line-height:1.5}.revision-card>p>strong{white-space:pre-wrap;overflow-wrap:anywhere}.sources summary{cursor:pointer}.sources a{overflow-wrap:anywhere}

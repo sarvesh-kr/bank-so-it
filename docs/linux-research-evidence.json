@@ -1,0 +1,205 @@
+{
+  "scope": "Technical sources for Linux R2; not previous-paper frequency evidence.",
+  "sources": [
+    {
+      "referenceKey": "awk",
+      "title": "GNU awk: records, fields and print",
+      "url": "https://man7.org/linux/man-pages/man1/gawk.1.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 67145,
+      "sha256": "3dd8882743f60c2815626bacfaad0391b5c35d336ed60aa1dfb9fbad810bb13d"
+    },
+    {
+      "referenceKey": "bash",
+      "title": "GNU Bash manual page, hosted by man7.org",
+      "url": "https://man7.org/linux/man-pages/man1/bash.1.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 497852,
+      "sha256": "e35fa2966c44a4e9ee519760160f1aba14c670451a463177968ed2c4710bf846"
+    },
+    {
+      "referenceKey": "coreutils",
+      "title": "GNU Coreutils: command and file-permission manual source",
+      "url": "https://raw.githubusercontent.com/coreutils/coreutils/master/doc/coreutils.texi",
+      "retrievedOn": "2026-10-21",
+      "bytes": 684410,
+      "sha256": "75d3f2d0f663bd56a6fdc3d62d5814849f57031352ae8b777a704d4e0032ac9e"
+    },
+    {
+      "referenceKey": "exec",
+      "title": "Linux execve: interpreter scripts and execution permissions",
+      "url": "https://man7.org/linux/man-pages/man2/execve.2.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 43619,
+      "sha256": "ea744b044227c50f852b8cd6165b5e48ed5c8afecf2258710b5e74b06defd309"
+    },
+    {
+      "referenceKey": "find",
+      "title": "GNU find: pathname traversal, types and name patterns",
+      "url": "https://man7.org/linux/man-pages/man1/find.1.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 117633,
+      "sha256": "62edc0549e6422624323368a1b142bb4d577e35a88a7d03b218856a67b01a288"
+    },
+    {
+      "referenceKey": "free",
+      "title": "procps: memory and swap reporting",
+      "url": "https://man7.org/linux/man-pages/man1/free.1.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 13150,
+      "sha256": "9f8f51d24f56bf0e59d92c1053262c6ae4c9a6076dfaeaa0b036a4eca76d55da"
+    },
+    {
+      "referenceKey": "grep",
+      "title": "GNU grep: selected lines and output-control options",
+      "url": "https://man7.org/linux/man-pages/man1/grep.1.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 43199,
+      "sha256": "d6f07a7f75c6275f6986df2501d355ebd22fa1475ce50dc6039f1fb028d6a3c2"
+    },
+    {
+      "referenceKey": "hier",
+      "title": "Linux man-pages: filesystem hierarchy",
+      "url": "https://man7.org/linux/man-pages/man7/hier.7.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 27936,
+      "sha256": "fc5c59c3720f0ab046d3761de03c5160e5c790d0cbfc762646f1f4ad2b97fefa"
+    },
+    {
+      "referenceKey": "ip-address",
+      "title": "iproute2: interface address management and display",
+      "url": "https://man7.org/linux/man-pages/man8/ip-address.8.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 22136,
+      "sha256": "a80f19b73bf8e8c277ec73ef4ce21cfb7c59112d8fc9817007a7ca8eef9c9913"
+    },
+    {
+      "referenceKey": "kill",
+      "title": "Linux kill utility: default signal and process signaling",
+      "url": "https://man7.org/linux/man-pages/man1/kill.1.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 18665,
+      "sha256": "9f636ee77eba1cb2e91260448fcb5c1b25b860d34f812dbde67781aeac5a22ad"
+    },
+    {
+      "referenceKey": "less",
+      "title": "less: interactive text paging",
+      "url": "https://man7.org/linux/man-pages/man1/less.1.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 150952,
+      "sha256": "a8a5df2352c8d1af3b22d511e55108e3c985ac2d03af39570f95c162b062f263"
+    },
+    {
+      "referenceKey": "man",
+      "title": "man-db: manual-page viewer",
+      "url": "https://man7.org/linux/man-pages/man1/man.1.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 51016,
+      "sha256": "cb2a9d3ba540a2e9b46b91cdd103c2ee2ad1690472fdb957a282ddcd322b1e55"
+    },
+    {
+      "referenceKey": "modes",
+      "title": "GNU Coreutils: file modes, symbolic/octal permissions and special bits",
+      "url": "https://raw.githubusercontent.com/coreutils/coreutils/master/doc/perm.texi",
+      "retrievedOn": "2026-10-21",
+      "bytes": 21199,
+      "sha256": "aed78d35105915b06bea6a98a783e45fb9b99252b26cd50a65c5a15c601a12bc"
+    },
+    {
+      "referenceKey": "mount",
+      "title": "util-linux: filesystem mounting",
+      "url": "https://man7.org/linux/man-pages/man8/mount.8.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 150865,
+      "sha256": "0fd3413f4fb073c6d083925a7ad04ac24af5235be2c28ee73da2f66a54bb16f9"
+    },
+    {
+      "referenceKey": "passwd",
+      "title": "Linux passwd account file format",
+      "url": "https://man7.org/linux/man-pages/man5/passwd.5.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 14576,
+      "sha256": "607c969fa6c7efb89b67f84a73ddbf72545e8c5f3b59facb830f8dbd08db0a95"
+    },
+    {
+      "referenceKey": "path",
+      "title": "Linux man-pages: pathname resolution, directory search and permissions",
+      "url": "https://man7.org/linux/man-pages/man7/path_resolution.7.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 19215,
+      "sha256": "94e3dcca3161a98b0425aba98b32e6bf083a74d10243c548dce18b4a7a2184b4"
+    },
+    {
+      "referenceKey": "ps",
+      "title": "procps: process snapshot reporting",
+      "url": "https://man7.org/linux/man-pages/man1/ps.1.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 83551,
+      "sha256": "aed877756126f049873bcb6f00083715cfffa7fead065b4ce552c158a5e5c8ad"
+    },
+    {
+      "referenceKey": "sed",
+      "title": "GNU sed: stream editing and substitution flags",
+      "url": "https://man7.org/linux/man-pages/man1/sed.1.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 20625,
+      "sha256": "ec2f370d88a00b33f8d1f2ef0b2829143b3ef6f0c6e183e44926fcbbb1ee8ab2"
+    },
+    {
+      "referenceKey": "shadow",
+      "title": "Linux shadow password file format",
+      "url": "https://man7.org/linux/man-pages/man5/shadow.5.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 12260,
+      "sha256": "f3087708d8d6b99a9cc379c1eb2450ab5d17e068b7a3a0aa37ae51b77e1fd9db"
+    },
+    {
+      "referenceKey": "ss",
+      "title": "iproute2 ss: socket selection and numeric output",
+      "url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 29103,
+      "sha256": "0e077ba9125e0fcf017fd61a404599249ec5960b0af310d755225817849ca069"
+    },
+    {
+      "referenceKey": "sudo",
+      "title": "sudo: permitted command execution as another user",
+      "url": "https://manpages.debian.org/bookworm/sudo/sudo.8.en.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 83717,
+      "sha256": "96741736909338b4c372cd569aa88e329b24de3a8f2729b07a27decb3cf75f07"
+    },
+    {
+      "referenceKey": "systemctl",
+      "title": "systemd: unit status and enable/start distinctions",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 201971,
+      "sha256": "f95e4bc82edf115aa4736ec9c9871cb1fd7f8c4cbe1b9be4f7790ab02c000d6f"
+    },
+    {
+      "referenceKey": "tar",
+      "title": "GNU tar: archive creation, compression, listing and extraction",
+      "url": "https://man7.org/linux/man-pages/man1/tar.1.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 61071,
+      "sha256": "66c2f99b3e52806129a218a85c4566748bb25a9181827d6304769ad1d46c9a1d"
+    },
+    {
+      "referenceKey": "umask",
+      "title": "Linux man-pages: creation mask, requested permissions and ACL interaction",
+      "url": "https://man7.org/linux/man-pages/man2/umask.2.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 12678,
+      "sha256": "94ec1e381d25f0c0d4647630654453beaa6313afc76cb52a4aaf755c505f6d4c"
+    },
+    {
+      "referenceKey": "usermod",
+      "title": "shadow-utils: primary and supplementary group modification",
+      "url": "https://man7.org/linux/man-pages/man8/usermod.8.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 23972,
+      "sha256": "dc210c78c0d1a1653beeb23726feff95410bec9452499cb9f19cd4d43565be1d"
+    }
+  ]
+}

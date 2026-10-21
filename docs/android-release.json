@@ -1,10 +1,10 @@
 {
-  "version": "2.4",
-  "versionCode": 9,
-  "bytes": 197807,
-  "sha256": "dfced5d3f5bfb23a44f2385d3f5694aa3a86e934568ce86cb389c074f3492de5",
+  "version": "2.5",
+  "versionCode": 10,
+  "bytes": 201903,
+  "sha256": "d975a538d907c662587ad0ba62535ab18393c42f07ae1dedfb40a55c73f81de8",
   "certificateSha256": "99b48912f61bdd5fda05c058add7f9d96cac200c5ee1875211f5eb624a0b5ceb",
-  "questions": 1016,
+  "questions": 1005,
   "subjects": 11,
   "signatureSchemes": [
     "v2",

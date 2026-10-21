@@ -1,0 +1,102 @@
+{
+  "bash": [
+    "GNU Bash manual page, hosted by man7.org",
+    "https://man7.org/linux/man-pages/man1/bash.1.html"
+  ],
+  "coreutils": [
+    "GNU Coreutils: command and file-permission manual source",
+    "https://raw.githubusercontent.com/coreutils/coreutils/master/doc/coreutils.texi"
+  ],
+  "find": [
+    "GNU find: pathname traversal, types and name patterns",
+    "https://man7.org/linux/man-pages/man1/find.1.html"
+  ],
+  "grep": [
+    "GNU grep: selected lines and output-control options",
+    "https://man7.org/linux/man-pages/man1/grep.1.html"
+  ],
+  "sed": [
+    "GNU sed: stream editing and substitution flags",
+    "https://man7.org/linux/man-pages/man1/sed.1.html"
+  ],
+  "awk": [
+    "GNU awk: records, fields and print",
+    "https://man7.org/linux/man-pages/man1/gawk.1.html"
+  ],
+  "hier": [
+    "Linux man-pages: filesystem hierarchy",
+    "https://man7.org/linux/man-pages/man7/hier.7.html"
+  ],
+  "path": [
+    "Linux man-pages: pathname resolution, directory search and permissions",
+    "https://man7.org/linux/man-pages/man7/path_resolution.7.html"
+  ],
+  "man": [
+    "man-db: manual-page viewer",
+    "https://man7.org/linux/man-pages/man1/man.1.html"
+  ],
+  "less": [
+    "less: interactive text paging",
+    "https://man7.org/linux/man-pages/man1/less.1.html"
+  ],
+  "shadow": [
+    "Linux shadow password file format",
+    "https://man7.org/linux/man-pages/man5/shadow.5.html"
+  ],
+  "passwd": [
+    "Linux passwd account file format",
+    "https://man7.org/linux/man-pages/man5/passwd.5.html"
+  ],
+  "usermod": [
+    "shadow-utils: primary and supplementary group modification",
+    "https://man7.org/linux/man-pages/man8/usermod.8.html"
+  ],
+  "sudo": [
+    "sudo: permitted command execution as another user",
+    "https://manpages.debian.org/bookworm/sudo/sudo.8.en.html"
+  ],
+  "umask": [
+    "Linux man-pages: creation mask, requested permissions and ACL interaction",
+    "https://man7.org/linux/man-pages/man2/umask.2.html"
+  ],
+  "ps": [
+    "procps: process snapshot reporting",
+    "https://man7.org/linux/man-pages/man1/ps.1.html"
+  ],
+  "kill": [
+    "Linux kill utility: default signal and process signaling",
+    "https://man7.org/linux/man-pages/man1/kill.1.html"
+  ],
+  "free": [
+    "procps: memory and swap reporting",
+    "https://man7.org/linux/man-pages/man1/free.1.html"
+  ],
+  "mount": [
+    "util-linux: filesystem mounting",
+    "https://man7.org/linux/man-pages/man8/mount.8.html"
+  ],
+  "systemctl": [
+    "systemd: unit status and enable/start distinctions",
+    "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html"
+  ],
+  "tar": [
+    "GNU tar: archive creation, compression, listing and extraction",
+    "https://man7.org/linux/man-pages/man1/tar.1.html"
+  ],
+  "ss": [
+    "iproute2 ss: socket selection and numeric output",
+    "https://man7.org/linux/man-pages/man8/ss.8.html"
+  ],
+  "ip-address": [
+    "iproute2: interface address management and display",
+    "https://man7.org/linux/man-pages/man8/ip-address.8.html"
+  ],
+  "exec": [
+    "Linux execve: interpreter scripts and execution permissions",
+    "https://man7.org/linux/man-pages/man2/execve.2.html"
+  ],
+  "modes": [
+    "GNU Coreutils: file modes, symbolic/octal permissions and special bits",
+    "https://raw.githubusercontent.com/coreutils/coreutils/master/doc/perm.texi"
+  ]
+}

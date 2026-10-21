@@ -1,0 +1,10 @@
+{
+  "sourceCommit": "34b15ea646bd55d841ff8fe788c560095ceab54e",
+  "previousLinux": 86,
+  "replacementLinux": 75,
+  "retiredInThisRevision": 86,
+  "otherQuestions": 930,
+  "otherBeforeSha256": "0e03c97b39aa3cdca8cfae079710fb47897755d1762ae37781c7e6465643e742",
+  "otherAfterSha256": "0e03c97b39aa3cdca8cfae079710fb47897755d1762ae37781c7e6465643e742",
+  "otherQuestionsUnchanged": true
+}
