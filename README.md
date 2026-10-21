@@ -36,7 +36,7 @@ Each retained stem, five-option set, key and explanation received a technical re
 
 **Data Warehousing & Data Mining now contains 50 newly curated conceptual questions**, covering warehouse types, OLTP/OLAP, schemas, marts, cubes, ETL, mining techniques and tools. There are no numerical exercises. The previous 52 items are replaced; the other 953 records are unchanged. See the [warehousing/mining audit and coverage](docs/DW_DM_AUDIT.md). Earlier [Linux](docs/LINUX_AUDIT.md), [DSA](docs/DSA_AUDIT.md), [OS](docs/OS_AUDIT.md), [DBMS](docs/DBMS_AUDIT.md) and [network](docs/NETWORK_AUDIT.md) revisions remain unchanged. The earlier cross-subject review is recorded separately in the content audit. Old stock imports cannot overwrite reviewed built-ins or restore retired items; use the editor for personal changes. Earlier session reviews are retained, while current-bank statistics exclude retired questions.
 
-**Android 2.6** bundles the same curated bank and quick revision. It reuses the Android 1.2 release key, so 1.2 installations can update in place. Export a progress backup before installing updates. Installations predating the 1.2 key change still need export, uninstall, reinstall and restore.
+**Android 2.6.1** bundles the same curated bank and quick revision. It reuses the Android 1.2 release key, so 1.2 installations can update in place. Export a progress backup before installing updates. Installations predating the 1.2 key change still need export, uninstall, reinstall and restore.
 
 ## Deploy on GitHub Pages
 
@@ -93,12 +93,13 @@ python3 tools/audit_bank.py
 python3 tools/check_apk_assets.py
 npm test
 npm run build:web
-npx playwright install chromium
+npx playwright install chromium webkit
 npm run test:pages
+npm run test:downloads
 python3 -m http.server 8000 --directory _site
 ```
 
-Open `http://localhost:8000/`. HTTPS or localhost is required for service workers. `test:pages` starts its own server and tests a repository subpath, offline practice, persistence, backups, separate project storage, the shared Android bridge, and automatic migration from the previous cached release. If using another installed Chromium, set `CHROME_PATH` to its executable.
+Open `http://localhost:8000/`. HTTPS or localhost is required for service workers. `test:downloads` checks real APK/question-pack link clicks and navigation downloads in Chromium and WebKit, online and offline, at root and repository paths. `test:pages` starts its own server and tests a repository subpath, offline practice, persistence, backups, separate project storage, the shared Android bridge, and automatic migration from the previous cached release. If using another installed Chromium, set `CHROME_PATH` to its executable.
 
 ## Project layout
 

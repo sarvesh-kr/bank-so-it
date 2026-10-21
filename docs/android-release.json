@@ -1,8 +1,8 @@
 {
-  "version": "2.6",
-  "versionCode": 11,
+  "version": "2.6.1",
+  "versionCode": 12,
   "bytes": 201903,
-  "sha256": "42bde415a714118f31e1c78089fbd0207df582f7726949699d2d7a3a5aa6c01b",
+  "sha256": "99c92360ff5d0f677d15c55d3a8f33cf4febfcf4ab19cd8f23723b39f67a9ca8",
   "certificateSha256": "99b48912f61bdd5fda05c058add7f9d96cac200c5ee1875211f5eb624a0b5ceb",
   "questions": 1003,
   "subjects": 11,

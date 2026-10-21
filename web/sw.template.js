@@ -17,9 +17,38 @@ self.addEventListener('activate',event=>{event.waitUntil((async()=>{
  await self.clients.claim();
 })());});
 self.addEventListener('message',event=>{if(event.data&&event.data.type==='ACTIVATE_UPDATE')self.skipWaiting();});
+// Downloads are assets even when a browser sends them as a navigation.
+const DOWNLOADS={
+ [new URL('downloads/Bank-SO-IT.apk',SCOPE).href]:{name:'Bank-SO-IT.apk',type:'application/vnd.android.package-archive'},
+ [new URL('bank.json',SCOPE).href]:{name:'bank-so-it-question-bank.json',type:'application/json'}
+};
+async function asset(request,href,navigation){
+ const cache=await caches.open(CACHE);
+ const response=(await cache.match(href))||await fetch(request);
+ const download=DOWNLOADS[href];
+ if(!download||!response.ok)return response;
+ // Content-Disposition covers browsers that navigate instead of honoring download.
+ // Preserve JSON fetch semantics; attachment is only needed for document navigation.
+ if(!navigation)return response;
+ const headers=new Headers(response.headers);
+ // Fetch exposes decoded bytes; copied transport headers would describe gzip bytes.
+ headers.delete('Content-Encoding');headers.delete('Content-Length');
+ headers.set('Content-Type',download.type);
+ headers.set('Content-Disposition','attachment; filename="'+download.name+'"');
+ return new Response(response.body,{status:response.status,statusText:response.statusText,headers});
+}
 self.addEventListener('fetch',event=>{
  if(event.request.method!=='GET')return;
  const url=new URL(event.request.url);if(!url.href.startsWith(SCOPE))return;
- if(event.request.mode==='navigate'){event.respondWith(caches.open(CACHE).then(async cache=>(await cache.match(new URL('index.html',SCOPE).href))||fetch(event.request)));return;}
- if(urls.includes(url.href))event.respondWith(caches.open(CACHE).then(async cache=>(await cache.match(event.request))||fetch(event.request)));
+ // Query strings do not turn a known static file into an app route.
+ url.search='';url.hash='';
+ const href=url.href;
+ if(urls.includes(href)){
+  event.respondWith(asset(event.request,href,event.request.mode==='navigate'));return;
+ }
+ // This app uses in-page screens, so only its root URL needs a shell fallback.
+ // Unknown paths must retain real network errors/404s, including missing downloads.
+ if(event.request.mode==='navigate'&&href===SCOPE){
+  event.respondWith(asset(event.request,new URL('index.html',SCOPE).href,false));
+ }
 });
