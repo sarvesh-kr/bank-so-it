@@ -258,5 +258,9 @@
   "http-cache": [
     "IETF RFC 9111: HTTP caching and Cache-Control",
     "https://www.rfc-editor.org/rfc/rfc9111.html"
+  ],
+  "ssl-history": [
+    "IETF RFC 6101: historical SSL 3.0 protocol terminology",
+    "https://www.rfc-editor.org/rfc/rfc6101.html"
   ]
 }

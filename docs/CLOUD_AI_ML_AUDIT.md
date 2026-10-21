@@ -1,6 +1,6 @@
 # Cloud, AI & ML Basics R2 audit — 21 October 2026
 
-This revision replaces 47 older items with **50 conceptual questions**, split equally between cloud and AI/ML. There are **no numerical exercises**. All **956 existing question records outside this topic are exactly unchanged**. The same release also adds 29 new networking items; see the [network supplement](NETWORK_SERVICES_AUDIT.md). [Change evidence](cloud-ai-ml-r2-change-evidence.json) compares all non-cloud records with commit `42206bfdb77f1ae551d2695f9b9a31c8a496bc20`.
+This revision replaces 47 older items with **50 conceptual questions**, split equally between cloud and AI/ML. There are **no numerical exercises**. All **956 existing question records outside this topic are exactly unchanged**. The same release also adds 31 new networking items; see the [network supplement](NETWORK_SERVICES_AUDIT.md). [Change evidence](cloud-ai-ml-r2-change-evidence.json) compares all non-cloud records with commit `42206bfdb77f1ae551d2695f9b9a31c8a496bc20`.
 
 ## Coverage
 

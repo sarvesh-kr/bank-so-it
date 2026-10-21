@@ -3,7 +3,7 @@
   "previous_topic_questions": 47,
   "current_topic_questions": 50,
   "other_records_unchanged": 956,
-  "comparison": "All 956 existing non-cloud records exactly unchanged; 29 new networking records added in the same release",
+  "comparison": "All 956 existing non-cloud records exactly unchanged; 31 new networking records added in the same release",
   "new_ids": [
     "cloud-ai-ml-r2-001",
     "cloud-ai-ml-r2-002",
@@ -123,6 +123,6 @@
     "cloud_ai_ml-064",
     "cloud_ai_ml-065"
   ],
-  "other_records_added": 29,
-  "current_other_records": 985
+  "other_records_added": 31,
+  "current_other_records": 987
 }

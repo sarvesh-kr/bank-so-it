@@ -1,9 +1,9 @@
 {
   "source_commit": "42206bfdb77f1ae551d2695f9b9a31c8a496bc20",
   "previous_network_questions": 200,
-  "current_network_questions": 229,
+  "current_network_questions": 231,
   "original_network_records_exactly_unchanged": 200,
-  "added_questions": 29,
+  "added_questions": 31,
   "added_ids": [
     "network-r2-201",
     "network-r2-202",
@@ -33,13 +33,16 @@
     "network-r2-226",
     "network-r2-227",
     "network-r2-228",
-    "network-r2-229"
+    "network-r2-229",
+    "network-r2-230",
+    "network-r2-231"
   ],
   "added_coverage": {
     "Services & ports": 12,
     "Web APIs & HTTP basics": 9,
     "Blockchain fundamentals": 6,
-    "CDN & web delivery": 2
+    "CDN & web delivery": 2,
+    "TLS, cryptography & encoding": 2
   },
   "new_numerical_exercises": 0,
   "unchanged_records_outside_network_and_cloud": 756,

@@ -2,7 +2,7 @@
 
 ## Question quality
 
-The current bank contains 1,035 questions across 11 subjects. Cloud/AI/ML has 50 conceptual questions replacing 47; networking gains 29 conceptual items and now has 229. All 200 earlier network records and all 756 existing records outside these two topics are unchanged. Every shipped item has a reviewed hash and references. See [CLOUD_AI_ML_AUDIT.md](CLOUD_AI_ML_AUDIT.md), [NETWORK_SERVICES_AUDIT.md](NETWORK_SERVICES_AUDIT.md), earlier topic audits and the per-item ledgers.
+The current bank contains 1,037 questions across 11 subjects. Cloud/AI/ML has 50 conceptual questions replacing 47; networking gains 31 conceptual items and now has 231. All 200 earlier network records and all 756 existing records outside these two topics are unchanged. Every shipped item has a reviewed hash and references. See [CLOUD_AI_ML_AUDIT.md](CLOUD_AI_ML_AUDIT.md), [NETWORK_SERVICES_AUDIT.md](NETWORK_SERVICES_AUDIT.md), earlier topic audits and the per-item ledgers.
 
 Network checks also verify 17 port questions against 24 retrieved IANA registry associations and enforce exactly ten subnet calculations. The independent checker verifies 124 current results: 25 DSA calculations/traces, ten OS scheduling/safety/memory/replacement/disk results, 32 SQL executions, six algebra evaluations, ten normalization/tree/RAID results, ten subnet calculations, 17 Linux/Bash executions, 10 Python outputs and four further calculations. All 485 computed results in the previous bank were also checked. SQL and scripts are executed; other small cases are independently calculated or enumerated. Technical relevance and conceptual interpretation received a model-assisted review using cited documentation and authored textbooks. This is not independent human expert certification or an authenticated past paper.
 
@@ -20,7 +20,7 @@ The static site is approximately 1.22 MB including its APK. Test tooling, raw so
 
 ## Android 2.7
 
-The public download is [Bank-SO-IT.apk](../downloads/Bank-SO-IT.apk): 214,191 bytes, version code 13, with all 1,035 questions and the same interface as the web app. APK Signature Schemes v2 and v3 verify. Every embedded shared asset matches source. [android-release.json](android-release.json) records its checksum and public signing-certificate fingerprint.
+The public download is [Bank-SO-IT.apk](../downloads/Bank-SO-IT.apk): 214,191 bytes, version code 13, with all 1,037 questions and the same interface as the web app. APK Signature Schemes v2 and v3 verify. Every embedded shared asset matches source. [android-release.json](android-release.json) records its checksum and public signing-certificate fingerprint.
 
 The existing Android 1.2 key and application ID are retained for in-place upgrades. The private key, password and backup remain excluded from Git. The signing certificate's original subject and internal storage identifiers are compatibility identifiers; the displayed app, downloads, exports, manifest and documentation use Bank SO IT. New backups use the new product format and old backups remain accepted.
 

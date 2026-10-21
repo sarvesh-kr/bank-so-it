@@ -4,10 +4,10 @@
   "retired": 1105,
   "retired_from_original_baseline": 1088,
   "retired_after_original_baseline": 17,
-  "added": 973,
-  "current_bank": 1035,
+  "added": 975,
+  "current_bank": 1037,
   "changes": {
-    "added": 973,
+    "added": 975,
     "retained": 56,
     "corrected or clarified": 6
   },
@@ -15,7 +15,7 @@
   "computed_checks_current": 124,
   "computed_checks_previous": 485,
   "subjects": {
-    "network": 229,
+    "network": 231,
     "dbms": 200,
     "os": 100,
     "dsa": 150,

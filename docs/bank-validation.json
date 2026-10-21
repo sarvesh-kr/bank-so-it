@@ -1,7 +1,7 @@
 {
-  "total": 1035,
+  "total": 1037,
   "subjects": {
-    "network": 229,
+    "network": 231,
     "dbms": 200,
     "os": 100,
     "dsa": 150,
@@ -15,7 +15,7 @@
   },
   "retired": 1105,
   "kinds": {
-    "concept": 915,
+    "concept": 917,
     "worked-drill": 10,
     "worked-dbms": 10,
     "checked-algebra": 6,
@@ -26,7 +26,7 @@
     "executed-python": 10
   },
   "difficulty": {
-    "Easy": 707,
+    "Easy": 709,
     "Moderate": 328
   },
   "checks": [

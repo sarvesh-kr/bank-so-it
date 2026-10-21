@@ -49,4 +49,4 @@ New questions use `network-r2-*` IDs so old answers are not misattributed to dif
 
 ## Later protocol/API/blockchain/CDN supplement
 
-The [21 October coverage supplement](NETWORK_SERVICES_AUDIT.md) adds 29 conceptual questions to the original 200 without changing those records. Current networking coverage is 229, still with ten subnet calculations. It adds explicit protocol functions/records/secure variants, API basics, blockchain and CDN. The current port checker validates 17 questions using the existing 24 IANA associations.
+The [21 October coverage supplement](NETWORK_SERVICES_AUDIT.md) adds 31 conceptual questions to the original 200 without changing those records. Current networking coverage is 231, still with ten subnet calculations. It adds explicit protocol functions/records/secure variants, API basics, blockchain and CDN. The current port checker validates 17 questions using the existing 24 IANA associations.

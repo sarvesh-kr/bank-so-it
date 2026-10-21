@@ -1,6 +1,6 @@
 # Exam-focused quality audit — 21 October 2026
 
-The current bank contains **1,035 questions across 11 subjects**. The [cloud/AI/ML revision](CLOUD_AI_ML_AUDIT.md) replaces 47 items with 50 conceptual questions. The [network supplement](NETWORK_SERVICES_AUDIT.md) adds 29 protocol, API, blockchain and CDN questions, bringing networking to 229. All 200 existing network records and the 756 existing records outside these two subjects are unchanged.
+The current bank contains **1,037 questions across 11 subjects**. The [cloud/AI/ML revision](CLOUD_AI_ML_AUDIT.md) replaces 47 items with 50 conceptual questions. The [network supplement](NETWORK_SERVICES_AUDIT.md) adds 31 protocol, API, blockchain, CDN and SSL/TLS questions, bringing networking to 231. All 200 existing network records and the 756 existing records outside these two subjects are unchanged.
 
 The earlier cross-subject review began with 1,150 questions and produced an 816-item bank: 680 retained and 136 additions, with 470 retirements and 163 retained items corrected or clarified. Those figures describe that earlier release. The current ledger contains 1,105 retirements across the revisions, including seventeen IDs added after the original baseline.
 
@@ -24,7 +24,7 @@ Bank SO IT covers foundational bank specialist IT knowledge. The initial exam-al
 
 | Subject | Questions |
 |---|---:|
-| Networks & Cybersecurity | 229 |
+| Networks & Cybersecurity | 231 |
 | DBMS & SQL | 200 |
 | Operating Systems | 100 |
 | Data Structures & Algorithms | 150 |
@@ -35,13 +35,13 @@ Bank SO IT covers foundational bank specialist IT knowledge. The initial exam-al
 | Programming & OOP | 60 |
 | Computer Fundamentals & Architecture | 33 |
 | Web Technology | 20 |
-| **Total** | **1,035** |
+| **Total** | **1,037** |
 
 The new areas cover C/C++/Java/Python fundamentals, OOP, exceptions, short Python outputs, CPU/registers/buses, representation and logic, memory hierarchy, HTML/CSS/JavaScript/DOM, HTTP, origins, JSON and XML. The app's Quick revision page provides searchable answer/explanation cards and a subject coverage selector. These are the mapped core areas of the selected IT preparation outline, not a guarantee of every possible future question.
 
 ## Evidence for every item
 
-- [question-audit.csv](question-audit.csv): all 1,035 shipped stems, five options, selected answers, explanations, references, review decisions and reviewed hashes.
+- [question-audit.csv](question-audit.csv): all 1,037 shipped stems, five options, selected answers, explanations, references, review decisions and reviewed hashes.
 - [retired-question-audit.csv](retired-question-audit.csv): all 1,105 retired IDs, topics and reasons, linked to the previous production commit.
 - [baseline-answer-checks.json](baseline-answer-checks.json): independently checked all 485 computed answers in the previous production bank: 305 numerical/trace, 150 SQL and 30 Bash answers.
 - [quality-checks.json](quality-checks.json): 124 checks in the current bank: 25 DSA calculations/traces, ten OS scheduling/safety/memory/replacement/disk results, 32 SQL executions, six relational-algebra evaluations, ten normalization/tree/RAID results, ten subnet results, 17 executed Linux/Bash examples, 10 Python outputs and four further calculations.

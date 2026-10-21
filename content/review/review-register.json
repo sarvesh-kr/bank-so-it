@@ -1037,7 +1037,9 @@
     "programming-057": "7224a31ae00737b07fd4c92f1d96af0e4916c279fb4a72df01c9f03f84905d88",
     "programming-058": "a20166e69c9db0db4cc4e4d46505be9f2a58da3fd18faa67857f62304c2c4e8a",
     "programming-059": "6f569f25e142ca9cad3d6e2aa4c246f07916a02eede4627de36aa38b713f5f30",
-    "programming-060": "62afc7b1f2ecb176f0dd36d190dfdbaa929194d7570ebf073f40ab5225d23417"
+    "programming-060": "62afc7b1f2ecb176f0dd36d190dfdbaa929194d7570ebf073f40ab5225d23417",
+    "network-r2-230": "5abf3f832eee4a4292158ffe711eea11e5a7e15a4839397055cb1d9150dafb3d",
+    "network-r2-231": "348195dbf120ad7a82033f98c9e0ebe2e9308504ac8fb207085848c137faf8fc"
   },
   "reviewedOnById": {
     "network-r2-001": "2026-10-20",
@@ -1893,7 +1895,9 @@
     "network-r2-228": "2026-10-21",
     "network-r2-223": "2026-10-21",
     "network-r2-219": "2026-10-21",
-    "network-r2-217": "2026-10-21"
+    "network-r2-217": "2026-10-21",
+    "network-r2-230": "2026-10-21",
+    "network-r2-231": "2026-10-21"
   },
-  "topicRevision": "Network R2: 200 items reviewed against the user-provided topic map; 10 independent subnet calculations and IANA port evidence. DBMS R2: 200 user-scoped items reviewed; 32 SQL executions, six algebra evaluations and ten normalization/tree/RAID checks. OS R2: 100 user-scoped items reviewed; ten independently checked scheduling, safety, memory, replacement and disk examples. DSA R2: 150 user-scoped questions reviewed; 25 independently checked short calculations and algorithm traces. Linux R2: 75 user-scoped command, permission and Bash questions reviewed; 17 examples executed in isolated working directories. Warehousing/mining R2: 50 conceptual user-scoped questions reviewed; no numerical exercises. Cloud/AI/ML R2: 50 conceptual user-scoped questions reviewed against foundational cloud, ML and governance documentation; no numerical exercises. Network supplement: 29 conceptual questions added for protocol functions/records/secure variants, APIs, blockchain and CDN; original 200 records unchanged."
+  "topicRevision": "Network R2: 200 items reviewed against the user-provided topic map; 10 independent subnet calculations and IANA port evidence. DBMS R2: 200 user-scoped items reviewed; 32 SQL executions, six algebra evaluations and ten normalization/tree/RAID checks. OS R2: 100 user-scoped items reviewed; ten independently checked scheduling, safety, memory, replacement and disk examples. DSA R2: 150 user-scoped questions reviewed; 25 independently checked short calculations and algorithm traces. Linux R2: 75 user-scoped command, permission and Bash questions reviewed; 17 examples executed in isolated working directories. Warehousing/mining R2: 50 conceptual user-scoped questions reviewed; no numerical exercises. Cloud/AI/ML R2: 50 conceptual user-scoped questions reviewed against foundational cloud, ML and governance documentation; no numerical exercises. Network supplement: 31 conceptual questions added for protocol functions/records/secure variants, APIs, blockchain, CDN and SSL/TLS; original 200 records unchanged."
 }

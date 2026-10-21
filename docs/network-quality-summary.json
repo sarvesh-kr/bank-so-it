@@ -1,5 +1,5 @@
 {
-  "questions": 229,
+  "questions": 231,
   "coverage": {
     "OSI & TCP/IP models": 16,
     "Network devices & media": 14,
@@ -9,7 +9,7 @@
     "TCP, UDP & communication": 10,
     "Services & ports": 34,
     "Bandwidth & network fundamentals": 8,
-    "TLS, cryptography & encoding": 21,
+    "TLS, cryptography & encoding": 23,
     "Firewalls & protective controls": 14,
     "Common attacks": 20,
     "Malware & virus types": 16,

@@ -1,6 +1,6 @@
 {
   "retrieved_on": "2026-10-21",
-  "used_reference_entries": 19,
+  "used_reference_entries": 21,
   "sources": {
     "cdn": {
       "title": "MDN: content delivery networks",
@@ -134,7 +134,20 @@
       "final_url": "https://www.rfc-editor.org/rfc/rfc8314.html",
       "bytes": 84323,
       "sha256": "eb03b79c959c3144671bbff3e67b1531d5701cc4276ffa48471de2e7fa379610"
+    },
+    "ssl-history": {
+      "title": "IETF RFC 6101: historical SSL 3.0 protocol terminology",
+      "url": "https://www.rfc-editor.org/rfc/rfc6101.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc6101.html",
+      "bytes": 170132,
+      "sha256": "a1535f4ea5b946cdef5945d5d97b81281730c831c013ecf2716202be8a774596"
+    },
+    "tls": {
+      "title": "IETF RFC 8446: TLS 1.3 traffic protection and key schedule",
+      "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+      "bytes": 419115,
+      "sha256": "370ed8c0e6da22c8b8f4ad0230b6c12e6ec8ae807eca034220070828f25684fb"
     }
-  },
-  "port_evidence": "The pre-existing IANA snapshot already includes TCP993 imaps and TCP995 pop3s; these associations now also check question211."
+  }
 }

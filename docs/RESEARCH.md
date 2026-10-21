@@ -8,7 +8,7 @@ The [2024 candidate-recalled Scale II analysis](https://www.bankersadda.com/ibps
 
 The [official 2025 notice](https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV_Final_AD_1.9.25.pdf) is indexed with the Specialist Cadre professional-knowledge examination table. Attempts to retrieve its full PDF failed. The current official notice/handout must govern actual timing, marking and any changes. The app offers a 40-question, 30-minute, +1/−0.25 revision preset. Equal subject sampling gives broad coverage rather than predicted IBPS weighting.
 
-[CONTENT_AUDIT.md](CONTENT_AUDIT.md) records the 1,035-question coverage map, corrections, retirement decisions, primary references and review evidence. Every shipped item has a matching reviewed content hash; changes require a renewed content review. The original fixed per-subject quotas were superseded by the user's request for accurate, efficient final revision.
+[CONTENT_AUDIT.md](CONTENT_AUDIT.md) records the 1,037-question coverage map, corrections, retirement decisions, primary references and review evidence. Every shipped item has a matching reviewed content hash; changes require a renewed content review. The original fixed per-subject quotas were superseded by the user's request for accurate, efficient final revision.
 
 The [network R2 revision](NETWORK_AUDIT.md) follows the user’s explicit topic list rather than a claimed prediction of previous-paper frequencies. It supplies 200 focused items with ten short subnet calculations. The other 664 questions are unchanged in that revision.
 
@@ -24,4 +24,4 @@ The [warehousing/mining R2 revision](DW_DM_AUDIT.md) follows the user’s reques
 
 The [cloud/AI/ML R2 revision](CLOUD_AI_ML_AUDIT.md) supplies 50 user-scoped conceptual questions, split equally between cloud and AI/ML, without numericals. It covers models, virtualization, operations/security, bank outsourcing controls, learning foundations, core algorithms, evaluation and responsible use. The other 956 records are unchanged. References include NIST, RBI, official platform documentation, Google/scikit-learn and established technical publishers. No exact exam frequency or authenticated past-paper provenance is asserted.
 
-The [network coverage supplement](NETWORK_SERVICES_AUDIT.md) adds 29 questions following the user’s DNS/DHCP/email/SSH/FTP/HTTP/API/blockchain/CDN checklist. The existing 200 networking records are preserved. Primary references include IETF, NIST, Fielding, OWASP and OpenSSH, with MDN technical definitions. There are no additional calculations or inferred paper frequencies.
+The [network coverage supplement](NETWORK_SERVICES_AUDIT.md) adds 31 questions following the user’s DNS/DHCP/email/SSH/FTP/HTTP/API/blockchain/CDN/SSL/TLS checklist. The existing 200 networking records are preserved. Primary references include IETF, NIST, Fielding, OWASP and OpenSSH, with MDN technical definitions. There are no additional calculations or inferred paper frequencies.
