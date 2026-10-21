@@ -1,0 +1,126 @@
+{
+  "retrieved_on": "2026-10-21",
+  "used_reference_entries": 17,
+  "sources": {
+    "association": {
+      "title": "Oracle Data Mining Concepts: association rules, support, confidence and lift",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/dmcon/association.html",
+      "final_url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/dmcon/association.html",
+      "bytes": 16599,
+      "sha256": "1eecdbf9c2dc4465a87564174282051e2be5f2e6f5f0ece92e3fa2706e90973f"
+    },
+    "clustering": {
+      "title": "Scikit-learn user guide: clustering",
+      "url": "https://scikit-learn.org/stable/modules/clustering.html",
+      "final_url": "https://scikit-learn.org/stable/modules/clustering.html",
+      "bytes": 245702,
+      "sha256": "3c8d5481d8092e86fe47ff269e134510dedd006360aeaf30b9b982c91a01de1c"
+    },
+    "decision-tree": {
+      "title": "Oracle Data Mining: decision trees",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/dmcon/decision-tree.html",
+      "final_url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/dmcon/decision-tree.html",
+      "bytes": 28098,
+      "sha256": "e50a81075dcc62eb9fb2241333579868b721910795f60ef0d6fa7150779ca331"
+    },
+    "etl": {
+      "title": "Oracle Data Warehousing Guide: overview of extraction, transformation and loading",
+      "url": "https://docs.oracle.com/cd/E11882_01/server.112/e25554/ettover.htm",
+      "final_url": "https://docs.oracle.com/cd/E11882_01/server.112/e25554/ettover.htm",
+      "bytes": 13903,
+      "sha256": "adfdf1803869586664e51f3bc6ebc3f008493e996c132c7a38790d936a0dc5de"
+    },
+    "han-frequent": {
+      "title": "Han, Kamber and Pei: Mining Frequent Patterns and Associations",
+      "url": "https://hanj.cs.illinois.edu/bk3/bk3_slides/06FPBasic.ppt",
+      "final_url": "https://hanj.cs.illinois.edu/bk3/bk3_slides/06FPBasic.ppt",
+      "bytes": 1571840,
+      "sha256": "72a49b04b9dcb528fb0708245e52de596b59e65691fc2083f71f56020293e469"
+    },
+    "han-intro": {
+      "title": "Han, Kamber and Pei: KDD and data mining introduction",
+      "url": "https://hanj.cs.illinois.edu/bk3/bk3_slides/01Intro.ppt",
+      "final_url": "https://hanj.cs.illinois.edu/bk3/bk3_slides/01Intro.ppt",
+      "bytes": 327168,
+      "sha256": "4ebc6cca3bc1c2a23b0aa8533ffa8cc398f6223fe6505b3f933f671cfa7f8e53"
+    },
+    "han-olap": {
+      "title": "Han, Kamber and Pei: Data Warehousing and OLAP",
+      "url": "https://hanj.cs.illinois.edu/bk3/bk3_slides/04OLAP.ppt",
+      "final_url": "https://hanj.cs.illinois.edu/bk3/bk3_slides/04OLAP.ppt",
+      "bytes": 678912,
+      "sha256": "066d5d1b814f52b28b5f8fac78e86b6ff69a2213147f17fdcc6cce3f87123f04"
+    },
+    "informatica": {
+      "title": "Informatica: PowerCenter data integration",
+      "url": "https://docs.informatica.com/data-integration/powercenter/10-5-9/getting-started/product-overview.html",
+      "final_url": "https://docs.informatica.com/data-integration/powercenter/10-5-9/getting-started/product-overview.html",
+      "bytes": 213439,
+      "sha256": "5f946d360a4127509c4144f629f93ca4f55144e09405d76dc883d5c47ed58060"
+    },
+    "kdd": {
+      "title": "Oracle Data Mining: basic concepts",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/dmcon/data-mining-basics.html",
+      "final_url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/dmcon/data-mining-basics.html",
+      "bytes": 73262,
+      "sha256": "b438738573a36742a45d958f7fdf58f5ccaabe9f3d0ffbcb58c0e598b8cbbacb"
+    },
+    "kimball": {
+      "title": "Kimball Group: dimensional modeling techniques",
+      "url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+      "final_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+      "bytes": 124332,
+      "sha256": "b0cc00922f8cd3bcf44dc24d4e9b834300a8b8aa76dfe085b3847fa5a099e349"
+    },
+    "kimball-pdf": {
+      "title": "Kimball Group: Dimensional Modeling Techniques reference",
+      "url": "https://www.kimballgroup.com/wp-content/uploads/2013/08/2013.09-Kimball-Dimensional-Modeling-Techniques11.pdf",
+      "final_url": "https://www.kimballgroup.com/wp-content/uploads/2013/08/2013.09-Kimball-Dimensional-Modeling-Techniques11.pdf",
+      "bytes": 451074,
+      "sha256": "b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936"
+    },
+    "mining": {
+      "title": "Oracle Data Mining Concepts: mining functions and algorithms",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/dmcon/mining-functions.html",
+      "final_url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/dmcon/mining-functions.html",
+      "bytes": 9633,
+      "sha256": "eac4ad34468394ddaab3ac9747866f2f62281745db56c9236cb9964a0516bee5"
+    },
+    "olap": {
+      "title": "Microsoft Learn: online analytical processing, cubes and storage types",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/relational-data/online-analytical-processing",
+      "final_url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/relational-data/online-analytical-processing",
+      "bytes": 66884,
+      "sha256": "73068fdf61c443480a8c5cf0026652653c197f32d05fee231c4497b82b811fe8"
+    },
+    "schemas": {
+      "title": "Oracle Database Data Warehousing Guide: schemas and dimensional design",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/dwhsg/data-warehouse-logical-design.html",
+      "final_url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/dwhsg/data-warehouse-logical-design.html",
+      "bytes": 70363,
+      "sha256": "21384db9f79500271a7b41eb3f446fb606ca2a1a7af00c45da8a9281e95f125d"
+    },
+    "sklearn": {
+      "title": "Scikit-learn user guide: preprocessing data",
+      "url": "https://scikit-learn.org/stable/modules/preprocessing.html",
+      "final_url": "https://scikit-learn.org/stable/modules/preprocessing.html",
+      "bytes": 205574,
+      "sha256": "efe09a2fc1ff719716078e77cebc0620abe3a1d899f51ee0c90eb60660915c89"
+    },
+    "warehouse": {
+      "title": "Oracle Database Data Warehousing Guide: introduction and warehouse characteristics",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/dwhsg/introduction-data-warehouse-concepts.html",
+      "final_url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/dwhsg/introduction-data-warehouse-concepts.html",
+      "bytes": 35802,
+      "sha256": "0739fb591c5925bbc51826b0102e672c87e7180fd76cab34b253560a140f3fb8"
+    },
+    "weka": {
+      "title": "University of Waikato: Weka data mining software",
+      "url": "https://ml.cms.waikato.ac.nz/weka/",
+      "final_url": "https://ml.cms.waikato.ac.nz/weka/",
+      "bytes": 3518,
+      "sha256": "7e028d94f2474b9cbc0968b757a8ac8a9591b84d3417e111c741c3d826da3770"
+    }
+  },
+  "review_method": "Relevant HTML text, author-hosted PowerPoint text records and the Kimball PDF were extracted and inspected; source retrieval alone is not conceptual certification."
+}

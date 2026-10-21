@@ -1,7 +1,7 @@
 {
   "passed": true,
   "steps": [
-    "Home: 1005 questions and eleven subjects",
+    "Home: 1003 questions and eleven subjects",
     "Practice: correct, wrong, unanswered, locked feedback, bookmark, flag, resume, score",
     "Timed test: hidden answers, preset, automatic submission on deadline",
     "Editor: add subject and question, persists in the bank",

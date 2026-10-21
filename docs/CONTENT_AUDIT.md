@@ -1,8 +1,8 @@
 # Exam-focused quality audit — 21 October 2026
 
-The current bank contains **1,005 questions across 11 subjects**. The [Linux R2 audit](LINUX_AUDIT.md) replaces 86 older Linux items with **75 newly curated questions** following the user’s topic map. The other 930 records are unchanged, including the 150-question [DSA](DSA_AUDIT.md), 100-question [OS](OS_AUDIT.md), 200-question [DBMS](DBMS_AUDIT.md) and 200-question [network](NETWORK_AUDIT.md) revisions.
+The current bank contains **1,003 questions across 11 subjects**. The [warehousing/mining R2 audit](DW_DM_AUDIT.md) replaces 52 previous items with **50 newly curated conceptual questions**. The other 953 records are unchanged, including the 75-question [Linux](LINUX_AUDIT.md), 150-question [DSA](DSA_AUDIT.md), 100-question [OS](OS_AUDIT.md), 200-question [DBMS](DBMS_AUDIT.md) and 200-question [network](NETWORK_AUDIT.md) revisions.
 
-The earlier cross-subject review began with 1,150 questions and produced an 816-item bank: 680 retained and 136 additions, with 470 retirements and 163 retained items corrected or clarified. Those figures describe that earlier release. The current ledger contains 1,006 retirements across the revisions, including seventeen IDs added after the original baseline.
+The earlier cross-subject review began with 1,150 questions and produced an 816-item bank: 680 retained and 136 additions, with 470 retirements and 163 retained items corrected or clarified. Those figures describe that earlier release. The current ledger contains 1,058 retirements across the revisions, including seventeen IDs added after the original baseline.
 
 ## Review criteria
 
@@ -29,22 +29,22 @@ Bank SO IT covers foundational bank specialist IT knowledge. The initial exam-al
 | Operating Systems | 100 |
 | Data Structures & Algorithms | 150 |
 | Linux & Shell | 75 |
-| Warehousing & Mining | 52 |
+| Warehousing & Mining | 50 |
 | Cloud, AI & ML Basics | 47 |
 | Software Engineering & Banking IT | 68 |
 | Programming & OOP | 60 |
 | Computer Fundamentals & Architecture | 33 |
 | Web Technology | 20 |
-| **Total** | **1,005** |
+| **Total** | **1,003** |
 
 The new areas cover C/C++/Java/Python fundamentals, OOP, exceptions, short Python outputs, CPU/registers/buses, representation and logic, memory hierarchy, HTML/CSS/JavaScript/DOM, HTTP, origins, JSON and XML. The app's Quick revision page provides searchable answer/explanation cards and a subject coverage selector. These are the mapped core areas of the selected IT preparation outline, not a guarantee of every possible future question.
 
 ## Evidence for every item
 
-- [question-audit.csv](question-audit.csv): all 1,005 shipped stems, five options, selected answers, explanations, references, review decisions and reviewed hashes.
-- [retired-question-audit.csv](retired-question-audit.csv): all 1,006 retired IDs, topics and reasons, linked to the previous production commit.
+- [question-audit.csv](question-audit.csv): all 1,003 shipped stems, five options, selected answers, explanations, references, review decisions and reviewed hashes.
+- [retired-question-audit.csv](retired-question-audit.csv): all 1,058 retired IDs, topics and reasons, linked to the previous production commit.
 - [baseline-answer-checks.json](baseline-answer-checks.json): independently checked all 485 computed answers in the previous production bank: 305 numerical/trace, 150 SQL and 30 Bash answers.
-- [quality-checks.json](quality-checks.json): 127 checks in the current bank: 25 DSA calculations/traces, ten OS scheduling/safety/memory/replacement/disk results, 32 SQL executions, six relational-algebra evaluations, ten normalization/tree/RAID results, ten subnet results, 17 executed Linux/Bash examples, 10 Python outputs and seven further calculations.
+- [quality-checks.json](quality-checks.json): 125 checks in the current bank: 25 DSA calculations/traces, ten OS scheduling/safety/memory/replacement/disk results, 32 SQL executions, six relational-algebra evaluations, ten normalization/tree/RAID results, ten subnet results, 17 executed Linux/Bash examples, 10 Python outputs and five further calculations.
 - [quality-audit-summary.json](quality-audit-summary.json): counts and dispositions.
 - [review-register.json](../content/review/review-register.json): exact content hashes approved in this technical review. CI rejects an item changed after review or missing from the register.
 

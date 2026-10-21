@@ -158,6 +158,8 @@ def check():
     dsa_proofs=check_dsa(bank)
     from check_linux import check_linux
     linux_proofs=check_linux(bank)
+    from check_dw_dm import check_dw_dm
+    check_dw_dm(bank)
     decisions=json.loads((ROOT/'content/review/retirements.json').read_text())
     baseline=json.loads((ROOT/'content/review/baseline-manifest.json').read_text())
     current={q['id'] for q in bank['questions']}
@@ -190,7 +192,7 @@ def check():
     assert not lint,lint
     # Numerical facts in otherwise conceptual items are also checked explicitly.
     by_id={q['id']:q for q in bank['questions']}
-    facts={'architecture-004':str(int('1010',2)),'architecture-005':format(13,'b'),'architecture-022':str(2**16),'architecture-023':str(64//8),'dw_dm-033':str(4*3*2),'dw_dm-064':f'{30/40*100:g}%','cloud_ai_ml-032':f'{30/(30+10)*100:g}%'}
+    facts={'architecture-004':str(int('1010',2)),'architecture-005':format(13,'b'),'architecture-022':str(2**16),'architecture-023':str(64//8),'cloud_ai_ml-032':f'{30/(30+10)*100:g}%'}
     for id,value in facts.items():
         q=by_id[id];assert q['options'][q['answer']]==value,(id,value)
         proofs[id]={'method':'independent conceptual calculation','independent_result':value}
