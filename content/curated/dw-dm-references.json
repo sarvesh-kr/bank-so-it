@@ -1,0 +1,70 @@
+{
+  "warehouse": [
+    "Oracle Database Data Warehousing Guide: introduction and warehouse characteristics",
+    "https://docs.oracle.com/en/database/oracle/oracle-database/19/dwhsg/introduction-data-warehouse-concepts.html"
+  ],
+  "schemas": [
+    "Oracle Database Data Warehousing Guide: schemas and dimensional design",
+    "https://docs.oracle.com/en/database/oracle/oracle-database/19/dwhsg/data-warehouse-logical-design.html"
+  ],
+  "etl": [
+    "Oracle Data Warehousing Guide: overview of extraction, transformation and loading",
+    "https://docs.oracle.com/cd/E11882_01/server.112/e25554/ettover.htm"
+  ],
+  "olap": [
+    "Microsoft Learn: online analytical processing, cubes and storage types",
+    "https://learn.microsoft.com/en-us/azure/architecture/data-guide/relational-data/online-analytical-processing"
+  ],
+  "mining": [
+    "Oracle Data Mining Concepts: mining functions and algorithms",
+    "https://docs.oracle.com/en/database/oracle/oracle-database/19/dmcon/mining-functions.html"
+  ],
+  "association": [
+    "Oracle Data Mining Concepts: association rules, support, confidence and lift",
+    "https://docs.oracle.com/en/database/oracle/oracle-database/19/dmcon/association.html"
+  ],
+  "kimball": [
+    "Kimball Group: dimensional modeling techniques",
+    "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/"
+  ],
+  "weka": [
+    "University of Waikato: Weka data mining software",
+    "https://ml.cms.waikato.ac.nz/weka/"
+  ],
+  "informatica": [
+    "Informatica: PowerCenter data integration",
+    "https://docs.informatica.com/data-integration/powercenter/10-5-9/getting-started/product-overview.html"
+  ],
+  "sklearn": [
+    "Scikit-learn user guide: preprocessing data",
+    "https://scikit-learn.org/stable/modules/preprocessing.html"
+  ],
+  "clustering": [
+    "Scikit-learn user guide: clustering",
+    "https://scikit-learn.org/stable/modules/clustering.html"
+  ],
+  "decision-tree": [
+    "Oracle Data Mining: decision trees",
+    "https://docs.oracle.com/en/database/oracle/oracle-database/19/dmcon/decision-tree.html"
+  ],
+  "kdd": [
+    "Oracle Data Mining: basic concepts",
+    "https://docs.oracle.com/en/database/oracle/oracle-database/19/dmcon/data-mining-basics.html"
+  ],
+  "kimball-pdf": [
+    "Kimball Group: Dimensional Modeling Techniques reference",
+    "https://www.kimballgroup.com/wp-content/uploads/2013/08/2013.09-Kimball-Dimensional-Modeling-Techniques11.pdf"
+  ],
+  "han-intro": [
+    "Han, Kamber and Pei: KDD and data mining introduction",
+    "https://hanj.cs.illinois.edu/bk3/bk3_slides/01Intro.ppt"
+  ],
+  "han-olap": [
+    "Han, Kamber and Pei: Data Warehousing and OLAP",
+    "https://hanj.cs.illinois.edu/bk3/bk3_slides/04OLAP.ppt"
+  ],
+  "han-frequent": [
+    "Han, Kamber and Pei: Mining Frequent Patterns and Associations",
+    "https://hanj.cs.illinois.edu/bk3/bk3_slides/06FPBasic.ppt"
+  ]
+}

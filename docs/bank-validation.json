@@ -1,21 +1,21 @@
 {
-  "total": 1005,
+  "total": 1003,
   "subjects": {
     "network": 200,
     "dbms": 200,
     "os": 100,
     "dsa": 150,
     "linux": 75,
-    "dw_dm": 52,
+    "dw_dm": 50,
     "cloud_ai_ml": 47,
     "se_bank_it": 68,
     "programming": 60,
     "architecture": 33,
     "web": 20
   },
-  "retired": 1006,
+  "retired": 1058,
   "kinds": {
-    "concept": 885,
+    "concept": 883,
     "worked-drill": 10,
     "worked-dbms": 10,
     "checked-algebra": 6,
@@ -26,8 +26,8 @@
     "executed-python": 10
   },
   "difficulty": {
-    "Easy": 657,
-    "Moderate": 348
+    "Easy": 669,
+    "Moderate": 334
   },
   "checks": [
     "Unique IDs and stems",

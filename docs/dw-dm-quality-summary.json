@@ -1,0 +1,13 @@
+{
+  "questions": 50,
+  "coverage": {
+    "Warehouse foundations & types": 8,
+    "Dimensional models & schemas": 9,
+    "ETL, metadata & data quality": 6,
+    "OLAP cubes, operations & types": 11,
+    "Data mining concepts & techniques": 14,
+    "Common tools & roles": 2
+  },
+  "numerical_exercises": 0,
+  "review": "Every stem, five choices, key and explanation technically reviewed against attached sources; structural checks do not certify conceptual accuracy."
+}
