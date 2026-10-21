@@ -1,0 +1,231 @@
+{
+  "retrieved_on": "2026-10-21",
+  "used_reference_entries": 28,
+  "sources": {
+    "bits": {
+      "title": "MIT Computation Structures: information and binary representation",
+      "url": "https://computationstructures.org/notes/information/notes.html",
+      "final_url": "https://computationstructures.org/notes/information/notes.html",
+      "bytes": 62358,
+      "sha256": "3048360d196895d1fa19782e959e724246f6a08452783341c9eae347361cdea3",
+      "mime": "text/html"
+    },
+    "boot": {
+      "title": "Microsoft: firmware, boot manager and OS loader stages",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/windows-boot-issues-troubleshooting",
+      "final_url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/windows-boot-issues-troubleshooting",
+      "bytes": 69752,
+      "sha256": "99f797b77af477d17a5d32cf84d614d0d0d8e196654f81f6b7290711c756c515",
+      "mime": "text/html"
+    },
+    "cache": {
+      "title": "MIT Computation Structures: caches and memory technologies",
+      "url": "https://computationstructures.org/lectures/caches/caches.html",
+      "final_url": "https://computationstructures.org/lectures/caches/caches.html",
+      "bytes": 70171,
+      "sha256": "5ec5e23fa0700d1d5d42707c18663c97de2d6b5fe74b87d89d1c75df09a92c31",
+      "mime": "text/html"
+    },
+    "concurrency-bugs": {
+      "title": "OSTEP: concurrency bugs and deadlock prevention",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf",
+      "bytes": 130552,
+      "sha256": "dc8c3a7b64ff35fe626838a877cc1759d33bce6104ab30a0221268b3ee9859d4",
+      "mime": "application/pdf"
+    },
+    "cpu": {
+      "title": "OSTEP: limited direct execution, protection, system calls and interrupts",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf",
+      "bytes": 134592,
+      "sha256": "ad9c3ae46f0d695744008a0faa1dd104ebf033eb0d5a0e14411146b2d53d9054",
+      "mime": "application/pdf"
+    },
+    "cpu-basics": {
+      "title": "University of York: computer architecture and processor registers",
+      "url": "https://online.york.ac.uk/resources/what-are-the-three-categories-of-computer-architecture/",
+      "final_url": "https://online.york.ac.uk/resources/what-are-the-three-categories-of-computer-architecture/",
+      "bytes": 288885,
+      "sha256": "d6c4798adfe7647c5857fb3526ef1a24c86e7ddfe2e5239a107e6c8e53fdaa99",
+      "mime": "text/html"
+    },
+    "deadlocks": {
+      "title": "University of Illinois Chicago: deadlocks, safety and Banker's algorithm",
+      "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/7_Deadlocks.html",
+      "final_url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/7_Deadlocks.html",
+      "bytes": 31893,
+      "sha256": "37e352abaa605ae1573619869d17f5779b7734a536860313509e41f38d7c7917",
+      "mime": "text/html"
+    },
+    "demand": {
+      "title": "OSTEP: beyond physical memory, mechanisms",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf",
+      "bytes": 107756,
+      "sha256": "2d59f70e76be4e9a78eec457b8e20e9941c0c6ec91bb158297695900415459d3",
+      "mime": "application/pdf"
+    },
+    "free-space": {
+      "title": "OSTEP: free-space management, fit policies and fragmentation",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf",
+      "bytes": 135110,
+      "sha256": "e843d8451f4c030ae2a7b1af0e5fb493bcfbfa9e0bd44681bda030019d974e2e",
+      "mime": "application/pdf"
+    },
+    "io": {
+      "title": "OSTEP: I/O devices, interrupts and DMA",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
+      "bytes": 119742,
+      "sha256": "08546bc068699f5a8be8df72417bd2b4e282b08f8c2a1fe056ca09bfdf0533d5",
+      "mime": "application/pdf"
+    },
+    "isa": {
+      "title": "MIT Computation Structures: instruction-set architecture",
+      "url": "https://computationstructures.org/lectures/isa/isa.html",
+      "final_url": "https://computationstructures.org/lectures/isa/isa.html",
+      "bytes": 61221,
+      "sha256": "44b002b49857f9291f26cd3bf4296bca340a7aca96191dea56f720cdff768844",
+      "mime": "text/html"
+    },
+    "locks": {
+      "title": "OSTEP: locks, mutual exclusion and spinning",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf",
+      "bytes": 171902,
+      "sha256": "349b3b3251a178e8bd725dc710cd2b9a4d30f34a7491390bc7c1b53c015d1515",
+      "mime": "application/pdf"
+    },
+    "logic": {
+      "title": "MIT Computation Structures: combinational logic",
+      "url": "https://computationstructures.org/notes/combinational_logic/notes.html",
+      "final_url": "https://computationstructures.org/notes/combinational_logic/notes.html",
+      "bytes": 58850,
+      "sha256": "613a81f17dc77d53f438d3b01dd9db0fc73c9e226cefdfa48afa022fbf8feda6",
+      "mime": "text/html"
+    },
+    "paging": {
+      "title": "OSTEP: paging, page tables and internal fragmentation",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf",
+      "bytes": 117219,
+      "sha256": "0307d990a5638c37d59fb8ca67de75a0afc439461239fa660a7c948dce3bc6d5",
+      "mime": "application/pdf"
+    },
+    "pipeline": {
+      "title": "MIT Computation Structures: pipelining the Beta",
+      "url": "https://computationstructures.org/lectures/pbeta/pbeta.html",
+      "final_url": "https://computationstructures.org/lectures/pbeta/pbeta.html",
+      "bytes": 58650,
+      "sha256": "66293f909e530eddbba0fc94b3bee1e862116ccf2dfb9f72438a034d4d71cc98",
+      "mime": "text/html"
+    },
+    "prefixes": {
+      "title": "NIST: binary prefixes",
+      "url": "https://physics.nist.gov/cuu/Units/binary.html",
+      "final_url": "https://physics.nist.gov/cuu/Units/binary.html",
+      "bytes": 13892,
+      "sha256": "c2566597b7bac960dbf97e5f073cab0b42c1611625b11c61ca1cb856ecf77537",
+      "mime": "text/html"
+    },
+    "process-notes": {
+      "title": "University of Illinois Chicago: processes, scheduling and IPC",
+      "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/3_Processes.html",
+      "final_url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/3_Processes.html",
+      "bytes": 53395,
+      "sha256": "6dcefe9e0d17a25a3e693465a86168108d15157cff2d1052c16b58e20ea83157",
+      "mime": "text/html"
+    },
+    "processes": {
+      "title": "OSTEP: processes and process states",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf",
+      "bytes": 106900,
+      "sha256": "d4c7a5200fa104f6d5af7d845dc65b99b17ea55fb1fed6a151a7c4d1353bd6e8",
+      "mime": "application/pdf"
+    },
+    "replacement": {
+      "title": "OSTEP: beyond physical memory, policies",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf",
+      "bytes": 199152,
+      "sha256": "a6f13af44cae11965876f652e836a1a40603be3e8dfd5336568b69a6007ca4c3",
+      "mime": "application/pdf"
+    },
+    "scheduling": {
+      "title": "OSTEP: CPU scheduling, turnaround, response, SJF and Round Robin",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf",
+      "bytes": 118326,
+      "sha256": "0912b1a34977a70704b921ecfdf0dd65300e038a3eb4e5e57b2d9c38f66b63c3",
+      "mime": "application/pdf"
+    },
+    "scheduling-notes": {
+      "title": "University of Illinois Chicago: CPU scheduling and dispatcher",
+      "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/5_CPU_Scheduling.html",
+      "final_url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/5_CPU_Scheduling.html",
+      "bytes": 46804,
+      "sha256": "913bcf2bcb6691a1de7df4e74adeb5761f9b5fe10ab5dab5f7292a3234b0c32f",
+      "mime": "text/html"
+    },
+    "segmentation": {
+      "title": "OSTEP: segmentation",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf",
+      "bytes": 106854,
+      "sha256": "f9511d43148cc005e9c2d992deff04c16eecbee7269e7568e4b50ab49ddbb2e8",
+      "mime": "application/pdf"
+    },
+    "semaphores": {
+      "title": "OSTEP: semaphores and bounded-buffer synchronization",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf",
+      "bytes": 150277,
+      "sha256": "991a6a2edbd604c6e2c9b52c9505ff63db92fd2bca4c294a252bdfc0dbed38fb",
+      "mime": "application/pdf"
+    },
+    "sequential": {
+      "title": "MIT Computation Structures: sequential logic",
+      "url": "https://computationstructures.org/notes/sequential_logic/notes.html",
+      "final_url": "https://computationstructures.org/notes/sequential_logic/notes.html",
+      "bytes": 60375,
+      "sha256": "d418272692c9e0c8543d12dd6b9e627693c276e804d3163fbc22844de44c04e2",
+      "mime": "text/html"
+    },
+    "ssd": {
+      "title": "OSTEP: flash-based solid-state drives",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf",
+      "bytes": 200630,
+      "sha256": "e8de0c6036d75cfb175166c8701055f75c11b576d8283a101ce09bedaf80b223",
+      "mime": "application/pdf"
+    },
+    "threads": {
+      "title": "OSTEP: threads and concurrency",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf",
+      "bytes": 125231,
+      "sha256": "04eebf12233463d54c6b39352bbea644241b308312cabd568b24b9aa3b7e4d1e",
+      "mime": "application/pdf"
+    },
+    "tlb": {
+      "title": "OSTEP: translation lookaside buffers",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf",
+      "final_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf",
+      "bytes": 150670,
+      "sha256": "202953f283487b812a9a97c17f4a3cb3a9b3e80a300cc6467c3080ffb0be013e",
+      "mime": "application/pdf"
+    },
+    "unicode": {
+      "title": "Unicode Consortium: UTF-8 frequently asked questions",
+      "url": "https://www.unicode.org/faq/utf_bom.html",
+      "final_url": "https://www.unicode.org/faq/utf_bom.html",
+      "bytes": 67907,
+      "sha256": "46b8326b26c49a322d5e798f75843dde91a43daa7666b25d431be3d3c83b43d0",
+      "mime": "text/html"
+    }
+  },
+  "retrieval_notes": "Source sections inspected, including extracted OSTEP PDFs. Initial guessed MIT/NIST URLs returned404 and were replaced with retrieved official paths. UEFI specification retrieval returned403; the basic loader question uses Microsoft boot-stage documentation. Unused or failed candidates are not counted."
+}

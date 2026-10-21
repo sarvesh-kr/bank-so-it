@@ -166,6 +166,10 @@ def check():
     check_se_bank(bank)
     from check_programming import check_programming
     check_programming(bank)
+    from check_architecture import check_architecture
+    architecture_proofs=check_architecture(bank)
+    from check_web_topic import check_web_topic
+    web_proofs=check_web_topic(bank)
     decisions=json.loads((ROOT/'content/review/retirements.json').read_text())
     baseline=json.loads((ROOT/'content/review/baseline-manifest.json').read_text())
     current={q['id'] for q in bank['questions']}
@@ -174,7 +178,7 @@ def check():
     assert set(decisions)<=set(baseline)|set(extra)
     assert not current&set(decisions)
     assert len(current)==len(bank['questions'])
-    proofs={**dbms_proofs,**os_proofs,**dsa_proofs,**linux_proofs};lint=[]
+    proofs={**dbms_proofs,**os_proofs,**dsa_proofs,**linux_proofs,**architecture_proofs,**web_proofs};lint=[]
     for q in bank['questions']:
         assert len(q['options'])==len(set(q['options']))==5,q['id']
         assert q['references'] and all(r['url'].startswith('https://') and r['title'] for r in q['references'])
@@ -196,12 +200,6 @@ def check():
         if len(answer)>150 and len(answer)>2*max(wrong):lint.append(q['id']+': answer-length cue')
         assert q['explanation'].strip() and len(q['explanation'].split())<=90,q['id']
     assert not lint,lint
-    # Numerical facts in otherwise conceptual items are also checked explicitly.
-    by_id={q['id']:q for q in bank['questions']}
-    facts={'architecture-004':str(int('1010',2)),'architecture-005':format(13,'b'),'architecture-022':str(2**16),'architecture-023':str(64//8)}
-    for id,value in facts.items():
-        q=by_id[id];assert q['options'][q['answer']]==value,(id,value)
-        proofs[id]={'method':'independent conceptual calculation','independent_result':value}
     report={'passed':True,'questions':len(bank['questions']),'retired':len(decisions),'independent_answer_checks':len(proofs),'proofs':proofs,'lint':lint}
     (ROOT/'docs/quality-checks.json').write_text(json.dumps(report,indent=2)+'\n')
     return bank,report

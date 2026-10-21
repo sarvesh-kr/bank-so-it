@@ -1,0 +1,13 @@
+{
+  "questions": 25,
+  "coverage": {
+    "HTML, forms & CSS": 8,
+    "JavaScript & DOM": 5,
+    "HTTP & web services": 4,
+    "Browser security & sessions": 5,
+    "Data formats & browser storage": 3
+  },
+  "conceptual_questions": 24,
+  "json_syntax_checks": 1,
+  "review": "Every stem, five choices, answer and explanation reviewed against attached web standards and documentation; protocol/API coverage in Networks remains unchanged."
+}

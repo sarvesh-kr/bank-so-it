@@ -963,5 +963,376 @@
     "kind": "executed-python",
     "family": "python-output-815",
     "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "architecture-001": {
+    "subject": "architecture",
+    "topic": "Data representation",
+    "kind": "concept",
+    "family": "Data representation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-002": {
+    "subject": "architecture",
+    "topic": "Data representation",
+    "kind": "concept",
+    "family": "Data representation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-003": {
+    "subject": "architecture",
+    "topic": "Data representation",
+    "kind": "concept",
+    "family": "Data representation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-004": {
+    "subject": "architecture",
+    "topic": "Data representation",
+    "kind": "concept",
+    "family": "Data representation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-005": {
+    "subject": "architecture",
+    "topic": "Data representation",
+    "kind": "concept",
+    "family": "Data representation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-006": {
+    "subject": "architecture",
+    "topic": "Digital logic",
+    "kind": "concept",
+    "family": "Digital logic",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-007": {
+    "subject": "architecture",
+    "topic": "Digital logic",
+    "kind": "concept",
+    "family": "Digital logic",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-008": {
+    "subject": "architecture",
+    "topic": "Digital logic",
+    "kind": "concept",
+    "family": "Digital logic",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-009": {
+    "subject": "architecture",
+    "topic": "Digital logic",
+    "kind": "concept",
+    "family": "Digital logic",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-010": {
+    "subject": "architecture",
+    "topic": "Digital logic",
+    "kind": "concept",
+    "family": "Digital logic",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-011": {
+    "subject": "architecture",
+    "topic": "Digital logic",
+    "kind": "concept",
+    "family": "Digital logic",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-012": {
+    "subject": "architecture",
+    "topic": "Digital logic",
+    "kind": "concept",
+    "family": "Digital logic",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-013": {
+    "subject": "architecture",
+    "topic": "CPU organisation",
+    "kind": "concept",
+    "family": "CPU organisation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-014": {
+    "subject": "architecture",
+    "topic": "CPU organisation",
+    "kind": "concept",
+    "family": "CPU organisation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-015": {
+    "subject": "architecture",
+    "topic": "CPU organisation",
+    "kind": "concept",
+    "family": "CPU organisation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-016": {
+    "subject": "architecture",
+    "topic": "CPU organisation",
+    "kind": "concept",
+    "family": "CPU organisation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-017": {
+    "subject": "architecture",
+    "topic": "Memory hierarchy",
+    "kind": "concept",
+    "family": "Memory hierarchy",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-018": {
+    "subject": "architecture",
+    "topic": "Memory hierarchy",
+    "kind": "concept",
+    "family": "Memory hierarchy",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-019": {
+    "subject": "architecture",
+    "topic": "Memory hierarchy",
+    "kind": "concept",
+    "family": "Memory hierarchy",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-020": {
+    "subject": "architecture",
+    "topic": "Memory hierarchy",
+    "kind": "concept",
+    "family": "Memory hierarchy",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-021": {
+    "subject": "architecture",
+    "topic": "CPU organisation",
+    "kind": "concept",
+    "family": "CPU organisation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-022": {
+    "subject": "architecture",
+    "topic": "Address calculations",
+    "kind": "concept",
+    "family": "Address calculations",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-023": {
+    "subject": "architecture",
+    "topic": "Data representation",
+    "kind": "concept",
+    "family": "Data representation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-024": {
+    "subject": "architecture",
+    "topic": "Memory hierarchy",
+    "kind": "concept",
+    "family": "Memory hierarchy",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-025": {
+    "subject": "architecture",
+    "topic": "Memory hierarchy",
+    "kind": "concept",
+    "family": "Memory hierarchy",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-026": {
+    "subject": "architecture",
+    "topic": "CPU organisation",
+    "kind": "concept",
+    "family": "CPU organisation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-027": {
+    "subject": "architecture",
+    "topic": "Memory hierarchy",
+    "kind": "concept",
+    "family": "Memory hierarchy",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-028": {
+    "subject": "architecture",
+    "topic": "I/O organisation",
+    "kind": "concept",
+    "family": "I/O organisation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-029": {
+    "subject": "architecture",
+    "topic": "CPU organisation",
+    "kind": "concept",
+    "family": "CPU organisation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-030": {
+    "subject": "architecture",
+    "topic": "CPU organisation",
+    "kind": "concept",
+    "family": "CPU organisation",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-031": {
+    "subject": "architecture",
+    "topic": "Language processing",
+    "kind": "concept",
+    "family": "Language processing",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-032": {
+    "subject": "architecture",
+    "topic": "Language processing",
+    "kind": "concept",
+    "family": "Language processing",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "architecture-033": {
+    "subject": "architecture",
+    "topic": "Language processing",
+    "kind": "concept",
+    "family": "Language processing",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-001": {
+    "subject": "web",
+    "topic": "Web foundations",
+    "kind": "concept",
+    "family": "Web foundations",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-002": {
+    "subject": "web",
+    "topic": "HTML",
+    "kind": "concept",
+    "family": "HTML",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-003": {
+    "subject": "web",
+    "topic": "Web foundations",
+    "kind": "concept",
+    "family": "Web foundations",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-004": {
+    "subject": "web",
+    "topic": "DOM",
+    "kind": "concept",
+    "family": "DOM",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-005": {
+    "subject": "web",
+    "topic": "HTML",
+    "kind": "concept",
+    "family": "HTML",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-006": {
+    "subject": "web",
+    "topic": "HTTP",
+    "kind": "concept",
+    "family": "HTTP",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-007": {
+    "subject": "web",
+    "topic": "HTTP",
+    "kind": "concept",
+    "family": "HTTP",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-008": {
+    "subject": "web",
+    "topic": "HTTP",
+    "kind": "concept",
+    "family": "HTTP",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-009": {
+    "subject": "web",
+    "topic": "HTTP",
+    "kind": "concept",
+    "family": "HTTP",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-010": {
+    "subject": "web",
+    "topic": "Browser state",
+    "kind": "concept",
+    "family": "Browser state",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-011": {
+    "subject": "web",
+    "topic": "Browser security",
+    "kind": "concept",
+    "family": "Browser security",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-012": {
+    "subject": "web",
+    "topic": "Browser security",
+    "kind": "concept",
+    "family": "Browser security",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-013": {
+    "subject": "web",
+    "topic": "Data formats",
+    "kind": "concept",
+    "family": "Data formats",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-014": {
+    "subject": "web",
+    "topic": "Data formats",
+    "kind": "concept",
+    "family": "Data formats",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-015": {
+    "subject": "web",
+    "topic": "URLs",
+    "kind": "concept",
+    "family": "URLs",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-016": {
+    "subject": "web",
+    "topic": "HTTP",
+    "kind": "concept",
+    "family": "HTTP",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-017": {
+    "subject": "web",
+    "topic": "HTML",
+    "kind": "concept",
+    "family": "HTML",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-018": {
+    "subject": "web",
+    "topic": "CSS",
+    "kind": "concept",
+    "family": "CSS",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-019": {
+    "subject": "web",
+    "topic": "HTTP",
+    "kind": "concept",
+    "family": "HTTP",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
+  },
+  "web-020": {
+    "subject": "web",
+    "topic": "Web services",
+    "kind": "concept",
+    "family": "Web services",
+    "original_source_commit": "64602727828aff726ad5adeed2163c283d932e08"
   }
 }

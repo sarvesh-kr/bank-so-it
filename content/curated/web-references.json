@@ -1,0 +1,94 @@
+{
+  "const": [
+    "MDN: JavaScript const declaration",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const"
+  ],
+  "cookies": [
+    "MDN: Set-Cookie attributes",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie"
+  ],
+  "cors": [
+    "MDN: cross-origin resource sharing",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS"
+  ],
+  "csrf": [
+    "OWASP: cross-site request forgery prevention",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+  ],
+  "css-box": [
+    "MDN: the CSS box model",
+    "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model"
+  ],
+  "css-media": [
+    "MDN: media queries",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries"
+  ],
+  "css-selectors": [
+    "MDN: CSS selectors",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors"
+  ],
+  "dom": [
+    "WHATWG DOM Standard",
+    "https://dom.spec.whatwg.org/"
+  ],
+  "equality": [
+    "MDN: strict equality",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality"
+  ],
+  "forms": [
+    "WHATWG HTML Standard: forms",
+    "https://html.spec.whatwg.org/multipage/forms.html"
+  ],
+  "html": [
+    "WHATWG HTML Standard: semantics and forms",
+    "https://html.spec.whatwg.org/multipage/semantics.html"
+  ],
+  "http": [
+    "IETF RFC 9110: HTTP semantics",
+    "https://www.rfc-editor.org/rfc/rfc9110.html"
+  ],
+  "js": [
+    "MDN: JavaScript overview",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  ],
+  "json": [
+    "IETF RFC8259: JSON",
+    "https://www.rfc-editor.org/rfc/rfc8259.html"
+  ],
+  "links": [
+    "WHATWG HTML Standard: hyperlinks",
+    "https://html.spec.whatwg.org/multipage/links.html"
+  ],
+  "origin": [
+    "MDN: same-origin policy",
+    "https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy"
+  ],
+  "password": [
+    "MDN: password input",
+    "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/password"
+  ],
+  "rest": [
+    "Roy Fielding: REST architectural style",
+    "https://roy.gbiv.com/pubs/dissertation/rest_arch_style.htm"
+  ],
+  "soap": [
+    "W3C SOAP 1.2 Part1: messaging framework",
+    "https://www.w3.org/TR/soap12-part1/"
+  ],
+  "storage": [
+    "WHATWG HTML Standard: Web Storage",
+    "https://html.spec.whatwg.org/multipage/webstorage.html"
+  ],
+  "xml": [
+    "W3C XML1.0 Fifth Edition",
+    "https://www.w3.org/TR/xml/"
+  ],
+  "xml-schema": [
+    "W3C XML Schema Part1: structures",
+    "https://www.w3.org/TR/xmlschema-1/"
+  ],
+  "xss": [
+    "OWASP: cross-site scripting prevention",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html"
+  ]
+}
