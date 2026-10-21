@@ -1,6 +1,6 @@
 # Bank SO IT preparation scope
 
-Checked 20 October 2026. Bank SO IT provides bank specialist IT practice. The initial exam-alignment review targets the IT **professional-knowledge** paper, with degree-level foundations and applied bank-IT scenarios. Reasoning, quantitative aptitude, language and financial-awareness papers are outside this bank.
+Checked 21 October 2026. Bank SO IT provides bank specialist IT practice. The initial exam-alignment review targets the IT **professional-knowledge** paper, with degree-level foundations and applied bank-IT scenarios. Reasoning, quantitative aptitude, language and financial-awareness papers are outside this bank.
 
 The [RRB-specific preparation outline](https://www.ixambee.com/exams/ibps-rrb-officer-scale-ii-exam-syllabus) includes DBMS/SQL, networks, operating systems, algorithms, programming/OOP, software engineering, web technology, architecture and warehousing/mining. Basic cloud/AI and banking IT controls round out contemporary awareness. This is an indicative provider outline, not an official granular syllabus or topic-weight specification.
 
@@ -8,6 +8,8 @@ The [2024 candidate-recalled Scale II analysis](https://www.bankersadda.com/ibps
 
 The [official 2025 notice](https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV_Final_AD_1.9.25.pdf) is indexed with the Specialist Cadre professional-knowledge examination table. Attempts to retrieve its full PDF failed. The current official notice/handout must govern actual timing, marking and any changes. The app offers a 40-question, 30-minute, +1/−0.25 revision preset. Equal subject sampling gives broad coverage rather than predicted IBPS weighting.
 
-[CONTENT_AUDIT.md](CONTENT_AUDIT.md) records the 864-question coverage map, corrections, retirement decisions, primary references and review evidence. Every shipped item has a matching reviewed content hash; changes require a renewed content review. The original fixed per-subject quotas were superseded by the user's request for accurate, efficient final revision.
+[CONTENT_AUDIT.md](CONTENT_AUDIT.md) records the 946-question coverage map, corrections, retirement decisions, primary references and review evidence. Every shipped item has a matching reviewed content hash; changes require a renewed content review. The original fixed per-subject quotas were superseded by the user's request for accurate, efficient final revision.
 
 The [network R2 revision](NETWORK_AUDIT.md) follows the user’s explicit topic list rather than a claimed prediction of previous-paper frequencies. It supplies 200 focused items with ten short subnet calculations. The other 664 questions are unchanged in that revision.
+
+The [DBMS R2 revision](DBMS_AUDIT.md), reviewed 21 October 2026, follows the user’s explicit scope: models, ER shapes/relations, names and types, normalization, algebra, indexes and B/B+ trees, SQL commands and outputs, transactions, recovery, backups and RAID. It replaces 118 items with 200 and leaves the other 746 unchanged. Primary references include the authors’ Database System Concepts slides, PostgreSQL and SQLite documentation and Linux RAID documentation. Worked queries state SQLite explicitly; broader concepts state notation and implementation assumptions where they affect the answer. No exact past-paper frequency is inferred.

@@ -1,8 +1,8 @@
 {
-  "total": 864,
+  "total": 946,
   "subjects": {
     "network": 200,
-    "dbms": 118,
+    "dbms": 200,
     "os": 73,
     "dsa": 107,
     "linux": 86,
@@ -13,17 +13,19 @@
     "architecture": 33,
     "web": 20
   },
-  "retired": 622,
+  "retired": 740,
   "kinds": {
-    "concept": 793,
+    "concept": 842,
     "worked-drill": 30,
-    "executed-SQL": 15,
+    "worked-dbms": 10,
+    "checked-algebra": 6,
+    "checked-sql": 32,
     "executed-shell": 16,
     "executed-python": 10
   },
   "difficulty": {
-    "Easy": 359,
-    "Moderate": 505
+    "Easy": 451,
+    "Moderate": 495
   },
   "checks": [
     "Unique IDs and stems",

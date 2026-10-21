@@ -1,9 +1,201 @@
 {
   "passed": true,
-  "questions": 864,
-  "retired": 622,
-  "independent_answer_checks": 78,
+  "questions": 946,
+  "retired": 740,
+  "independent_answer_checks": 111,
   "proofs": {
+    "dbms-r2-062": {
+      "method": "worked-dbms",
+      "independent_result": "{A, B, C}"
+    },
+    "dbms-r2-068": {
+      "method": "worked-dbms",
+      "independent_result": "1NF"
+    },
+    "dbms-r2-069": {
+      "method": "worked-dbms",
+      "independent_result": "2NF"
+    },
+    "dbms-r2-070": {
+      "method": "worked-dbms",
+      "independent_result": "3NF but not BCNF"
+    },
+    "dbms-r2-071": {
+      "method": "worked-dbms",
+      "independent_result": "Yes, because common attribute A determines R1"
+    },
+    "dbms-r2-081": {
+      "method": "checked-algebra",
+      "independent_result": "(1, 100); (2, 200)"
+    },
+    "dbms-r2-082": {
+      "method": "checked-algebra",
+      "independent_result": "A; B"
+    },
+    "dbms-r2-083": {
+      "method": "checked-algebra",
+      "independent_result": "6"
+    },
+    "dbms-r2-084": {
+      "method": "checked-algebra",
+      "independent_result": "1; 2; 3"
+    },
+    "dbms-r2-085": {
+      "method": "checked-algebra",
+      "independent_result": "1"
+    },
+    "dbms-r2-086": {
+      "method": "checked-algebra",
+      "independent_result": "(1, X, 10)"
+    },
+    "dbms-r2-098": {
+      "method": "worked-dbms",
+      "independent_result": "4"
+    },
+    "dbms-r2-137": {
+      "method": "checked-sql",
+      "independent_result": "100; 200; NULL; 200"
+    },
+    "dbms-r2-138": {
+      "method": "checked-sql",
+      "independent_result": "2; 4"
+    },
+    "dbms-r2-139": {
+      "method": "checked-sql",
+      "independent_result": "2; 4"
+    },
+    "dbms-r2-140": {
+      "method": "checked-sql",
+      "independent_result": "A; B"
+    },
+    "dbms-r2-141": {
+      "method": "checked-sql",
+      "independent_result": "4"
+    },
+    "dbms-r2-142": {
+      "method": "checked-sql",
+      "independent_result": "3"
+    },
+    "dbms-r2-143": {
+      "method": "checked-sql",
+      "independent_result": "500"
+    },
+    "dbms-r2-144": {
+      "method": "checked-sql",
+      "independent_result": "166.67"
+    },
+    "dbms-r2-145": {
+      "method": "checked-sql",
+      "independent_result": "100, 200"
+    },
+    "dbms-r2-146": {
+      "method": "checked-sql",
+      "independent_result": "3"
+    },
+    "dbms-r2-147": {
+      "method": "checked-sql",
+      "independent_result": "(no rows)"
+    },
+    "dbms-r2-148": {
+      "method": "checked-sql",
+      "independent_result": "A, 2; B, 2"
+    },
+    "dbms-r2-149": {
+      "method": "checked-sql",
+      "independent_result": "A"
+    },
+    "dbms-r2-150": {
+      "method": "checked-sql",
+      "independent_result": "A; B"
+    },
+    "dbms-r2-151": {
+      "method": "checked-sql",
+      "independent_result": "A, 2; B, 2; C, 0"
+    },
+    "dbms-r2-152": {
+      "method": "checked-sql",
+      "independent_result": "12"
+    },
+    "dbms-r2-153": {
+      "method": "checked-sql",
+      "independent_result": "2; 4"
+    },
+    "dbms-r2-154": {
+      "method": "checked-sql",
+      "independent_result": "A; B"
+    },
+    "dbms-r2-155": {
+      "method": "checked-sql",
+      "independent_result": "(no rows)"
+    },
+    "dbms-r2-156": {
+      "method": "checked-sql",
+      "independent_result": "A"
+    },
+    "dbms-r2-157": {
+      "method": "checked-sql",
+      "independent_result": "A; A"
+    },
+    "dbms-r2-158": {
+      "method": "checked-sql",
+      "independent_result": "1"
+    },
+    "dbms-r2-159": {
+      "method": "checked-sql",
+      "independent_result": "150"
+    },
+    "dbms-r2-160": {
+      "method": "checked-sql",
+      "independent_result": "3"
+    },
+    "dbms-r2-161": {
+      "method": "checked-sql",
+      "independent_result": "5"
+    },
+    "dbms-r2-162": {
+      "method": "checked-sql",
+      "independent_result": "4"
+    },
+    "dbms-r2-163": {
+      "method": "checked-sql",
+      "independent_result": "2"
+    },
+    "dbms-r2-164": {
+      "method": "checked-sql",
+      "independent_result": "100"
+    },
+    "dbms-r2-165": {
+      "method": "checked-sql",
+      "independent_result": "100"
+    },
+    "dbms-r2-166": {
+      "method": "checked-sql",
+      "independent_result": "PRIMARY KEY constraint violation"
+    },
+    "dbms-r2-167": {
+      "method": "checked-sql",
+      "independent_result": "CHECK constraint violation"
+    },
+    "dbms-r2-168": {
+      "method": "checked-sql",
+      "independent_result": "FOREIGN KEY constraint violation"
+    },
+    "dbms-r2-194": {
+      "method": "worked-dbms",
+      "independent_result": "2 TB"
+    },
+    "dbms-r2-198": {
+      "method": "worked-dbms",
+      "independent_result": "6 TB"
+    },
+    "dbms-r2-199": {
+      "method": "worked-dbms",
+      "independent_result": "8 TB"
+    },
+    "dbms-r2-200": {
+      "method": "worked-dbms",
+      "independent_result": "4 TB"
+    },
     "network-r2-065": {
       "method": "worked-drill",
       "independent_result": "254"
@@ -43,66 +235,6 @@
     "network-r2-074": {
       "method": "worked-drill",
       "independent_result": "/26"
-    },
-    "dbms-101": {
-      "method": "executed-SQL",
-      "independent_result": "5"
-    },
-    "dbms-102": {
-      "method": "executed-SQL",
-      "independent_result": "4"
-    },
-    "dbms-103": {
-      "method": "executed-SQL",
-      "independent_result": "300"
-    },
-    "dbms-104": {
-      "method": "executed-SQL",
-      "independent_result": "3"
-    },
-    "dbms-105": {
-      "method": "executed-SQL",
-      "independent_result": "3"
-    },
-    "dbms-106": {
-      "method": "executed-SQL",
-      "independent_result": "A; B"
-    },
-    "dbms-107": {
-      "method": "executed-SQL",
-      "independent_result": "2; 4; 5"
-    },
-    "dbms-108": {
-      "method": "executed-SQL",
-      "independent_result": "825"
-    },
-    "dbms-109": {
-      "method": "executed-SQL",
-      "independent_result": "6"
-    },
-    "dbms-110": {
-      "method": "executed-SQL",
-      "independent_result": "D"
-    },
-    "dbms-111": {
-      "method": "executed-SQL",
-      "independent_result": "A; B; C"
-    },
-    "dbms-112": {
-      "method": "executed-SQL",
-      "independent_result": "1, 3; 2, 2; 4, 1; 5, 2"
-    },
-    "dbms-113": {
-      "method": "executed-SQL",
-      "independent_result": "3"
-    },
-    "dbms-114": {
-      "method": "executed-SQL",
-      "independent_result": "4"
-    },
-    "dbms-115": {
-      "method": "executed-SQL",
-      "independent_result": "(no rows)"
     },
     "dsa-101": {
       "method": "worked-drill",

@@ -1,3 +1,4 @@
+# Legacy generation input retained for stable IDs/RNG; published DBMS questions come from content/curated/dbms-r2.txt.
 Foundations¦Easy¦What is a tuple in the relational model?¦A row¦A column¦A database server¦An index page¦An entire schema¦A tuple is a row representing one combination of attribute values in a relation.
 Foundations¦Easy¦What is the degree of a relation?¦The number of attributes¦The number of rows¦The number of users¦The number of indexes¦The number of transactions¦Degree counts attributes or columns; cardinality counts tuples or rows.
 Foundations¦Easy¦Which key is a minimal set of attributes that uniquely identifies a tuple?¦Candidate key¦Foreign key¦Non-unique index¦Partial dependency¦Multivalued attribute¦A candidate key uniquely identifies tuples and has no unnecessary attribute.
