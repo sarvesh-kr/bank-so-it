@@ -1,0 +1,130 @@
+{
+  "nist-cloud": [
+    "NIST SP 800-145: The NIST Definition of Cloud Computing",
+    "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf"
+  ],
+  "virtualization": [
+    "Red Hat: hypervisors and virtualization",
+    "https://www.redhat.com/en/topics/virtualization/what-is-a-hypervisor"
+  ],
+  "containers": [
+    "Docker: containers and virtual machines",
+    "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/"
+  ],
+  "images": [
+    "Docker: images and containers",
+    "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-an-image/"
+  ],
+  "kubernetes": [
+    "Kubernetes: overview and orchestration",
+    "https://kubernetes.io/docs/concepts/overview/"
+  ],
+  "aws-cloud": [
+    "AWS: cloud computing concepts and benefits",
+    "https://aws.amazon.com/what-is-cloud-computing/"
+  ],
+  "shared": [
+    "AWS Well-Architected Security Pillar: shared responsibility",
+    "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/shared-responsibility.html"
+  ],
+  "serverless": [
+    "AWS: serverless computing",
+    "https://aws.amazon.com/serverless/"
+  ],
+  "object": [
+    "AWS: object storage concepts",
+    "https://aws.amazon.com/what-is/object-storage/"
+  ],
+  "dr": [
+    "AWS Well-Architected REL13-BP01: recovery time and recovery point objectives",
+    "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_planning_for_recovery_objective_defined.html"
+  ],
+  "iam": [
+    "AWS IAM: security best practices",
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"
+  ],
+  "bank-cloud": [
+    "RBI: Master Direction on Outsourcing of Information Technology Services, 2023",
+    "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12486&Mode=0"
+  ],
+  "ml": [
+    "Google: introduction to machine learning",
+    "https://developers.google.com/machine-learning/intro-to-ml/what-is-ml"
+  ],
+  "ai": [
+    "IBM: artificial intelligence concepts",
+    "https://www.ibm.com/think/topics/artificial-intelligence"
+  ],
+  "expert": [
+    "Encyclopaedia Britannica: expert systems and inference engines",
+    "https://www.britannica.com/technology/expert-system"
+  ],
+  "supervised": [
+    "Scikit-learn: supervised learning",
+    "https://scikit-learn.org/stable/supervised_learning.html"
+  ],
+  "evaluation": [
+    "Google ML Crash Course: classification metrics",
+    "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall"
+  ],
+  "generalization": [
+    "Google ML Crash Course: overfitting and generalization",
+    "https://developers.google.com/machine-learning/crash-course/overfitting/overfitting"
+  ],
+  "leakage": [
+    "Scikit-learn: common pitfalls and data leakage",
+    "https://scikit-learn.org/stable/common_pitfalls.html"
+  ],
+  "splits": [
+    "Scikit-learn: cross-validation and train/test splits",
+    "https://scikit-learn.org/stable/modules/cross_validation.html"
+  ],
+  "cnn": [
+    "Google ML Practicum: convolutional neural networks",
+    "https://developers.google.com/machine-learning/practica/image-classification/convolutional-neural-networks"
+  ],
+  "nlp": [
+    "IBM: natural language processing",
+    "https://www.ibm.com/think/topics/natural-language-processing"
+  ],
+  "genai": [
+    "IBM: generative AI concepts",
+    "https://www.ibm.com/think/topics/generative-ai"
+  ],
+  "ai-risk": [
+    "NIST: AI Risk Management Framework",
+    "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+  ],
+  "logistic": [
+    "Scikit-learn: logistic regression classifier",
+    "https://scikit-learn.org/stable/modules/linear_model.html"
+  ],
+  "trees": [
+    "Scikit-learn: decision trees",
+    "https://scikit-learn.org/stable/modules/tree.html"
+  ],
+  "forest": [
+    "Scikit-learn: random forests and ensembles",
+    "https://scikit-learn.org/stable/modules/ensemble.html"
+  ],
+  "bayes": [
+    "Scikit-learn: naive Bayes",
+    "https://scikit-learn.org/stable/modules/naive_bayes.html"
+  ],
+  "neighbors": [
+    "Scikit-learn: nearest-neighbour classification",
+    "https://scikit-learn.org/1.7/modules/neighbors.html"
+  ],
+  "svm": [
+    "Scikit-learn: support vector machines",
+    "https://scikit-learn.org/stable/modules/svm.html"
+  ],
+  "load-balancing": [
+    "AWS Elastic Load Balancing: overview",
+    "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+  ],
+  "encryption": [
+    "AWS Well-Architected Security Pillar: data protection",
+    "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/data-protection.html"
+  ]
+}

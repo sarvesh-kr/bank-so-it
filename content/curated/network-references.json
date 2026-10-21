@@ -202,5 +202,61 @@
   "zero": [
     "NIST glossary: zero-day attack",
     "https://csrc.nist.gov/glossary/term/zero_day_attack"
+  ],
+  "api": [
+    "MDN: application programming interface (API)",
+    "https://developer.mozilla.org/en-US/docs/Glossary/API"
+  ],
+  "rest": [
+    "Roy Fielding: REST architectural style, dissertation chapter 5",
+    "https://roy.gbiv.com/pubs/dissertation/rest_arch_style.htm"
+  ],
+  "oauth": [
+    "IETF RFC 6749: OAuth 2.0 delegated authorization framework",
+    "https://www.rfc-editor.org/rfc/rfc6749.html"
+  ],
+  "ratelimit": [
+    "IETF RFC 6585: HTTP 429 Too Many Requests",
+    "https://www.rfc-editor.org/rfc/rfc6585.html"
+  ],
+  "api-security": [
+    "OWASP: REST security and API-key handling",
+    "https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html"
+  ],
+  "blockchain": [
+    "NIST IR 8202: Blockchain Technology Overview",
+    "https://nvlpubs.nist.gov/nistpubs/ir/2018/NIST.IR.8202.pdf"
+  ],
+  "dns-ipv6": [
+    "IETF RFC 3596: DNS AAAA records for IPv6",
+    "https://www.rfc-editor.org/rfc/rfc3596.html"
+  ],
+  "pop3": [
+    "IETF RFC 1939: POP3 mail retrieval and deletion behaviour",
+    "https://www.rfc-editor.org/rfc/rfc1939.html"
+  ],
+  "ssh": [
+    "IETF RFC 4251: SSH secure remote-login architecture",
+    "https://www.rfc-editor.org/rfc/rfc4251.html"
+  ],
+  "ftps": [
+    "IETF RFC 4217: securing FTP with TLS",
+    "https://www.rfc-editor.org/rfc/rfc4217.html"
+  ],
+  "sftp": [
+    "OpenBSD/OpenSSH sftp manual: file transfer over SSH",
+    "https://man.openbsd.org/sftp"
+  ],
+  "mail-tls": [
+    "IETF RFC 8314: TLS for email access and submission",
+    "https://www.rfc-editor.org/rfc/rfc8314.html"
+  ],
+  "cdn": [
+    "MDN: content delivery networks",
+    "https://developer.mozilla.org/en-US/docs/Glossary/CDN"
+  ],
+  "http-cache": [
+    "IETF RFC 9111: HTTP caching and Cache-Control",
+    "https://www.rfc-editor.org/rfc/rfc9111.html"
   ]
 }

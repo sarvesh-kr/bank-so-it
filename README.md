@@ -6,7 +6,7 @@ The web version runs entirely on **GitHub Pages**: no server, database service, 
 
 ## Practice features
 
-- **1,003 curated practice MCQs**, each with five choices, a correct answer and an explanation.
+- **1,035 curated practice MCQs**, each with five choices, a correct answer and an explanation.
 - Subject-wise or mixed tests; choose 20, 40, 50, all eligible questions, or any custom count.
 - Subtopic, difficulty, unseen, wrong-answer and bookmark filters.
 - **Quick revision**: searchable answer/explanation cards, source links and an 11-subject coverage selector. Repeated and specialist-depth items have been retired.
@@ -19,24 +19,24 @@ The web version runs entirely on **GitHub Pages**: no server, database service, 
 
 | Subject | Questions |
 |---|---:|
-| Networks & Cybersecurity | 200 |
+| Networks & Cybersecurity | 229 |
 | DBMS & SQL | 200 |
 | Operating Systems | 100 |
 | Data Structures & Algorithms | 150 |
 | Linux & Shell | 75 |
 | Warehousing & Mining | 50 |
-| Cloud, AI & ML Basics | 47 |
+| Cloud, AI & ML Basics | 50 |
 | Software Engineering & Banking IT | 68 |
 | Programming & OOP | 60 |
 | Computer Fundamentals & Architecture | 33 |
 | Web Technology | 20 |
-| **Total** | **1,003** |
+| **Total** | **1,035** |
 
 Each retained stem, five-option set, key and explanation received a technical review, with sources and independent checks for computed answers. See the [content audit](docs/CONTENT_AUDIT.md), [per-item ledger](docs/question-audit.csv) and [retirement decisions](docs/retired-question-audit.csv). This is practice material rather than an official previous-year paper. No exact exam topic weights are asserted.
 
-**Data Warehousing & Data Mining now contains 50 newly curated conceptual questions**, covering warehouse types, OLTP/OLAP, schemas, marts, cubes, ETL, mining techniques and tools. There are no numerical exercises. The previous 52 items are replaced; the other 953 records are unchanged. See the [warehousing/mining audit and coverage](docs/DW_DM_AUDIT.md). Earlier [Linux](docs/LINUX_AUDIT.md), [DSA](docs/DSA_AUDIT.md), [OS](docs/OS_AUDIT.md), [DBMS](docs/DBMS_AUDIT.md) and [network](docs/NETWORK_AUDIT.md) revisions remain unchanged. The earlier cross-subject review is recorded separately in the content audit. Old stock imports cannot overwrite reviewed built-ins or restore retired items; use the editor for personal changes. Earlier session reviews are retained, while current-bank statistics exclude retired questions.
+**Cloud, AI & ML Basics now contains 50 newly curated conceptual questions**, covering cloud models, virtualization, security/banking controls, AI/ML foundations, algorithms, evaluation and responsible use. There are no numerical exercises. The previous 47 items are replaced; all 956 existing records outside that topic are unchanged. Networking also gains 29 new questions on protocol functions, APIs, blockchain and CDN, bringing it to 229; see the [network supplement](docs/NETWORK_SERVICES_AUDIT.md). See the [cloud/AI/ML audit and coverage](docs/CLOUD_AI_ML_AUDIT.md). Earlier [warehousing/mining](docs/DW_DM_AUDIT.md), [Linux](docs/LINUX_AUDIT.md), [DSA](docs/DSA_AUDIT.md), [OS](docs/OS_AUDIT.md), [DBMS](docs/DBMS_AUDIT.md) and [network](docs/NETWORK_AUDIT.md) revisions remain unchanged. The earlier cross-subject review is recorded separately in the content audit. Old stock imports cannot overwrite reviewed built-ins or restore retired items; use the editor for personal changes. Earlier session reviews are retained, while current-bank statistics exclude retired questions.
 
-**Android 2.6.1** bundles the same curated bank and quick revision. It reuses the Android 1.2 release key, so 1.2 installations can update in place. Export a progress backup before installing updates. Installations predating the 1.2 key change still need export, uninstall, reinstall and restore.
+**Android 2.7** bundles the same curated bank and quick revision. It reuses the Android 1.2 release key, so 1.2 installations can update in place. Export a progress backup before installing updates. Installations predating the 1.2 key change still need export, uninstall, reinstall and restore.
 
 ## Deploy on GitHub Pages
 
@@ -105,8 +105,9 @@ Open `http://localhost:8000/`. HTTPS or localhost is required for service worker
 
 - `app/src/main/assets/` — shared UI, pure quiz logic, browser persistence, PWA bootstrap, import validation and the generated question bank.
 - `app/src/main/java/` — Android WebView shell, private storage and system file picker.
+- `content/curated/cloud-ai-ml-r2.txt` — current 50-question conceptual cloud/AI/ML source with explicit IDs and references.
 - `content/curated/dw-dm-r2.txt` — current 50-question conceptual warehousing/mining source with explicit IDs and references.
-- `content/curated/network-r2.txt` — current 200-question network/cybersecurity source with explicit IDs and per-item references.
+- `content/curated/network-r2.txt` — current 229-question network/cybersecurity source with explicit IDs and per-item references.
 - `content/*.txt` — other concept/scenario sources and legacy generator compatibility inputs.
 - `tools/build_bank.py` — deterministic generation plus executable SQL/Bash answer checks.
 - `tools/build_web.py` — fresh `_site/` artifact built from an explicit public-file allowlist.

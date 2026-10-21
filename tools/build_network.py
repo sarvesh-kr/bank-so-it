@@ -17,6 +17,6 @@ def load_network():
             'options':options,'answer':options.index(correct),'explanation':explanation,
             'kind':'worked-drill' if int(id) in numerical else 'concept','family':numerical.get(int(id),topic),
             'references':[{'title':catalog[key][0],'url':catalog[key][1]} for key in keys]})
-    assert len(rows)==200
-    assert len({r['id'] for r in rows})==len({r['question'] for r in rows})==200
+    assert len(rows)==229
+    assert len({r['id'] for r in rows})==len({r['question'] for r in rows})==229
     return rows

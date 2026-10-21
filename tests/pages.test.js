@@ -6,11 +6,11 @@ const server=http.createServer((req,res)=>{const pathname=decodeURIComponent(new
 (async()=>{await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const origin='http://127.0.0.1:'+server.address().port,url=origin+'/bank-so-it/';const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH,args:['--no-sandbox']});let context;
 try{
  context=await browser.newContext({viewport:{width:390,height:844},acceptDownloads:true});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));const action=a=>page.locator('[data-action="'+a+'"]').first();
- await page.goto(url);await page.waitForSelector('.subjects');assert.match(await page.locator('.stats').innerText(),/1003/);
+ await page.goto(url);await page.waitForSelector('.subjects');assert.match(await page.locator('.stats').innerText(),/1035/);
  for(const id of ['network','dbms','os','dsa','linux','dw_dm','cloud_ai_ml','se_bank_it','programming','architecture','web']){
   await page.locator('[data-action="subject"][data-id="'+id+'"]').click();
   assert((await page.evaluate(()=>getPool().length))>0);
-  if(id==='network'){assert.equal(await page.evaluate(()=>getPool().length),200);await page.locator('#topic').selectOption('Subnetting');assert.equal(await page.evaluate(()=>getPool().length),12);await page.locator('#topic').selectOption('');}
+  if(id==='network'){assert.equal(await page.evaluate(()=>getPool().length),229);for(const [topic,count] of [['Services & ports',34],['Web APIs & HTTP basics',9],['Blockchain fundamentals',6],['CDN & web delivery',2]]){await page.locator('#topic').selectOption(topic);assert.equal(await page.evaluate(()=>getPool().length),count);}await page.locator('#topic').selectOption('Subnetting');assert.equal(await page.evaluate(()=>getPool().length),12);await page.locator('#topic').selectOption('');}
   if(id==='dbms'){
    assert.equal(await page.evaluate(()=>getPool().length),200);
    for(const [topic,count] of [['Normalization & dependencies',16],['Relational algebra',14],['SQL output & command practice',32]]){await page.locator('#topic').selectOption(topic);assert.equal(await page.evaluate(()=>getPool().length),count);}
@@ -32,6 +32,11 @@ try{
    for(const [topic,count] of [['Warehouse foundations & types',8],['Dimensional models & schemas',9],['ETL, metadata & data quality',6],['OLAP cubes, operations & types',11],['Data mining concepts & techniques',14],['Common tools & roles',2]]){await page.locator('#topic').selectOption(topic);assert.equal(await page.evaluate(()=>getPool().length),count);}
    await page.locator('#topic').selectOption('');
   }
+  if(id==='cloud_ai_ml'){
+   assert.equal(await page.evaluate(()=>getPool().length),50);
+   for(const [topic,count] of [['Cloud foundations & models',10],['Virtualization, storage & operations',10],['Cloud security & banking controls',5],['AI & learning foundations',8],['ML algorithms & evaluation',12],['AI applications & responsible use',5]]){await page.locator('#topic').selectOption(topic);assert.equal(await page.evaluate(()=>getPool().length),count);}
+   await page.locator('#topic').selectOption('');
+  }
   await page.locator('#count').fill('1');await action('begin').click();
   const answer=await page.evaluate(()=>state.active.questions[0].answer);
   await page.locator('[data-action="answer"][data-index="'+answer+'"]').click();
@@ -44,6 +49,11 @@ try{
  await page.locator('#revisionSubject').selectOption('network');await page.locator('#revisionSearch').fill('What is the broadcast address of');
  await page.waitForFunction(()=>document.querySelectorAll('.revision-card').length===1);await page.locator('.revision-card>summary').click();assert.match(await page.locator('.revision-card').innerText(),/192\.168\.10\.127/);
  fs.mkdirSync('test-results',{recursive:true});await page.screenshot({path:'test-results/network-revision.png',fullPage:true});
+ await page.locator('#revisionSearch').fill('must not be stored by any HTTP cache');
+ await page.waitForFunction(()=>document.querySelectorAll('.revision-card').length===1&&document.querySelector('.revision-card>summary').textContent.includes('CDN cache'));await page.locator('.revision-card>summary').click();
+ await page.waitForFunction(()=>document.querySelector('.revision-card>p>strong')?.innerText==='Cache-Control: no-store');assert.match(await page.locator('.revision-card').innerText(),/Private alone/);
+ assert((await page.locator('.revision-card a').first().getAttribute('href')).startsWith('https://'));
+ await page.setViewportSize({width:320,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:'test-results/cdn-revision.png',fullPage:true});await page.setViewportSize({width:390,height:844});
  await page.locator('#revisionSubject').selectOption('dbms');await page.locator('#revisionSearch').fill('NULL in the NOT IN list');
  await page.waitForFunction(()=>document.querySelectorAll('.revision-card').length===1);await page.locator('.revision-card>summary').click();assert.match(await page.locator('.revision-card').innerText(),/\(no rows\)/);
  assert((await page.locator('.revision-card a').first().getAttribute('href')).startsWith('https://'));
@@ -68,6 +78,11 @@ try{
  await page.waitForFunction(()=>document.querySelector('.revision-card>p>strong')?.innerText==='Dice');assert.match(await page.locator('.revision-card').innerText(),/subcube/);
  assert((await page.locator('.revision-card a').first().getAttribute('href')).startsWith('https://'));
  await page.setViewportSize({width:320,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:'test-results/dw-dm-revision.png',fullPage:true});await page.setViewportSize({width:390,height:844});
+ await page.locator('#revisionSubject').selectOption('cloud_ai_ml');await page.locator('#revisionSearch').fill('genuine transaction incorrectly');
+ await page.waitForFunction(()=>document.querySelectorAll('.revision-card').length===1&&document.querySelector('.revision-card>summary').textContent.includes('fraud is the positive'));await page.locator('.revision-card>summary').click();
+ await page.waitForFunction(()=>document.querySelector('.revision-card>p>strong')?.innerText==='False positive');assert.match(await page.locator('.revision-card').innerText(),/false negative/);
+ assert((await page.locator('.revision-card a').first().getAttribute('href')).startsWith('https://'));
+ await page.setViewportSize({width:320,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:'test-results/cloud-ai-ml-revision.png',fullPage:true});await page.setViewportSize({width:390,height:844});
  await page.locator('#revisionSubject').selectOption('programming');await page.locator('#revisionSearch').fill('dereferencing a null pointer');
  await page.waitForFunction(()=>document.querySelectorAll('.revision-card').length===1);
  await page.locator('.revision-card>summary').click();assert.match(await page.locator('.revision-card').innerText(),/Undefined behaviour/);
@@ -77,7 +92,7 @@ try{
  // A stale stock pack cannot downgrade reviewed questions or reintroduce retired IDs.
  await page.evaluate(()=>{const q={...base.questions[0],question:'Old imported wording'};receiveImport(JSON.stringify({schemaVersion:1,subjects:base.subjects,questions:[q,{...q,id:base.retiredQuestionIds[0]}]}));});
  assert.match(await page.locator('#modalBody').innerText(),/2 old built-in or retired questions skipped/);
- await action('confirm-import').click();assert.equal(await page.evaluate(()=>bank.questions.length),1003);
+ await action('confirm-import').click();assert.equal(await page.evaluate(()=>bank.questions.length),1035);
  assert.notEqual(await page.evaluate(()=>bank.questions[0].question),'Old imported wording');
  await page.locator('#nav [data-screen="home"]').click();
  // Keep the existing persistence assertions independent of these new-subject sessions.
@@ -95,14 +110,14 @@ try{
  // Identical app hosted at a second Pages path must get separate browser state.
  const sibling=await fresh.newPage();await sibling.goto(origin+'/another-practice/');await sibling.waitForSelector('.subjects');assert.equal(await sibling.evaluate(()=>state.totalSessions),0);assert.equal(await sibling.evaluate(()=>Object.keys(state.bookmarks).length),0);
  // A custom domain serves the same app at /, with a root-scoped offline cache.
- const domainContext=await browser.newContext();const domainPage=await domainContext.newPage();await domainPage.goto(origin+'/');await domainPage.waitForSelector('.subjects');assert.match(await domainPage.locator('.stats').innerText(),/1003/);
+ const domainContext=await browser.newContext();const domainPage=await domainContext.newPage();await domainPage.goto(origin+'/');await domainPage.waitForSelector('.subjects');assert.match(await domainPage.locator('.stats').innerText(),/1035/);
  assert.equal(await domainPage.evaluate(async()=>{const registration=await navigator.serviceWorker.ready;if(!navigator.serviceWorker.controller)await new Promise(r=>navigator.serviceWorker.addEventListener('controllerchange',r,{once:true}));return new URL(registration.scope).pathname;}),'/');
- await domainContext.setOffline(true);await domainPage.reload();await domainPage.waitForSelector('.subjects');assert.match(await domainPage.locator('.stats').innerText(),/1003/);await domainContext.close();
+ await domainContext.setOffline(true);await domainPage.reload();await domainPage.waitForSelector('.subjects');assert.match(await domainPage.locator('.stats').innerText(),/1035/);await domainContext.close();
  // Simulated native storage bridge consumes the same backup and UI assets.
  const native=await browser.newContext();await native.addInitScript(({raw})=>{let value=raw;window.Android={readState:()=>value,writeState:v=>{value=v;return '';},importPack:()=>{},exportPack:()=>{}};},{raw:JSON.stringify(backup.state)});const apk=await native.newPage();await apk.goto(url);await apk.waitForSelector('.subjects');assert.equal(await apk.evaluate(()=>state.totalSessions),1);await apk.locator('#nav [data-screen="library"]').click();assert.equal(await apk.locator('[data-action="install-web"]').count(),0);
  for(const width of [320,390,900]){await page.setViewportSize({width,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));}
  assert.deepEqual(errors,[]);await page.screenshot({path:'test-results/pages-library.png',fullPage:true});
- console.log('PASS: Pages subpath and custom-domain root, shared 1003-question bank, PWA scope, offline reload and quiz, score/review, IndexedDB persistence, backup/restore, path isolation, cached APK, simulated native bridge and responsive layouts.');
+ console.log('PASS: Pages subpath and custom-domain root, shared 1035-question bank, PWA scope, offline reload and quiz, score/review, IndexedDB persistence, backup/restore, path isolation, cached APK, simulated native bridge and responsive layouts.');
  await fresh.close();await native.close();
 }finally{await browser.close();server.close();}
 })().catch(error=>{console.error(error);server.close();process.exitCode=1;});

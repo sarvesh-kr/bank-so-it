@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "questions": 1003,
-  "retired": 1058,
-  "independent_answer_checks": 125,
+  "questions": 1035,
+  "retired": 1105,
+  "independent_answer_checks": 124,
   "proofs": {
     "dbms-r2-062": {
       "method": "worked-dbms",
@@ -1020,10 +1020,6 @@
     "architecture-023": {
       "method": "independent conceptual calculation",
       "independent_result": "8"
-    },
-    "cloud_ai_ml-032": {
-      "method": "independent conceptual calculation",
-      "independent_result": "75%"
     }
   },
   "lint": []

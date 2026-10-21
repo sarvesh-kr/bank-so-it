@@ -1,0 +1,140 @@
+{
+  "retrieved_on": "2026-10-21",
+  "used_reference_entries": 19,
+  "sources": {
+    "cdn": {
+      "title": "MDN: content delivery networks",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/CDN",
+      "final_url": "https://developer.mozilla.org/en-US/docs/Glossary/CDN",
+      "bytes": 186415,
+      "sha256": "b7c872bf2eb5fceaad54a6ee07cbd6cc2e9bd21e0241b5001857f7e99ed524fb"
+    },
+    "http-cache": {
+      "title": "IETF RFC 9111: HTTP caching and Cache-Control",
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9111.html",
+      "bytes": 232630,
+      "sha256": "ce91ee9848d2b9ac46386b0f0cbd4bfd9c0cd1948ebc363834cadc7e0997f3d7"
+    },
+    "api": {
+      "title": "MDN: application programming interface (API)",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/API",
+      "final_url": "https://developer.mozilla.org/en-US/docs/Glossary/API",
+      "bytes": 186252,
+      "sha256": "f436e7dbefa6b5774f6ccff82aa30b747d6f3b444ae643dbcd93f0624c6d9b5d"
+    },
+    "rest": {
+      "title": "Roy Fielding: REST architectural style, dissertation chapter 5",
+      "url": "https://roy.gbiv.com/pubs/dissertation/rest_arch_style.htm",
+      "final_url": "https://roy.gbiv.com/pubs/dissertation/rest_arch_style.htm",
+      "bytes": 53025,
+      "sha256": "81df71b62240941f8545a175869129e77c7c45a959c1a76e1eb7e37c8e340a41"
+    },
+    "http": {
+      "title": "IETF RFC 9110: HTTP methods and status semantics",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "bytes": 1187554,
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5"
+    },
+    "oauth": {
+      "title": "IETF RFC 6749: OAuth 2.0 delegated authorization framework",
+      "url": "https://www.rfc-editor.org/rfc/rfc6749.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc6749.html",
+      "bytes": 201745,
+      "sha256": "535362fa3b4ca668d4734c244c6ed8c811f2ccd7ea1612a4201e5d8922a74b4e"
+    },
+    "ratelimit": {
+      "title": "IETF RFC 6585: HTTP 429 Too Many Requests",
+      "url": "https://www.rfc-editor.org/rfc/rfc6585.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc6585.html",
+      "bytes": 23151,
+      "sha256": "423d8b867e8f2d4b15ee37d3aaa370ff7ece430aae50690440e4934987bce348"
+    },
+    "api-security": {
+      "title": "OWASP: REST security and API-key handling",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html",
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html",
+      "bytes": 98209,
+      "sha256": "61fe39207fc86d2a51e883ee10a07948340f5ce6188f5ce69cd8c34e793efd1f"
+    },
+    "blockchain": {
+      "title": "NIST IR 8202: Blockchain Technology Overview",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ir/2018/NIST.IR.8202.pdf",
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/ir/2018/NIST.IR.8202.pdf",
+      "bytes": 772424,
+      "sha256": "8cb346731900118be97a2eaf2a1613b2ed58922eb99ab1b766960932a741d0e6"
+    },
+    "dns": {
+      "title": "IETF RFC 1035: DNS records and transport",
+      "url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+      "bytes": 140476,
+      "sha256": "2d604f2c272b41983f98cecf5f9ccc101f2eda690e255c2e95121462f3373cf9"
+    },
+    "dns-ipv6": {
+      "title": "IETF RFC 3596: DNS AAAA records for IPv6",
+      "url": "https://www.rfc-editor.org/rfc/rfc3596.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc3596.html",
+      "bytes": 18558,
+      "sha256": "816b88e920fca9a55f4b8dc07efd89bb988f90e9b13772f5a321dfdeec38676f"
+    },
+    "dhcp": {
+      "title": "IETF RFC 2131: DHCPv4 configuration and relay agents",
+      "url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+      "bytes": 130604,
+      "sha256": "2738855a6714a3297b432c8562c8511b66c6030ef82f909df2d15159acbb9873"
+    },
+    "smtp": {
+      "title": "IETF RFC 5321: SMTP mail transfer",
+      "url": "https://www.rfc-editor.org/rfc/rfc5321.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc5321.html",
+      "bytes": 278948,
+      "sha256": "5df422fb9940f2659fbf468d2a9f78fc8aebc2eec63f92a9dc598b4630ad48aa"
+    },
+    "pop3": {
+      "title": "IETF RFC 1939: POP3 mail retrieval and deletion behaviour",
+      "url": "https://www.rfc-editor.org/rfc/rfc1939.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc1939.html",
+      "bytes": 54492,
+      "sha256": "3f8666423bdc17b16d6d4889b9e17ea8b07e3823d154728a15fb5ee194b349e0"
+    },
+    "ssh": {
+      "title": "IETF RFC 4251: SSH secure remote-login architecture",
+      "url": "https://www.rfc-editor.org/rfc/rfc4251.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc4251.html",
+      "bytes": 89400,
+      "sha256": "c72cbe6e89097b80c4762b489246c279f32213ae11627a46def865ddb907de94"
+    },
+    "ftp": {
+      "title": "IETF RFC 959: FTP control and data connections",
+      "url": "https://www.rfc-editor.org/rfc/rfc959.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc959.html",
+      "bytes": 157689,
+      "sha256": "f09b1ddf51678bc82db463173f40666c43e6ac03f9a47e873cfefd89b39c2462"
+    },
+    "ftps": {
+      "title": "IETF RFC 4217: securing FTP with TLS",
+      "url": "https://www.rfc-editor.org/rfc/rfc4217.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc4217.html",
+      "bytes": 77269,
+      "sha256": "08c4a98ecc2774ed218e0a0ef0f75fbf9dc57a938835ad476b253b8bc1d08419"
+    },
+    "sftp": {
+      "title": "OpenBSD/OpenSSH sftp manual: file transfer over SSH",
+      "url": "https://man.openbsd.org/sftp",
+      "final_url": "https://man.openbsd.org/sftp",
+      "bytes": 43487,
+      "sha256": "91d7ff7b17c660fa94ea383477a402d45a757012a1f8eed87497df90c55135e4"
+    },
+    "mail-tls": {
+      "title": "IETF RFC 8314: TLS for email access and submission",
+      "url": "https://www.rfc-editor.org/rfc/rfc8314.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8314.html",
+      "bytes": 84323,
+      "sha256": "eb03b79c959c3144671bbff3e67b1531d5701cc4276ffa48471de2e7fa379610"
+    }
+  },
+  "port_evidence": "The pre-existing IANA snapshot already includes TCP993 imaps and TCP995 pop3s; these associations now also check question211."
+}
