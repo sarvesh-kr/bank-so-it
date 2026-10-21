@@ -1,0 +1,17 @@
+{
+  "questions": 50,
+  "conceptual_questions": 45,
+  "banking_scenarios": 5,
+  "coverage": {
+    "SDLC & requirements": 9,
+    "Design, delivery & maintenance": 6,
+    "Testing foundations & types": 12,
+    "Testing techniques & principles": 5,
+    "IT service management & resilience": 5,
+    "Vendor management & outsourcing": 4,
+    "Banking systems & payments": 4,
+    "Banking IT scenarios": 5
+  },
+  "numerical_exercises": 0,
+  "review": "Every stem, five options, answer and explanation reviewed using attached technical references; structural checks alone do not certify conceptual correctness or exam frequency."
+}

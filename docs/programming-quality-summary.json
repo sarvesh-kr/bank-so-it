@@ -1,0 +1,16 @@
+{
+  "questions": 75,
+  "conceptual_questions": 70,
+  "executed_python_outputs": 5,
+  "coverage": {
+    "OOP foundations": 8,
+    "Python types & basics": 12,
+    "Python functions & OOP": 8,
+    "Python short output": 5,
+    "Java runtime & core types": 9,
+    "Java classes & interfaces": 11,
+    "C pointers & strings": 8,
+    "C++ classes & strings": 14
+  },
+  "review": "Every stem, five choices, key and explanation reviewed using attached language specifications/documentation; all five displayed Python outputs execute in the whole-bank checker."
+}

@@ -501,5 +501,467 @@
       }
     ],
     "original_source_commit": "7d7afbb42e9b0a3d415c32b3c7a249e3d432c84d"
+  },
+  "se_bank_it-071": {
+    "subject": "se_bank_it",
+    "topic": "Payment systems",
+    "kind": "concept",
+    "family": "Payment systems",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "se_bank_it-072": {
+    "subject": "se_bank_it",
+    "topic": "Payment systems",
+    "kind": "concept",
+    "family": "Payment systems",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "se_bank_it-073": {
+    "subject": "se_bank_it",
+    "topic": "Payment systems",
+    "kind": "concept",
+    "family": "Payment systems",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "se_bank_it-074": {
+    "subject": "se_bank_it",
+    "topic": "Financial messaging",
+    "kind": "concept",
+    "family": "Financial messaging",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "se_bank_it-075": {
+    "subject": "se_bank_it",
+    "topic": "Banking channel security",
+    "kind": "concept",
+    "family": "Banking channel security",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "se_bank_it-076": {
+    "subject": "se_bank_it",
+    "topic": "Banking security operations",
+    "kind": "concept",
+    "family": "Banking security operations",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-001": {
+    "subject": "programming",
+    "topic": "OOP",
+    "kind": "concept",
+    "family": "OOP",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-002": {
+    "subject": "programming",
+    "topic": "OOP",
+    "kind": "concept",
+    "family": "OOP",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-003": {
+    "subject": "programming",
+    "topic": "OOP",
+    "kind": "concept",
+    "family": "OOP",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-004": {
+    "subject": "programming",
+    "topic": "OOP",
+    "kind": "concept",
+    "family": "OOP",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-005": {
+    "subject": "programming",
+    "topic": "OOP",
+    "kind": "concept",
+    "family": "OOP",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-006": {
+    "subject": "programming",
+    "topic": "OOP",
+    "kind": "concept",
+    "family": "OOP",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-007": {
+    "subject": "programming",
+    "topic": "OOP",
+    "kind": "concept",
+    "family": "OOP",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-008": {
+    "subject": "programming",
+    "topic": "OOP",
+    "kind": "concept",
+    "family": "OOP",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-009": {
+    "subject": "programming",
+    "topic": "OOP",
+    "kind": "concept",
+    "family": "OOP",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-010": {
+    "subject": "programming",
+    "topic": "OOP",
+    "kind": "concept",
+    "family": "OOP",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-011": {
+    "subject": "programming",
+    "topic": "OOP",
+    "kind": "concept",
+    "family": "OOP",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-012": {
+    "subject": "programming",
+    "topic": "Exceptions",
+    "kind": "concept",
+    "family": "Exceptions",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-013": {
+    "subject": "programming",
+    "topic": "Exceptions",
+    "kind": "concept",
+    "family": "Exceptions",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-014": {
+    "subject": "programming",
+    "topic": "C basics",
+    "kind": "concept",
+    "family": "C basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-015": {
+    "subject": "programming",
+    "topic": "C basics",
+    "kind": "concept",
+    "family": "C basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-016": {
+    "subject": "programming",
+    "topic": "C basics",
+    "kind": "concept",
+    "family": "C basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-017": {
+    "subject": "programming",
+    "topic": "C basics",
+    "kind": "concept",
+    "family": "C basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-018": {
+    "subject": "programming",
+    "topic": "C basics",
+    "kind": "concept",
+    "family": "C basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-019": {
+    "subject": "programming",
+    "topic": "C basics",
+    "kind": "concept",
+    "family": "C basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-020": {
+    "subject": "programming",
+    "topic": "C basics",
+    "kind": "concept",
+    "family": "C basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-021": {
+    "subject": "programming",
+    "topic": "C basics",
+    "kind": "concept",
+    "family": "C basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-022": {
+    "subject": "programming",
+    "topic": "C basics",
+    "kind": "concept",
+    "family": "C basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-023": {
+    "subject": "programming",
+    "topic": "C basics",
+    "kind": "concept",
+    "family": "C basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-024": {
+    "subject": "programming",
+    "topic": "C basics",
+    "kind": "concept",
+    "family": "C basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-025": {
+    "subject": "programming",
+    "topic": "C++ basics",
+    "kind": "concept",
+    "family": "C++ basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-026": {
+    "subject": "programming",
+    "topic": "C++ basics",
+    "kind": "concept",
+    "family": "C++ basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-027": {
+    "subject": "programming",
+    "topic": "C++ basics",
+    "kind": "concept",
+    "family": "C++ basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-028": {
+    "subject": "programming",
+    "topic": "C++ basics",
+    "kind": "concept",
+    "family": "C++ basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-029": {
+    "subject": "programming",
+    "topic": "C++ basics",
+    "kind": "concept",
+    "family": "C++ basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-030": {
+    "subject": "programming",
+    "topic": "C++ basics",
+    "kind": "concept",
+    "family": "C++ basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-031": {
+    "subject": "programming",
+    "topic": "Java basics",
+    "kind": "concept",
+    "family": "Java basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-032": {
+    "subject": "programming",
+    "topic": "Java basics",
+    "kind": "concept",
+    "family": "Java basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-033": {
+    "subject": "programming",
+    "topic": "Java basics",
+    "kind": "concept",
+    "family": "Java basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-034": {
+    "subject": "programming",
+    "topic": "Java basics",
+    "kind": "concept",
+    "family": "Java basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-035": {
+    "subject": "programming",
+    "topic": "Java basics",
+    "kind": "concept",
+    "family": "Java basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-036": {
+    "subject": "programming",
+    "topic": "Java basics",
+    "kind": "concept",
+    "family": "Java basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-037": {
+    "subject": "programming",
+    "topic": "Java basics",
+    "kind": "concept",
+    "family": "Java basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-038": {
+    "subject": "programming",
+    "topic": "Java basics",
+    "kind": "concept",
+    "family": "Java basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-039": {
+    "subject": "programming",
+    "topic": "Python basics",
+    "kind": "concept",
+    "family": "Python basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-040": {
+    "subject": "programming",
+    "topic": "Python basics",
+    "kind": "concept",
+    "family": "Python basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-041": {
+    "subject": "programming",
+    "topic": "Python basics",
+    "kind": "concept",
+    "family": "Python basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-042": {
+    "subject": "programming",
+    "topic": "Python basics",
+    "kind": "concept",
+    "family": "Python basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-043": {
+    "subject": "programming",
+    "topic": "Python basics",
+    "kind": "concept",
+    "family": "Python basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-044": {
+    "subject": "programming",
+    "topic": "Python basics",
+    "kind": "concept",
+    "family": "Python basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-045": {
+    "subject": "programming",
+    "topic": "Python basics",
+    "kind": "concept",
+    "family": "Python basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-046": {
+    "subject": "programming",
+    "topic": "Python basics",
+    "kind": "concept",
+    "family": "Python basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-047": {
+    "subject": "programming",
+    "topic": "Python basics",
+    "kind": "concept",
+    "family": "Python basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-048": {
+    "subject": "programming",
+    "topic": "Control flow",
+    "kind": "concept",
+    "family": "Control flow",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-049": {
+    "subject": "programming",
+    "topic": "Language processing",
+    "kind": "concept",
+    "family": "Language processing",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-050": {
+    "subject": "programming",
+    "topic": "Python basics",
+    "kind": "concept",
+    "family": "Python basics",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-051": {
+    "subject": "programming",
+    "topic": "Python output",
+    "kind": "executed-python",
+    "family": "python-output-806",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-052": {
+    "subject": "programming",
+    "topic": "Python output",
+    "kind": "executed-python",
+    "family": "python-output-807",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-053": {
+    "subject": "programming",
+    "topic": "Python output",
+    "kind": "executed-python",
+    "family": "python-output-808",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-054": {
+    "subject": "programming",
+    "topic": "Python output",
+    "kind": "executed-python",
+    "family": "python-output-809",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-055": {
+    "subject": "programming",
+    "topic": "Python output",
+    "kind": "executed-python",
+    "family": "python-output-810",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-056": {
+    "subject": "programming",
+    "topic": "Python output",
+    "kind": "executed-python",
+    "family": "python-output-811",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-057": {
+    "subject": "programming",
+    "topic": "Python output",
+    "kind": "executed-python",
+    "family": "python-output-812",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-058": {
+    "subject": "programming",
+    "topic": "Python output",
+    "kind": "executed-python",
+    "family": "python-output-813",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-059": {
+    "subject": "programming",
+    "topic": "Python output",
+    "kind": "executed-python",
+    "family": "python-output-814",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
+  },
+  "programming-060": {
+    "subject": "programming",
+    "topic": "Python output",
+    "kind": "executed-python",
+    "family": "python-output-815",
+    "original_source_commit": "db458fb00b8bf44ac9f0be38300a6a958ab395c3"
   }
 }

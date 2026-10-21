@@ -1,0 +1,230 @@
+{
+  "retrieved_on": "2026-10-21",
+  "used_reference_entries": 27,
+  "full_document_entries": 26,
+  "official_indexed_glossary_entries": 1,
+  "sources": {
+    "agile": {
+      "title": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "final_url": "https://agilemanifesto.org/",
+      "bytes": 6447,
+      "sha256": "0b8e95ccabe552d0909be8fff8e94909952c7b242a7e703c1fe3edb17f2236c6",
+      "mime": "text/html"
+    },
+    "alpha": {
+      "title": "ISTQB official glossary: alpha and beta testing",
+      "url": "https://glossary.istqb.org/en_US/term/alpha-testing",
+      "retrieval_method": "Official ISTQB search-index excerpts inspected; direct glossary HTML exposes only a JavaScript shell",
+      "verified_concepts": [
+        "Alpha testing uses the developer test environment with roles outside the development organization",
+        "Beta testing takes place outside that test environment with roles outside the development organization"
+      ],
+      "indexed_source_urls": [
+        "https://glossary.istqb.org/en_US/term/alpha-testing?exact_matches_first=true&page=2&term=",
+        "https://glossary.istqb.org/en_US/search?exact_matches_first=true&page=11"
+      ]
+    },
+    "change": {
+      "title": "Atlassian: change management",
+      "url": "https://www.atlassian.com/itsm/change-management",
+      "final_url": "https://www.atlassian.com/itsm/change-management",
+      "bytes": 2198127,
+      "sha256": "715d82192416c3f1125562fd6e643ce85d1b102f4a093cf551f04d768eb9a2cf",
+      "mime": "text/html"
+    },
+    "ci": {
+      "title": "AWS: continuous integration",
+      "url": "https://aws.amazon.com/devops/continuous-integration/",
+      "final_url": "https://aws.amazon.com/devops/continuous-integration/",
+      "bytes": 340114,
+      "sha256": "76fd48aa662aed3342ff966664495646263d0c105ced0bddf2dbce12af312785",
+      "mime": "text/html"
+    },
+    "cicd": {
+      "title": "AWS: continuous delivery versus continuous deployment",
+      "url": "https://aws.amazon.com/devops/continuous-delivery/",
+      "final_url": "https://aws.amazon.com/devops/continuous-delivery/",
+      "bytes": 350746,
+      "sha256": "17b1b58cca7908ed1cf0f1f5125e2818de42ad813ddf9cd8ffd98ab63a4d3e25",
+      "mime": "text/html"
+    },
+    "continuity": {
+      "title": "NIST SP 800-34 Revision 1: contingency planning",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf",
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf",
+      "bytes": 952921,
+      "sha256": "476f04d4c60b0770c1ac8b2720551972074ce78e936a3e7a535048416111d0df",
+      "mime": "application/pdf"
+    },
+    "controls": {
+      "title": "NIST SP 800-53 Revision 5: security and privacy controls",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf",
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf",
+      "bytes": 6073678,
+      "sha256": "fc63bcd61715d0181dd8e85998b1e6201ae3515fc6626102101cab1841e11ec6",
+      "mime": "application/pdf"
+    },
+    "core-banking": {
+      "title": "IBM: core banking",
+      "url": "https://www.ibm.com/think/topics/core-banking",
+      "final_url": "https://www.ibm.com/think/topics/core-banking",
+      "bytes": 180271,
+      "sha256": "a01b998a92b9a885ecc04d2efd93d7a1e31983835ccfe95bec701eb902795370",
+      "mime": "text/html"
+    },
+    "cyber-incident": {
+      "title": "NIST SP 800-61 Revision 3: incident response",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "bytes": 1040566,
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "mime": "application/pdf"
+    },
+    "git": {
+      "title": "Git: version control basics",
+      "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+      "final_url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+      "bytes": 126875,
+      "sha256": "66a05b5a4278ac7f18c9f96966d6736b0aca4bc255c31faf5ccbe519fd0c5a9d",
+      "mime": "text/html"
+    },
+    "idempotency": {
+      "title": "AWS Builders Library: making retries safe with idempotent APIs",
+      "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "final_url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "bytes": 455504,
+      "sha256": "fde58418242c255e4166298674a8eafb41ac46661dbb573f253af9af1ebefc2a",
+      "mime": "text/html"
+    },
+    "incident": {
+      "title": "Atlassian: incident management",
+      "url": "https://www.atlassian.com/incident-management",
+      "final_url": "https://www.atlassian.com/incident-management",
+      "bytes": 2172076,
+      "sha256": "dfedc9023b7ff42dd401aba8ca5de27ec90fa14ff07f68bf68c8d591c902ecd9",
+      "mime": "text/html"
+    },
+    "istqb": {
+      "title": "ISTQB CTFL syllabus v4.0.1",
+      "url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "final_url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "bytes": 1061189,
+      "sha256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1",
+      "mime": "application/pdf"
+    },
+    "neft": {
+      "title": "RBI: NEFT frequently asked questions",
+      "url": "https://www.rbi.org.in/scripts/FS_FAQs.aspx?Id=60",
+      "final_url": "https://www.rbi.org.in/scripts/FS_FAQs.aspx?Id=60",
+      "bytes": 109730,
+      "sha256": "a3a6ce10611ca2e4612e36a92490cf7aeefe03086d14749652cea09524c51d60",
+      "mime": "text/html"
+    },
+    "pci": {
+      "title": "PCI SSC: PCI DSS",
+      "url": "https://www.pcisecuritystandards.org/standards/pci-dss/",
+      "final_url": "https://www.pcisecuritystandards.org/standards/pci-dss/",
+      "bytes": 723570,
+      "sha256": "b76fd6988c0c65906c0c7d5f55a214346e814f9a0239e00a40437638b08f9054",
+      "mime": "text/html"
+    },
+    "performance": {
+      "title": "Microsoft Azure: performance testing",
+      "url": "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/performance-test",
+      "final_url": "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/performance-test",
+      "bytes": 65376,
+      "sha256": "5ec351aec7c51a55695ed41c1adddae7768e425d304fcbc8093938d40bf52add",
+      "mime": "text/html"
+    },
+    "priority": {
+      "title": "Atlassian: calculating incident priority using impact and urgency",
+      "url": "https://support.atlassian.com/jira-service-management-cloud/docs/how-impact-and-urgency-are-used-to-calculate-priority/",
+      "final_url": "https://support.atlassian.com/jira-service-management-cloud/docs/how-impact-and-urgency-are-used-to-calculate-priority/",
+      "bytes": 937140,
+      "sha256": "76563876577caff98d6b69728738b9e7e874771d0bab9265d47df1a5df71c417",
+      "mime": "text/html"
+    },
+    "problem": {
+      "title": "Atlassian: problem management",
+      "url": "https://www.atlassian.com/itsm/problem-management",
+      "final_url": "https://www.atlassian.com/itsm/problem-management",
+      "bytes": 2182556,
+      "sha256": "c74df23e7edbec168e130af96b339b83f7f4e8738040cf391032c1b6423f970e",
+      "mime": "text/html"
+    },
+    "rbi-outsourcing": {
+      "title": "RBI: Outsourcing of Information Technology Services Directions, 2023",
+      "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12486&Mode=0",
+      "final_url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12486&Mode=0",
+      "bytes": 177931,
+      "sha256": "7c5569d995c0f4ff7ac25b47bd95574f1cff2481752f19145573be2020fc2e6e",
+      "mime": "text/html"
+    },
+    "rtgs": {
+      "title": "RBI: RTGS frequently asked questions",
+      "url": "https://www.rbi.org.in/scripts/FS_FAQs.aspx?Id=65",
+      "final_url": "https://www.rbi.org.in/scripts/FS_FAQs.aspx?Id=65",
+      "bytes": 107418,
+      "sha256": "73f2b5a93875a8da4690208a54e734ba6f2862cffd858ac5f8f4bfac19550d51",
+      "mime": "text/html"
+    },
+    "scrum": {
+      "title": "The Scrum Guide, November 2020",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "final_url": "https://scrumguides.org/scrum-guide.html",
+      "bytes": 34943,
+      "sha256": "64aade688c3f2bceb1051268310e1cdcf503ac424e052a07414f60cabea8bcc0",
+      "mime": "text/html"
+    },
+    "sdlc": {
+      "title": "IBM: software development lifecycle",
+      "url": "https://www.ibm.com/think/topics/sdlc",
+      "final_url": "https://www.ibm.com/think/topics/sdlc",
+      "bytes": 211975,
+      "sha256": "4f6b18bc8e80471fc8f4c7e370f5fb9db557d59db78abd50deb601e21a9b3a0e",
+      "mime": "text/html"
+    },
+    "sla": {
+      "title": "Atlassian: service-level agreements",
+      "url": "https://www.atlassian.com/itsm/service-request-management/slas",
+      "final_url": "https://www.atlassian.com/itsm/service-request-management/slas",
+      "bytes": 2190788,
+      "sha256": "b0bb7127ec88cc0e25cda4d55584ef77c7059d1d8a37223cca0f248bd9777298",
+      "mime": "text/html"
+    },
+    "ssdf": {
+      "title": "NIST SP 800-218: Secure Software Development Framework",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf",
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf",
+      "bytes": 739891,
+      "sha256": "617746e553a9e2da49bfbd4eef0dfc3094758a39b869314e4173ac36605cde22",
+      "mime": "application/pdf"
+    },
+    "swebok": {
+      "title": "IEEE Computer Society SWEBOK Guide v4.0",
+      "url": "https://ieeecs-media.computer.org/media/education/swebok/swebok-v4.pdf",
+      "final_url": "https://ieeecs-media.computer.org/media/education/swebok/swebok-v4.pdf",
+      "bytes": 6015672,
+      "sha256": "0c9db4da0b2425c58cf778b99131eb31bb6c188e98b67163a549a1366d96e511",
+      "mime": "application/pdf"
+    },
+    "swift": {
+      "title": "SWIFT: our role in financial messaging",
+      "url": "https://www.swift.com/about-us/who-we-are",
+      "final_url": "https://www.swift.com/about-us/who-we-are",
+      "bytes": 172233,
+      "sha256": "38c251eb3bee54dfbaa1d9f8c52f264a54f28042195f4e5971b7b7bd90d0882b",
+      "mime": "text/html"
+    },
+    "uml": {
+      "title": "OMG Unified Modeling Language 2.5.1 specification",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "final_url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "bytes": 18069510,
+      "sha256": "416b57e1933780eb48bd60fe513e031da220c28a521bdd334a366bebc78a463e",
+      "mime": "application/pdf"
+    }
+  },
+  "retrieval_notes": "Reviewed source sections and extracted PDFs. ISTQB CTFL used the official PDF after an S3 link failed. Alpha/beta definitions were checked against indexed official glossary entries; direct glossary HTML provides only a JavaScript shell. An old ASTQB PDF link redirected to a resource index and was not counted as a glossary download. NPCI responses did not expose usable content; UPI attribution uses the Government of India PIB factsheet. A NIC page returned503. Unused or unusable responses are not supporting evidence."
+}

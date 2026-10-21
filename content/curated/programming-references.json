@@ -1,0 +1,98 @@
+{
+  "c": [
+    "WG14: C11 committee draft N1570",
+    "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf"
+  ],
+  "cpp-abstract": [
+    "C++ working draft: abstract classes",
+    "https://eel.is/c++draft/class.abstract"
+  ],
+  "cpp-classes": [
+    "C++ working draft: classes",
+    "https://eel.is/c++draft/class"
+  ],
+  "cpp-delete": [
+    "C++ working draft: delete expressions",
+    "https://eel.is/c++draft/expr.delete"
+  ],
+  "cpp-dtor": [
+    "C++ working draft: destructors",
+    "https://eel.is/c++draft/class.dtor"
+  ],
+  "cpp-inheritance": [
+    "C++ working draft: derived classes",
+    "https://eel.is/c++draft/class.derived"
+  ],
+  "cpp-raii": [
+    "C++ Core Guidelines: resource management through RAII",
+    "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-raii"
+  ],
+  "cpp-ref": [
+    "C++ working draft: references",
+    "https://eel.is/c++draft/dcl.ref"
+  ],
+  "cpp-string": [
+    "C++ working draft: basic_string",
+    "https://eel.is/c++draft/basic.string"
+  ],
+  "cpp-virtual": [
+    "C++ working draft: virtual functions",
+    "https://eel.is/c++draft/class.virtual"
+  ],
+  "java-string": [
+    "Java SE 21 API: String",
+    "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html"
+  ],
+  "javac": [
+    "Oracle Java SE 21: javac command",
+    "https://docs.oracle.com/en/java/javase/21/docs/specs/man/javac.html"
+  ],
+  "jls-classes": [
+    "Java SE 21 language specification: classes",
+    "https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html"
+  ],
+  "jls-exceptions": [
+    "Java SE 21 language specification: exceptions",
+    "https://docs.oracle.com/javase/specs/jls/se21/html/jls-11.html"
+  ],
+  "jls-interfaces": [
+    "Java SE 21 language specification: interfaces",
+    "https://docs.oracle.com/javase/specs/jls/se21/html/jls-9.html"
+  ],
+  "jls-types": [
+    "Java SE 21 language specification: types, values and variables",
+    "https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html"
+  ],
+  "jvms": [
+    "Java SE 21 virtual machine specification: the class file format",
+    "https://docs.oracle.com/javase/specs/jvms/se21/html/jvms-4.html"
+  ],
+  "jvms-intro": [
+    "Java SE 21 JVM specification: introduction and implementation freedom",
+    "https://docs.oracle.com/javase/specs/jvms/se21/html/jvms-1.html"
+  ],
+  "jvms-runtime": [
+    "Java SE 21 JVM specification: runtime data areas and heap",
+    "https://docs.oracle.com/javase/specs/jvms/se21/html/jvms-2.html"
+  ],
+  "python-classes": [
+    "Python 3 tutorial: classes",
+    "https://docs.python.org/3/tutorial/classes.html"
+  ],
+  "python-errors": [
+    "Python 3 tutorial: errors and exceptions",
+    "https://docs.python.org/3/tutorial/errors.html"
+  ],
+  "python-functions": [
+    "Python 3 tutorial: control flow and function definitions",
+    "https://docs.python.org/3/tutorial/controlflow.html"
+  ],
+  "python-model": [
+    "Python 3 data model: object initialization and special methods",
+    "https://docs.python.org/3/reference/datamodel.html"
+  ],
+  "python-types": [
+    "Python 3: built-in types",
+    "https://docs.python.org/3/library/stdtypes.html"
+  ]
+}

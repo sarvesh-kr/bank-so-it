@@ -1,0 +1,110 @@
+{
+  "agile": [
+    "Manifesto for Agile Software Development",
+    "https://agilemanifesto.org/"
+  ],
+  "alpha": [
+    "ISTQB official glossary: alpha and beta testing",
+    "https://glossary.istqb.org/en_US/term/alpha-testing"
+  ],
+  "change": [
+    "Atlassian: change management",
+    "https://www.atlassian.com/itsm/change-management"
+  ],
+  "ci": [
+    "AWS: continuous integration",
+    "https://aws.amazon.com/devops/continuous-integration/"
+  ],
+  "cicd": [
+    "AWS: continuous delivery versus continuous deployment",
+    "https://aws.amazon.com/devops/continuous-delivery/"
+  ],
+  "continuity": [
+    "NIST SP 800-34 Revision 1: contingency planning",
+    "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf"
+  ],
+  "controls": [
+    "NIST SP 800-53 Revision 5: security and privacy controls",
+    "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf"
+  ],
+  "core-banking": [
+    "IBM: core banking",
+    "https://www.ibm.com/think/topics/core-banking"
+  ],
+  "cyber-incident": [
+    "NIST SP 800-61 Revision 3: incident response",
+    "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf"
+  ],
+  "git": [
+    "Git: version control basics",
+    "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"
+  ],
+  "idempotency": [
+    "AWS Builders Library: making retries safe with idempotent APIs",
+    "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/"
+  ],
+  "incident": [
+    "Atlassian: incident management",
+    "https://www.atlassian.com/incident-management"
+  ],
+  "istqb": [
+    "ISTQB CTFL syllabus v4.0.1",
+    "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf"
+  ],
+  "neft": [
+    "RBI: NEFT frequently asked questions",
+    "https://www.rbi.org.in/scripts/FS_FAQs.aspx?Id=60"
+  ],
+  "pci": [
+    "PCI SSC: PCI DSS",
+    "https://www.pcisecuritystandards.org/standards/pci-dss/"
+  ],
+  "performance": [
+    "Microsoft Azure: performance testing",
+    "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/performance-test"
+  ],
+  "priority": [
+    "Atlassian: calculating incident priority using impact and urgency",
+    "https://support.atlassian.com/jira-service-management-cloud/docs/how-impact-and-urgency-are-used-to-calculate-priority/"
+  ],
+  "problem": [
+    "Atlassian: problem management",
+    "https://www.atlassian.com/itsm/problem-management"
+  ],
+  "rbi-outsourcing": [
+    "RBI: Outsourcing of Information Technology Services Directions, 2023",
+    "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12486&Mode=0"
+  ],
+  "rtgs": [
+    "RBI: RTGS frequently asked questions",
+    "https://www.rbi.org.in/scripts/FS_FAQs.aspx?Id=65"
+  ],
+  "scrum": [
+    "The Scrum Guide, November 2020",
+    "https://scrumguides.org/scrum-guide.html"
+  ],
+  "sdlc": [
+    "IBM: software development lifecycle",
+    "https://www.ibm.com/think/topics/sdlc"
+  ],
+  "sla": [
+    "Atlassian: service-level agreements",
+    "https://www.atlassian.com/itsm/service-request-management/slas"
+  ],
+  "ssdf": [
+    "NIST SP 800-218: Secure Software Development Framework",
+    "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf"
+  ],
+  "swebok": [
+    "IEEE Computer Society SWEBOK Guide v4.0",
+    "https://ieeecs-media.computer.org/media/education/swebok/swebok-v4.pdf"
+  ],
+  "swift": [
+    "SWIFT: our role in financial messaging",
+    "https://www.swift.com/about-us/who-we-are"
+  ],
+  "uml": [
+    "OMG Unified Modeling Language 2.5.1 specification",
+    "https://www.omg.org/spec/UML/2.5.1/PDF"
+  ]
+}

@@ -6,7 +6,7 @@ The web version runs entirely on **GitHub Pages**: no server, database service, 
 
 ## Practice features
 
-- **1,037 curated practice MCQs**, each with five choices, a correct answer and an explanation.
+- **1,034 curated practice MCQs**, each with five choices, a correct answer and an explanation.
 - Subject-wise or mixed tests; choose 20, 40, 50, all eligible questions, or any custom count.
 - Subtopic, difficulty, unseen, wrong-answer and bookmark filters.
 - **Quick revision**: searchable answer/explanation cards, source links and an 11-subject coverage selector. Repeated and specialist-depth items have been retired.
@@ -26,17 +26,17 @@ The web version runs entirely on **GitHub Pages**: no server, database service, 
 | Linux & Shell | 75 |
 | Warehousing & Mining | 50 |
 | Cloud, AI & ML Basics | 50 |
-| Software Engineering & Banking IT | 68 |
-| Programming & OOP | 60 |
+| Software Engineering & Banking IT | 50 |
+| Programming & OOP | 75 |
 | Computer Fundamentals & Architecture | 33 |
 | Web Technology | 20 |
-| **Total** | **1,037** |
+| **Total** | **1,034** |
 
 Each retained stem, five-option set, key and explanation received a technical review, with sources and independent checks for computed answers. See the [content audit](docs/CONTENT_AUDIT.md), [per-item ledger](docs/question-audit.csv) and [retirement decisions](docs/retired-question-audit.csv). This is practice material rather than an official previous-year paper. No exact exam topic weights are asserted.
 
-**Cloud, AI & ML Basics now contains 50 newly curated conceptual questions**, covering cloud models, virtualization, security/banking controls, AI/ML foundations, algorithms, evaluation and responsible use. There are no numerical exercises. The previous 47 items are replaced; all 956 existing records outside that topic are unchanged. Networking also gains 31 new questions on protocol functions, APIs, blockchain, CDN and SSL/TLS, bringing it to 231; see the [network supplement](docs/NETWORK_SERVICES_AUDIT.md). See the [cloud/AI/ML audit and coverage](docs/CLOUD_AI_ML_AUDIT.md). Earlier [warehousing/mining](docs/DW_DM_AUDIT.md), [Linux](docs/LINUX_AUDIT.md), [DSA](docs/DSA_AUDIT.md), [OS](docs/OS_AUDIT.md), [DBMS](docs/DBMS_AUDIT.md) and [network](docs/NETWORK_AUDIT.md) revisions remain unchanged. The earlier cross-subject review is recorded separately in the content audit. Old stock imports cannot overwrite reviewed built-ins or restore retired items; use the editor for personal changes. Earlier session reviews are retained, while current-bank statistics exclude retired questions.
+**Software Engineering & Banking IT now has 50 focused questions: 45 concepts and five short banking scenarios**, covering SDLC, requirements, design/delivery, testing, incident/problem/change management, vendor due diligence/contracts/accountability/exit, recovery and core payment-system concepts. No numerical exercises are included; the concurrent Programming & OOP revision has 75 questions and all 909 records outside both topics are unchanged. See the [software/banking audit](docs/SE_BANK_IT_AUDIT.md), [coverage](docs/se-bank-quality-summary.json) and [change evidence](docs/se-bank-r2-change-evidence.json). Programming covers Python data types and initialization, Java interfaces/classes/JVM/bytecode, C/C++ inheritance and string functions; five short Python outputs are executed. See the [programming audit](docs/PROGRAMMING_AUDIT.md). Earlier [cloud/AI/ML](docs/CLOUD_AI_ML_AUDIT.md), [network protocol/API/blockchain/CDN/SSL/TLS supplement](docs/NETWORK_SERVICES_AUDIT.md), [warehousing/mining](docs/DW_DM_AUDIT.md), [Linux](docs/LINUX_AUDIT.md), [DSA](docs/DSA_AUDIT.md), [OS](docs/OS_AUDIT.md) and [DBMS](docs/DBMS_AUDIT.md) revisions remain available. Old stock imports cannot overwrite reviewed built-ins or restore retired items; use the editor for personal changes. Earlier session reviews retain their question snapshots.
 
-**Android 2.7** bundles the same curated bank and quick revision. It reuses the Android 1.2 release key, so 1.2 installations can update in place. Export a progress backup before installing updates. Installations predating the 1.2 key change still need export, uninstall, reinstall and restore.
+**Android 2.8** bundles the same curated bank and quick revision. It reuses the Android 1.2 release key, so 1.2 installations can update in place. Export a progress backup before installing updates. Installations predating the 1.2 key change still need export, uninstall, reinstall and restore.
 
 ## Deploy on GitHub Pages
 
@@ -105,6 +105,8 @@ Open `http://localhost:8000/`. HTTPS or localhost is required for service worker
 
 - `app/src/main/assets/` — shared UI, pure quiz logic, browser persistence, PWA bootstrap, import validation and the generated question bank.
 - `app/src/main/java/` — Android WebView shell, private storage and system file picker.
+- `content/curated/programming-r2.txt` — current 75-question OOP/Python/Java/C/C++ source with five executed Python outputs.
+- `content/curated/se-bank-r2.txt` — current 50-question software/banking source with five short scenarios and explicit references.
 - `content/curated/cloud-ai-ml-r2.txt` — current 50-question conceptual cloud/AI/ML source with explicit IDs and references.
 - `content/curated/dw-dm-r2.txt` — current 50-question conceptual warehousing/mining source with explicit IDs and references.
 - `content/curated/network-r2.txt` — current 231-question network/cybersecurity source with explicit IDs and per-item references.

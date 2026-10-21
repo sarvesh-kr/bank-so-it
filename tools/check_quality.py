@@ -162,6 +162,10 @@ def check():
     check_dw_dm(bank)
     from check_cloud_ai_ml import check_cloud_ai_ml
     check_cloud_ai_ml(bank)
+    from check_se_bank import check_se_bank
+    check_se_bank(bank)
+    from check_programming import check_programming
+    check_programming(bank)
     decisions=json.loads((ROOT/'content/review/retirements.json').read_text())
     baseline=json.loads((ROOT/'content/review/baseline-manifest.json').read_text())
     current={q['id'] for q in bank['questions']}

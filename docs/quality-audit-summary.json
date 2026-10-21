@@ -1,18 +1,16 @@
 {
   "previous_bank": 1150,
-  "previous_items_retained": 62,
-  "retired": 1105,
-  "retired_from_original_baseline": 1088,
-  "retired_after_original_baseline": 17,
-  "added": 975,
-  "current_bank": 1037,
+  "previous_items_retained": 0,
+  "retired": 1233,
+  "retired_from_original_baseline": 1150,
+  "retired_after_original_baseline": 83,
+  "added": 1034,
+  "current_bank": 1034,
   "changes": {
-    "added": 975,
-    "retained": 56,
-    "corrected or clarified": 6
+    "added": 1034
   },
   "reviewer": "Codex technical content review",
-  "computed_checks_current": 124,
+  "computed_checks_current": 119,
   "computed_checks_previous": 485,
   "subjects": {
     "network": 231,
@@ -22,8 +20,8 @@
     "linux": 75,
     "dw_dm": 50,
     "cloud_ai_ml": 50,
-    "se_bank_it": 68,
-    "programming": 60,
+    "se_bank_it": 50,
+    "programming": 75,
     "architecture": 33,
     "web": 20
   },
