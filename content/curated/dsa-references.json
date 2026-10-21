@@ -1,0 +1,118 @@
+{
+  "ods": [
+    "Pat Morin, Open Data Structures: analysis, arrays, lists, trees, heaps, hashing and graphs",
+    "https://opendatastructures.org/ods-java.pdf"
+  ],
+  "stacks": [
+    "Sedgewick and Wayne, Algorithms: bags, queues and stacks",
+    "https://algs4.cs.princeton.edu/13stacks/"
+  ],
+  "expressions": [
+    "Sedgewick and Wayne: stack-based infix/postfix conversion and evaluation exercises",
+    "https://algs4.cs.princeton.edu/13stacks/"
+  ],
+  "elementary": [
+    "Sedgewick and Wayne: selection, insertion and Shell sorting",
+    "https://algs4.cs.princeton.edu/21elementary/"
+  ],
+  "merge": [
+    "Sedgewick and Wayne: merge sort and stability",
+    "https://algs4.cs.princeton.edu/22mergesort/"
+  ],
+  "quick": [
+    "Sedgewick and Wayne: quicksort, partitioning and performance",
+    "https://algs4.cs.princeton.edu/23quicksort/"
+  ],
+  "heaps": [
+    "Sedgewick and Wayne: priority queues, binary heaps and heapsort",
+    "https://algs4.cs.princeton.edu/24pq/"
+  ],
+  "hash": [
+    "Sedgewick and Wayne: hash tables, chaining and linear probing",
+    "https://algs4.cs.princeton.edu/34hash/"
+  ],
+  "graphs": [
+    "Sedgewick and Wayne: undirected graphs, DFS and BFS",
+    "https://algs4.cs.princeton.edu/41graph/"
+  ],
+  "directed": [
+    "Sedgewick and Wayne: directed graphs and topological order",
+    "https://algs4.cs.princeton.edu/42digraph/"
+  ],
+  "mst": [
+    "Sedgewick and Wayne: minimum spanning trees and greedy algorithms",
+    "https://algs4.cs.princeton.edu/43mst/"
+  ],
+  "shortest": [
+    "Sedgewick and Wayne: shortest paths and Dijkstra's algorithm",
+    "https://algs4.cs.princeton.edu/44sp/"
+  ],
+  "radix": [
+    "Sedgewick and Wayne: LSD radix sorting and key-indexed counting",
+    "https://algs4.cs.princeton.edu/51radix/"
+  ],
+  "bisect": [
+    "Python documentation: binary-search insertion boundaries and search costs",
+    "https://docs.python.org/3/library/bisect.html"
+  ],
+  "bst": [
+    "Sedgewick and Wayne: binary search trees, search, insertion and deletion",
+    "https://algs4.cs.princeton.edu/32bst/"
+  ],
+  "dp": [
+    "MIT 6.006: dynamic programming, subproblems and memoization",
+    "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/lecture-15-dynamic-programming-part-1-srtbot-fib-dags-bowling/"
+  ],
+  "c-string": [
+    "ISO C11 committee draft N1570: strlen, section 7.24.6.3",
+    "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf"
+  ],
+  "row-major": [
+    "ISO C11 committee draft N1570: row-major arrays, section 6.5.2.1",
+    "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf"
+  ],
+  "prefix": [
+    "USACO Guide authors: prefix sums and constant-time range queries",
+    "https://raw.githubusercontent.com/cpinitiative/usaco-guide/master/content/3_Silver/Prefix_Sums.mdx"
+  ],
+  "cycle": [
+    "CP Algorithms: Floyd's linked-list cycle detection",
+    "https://cp-algorithms.com/others/tortoise_and_hare.html"
+  ],
+  "queue-stacks": [
+    "CP Algorithms: implementing a queue with two stacks",
+    "https://cp-algorithms.com/data_structures/stack_queue_modification.html"
+  ],
+  "sparse": [
+    "SciPy: sparse-array representations and implicit zeros",
+    "https://docs.scipy.org/doc/scipy/tutorial/sparse.html"
+  ],
+  "binary-mid": [
+    "Joshua Bloch: avoiding overflow in binary-search midpoint computation",
+    "https://research.google/blog/extra-extra-read-all-about-it-nearly-all-binary-searches-and-mergesorts-are-broken/"
+  ],
+  "bubble": [
+    "OpenDSA textbook source: bubble sort and early termination",
+    "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/Sorting/BubbleSort.rst"
+  ],
+  "avl": [
+    "OpenDSA textbook source: AVL height balance and rotations",
+    "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/SearchStruct/AVL.rst"
+  ],
+  "binary-types": [
+    "OpenDSA textbook source: binary-tree terminology and definitions",
+    "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/Binary/BinaryTree.rst"
+  ],
+  "bucket": [
+    "OpenDSA textbook source: distribution sorting into bins",
+    "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/Sorting/BinSort.rst"
+  ],
+  "full-tree-proof": [
+    "OpenDSA: full binary-tree leaf/internal-node theorem",
+    "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/Binary/BinaryTreeFullThm.rst"
+  ],
+  "complete": [
+    "OpenDSA: complete binary trees and array representations",
+    "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/Binary/CompleteTree.rst"
+  ]
+}

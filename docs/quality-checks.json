@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "questions": 973,
-  "retired": 813,
-  "independent_answer_checks": 116,
+  "questions": 1016,
+  "retired": 920,
+  "independent_answer_checks": 126,
   "proofs": {
     "dbms-r2-062": {
       "method": "worked-dbms",
@@ -463,6 +463,383 @@
         ]
       }
     },
+    "dsa-r2-011": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "21",
+      "details": {
+        "inner_iteration_counts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    "dsa-r2-012": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "5",
+      "details": {
+        "successive_values": [
+          16,
+          8,
+          4,
+          2,
+          1
+        ]
+      }
+    },
+    "dsa-r2-024": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "1028",
+      "details": {
+        "base": 1000,
+        "element_bytes": 4,
+        "index": 7
+      }
+    },
+    "dsa-r2-036": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "1 \u2192 2 \u2192 5",
+      "details": {
+        "final_list": [
+          1,
+          2,
+          5
+        ]
+      }
+    },
+    "dsa-r2-045": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "14",
+      "details": {
+        "tokens": [
+          "8",
+          "2",
+          "3",
+          "*",
+          "+"
+        ]
+      }
+    },
+    "dsa-r2-046": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "7, 9, 4",
+      "details": {
+        "returned": [
+          7,
+          9,
+          4
+        ],
+        "remaining": []
+      }
+    },
+    "dsa-r2-055": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "A, B",
+      "details": {
+        "returned": [
+          "A",
+          "B"
+        ],
+        "remaining": [
+          "C"
+        ]
+      }
+    },
+    "dsa-r2-056": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "1",
+      "details": {
+        "occupied_indices": [
+          3,
+          4,
+          0
+        ]
+      }
+    },
+    "dsa-r2-067": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "2",
+      "details": {
+        "probes": [
+          {
+            "index": 3,
+            "value": 8
+          },
+          {
+            "index": 5,
+            "value": 12
+          }
+        ]
+      }
+    },
+    "dsa-r2-068": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "1",
+      "details": {
+        "values": [
+          2,
+          4,
+          4,
+          4,
+          7
+        ],
+        "target": 4
+      }
+    },
+    "dsa-r2-091": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "[1,4,2,5]",
+      "details": {
+        "array_trace": [
+          [
+            5,
+            1,
+            4,
+            2
+          ],
+          [
+            1,
+            5,
+            4,
+            2
+          ],
+          [
+            1,
+            4,
+            5,
+            2
+          ],
+          [
+            1,
+            4,
+            2,
+            5
+          ]
+        ]
+      }
+    },
+    "dsa-r2-092": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "[1,5,4,2]",
+      "details": {
+        "array_trace": [
+          [
+            5,
+            1,
+            4,
+            2
+          ],
+          [
+            1,
+            5,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    "dsa-r2-093": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "[1,4,5,2]",
+      "details": {
+        "array_trace": [
+          [
+            5,
+            1,
+            4,
+            2
+          ],
+          [
+            1,
+            5,
+            4,
+            2
+          ],
+          [
+            1,
+            4,
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    "dsa-r2-094": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "[1,2,3,4,7,8]",
+      "details": {
+        "merged": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8
+        ]
+      }
+    },
+    "dsa-r2-106": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "D, B, E, A, C",
+      "details": {
+        "inorder": [
+          "D",
+          "B",
+          "E",
+          "A",
+          "C"
+        ]
+      }
+    },
+    "dsa-r2-107": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "2",
+      "details": {
+        "child_edges": {
+          "A": [
+            "B",
+            "C"
+          ],
+          "B": [
+            "D",
+            "E"
+          ],
+          "C": [
+            "F",
+            "G"
+          ]
+        },
+        "height_convention": "edges"
+      }
+    },
+    "dsa-r2-108": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "9",
+      "details": {
+        "leaves": 5,
+        "internal": 4,
+        "edges": 8
+      }
+    },
+    "dsa-r2-119": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "40, 60, 50",
+      "details": {
+        "comparison_path": [
+          40,
+          60,
+          50
+        ]
+      }
+    },
+    "dsa-r2-120": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "50",
+      "details": {
+        "inorder_after_deletion": [
+          10,
+          20,
+          30,
+          50,
+          60,
+          70
+        ]
+      }
+    },
+    "dsa-r2-129": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "[1,5,2,9,7,4]",
+      "details": {
+        "resulting_heap": [
+          1,
+          5,
+          2,
+          9,
+          7,
+          4
+        ]
+      }
+    },
+    "dsa-r2-130": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "[4,5,7,9]",
+      "details": {
+        "resulting_heap": [
+          4,
+          5,
+          7,
+          9
+        ]
+      }
+    },
+    "dsa-r2-137": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "5",
+      "details": {
+        "slots": [
+          null,
+          null,
+          null,
+          10,
+          17,
+          24,
+          null
+        ]
+      }
+    },
+    "dsa-r2-138": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "3",
+      "details": {
+        "buckets": [
+          [],
+          [],
+          [
+            12,
+            7,
+            22
+          ],
+          [],
+          [
+            9
+          ]
+        ]
+      }
+    },
+    "dsa-r2-149": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "A, B, C, D, E",
+      "details": {
+        "dequeue_order": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    "dsa-r2-150": {
+      "method": "independent DSA simulation/calculation",
+      "independent_result": "4",
+      "details": {
+        "distances": {
+          "A": 0,
+          "B": 3,
+          "C": 1,
+          "D": 4
+        },
+        "shortest_path": [
+          "A",
+          "C",
+          "B",
+          "D"
+        ]
+      }
+    },
     "network-r2-065": {
       "method": "worked-drill",
       "independent_result": "254"
@@ -502,66 +879,6 @@
     "network-r2-074": {
       "method": "worked-drill",
       "independent_result": "/26"
-    },
-    "dsa-101": {
-      "method": "worked-drill",
-      "independent_result": "10"
-    },
-    "dsa-102": {
-      "method": "worked-drill",
-      "independent_result": "3"
-    },
-    "dsa-103": {
-      "method": "worked-drill",
-      "independent_result": "7"
-    },
-    "dsa-104": {
-      "method": "worked-drill",
-      "independent_result": "10"
-    },
-    "dsa-105": {
-      "method": "worked-drill",
-      "independent_result": "8"
-    },
-    "dsa-106": {
-      "method": "worked-drill",
-      "independent_result": "5"
-    },
-    "dsa-107": {
-      "method": "worked-drill",
-      "independent_result": "12"
-    },
-    "dsa-108": {
-      "method": "worked-drill",
-      "independent_result": "6"
-    },
-    "dsa-109": {
-      "method": "worked-drill",
-      "independent_result": "2, 5, 7, 10, 15"
-    },
-    "dsa-110": {
-      "method": "worked-drill",
-      "independent_result": "[1, 5, 4, 2, 3]"
-    },
-    "dsa-111": {
-      "method": "worked-drill",
-      "independent_result": "3"
-    },
-    "dsa-112": {
-      "method": "worked-drill",
-      "independent_result": "3"
-    },
-    "dsa-113": {
-      "method": "worked-drill",
-      "independent_result": "2"
-    },
-    "dsa-114": {
-      "method": "worked-drill",
-      "independent_result": "7"
-    },
-    "dsa-115": {
-      "method": "worked-drill",
-      "independent_result": "4"
     },
     "linux-073": {
       "method": "executed-shell",

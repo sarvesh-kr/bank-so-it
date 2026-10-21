@@ -1,3 +1,4 @@
+# Legacy generation input retained for stable IDs/RNG; published DSA questions come from content/curated/dsa-r2.txt.
 Complexity¦Easy¦What does O(n) describe as an asymptotic upper bound?¦An eventual upper bound proportional to n¦An exact running time of n seconds¦A guarantee of one operation¦Memory address n¦A probability of n percent¦Big-O describes growth up to constant factors beyond a threshold; it is not an exact elapsed time.
 Complexity¦Moderate¦Which notation expresses an asymptotically tight bound?¦Theta¦Big-O alone¦Big-Omega alone¦Factorial¦Modulo¦Theta provides both asymptotic upper and lower bounds of the same order.
 Complexity¦Easy¦What is the worst-case time for linear search through n unsorted items? Choose the tightest listed asymptotic bound.¦O(n)¦O(1)¦O(log n)¦O(n log n)¦O(n squared)¦The target may be absent or last, requiring examination of all n items.

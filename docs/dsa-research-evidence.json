@@ -1,0 +1,237 @@
+{
+  "scope": "Technical source retrieval for DSA R2; not past-paper-frequency evidence.",
+  "sources": [
+    {
+      "referenceKey": "avl",
+      "title": "OpenDSA textbook source: AVL height balance and rotations",
+      "url": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/SearchStruct/AVL.rst",
+      "retrievedOn": "2026-10-21",
+      "bytes": 4990,
+      "sha256": "306f8d021fa6167b08124910ebb03f20bf68e5f789b907e01b600ce45dcbc6e4"
+    },
+    {
+      "referenceKey": "binary-mid",
+      "title": "Joshua Bloch: avoiding overflow in binary-search midpoint computation",
+      "url": "https://research.google/blog/extra-extra-read-all-about-it-nearly-all-binary-searches-and-mergesorts-are-broken/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 157011,
+      "sha256": "7b8c90982201a9c277cff1a9cc433662ad2b0d5bfa5e6ed9881f456fc5dea604"
+    },
+    {
+      "referenceKey": "binary-types",
+      "title": "OpenDSA textbook source: binary-tree terminology and definitions",
+      "url": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/Binary/BinaryTree.rst",
+      "retrievedOn": "2026-10-21",
+      "bytes": 6270,
+      "sha256": "ad5ad1d1fdb845b4b0a26bb9af4426b8b7eb3ae3bd0487d96ebe2fadacdd5e76"
+    },
+    {
+      "referenceKey": "bisect",
+      "title": "Python documentation: binary-search insertion boundaries and search costs",
+      "url": "https://docs.python.org/3/library/bisect.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 49902,
+      "sha256": "24cc5fea221e2e81f4773464fab420a01dc5f3d5b068f2ac16fb91d3109361e6"
+    },
+    {
+      "referenceKey": "bst",
+      "title": "Sedgewick and Wayne: binary search trees, search, insertion and deletion",
+      "url": "https://algs4.cs.princeton.edu/32bst/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 27072,
+      "sha256": "d76c366efe3263227e8832440d347821911388556a36ae8aec61ab31d35332bc"
+    },
+    {
+      "referenceKey": "bubble",
+      "title": "OpenDSA textbook source: bubble sort and early termination",
+      "url": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/Sorting/BubbleSort.rst",
+      "retrievedOn": "2026-10-21",
+      "bytes": 4380,
+      "sha256": "04e915eec9920cca04ec24d6a16b89d338e922151607720a9dd3f5ec84e86fdd"
+    },
+    {
+      "referenceKey": "bucket",
+      "title": "OpenDSA textbook source: distribution sorting into bins",
+      "url": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/Sorting/BinSort.rst",
+      "retrievedOn": "2026-10-21",
+      "bytes": 5191,
+      "sha256": "62b73a0fe76da9159ab517e305f8220e1cd8e01aef708cf211a9178bce6dc1ef"
+    },
+    {
+      "referenceKey": "c-string",
+      "title": "ISO C11 committee draft N1570: strlen, section 7.24.6.3",
+      "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 1692004,
+      "sha256": "208969fec021e4f4ce87a1873765298c73e7bbb5209b1c5868967c7adfc8492e"
+    },
+    {
+      "referenceKey": "complete",
+      "title": "OpenDSA: complete binary trees and array representations",
+      "url": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/Binary/CompleteTree.rst",
+      "retrievedOn": "2026-10-21",
+      "bytes": 4635,
+      "sha256": "67eece93e5064c905e9b9961835a7fddaf33a3b929e74c0408b18383e457242f"
+    },
+    {
+      "referenceKey": "cycle",
+      "title": "CP Algorithms: Floyd's linked-list cycle detection",
+      "url": "https://cp-algorithms.com/others/tortoise_and_hare.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 143249,
+      "sha256": "e72edca138e11c69908a232614c56c29978c1b19ecf95552279432facceb0dbf"
+    },
+    {
+      "referenceKey": "directed",
+      "title": "Sedgewick and Wayne: directed graphs and topological order",
+      "url": "https://algs4.cs.princeton.edu/42digraph/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 44188,
+      "sha256": "225629eb8a812bf3df248a5d5702250e227b4fd239b811b59fdb53eca470f522"
+    },
+    {
+      "referenceKey": "dp",
+      "title": "MIT 6.006: dynamic programming, subproblems and memoization",
+      "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/lecture-15-dynamic-programming-part-1-srtbot-fib-dags-bowling/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 74057,
+      "sha256": "ca2237106022c1cc783ad6f0682cfc1426e513e473ff1a48a42f1b3d1335fc22"
+    },
+    {
+      "referenceKey": "elementary",
+      "title": "Sedgewick and Wayne: selection, insertion and Shell sorting",
+      "url": "https://algs4.cs.princeton.edu/21elementary/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 31709,
+      "sha256": "a263ea3f48d29a3628b860fa9f40828217ac76db6cc106f95a307b4fc31ba556"
+    },
+    {
+      "referenceKey": "expressions",
+      "title": "Sedgewick and Wayne: stack-based infix/postfix conversion and evaluation exercises",
+      "url": "https://algs4.cs.princeton.edu/13stacks/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 58918,
+      "sha256": "25d15d17280f86c492c071fe0abaa101be7e606e21a951fda1a1efe241918b22"
+    },
+    {
+      "referenceKey": "full-tree-proof",
+      "title": "OpenDSA: full binary-tree leaf/internal-node theorem",
+      "url": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/Binary/BinaryTreeFullThm.rst",
+      "retrievedOn": "2026-10-21",
+      "bytes": 6669,
+      "sha256": "40c65184bb5f910d7e7a754985848a695147ec17effccd660c86a1ce4a88f27c"
+    },
+    {
+      "referenceKey": "graphs",
+      "title": "Sedgewick and Wayne: undirected graphs, DFS and BFS",
+      "url": "https://algs4.cs.princeton.edu/41graph/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 41656,
+      "sha256": "a422c40e4ab0eef86e998836640f37e7bec566d33803f8f05132b03ea5ad59f7"
+    },
+    {
+      "referenceKey": "hash",
+      "title": "Sedgewick and Wayne: hash tables, chaining and linear probing",
+      "url": "https://algs4.cs.princeton.edu/34hash/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 33271,
+      "sha256": "4ac0c142e316680ab41c74795ea5eda31a5fd1be57d565e4cc6da310e88880d3"
+    },
+    {
+      "referenceKey": "heaps",
+      "title": "Sedgewick and Wayne: priority queues, binary heaps and heapsort",
+      "url": "https://algs4.cs.princeton.edu/24pq/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 50226,
+      "sha256": "90a4b65cb45e07088f0ad277203f7581f9848b651b07b9c8c417ded396eed9cd"
+    },
+    {
+      "referenceKey": "merge",
+      "title": "Sedgewick and Wayne: merge sort and stability",
+      "url": "https://algs4.cs.princeton.edu/22mergesort/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 30101,
+      "sha256": "630f6b53d2802efec222a3d9c9a3dc15dfe37175b1074f13b453e56a5be12509"
+    },
+    {
+      "referenceKey": "mst",
+      "title": "Sedgewick and Wayne: minimum spanning trees and greedy algorithms",
+      "url": "https://algs4.cs.princeton.edu/43mst/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 30000,
+      "sha256": "a1be6c5bc084b93a8ac26b9eda573a4d3477f5c1e58f3dcc86d443fa83f186e5"
+    },
+    {
+      "referenceKey": "ods",
+      "title": "Pat Morin, Open Data Structures: analysis, arrays, lists, trees, heaps, hashing and graphs",
+      "url": "https://opendatastructures.org/ods-java.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 1513611,
+      "sha256": "a2bfbe56f09897ded27c535cca87f92be45470df2983003b1040c09281beaa30"
+    },
+    {
+      "referenceKey": "prefix",
+      "title": "USACO Guide authors: prefix sums and constant-time range queries",
+      "url": "https://raw.githubusercontent.com/cpinitiative/usaco-guide/master/content/3_Silver/Prefix_Sums.mdx",
+      "retrievedOn": "2026-10-21",
+      "bytes": 14294,
+      "sha256": "bc6ba5961d5c13cc06a1729cc13ac7544051aaa7f5446be75c44e10970fc9b18"
+    },
+    {
+      "referenceKey": "queue-stacks",
+      "title": "CP Algorithms: implementing a queue with two stacks",
+      "url": "https://cp-algorithms.com/data_structures/stack_queue_modification.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 152510,
+      "sha256": "eb843aa6f72fe04ba8f9fde54966ed8a0edaba19c44a6a019fe97341ebeea05e"
+    },
+    {
+      "referenceKey": "quick",
+      "title": "Sedgewick and Wayne: quicksort, partitioning and performance",
+      "url": "https://algs4.cs.princeton.edu/23quicksort/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 26223,
+      "sha256": "941015a22cb7bafa586ea361a8f8384e949a557ca21987cd7f54e1c9cbbbd258"
+    },
+    {
+      "referenceKey": "radix",
+      "title": "Sedgewick and Wayne: LSD radix sorting and key-indexed counting",
+      "url": "https://algs4.cs.princeton.edu/51radix/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 13059,
+      "sha256": "8cde9a6245c945ac34b43fc521c51080eae55b85214ff445c18dbced49a2b41a"
+    },
+    {
+      "referenceKey": "row-major",
+      "title": "ISO C11 committee draft N1570: row-major arrays, section 6.5.2.1",
+      "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 1692004,
+      "sha256": "208969fec021e4f4ce87a1873765298c73e7bbb5209b1c5868967c7adfc8492e"
+    },
+    {
+      "referenceKey": "shortest",
+      "title": "Sedgewick and Wayne: shortest paths and Dijkstra's algorithm",
+      "url": "https://algs4.cs.princeton.edu/44sp/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 39814,
+      "sha256": "b0e16d6f535e94de1593186152ca922516d0665bdb7f6b80599496bc1334e402"
+    },
+    {
+      "referenceKey": "sparse",
+      "title": "SciPy: sparse-array representations and implicit zeros",
+      "url": "https://docs.scipy.org/doc/scipy/tutorial/sparse.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 59886,
+      "sha256": "fb891139c206b88871b42ecd848f32f84129303dc9e46a97578a45eb11d79fe8"
+    },
+    {
+      "referenceKey": "stacks",
+      "title": "Sedgewick and Wayne, Algorithms: bags, queues and stacks",
+      "url": "https://algs4.cs.princeton.edu/13stacks/",
+      "retrievedOn": "2026-10-21",
+      "bytes": 58918,
+      "sha256": "25d15d17280f86c492c071fe0abaa101be7e606e21a951fda1a1efe241918b22"
+    }
+  ]
+}

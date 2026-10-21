@@ -1,4 +1,4 @@
-package: name='in.rrbpractice.lite' versionCode='8' versionName='2.3' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+package: name='in.rrbpractice.lite' versionCode='9' versionName='2.4' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
 sdkVersion:'24'
 targetSdkVersion:'35'
 application-label:'Bank SO IT'
