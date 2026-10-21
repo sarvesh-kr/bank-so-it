@@ -1,3 +1,4 @@
+# Legacy generation input retained for stable IDs/RNG; published Linux questions come from content/curated/linux-r2.txt.
 Navigation¦Easy¦Which command prints the current working directory?¦pwd¦cd¦ls¦who¦mkdir¦pwd reports the current directory; cd changes it.
 Navigation¦Easy¦Which command lists files, including names beginning with a dot?¦ls -a¦ls -d¦pwd¦whoami¦date¦The -a option includes hidden dot entries in the listing.
 Navigation¦Easy¦What does cd .. do?¦Changes to the parent directory¦Changes to the root directory always¦Deletes the current directory¦Creates a hidden directory¦Lists all users¦The .. entry refers to the current directory's parent.

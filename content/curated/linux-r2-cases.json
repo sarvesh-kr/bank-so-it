@@ -1,0 +1,56 @@
+{
+  "dialect": "Bash with default options, GNU/Linux utilities and LC_ALL=C. Each case runs in a fresh temporary working directory. Permission cases assume no default ACL.",
+  "cases": {
+    "24": {
+      "script": "printf 'alice:10\\nbob:20\\n' | cut -d: -f1"
+    },
+    "25": {
+      "script": "printf 'cat cat\\n' | sed 's/cat/dog/g'"
+    },
+    "26": {
+      "script": "printf 'IT 7\\nHR 3\\n' | awk '{print $1}'"
+    },
+    "37": {
+      "script": "touch sample\nchmod u=rw,g=r,o= sample\nstat -c '%a' sample"
+    },
+    "38": {
+      "script": "umask 022\n: > sample\nstat -c '%a' sample"
+    },
+    "39": {
+      "script": "umask 027\nmkdir sampledir\nstat -c '%a' sampledir"
+    },
+    "55": {
+      "script": "name=Bank\nprintf '%s\\n' '$name' \"$name\""
+    },
+    "56": {
+      "script": "set -- one 'two words'\nprintf '<%s>\\n' \"$@\""
+    },
+    "58": {
+      "script": "false\nprintf '%s\\n' \"$?\""
+    },
+    "63": {
+      "script": "a=7\nb=2\nprintf '%s\\n' \"$((a / b))\""
+    },
+    "66": {
+      "script": "s=\nif [ -z \"$s\" ]; then\n  printf 'empty\\n'\nelse\n  printf 'set\\n'\nfi"
+    },
+    "68": {
+      "script": "total=0\nfor n in 1 2 3; do\n  total=$((total + n))\ndone\nprintf '%s\\n' \"$total\""
+    },
+    "69": {
+      "script": "n=0\nwhile [ \"$n\" -lt 3 ]; do\n  n=$((n + 1))\ndone\nprintf '%s\\n' \"$n\""
+    },
+    "70": {
+      "script": "day=Mon\ncase \"$day\" in\n  Mon|Tue) printf 'work\\n' ;;\n  *) printf 'other\\n' ;;\nesac"
+    },
+    "71": {
+      "script": "status() { return 7; }\nstatus\nprintf '%s\\n' \"$?\""
+    },
+    "72": {
+      "script": "set -- linux 'shell basics'\nprintf '%s:%s\\n' \"$#\" \"$2\""
+    },
+    "75": {
+      "script": "printf 'pear\\napple\\npear\\n' | sort | uniq | wc -l"
+    }
+  }
+}

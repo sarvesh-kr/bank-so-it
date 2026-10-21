@@ -1,11 +1,11 @@
 {
-  "total": 1016,
+  "total": 1005,
   "subjects": {
     "network": 200,
     "dbms": 200,
     "os": 100,
     "dsa": 150,
-    "linux": 86,
+    "linux": 75,
     "dw_dm": 52,
     "cloud_ai_ml": 47,
     "se_bank_it": 68,
@@ -13,21 +13,21 @@
     "architecture": 33,
     "web": 20
   },
-  "retired": 920,
+  "retired": 1006,
   "kinds": {
-    "concept": 897,
+    "concept": 885,
     "worked-drill": 10,
     "worked-dbms": 10,
     "checked-algebra": 6,
     "checked-sql": 32,
     "worked-os": 10,
     "worked-dsa": 25,
-    "executed-shell": 16,
+    "checked-linux": 17,
     "executed-python": 10
   },
   "difficulty": {
-    "Easy": 603,
-    "Moderate": 413
+    "Easy": 657,
+    "Moderate": 348
   },
   "checks": [
     "Unique IDs and stems",
@@ -36,7 +36,7 @@
     "Explanations and references present",
     "Legacy ID retirement prevents duplicate reintroduction",
     "SQL answers executed in SQLite during generation",
-    "Shell answers executed in Bash during generation",
+    "Published Bash examples executed in isolated directories by the quality checker",
     "Python answers executed in Python 3 during generation"
   ]
 }
