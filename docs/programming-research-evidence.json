@@ -1,0 +1,199 @@
+{
+  "retrieved_on": "2026-10-21",
+  "retrieval_notes": "Retrieved and inspected official language specifications/documentation and extracted the C committee draft. OpenJDK project page returned403 and is not used; the JDK development-tool question cites Oracle javac and JVM specifications instead.",
+  "used_reference_entries": 24,
+  "sources": {
+    "c": {
+      "title": "WG14: C11 committee draft N1570",
+      "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+      "final_url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+      "bytes": 1692004,
+      "sha256": "208969fec021e4f4ce87a1873765298c73e7bbb5209b1c5868967c7adfc8492e",
+      "mime": "application/pdf"
+    },
+    "cpp-abstract": {
+      "title": "C++ working draft: abstract classes",
+      "url": "https://eel.is/c++draft/class.abstract",
+      "final_url": "https://eel.is/c++draft/class.abstract",
+      "bytes": 14838,
+      "sha256": "255b14adb35d735c45eca89ec06c27619e90836d512b656f735e70789e61010e",
+      "mime": "text/html"
+    },
+    "cpp-classes": {
+      "title": "C++ working draft: classes",
+      "url": "https://eel.is/c++draft/class",
+      "final_url": "https://eel.is/c++draft/class",
+      "bytes": 932275,
+      "sha256": "1369fad0b0e35eb31bdd23f0d00ceb588beed66136517a61b998eacea3553cf6",
+      "mime": "text/html"
+    },
+    "cpp-delete": {
+      "title": "C++ working draft: delete expressions",
+      "url": "https://eel.is/c++draft/expr.delete",
+      "final_url": "https://eel.is/c++draft/expr.delete",
+      "bytes": 36715,
+      "sha256": "77eeac0089293dc4f667a7f7ac1bee20a66e3f46009a228a710966a256406476",
+      "mime": "text/html"
+    },
+    "cpp-dtor": {
+      "title": "C++ working draft: destructors",
+      "url": "https://eel.is/c++draft/class.dtor",
+      "final_url": "https://eel.is/c++draft/class.dtor",
+      "bytes": 46831,
+      "sha256": "f92bd859ef69555a80cd270d6d2cec64c66daddf305eb2f1392dee46cd1cf183",
+      "mime": "text/html"
+    },
+    "cpp-inheritance": {
+      "title": "C++ working draft: derived classes",
+      "url": "https://eel.is/c++draft/class.derived",
+      "final_url": "https://eel.is/c++draft/class.derived",
+      "bytes": 120358,
+      "sha256": "6efe9577dc9fe2362bca7ad69a115d500a11f24df59a70f85235c5d5c9f320d3",
+      "mime": "text/html"
+    },
+    "cpp-raii": {
+      "title": "C++ Core Guidelines: resource management through RAII",
+      "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-raii",
+      "final_url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-raii",
+      "bytes": 1273757,
+      "sha256": "ba777a34713d7bc694da2974ee50964c7b9464d0e3207a8b87361d6ad6a44176",
+      "mime": "text/html"
+    },
+    "cpp-ref": {
+      "title": "C++ working draft: references",
+      "url": "https://eel.is/c++draft/dcl.ref",
+      "final_url": "https://eel.is/c++draft/dcl.ref",
+      "bytes": 28127,
+      "sha256": "8725f165c8e978c89cee7fa9773f8f8042eecce7770641582ff6203dda0f72e0",
+      "mime": "text/html"
+    },
+    "cpp-string": {
+      "title": "C++ working draft: basic_string",
+      "url": "https://eel.is/c++draft/basic.string",
+      "final_url": "https://eel.is/c++draft/basic.string",
+      "bytes": 380296,
+      "sha256": "e6968385eb80598f482775fd91613303148884f36da5ac7a98815c7ebcdac3ee",
+      "mime": "text/html"
+    },
+    "cpp-virtual": {
+      "title": "C++ working draft: virtual functions",
+      "url": "https://eel.is/c++draft/class.virtual",
+      "final_url": "https://eel.is/c++draft/class.virtual",
+      "bytes": 46717,
+      "sha256": "e013814335a9ee092d0e0581099ca046d553471e8fe0d96fd69f97e3b1901f2c",
+      "mime": "text/html"
+    },
+    "java-string": {
+      "title": "Java SE 21 API: String",
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html",
+      "final_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html",
+      "bytes": 245248,
+      "sha256": "7c79431296854b67e81052aee323431674368050eedf0409958a4d5930c122ce",
+      "mime": "text/html"
+    },
+    "javac": {
+      "title": "Oracle Java SE 21: javac command",
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/specs/man/javac.html",
+      "final_url": "https://docs.oracle.com/en/java/javase/21/docs/specs/man/javac.html",
+      "bytes": 104945,
+      "sha256": "7fa46d19ea8f0c7ce7898330b8d7a8025224a36fe8f3a3d49c5f08e225f6a695",
+      "mime": "text/html"
+    },
+    "jls-classes": {
+      "title": "Java SE 21 language specification: classes",
+      "url": "https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html",
+      "final_url": "https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html",
+      "bytes": 584578,
+      "sha256": "64d7f2d97da784e2642b1617ee23e007dc6d1c311f8d2acd0b62196b4c6be0c0",
+      "mime": "text/html"
+    },
+    "jls-exceptions": {
+      "title": "Java SE 21 language specification: exceptions",
+      "url": "https://docs.oracle.com/javase/specs/jls/se21/html/jls-11.html",
+      "final_url": "https://docs.oracle.com/javase/specs/jls/se21/html/jls-11.html",
+      "bytes": 73117,
+      "sha256": "2ba41a367dede387582fe42d5c5c9836f9e0502b4bb23f8fe2118dbd00d7ea9f",
+      "mime": "text/html"
+    },
+    "jls-interfaces": {
+      "title": "Java SE 21 language specification: interfaces",
+      "url": "https://docs.oracle.com/javase/specs/jls/se21/html/jls-9.html",
+      "final_url": "https://docs.oracle.com/javase/specs/jls/se21/html/jls-9.html",
+      "bytes": 344349,
+      "sha256": "3c87670664402810a30ae26c854459240e8164f748e4a1649bcb0d62099ab4ca",
+      "mime": "text/html"
+    },
+    "jls-types": {
+      "title": "Java SE 21 language specification: types, values and variables",
+      "url": "https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html",
+      "final_url": "https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html",
+      "bytes": 361153,
+      "sha256": "0f243d22fbecd7b2eb36305e7e95d30de8acf8183c9742657be9472128d8f1ad",
+      "mime": "text/html"
+    },
+    "jvms": {
+      "title": "Java SE 21 virtual machine specification: the class file format",
+      "url": "https://docs.oracle.com/javase/specs/jvms/se21/html/jvms-4.html",
+      "final_url": "https://docs.oracle.com/javase/specs/jvms/se21/html/jvms-4.html",
+      "bytes": 1261150,
+      "sha256": "9128a4c5a68286f1e4a52c584faf73652c6d47de3aeca5196567198795676fa9",
+      "mime": "text/html"
+    },
+    "jvms-intro": {
+      "title": "Java SE 21 JVM specification: introduction and implementation freedom",
+      "url": "https://docs.oracle.com/javase/specs/jvms/se21/html/jvms-1.html",
+      "final_url": "https://docs.oracle.com/javase/specs/jvms/se21/html/jvms-1.html",
+      "bytes": 19799,
+      "sha256": "887eff682685a3a9c6b9128a02c40ccb1bc9977a784bf85f3e04d61324df1c89",
+      "mime": "text/html"
+    },
+    "jvms-runtime": {
+      "title": "Java SE 21 JVM specification: runtime data areas and heap",
+      "url": "https://docs.oracle.com/javase/specs/jvms/se21/html/jvms-2.html",
+      "final_url": "https://docs.oracle.com/javase/specs/jvms/se21/html/jvms-2.html",
+      "bytes": 222113,
+      "sha256": "2daf4465b92e173300cf363d21be3a8caeada3c36f2832a5e5e13643e6ef0640",
+      "mime": "text/html"
+    },
+    "python-classes": {
+      "title": "Python 3 tutorial: classes",
+      "url": "https://docs.python.org/3/tutorial/classes.html",
+      "final_url": "https://docs.python.org/3/tutorial/classes.html",
+      "bytes": 108354,
+      "sha256": "69218135f6f4df0440f9da10df0035fc6cf68e7e3924651243170a73c902dd55",
+      "mime": "text/html"
+    },
+    "python-errors": {
+      "title": "Python 3 tutorial: errors and exceptions",
+      "url": "https://docs.python.org/3/tutorial/errors.html",
+      "final_url": "https://docs.python.org/3/tutorial/errors.html",
+      "bytes": 85619,
+      "sha256": "3a0268ea1b8be62d3a671a65b961182163f85125982c87864600e5047445d8bf",
+      "mime": "text/html"
+    },
+    "python-functions": {
+      "title": "Python 3 tutorial: control flow and function definitions",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html",
+      "final_url": "https://docs.python.org/3/tutorial/controlflow.html",
+      "bytes": 140178,
+      "sha256": "c81b30c4d36eb75e6e9937f318013c5664502269fc6860ef4528434d66487972",
+      "mime": "text/html"
+    },
+    "python-model": {
+      "title": "Python 3 data model: object initialization and special methods",
+      "url": "https://docs.python.org/3/reference/datamodel.html",
+      "final_url": "https://docs.python.org/3/reference/datamodel.html",
+      "bytes": 468060,
+      "sha256": "61338554de947683c313c03d1195a022dff974b23205a0599ab47a871e3fbdd1",
+      "mime": "text/html"
+    },
+    "python-types": {
+      "title": "Python 3: built-in types",
+      "url": "https://docs.python.org/3/library/stdtypes.html",
+      "final_url": "https://docs.python.org/3/builtins/stdtypes.html",
+      "bytes": 814482,
+      "sha256": "4b73b840d9d7aa5fa661df4d8919351adf771f8e5b9030359117d1f78cececff",
+      "mime": "text/html"
+    }
+  }
+}

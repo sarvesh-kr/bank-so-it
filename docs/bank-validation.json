@@ -1,5 +1,5 @@
 {
-  "total": 1037,
+  "total": 1034,
   "subjects": {
     "network": 231,
     "dbms": 200,
@@ -8,14 +8,14 @@
     "linux": 75,
     "dw_dm": 50,
     "cloud_ai_ml": 50,
-    "se_bank_it": 68,
-    "programming": 60,
+    "se_bank_it": 50,
+    "programming": 75,
     "architecture": 33,
     "web": 20
   },
-  "retired": 1105,
+  "retired": 1233,
   "kinds": {
-    "concept": 917,
+    "concept": 914,
     "worked-drill": 10,
     "worked-dbms": 10,
     "checked-algebra": 6,
@@ -23,11 +23,12 @@
     "worked-os": 10,
     "worked-dsa": 25,
     "checked-linux": 17,
-    "executed-python": 10
+    "scenario": 5,
+    "executed-python": 5
   },
   "difficulty": {
-    "Easy": 709,
-    "Moderate": 328
+    "Easy": 738,
+    "Moderate": 296
   },
   "checks": [
     "Unique IDs and stems",

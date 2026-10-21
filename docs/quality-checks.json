@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "questions": 1037,
-  "retired": 1105,
-  "independent_answer_checks": 124,
+  "questions": 1034,
+  "retired": 1233,
+  "independent_answer_checks": 119,
   "proofs": {
     "dbms-r2-062": {
       "method": "worked-dbms",
@@ -965,45 +965,25 @@
       "method": "worked-drill",
       "independent_result": "/26"
     },
-    "programming-051": {
+    "programming-r2-029": {
       "method": "executed-python",
-      "independent_result": "3"
+      "independent_result": "500"
     },
-    "programming-052": {
+    "programming-r2-030": {
       "method": "executed-python",
-      "independent_result": "1"
+      "independent_result": "[1, 2, 3]"
     },
-    "programming-053": {
+    "programming-r2-031": {
       "method": "executed-python",
-      "independent_result": "14"
+      "independent_result": "ANK"
     },
-    "programming-054": {
-      "method": "executed-python",
-      "independent_result": "[1, 3, 5]"
-    },
-    "programming-055": {
-      "method": "executed-python",
-      "independent_result": "AN"
-    },
-    "programming-056": {
-      "method": "executed-python",
-      "independent_result": "3"
-    },
-    "programming-057": {
+    "programming-r2-032": {
       "method": "executed-python",
       "independent_result": "2"
     },
-    "programming-058": {
+    "programming-r2-033": {
       "method": "executed-python",
-      "independent_result": "73"
-    },
-    "programming-059": {
-      "method": "executed-python",
-      "independent_result": "False"
-    },
-    "programming-060": {
-      "method": "executed-python",
-      "independent_result": "[2, 4, 6]"
+      "independent_result": "child"
     },
     "architecture-004": {
       "method": "independent conceptual calculation",
