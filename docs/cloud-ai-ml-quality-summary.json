@@ -1,0 +1,15 @@
+{
+  "questions": 50,
+  "cloud": 25,
+  "ai_ml": 25,
+  "coverage": {
+    "Cloud foundations & models": 10,
+    "Virtualization, storage & operations": 10,
+    "Cloud security & banking controls": 5,
+    "AI & learning foundations": 8,
+    "ML algorithms & evaluation": 12,
+    "AI applications & responsible use": 5
+  },
+  "numerical_exercises": 0,
+  "review": "Every stem, five options, key and explanation reviewed against attached references; structural checks alone do not certify conceptual accuracy."
+}

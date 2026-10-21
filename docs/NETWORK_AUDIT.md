@@ -46,3 +46,7 @@ References include RFCs, IANA, ITU, NIST, OWASP, the Kurose/Ross networking lect
 ## Saved progress
 
 New questions use `network-r2-*` IDs so old answers are not misattributed to different questions. All 152 former current-network IDs are retired, including seven introduced after the original 1,150-question baseline. Old imports cannot restore those stock items. Historical and unfinished attempt snapshots remain intact; current-bank statistics track the replacement set. Other subjects' progress is unchanged.
+
+## Later protocol/API/blockchain/CDN supplement
+
+The [21 October coverage supplement](NETWORK_SERVICES_AUDIT.md) adds 31 conceptual questions to the original 200 without changing those records. Current networking coverage is 231, still with ten subnet calculations. It adds explicit protocol functions/records/secure variants, API basics, blockchain and CDN. The current port checker validates 17 questions using the existing 24 IANA associations.
