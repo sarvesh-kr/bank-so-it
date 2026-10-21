@@ -298,7 +298,8 @@ for case_number,(script,answer,wrong,explanation) in enumerate(python_cases,star
 
 # Versioned topic replacement; legacy generation above keeps other subjects byte-stable.
 from build_network import load_network
-questions[:]=load_network()+[q for q in questions if q['subject']!='network']
+from build_dbms import load_dbms
+questions[:]=load_network()+load_dbms()+[q for q in questions if q['subject'] not in {'network','dbms'}]
 assert not {q['id'] for q in questions}&set(retired)
 
 counts=collections.Counter(q['subject'] for q in questions)
@@ -317,7 +318,7 @@ from review_sources import references_for
 for q in questions:
     q['references']=q.get('references') or references_for(q)
     assert q['references'],q['id']
-bank={'schemaVersion':1,'version':'2.1.0','title':'Bank SO IT','subjects':[{'id':sid,'name':name} for sid,name in all_subjects],
+bank={'schemaVersion':1,'version':'2.2.0','title':'Bank SO IT','subjects':[{'id':sid,'name':name} for sid,name in all_subjects],
       'retiredQuestionIds':sorted(retired),'questions':questions}
 OUT.mkdir(parents=True,exist_ok=True)
 (ROOT/'dist').mkdir(exist_ok=True)

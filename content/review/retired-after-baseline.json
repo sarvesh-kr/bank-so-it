@@ -203,5 +203,222 @@
       }
     ],
     "original_source_commit": "0ca568e8abb57f2b9652d15fb21e330d1e74f93c"
+  },
+  "dbms-251": {
+    "id": "dbms-251",
+    "subject": "dbms",
+    "topic": "Relational algebra",
+    "difficulty": "Easy",
+    "question": "In relational algebra, what does selection primarily do?",
+    "options": [
+      "Choose tuples satisfying a predicate",
+      "Rename every relation",
+      "Choose attribute columns only",
+      "Form every possible pair of tuples",
+      "Sort all tuples into physical disk order"
+    ],
+    "answer": 0,
+    "explanation": "Selection, often written \u03c3, filters rows. Projection, often written \u03c0, chooses attributes.",
+    "kind": "concept",
+    "family": "Relational algebra",
+    "studyScope": "core",
+    "studyReason": "Curated degree-level foundation or representative exam-style application",
+    "references": [
+      {
+        "title": "Database Design, 2nd edition: relational design and normalization",
+        "url": "https://opentextbc.ca/dbdesign2/"
+      },
+      {
+        "title": "PostgreSQL: SQL language reference",
+        "url": "https://www.postgresql.org/docs/current/sql.html"
+      }
+    ],
+    "original_source_commit": "516b7b71c9530d23fb5aecb8633f9c86271ecf08"
+  },
+  "dbms-252": {
+    "id": "dbms-252",
+    "subject": "dbms",
+    "topic": "Relational algebra",
+    "difficulty": "Easy",
+    "question": "What does projection do in the classical set-based relational algebra?",
+    "options": [
+      "Choose attributes, eliminating duplicate resulting tuples",
+      "Filter tuples only by a Boolean condition",
+      "Perform a Cartesian product",
+      "Change every attribute's data type",
+      "Add a new transaction log"
+    ],
+    "answer": 0,
+    "explanation": "Projection selects columns. Classical relational algebra uses sets, so duplicate projected tuples collapse; SQL SELECT does not remove duplicates unless requested.",
+    "kind": "concept",
+    "family": "Relational algebra",
+    "studyScope": "core",
+    "studyReason": "Curated degree-level foundation or representative exam-style application",
+    "references": [
+      {
+        "title": "Database Design, 2nd edition: relational design and normalization",
+        "url": "https://opentextbc.ca/dbdesign2/"
+      },
+      {
+        "title": "PostgreSQL: SQL language reference",
+        "url": "https://www.postgresql.org/docs/current/sql.html"
+      }
+    ],
+    "original_source_commit": "516b7b71c9530d23fb5aecb8633f9c86271ecf08"
+  },
+  "dbms-253": {
+    "id": "dbms-253",
+    "subject": "dbms",
+    "topic": "SQL fundamentals",
+    "difficulty": "Easy",
+    "question": "Which SQL statement creates a table definition?",
+    "options": [
+      "CREATE TABLE",
+      "DELETE",
+      "UPDATE",
+      "COMMIT",
+      "GRANT"
+    ],
+    "answer": 0,
+    "explanation": "CREATE TABLE is a data-definition statement; UPDATE and DELETE modify rows in an existing table.",
+    "kind": "concept",
+    "family": "SQL fundamentals",
+    "studyScope": "core",
+    "studyReason": "Curated degree-level foundation or representative exam-style application",
+    "references": [
+      {
+        "title": "Database Design, 2nd edition: relational design and normalization",
+        "url": "https://opentextbc.ca/dbdesign2/"
+      },
+      {
+        "title": "PostgreSQL: SQL language reference",
+        "url": "https://www.postgresql.org/docs/current/sql.html"
+      }
+    ],
+    "original_source_commit": "516b7b71c9530d23fb5aecb8633f9c86271ecf08"
+  },
+  "dbms-254": {
+    "id": "dbms-254",
+    "subject": "dbms",
+    "topic": "SQL fundamentals",
+    "difficulty": "Moderate",
+    "question": "In PostgreSQL, which operation empties a table without supporting a WHERE row filter?",
+    "options": [
+      "DELETE with a WHERE condition",
+      "UPDATE with a WHERE condition",
+      "ROLLBACK TO SAVEPOINT",
+      "SELECT DISTINCT",
+      "TRUNCATE TABLE"
+    ],
+    "answer": 4,
+    "explanation": "TRUNCATE removes all rows of the named table subject to its options and constraints. In PostgreSQL it is transactional; do not apply a universal cannot-rollback rule across DBMSs.",
+    "kind": "concept",
+    "family": "SQL fundamentals",
+    "studyScope": "core",
+    "studyReason": "Curated degree-level foundation or representative exam-style application",
+    "references": [
+      {
+        "title": "Database Design, 2nd edition: relational design and normalization",
+        "url": "https://opentextbc.ca/dbdesign2/"
+      },
+      {
+        "title": "PostgreSQL: SQL language reference",
+        "url": "https://www.postgresql.org/docs/current/sql.html"
+      }
+    ],
+    "original_source_commit": "516b7b71c9530d23fb5aecb8633f9c86271ecf08"
+  },
+  "dbms-255": {
+    "id": "dbms-255",
+    "subject": "dbms",
+    "topic": "Foundations",
+    "difficulty": "Easy",
+    "question": "What does a primary key require in ordinary SQL table design?",
+    "options": [
+      "Unique, non-NULL identifying values",
+      "A distinct physical disk for each row",
+      "Values that may all be NULL",
+      "Exactly one attribute in every case",
+      "Only a text data type"
+    ],
+    "answer": 0,
+    "explanation": "A primary key uniquely identifies rows and disallows NULL in its key columns. It can contain more than one column.",
+    "kind": "concept",
+    "family": "Foundations",
+    "studyScope": "core",
+    "studyReason": "Curated degree-level foundation or representative exam-style application",
+    "references": [
+      {
+        "title": "Database Design, 2nd edition: relational design and normalization",
+        "url": "https://opentextbc.ca/dbdesign2/"
+      },
+      {
+        "title": "PostgreSQL: SQL language reference",
+        "url": "https://www.postgresql.org/docs/current/sql.html"
+      }
+    ],
+    "original_source_commit": "516b7b71c9530d23fb5aecb8633f9c86271ecf08"
+  },
+  "dbms-256": {
+    "id": "dbms-256",
+    "subject": "dbms",
+    "topic": "Foundations",
+    "difficulty": "Easy",
+    "question": "What is a database system catalog or data dictionary primarily used to store?",
+    "options": [
+      "Only the latest customer transaction",
+      "Only a copy of every password in plaintext",
+      "Only a list of network cable lengths",
+      "Metadata about database objects and their definitions",
+      "Only the output of the last SELECT"
+    ],
+    "answer": 3,
+    "explanation": "Catalog metadata describes objects such as tables, columns and constraints; it is data about the database's structure.",
+    "kind": "concept",
+    "family": "Foundations",
+    "studyScope": "core",
+    "studyReason": "Curated degree-level foundation or representative exam-style application",
+    "references": [
+      {
+        "title": "Database Design, 2nd edition: relational design and normalization",
+        "url": "https://opentextbc.ca/dbdesign2/"
+      },
+      {
+        "title": "PostgreSQL: SQL language reference",
+        "url": "https://www.postgresql.org/docs/current/sql.html"
+      }
+    ],
+    "original_source_commit": "516b7b71c9530d23fb5aecb8633f9c86271ecf08"
+  },
+  "dbms-257": {
+    "id": "dbms-257",
+    "subject": "dbms",
+    "topic": "SQL joins",
+    "difficulty": "Moderate",
+    "question": "Which join keeps unmatched rows from both input tables, with NULLs on the missing side?",
+    "options": [
+      "INNER JOIN",
+      "CROSS JOIN",
+      "FULL OUTER JOIN",
+      "A self-join in every case",
+      "LEFT JOIN only"
+    ],
+    "answer": 2,
+    "explanation": "A full outer join includes matches and unmatched rows from both sides. Support and syntax vary by DBMS, so use the operation's relational meaning.",
+    "kind": "concept",
+    "family": "SQL joins",
+    "studyScope": "core",
+    "studyReason": "Curated degree-level foundation or representative exam-style application",
+    "references": [
+      {
+        "title": "Database Design, 2nd edition: relational design and normalization",
+        "url": "https://opentextbc.ca/dbdesign2/"
+      },
+      {
+        "title": "PostgreSQL: SQL language reference",
+        "url": "https://www.postgresql.org/docs/current/sql.html"
+      }
+    ],
+    "original_source_commit": "516b7b71c9530d23fb5aecb8633f9c86271ecf08"
   }
 }

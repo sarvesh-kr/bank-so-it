@@ -1,0 +1,471 @@
+{
+  "tables": {
+    "accounts": {
+      "schema": "CREATE TABLE accounts(id INTEGER PRIMARY KEY, branch TEXT NOT NULL, balance INTEGER);",
+      "heading": "accounts(id PRIMARY KEY, branch, balance)",
+      "rows": [
+        [
+          1,
+          "A",
+          100
+        ],
+        [
+          2,
+          "A",
+          200
+        ],
+        [
+          3,
+          "B",
+          null
+        ],
+        [
+          4,
+          "B",
+          200
+        ]
+      ]
+    },
+    "branches": {
+      "schema": "CREATE TABLE branches(code TEXT PRIMARY KEY);",
+      "heading": "branches(code PRIMARY KEY)",
+      "rows": [
+        [
+          "A"
+        ],
+        [
+          "B"
+        ],
+        [
+          "C"
+        ]
+      ]
+    }
+  },
+  "cases": {
+    "137": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT balance FROM accounts ORDER BY id;"
+    },
+    "138": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT id FROM accounts WHERE balance >= 200 ORDER BY id;"
+    },
+    "139": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT id FROM accounts ORDER BY balance DESC, id ASC LIMIT 2;"
+    },
+    "140": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT DISTINCT branch FROM accounts ORDER BY branch;"
+    },
+    "141": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT COUNT(*) FROM accounts;"
+    },
+    "142": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT COUNT(balance) FROM accounts;"
+    },
+    "143": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT SUM(balance) FROM accounts;"
+    },
+    "144": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT ROUND(AVG(balance), 2) FROM accounts;"
+    },
+    "145": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT MIN(balance), MAX(balance) FROM accounts;"
+    },
+    "146": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT id FROM accounts WHERE balance IS NULL ORDER BY id;"
+    },
+    "147": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT id FROM accounts WHERE balance = NULL ORDER BY id;"
+    },
+    "148": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT branch, COUNT(*) FROM accounts GROUP BY branch ORDER BY branch;"
+    },
+    "149": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT branch FROM accounts GROUP BY branch HAVING SUM(balance) >= 300 ORDER BY branch;"
+    },
+    "150": {
+      "type": "sql",
+      "tables": [
+        "accounts",
+        "branches"
+      ],
+      "sql": "SELECT DISTINCT b.code FROM branches AS b JOIN accounts AS a ON a.branch = b.code ORDER BY b.code;"
+    },
+    "151": {
+      "type": "sql",
+      "tables": [
+        "accounts",
+        "branches"
+      ],
+      "sql": "SELECT b.code, COUNT(a.id) FROM branches AS b LEFT JOIN accounts AS a ON a.branch = b.code GROUP BY b.code ORDER BY b.code;"
+    },
+    "152": {
+      "type": "sql",
+      "tables": [
+        "accounts",
+        "branches"
+      ],
+      "sql": "SELECT COUNT(*) FROM accounts CROSS JOIN branches;"
+    },
+    "153": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT id FROM accounts WHERE balance > (SELECT AVG(balance) FROM accounts) ORDER BY id;"
+    },
+    "154": {
+      "type": "sql",
+      "tables": [
+        "accounts",
+        "branches"
+      ],
+      "sql": "SELECT b.code FROM branches AS b WHERE EXISTS (SELECT 1 FROM accounts AS a WHERE a.branch = b.code) ORDER BY b.code;"
+    },
+    "155": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT id FROM accounts WHERE balance NOT IN (100, NULL) ORDER BY id;"
+    },
+    "156": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT branch FROM accounts WHERE id = 1 UNION SELECT branch FROM accounts WHERE id = 2;"
+    },
+    "157": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SELECT branch FROM accounts WHERE id = 1 UNION ALL SELECT branch FROM accounts WHERE id = 2;"
+    },
+    "158": {
+      "type": "sql",
+      "tables": [],
+      "sql": "SELECT 'BANK' LIKE 'B_N%';"
+    },
+    "159": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "UPDATE accounts SET balance = balance + 50 WHERE id = 1;\nSELECT balance FROM accounts WHERE id = 1;"
+    },
+    "160": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "DELETE FROM accounts WHERE balance IS NULL;\nSELECT COUNT(*) FROM accounts;"
+    },
+    "161": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "INSERT INTO accounts(id, branch, balance) VALUES(5, 'C', 300);\nSELECT COUNT(*) FROM accounts;"
+    },
+    "162": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "ALTER TABLE accounts ADD COLUMN active INTEGER DEFAULT 1;\nSELECT SUM(active) FROM accounts;"
+    },
+    "163": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "CREATE VIEW high_accounts AS SELECT * FROM accounts WHERE balance >= 200;\nSELECT COUNT(*) FROM high_accounts;"
+    },
+    "164": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "BEGIN;\nUPDATE accounts SET balance = 999 WHERE id = 1;\nROLLBACK;\nSELECT balance FROM accounts WHERE id = 1;"
+    },
+    "165": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "SAVEPOINT s;\nUPDATE accounts SET balance = 777 WHERE id = 1;\nROLLBACK TO s;\nRELEASE s;\nSELECT balance FROM accounts WHERE id = 1;"
+    },
+    "166": {
+      "type": "sql",
+      "tables": [
+        "accounts"
+      ],
+      "sql": "INSERT INTO accounts(id, branch, balance) VALUES(1, 'A', 500);"
+    },
+    "167": {
+      "type": "sql",
+      "tables": [],
+      "sql": "CREATE TABLE limits(amount INTEGER CHECK(amount >= 0));\nINSERT INTO limits(amount) VALUES(-1);"
+    },
+    "168": {
+      "type": "sql",
+      "tables": [
+        "branches"
+      ],
+      "sql": "CREATE TABLE tx(branch TEXT REFERENCES branches(code));\nINSERT INTO tx(branch) VALUES('Z');"
+    },
+    "81": {
+      "type": "algebra",
+      "relations": {
+        "R": {
+          "columns": [
+            "id",
+            "balance"
+          ],
+          "rows": [
+            [
+              1,
+              100
+            ],
+            [
+              2,
+              200
+            ],
+            [
+              3,
+              50
+            ]
+          ]
+        }
+      },
+      "operation": "select",
+      "column": "balance",
+      "value": 100,
+      "expression": "σ(balance >= 100)(R)"
+    },
+    "82": {
+      "type": "algebra",
+      "relations": {
+        "R": {
+          "columns": [
+            "id",
+            "branch"
+          ],
+          "rows": [
+            [
+              1,
+              "A"
+            ],
+            [
+              2,
+              "A"
+            ],
+            [
+              3,
+              "B"
+            ]
+          ]
+        }
+      },
+      "operation": "project",
+      "columns": [
+        "branch"
+      ],
+      "expression": "π(branch)(R)"
+    },
+    "83": {
+      "type": "algebra",
+      "relations": {
+        "R": {
+          "columns": [
+            "x"
+          ],
+          "rows": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        },
+        "S": {
+          "columns": [
+            "y"
+          ],
+          "rows": [
+            [
+              "A"
+            ],
+            [
+              "B"
+            ]
+          ]
+        }
+      },
+      "operation": "product-count",
+      "expression": "cardinality of R × S"
+    },
+    "84": {
+      "type": "algebra",
+      "relations": {
+        "R": {
+          "columns": [
+            "id"
+          ],
+          "rows": [
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ]
+        },
+        "S": {
+          "columns": [
+            "id"
+          ],
+          "rows": [
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        }
+      },
+      "operation": "union",
+      "expression": "R ∪ S"
+    },
+    "85": {
+      "type": "algebra",
+      "relations": {
+        "R": {
+          "columns": [
+            "id"
+          ],
+          "rows": [
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ]
+        },
+        "S": {
+          "columns": [
+            "id"
+          ],
+          "rows": [
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        }
+      },
+      "operation": "difference",
+      "expression": "R − S"
+    },
+    "86": {
+      "type": "algebra",
+      "relations": {
+        "R": {
+          "columns": [
+            "a",
+            "b"
+          ],
+          "rows": [
+            [
+              1,
+              "X"
+            ],
+            [
+              2,
+              "Y"
+            ]
+          ]
+        },
+        "S": {
+          "columns": [
+            "b",
+            "c"
+          ],
+          "rows": [
+            [
+              "X",
+              10
+            ],
+            [
+              "Z",
+              20
+            ]
+          ]
+        }
+      },
+      "operation": "natural-join",
+      "expression": "R ⋈ S, with output columns (a,b,c)"
+    }
+  }
+}
