@@ -1,0 +1,114 @@
+{
+  "bits": [
+    "MIT Computation Structures: information and binary representation",
+    "https://computationstructures.org/notes/information/notes.html"
+  ],
+  "boot": [
+    "Microsoft: firmware, boot manager and OS loader stages",
+    "https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/windows-boot-issues-troubleshooting"
+  ],
+  "cache": [
+    "MIT Computation Structures: caches and memory technologies",
+    "https://computationstructures.org/lectures/caches/caches.html"
+  ],
+  "concurrency-bugs": [
+    "OSTEP: concurrency bugs and deadlock prevention",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"
+  ],
+  "cpu": [
+    "OSTEP: limited direct execution, protection, system calls and interrupts",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf"
+  ],
+  "cpu-basics": [
+    "University of York: computer architecture and processor registers",
+    "https://online.york.ac.uk/resources/what-are-the-three-categories-of-computer-architecture/"
+  ],
+  "deadlocks": [
+    "University of Illinois Chicago: deadlocks, safety and Banker's algorithm",
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/7_Deadlocks.html"
+  ],
+  "demand": [
+    "OSTEP: beyond physical memory, mechanisms",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf"
+  ],
+  "free-space": [
+    "OSTEP: free-space management, fit policies and fragmentation",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf"
+  ],
+  "io": [
+    "OSTEP: I/O devices, interrupts and DMA",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"
+  ],
+  "isa": [
+    "MIT Computation Structures: instruction-set architecture",
+    "https://computationstructures.org/lectures/isa/isa.html"
+  ],
+  "locks": [
+    "OSTEP: locks, mutual exclusion and spinning",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"
+  ],
+  "logic": [
+    "MIT Computation Structures: combinational logic",
+    "https://computationstructures.org/notes/combinational_logic/notes.html"
+  ],
+  "paging": [
+    "OSTEP: paging, page tables and internal fragmentation",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"
+  ],
+  "pipeline": [
+    "MIT Computation Structures: pipelining the Beta",
+    "https://computationstructures.org/lectures/pbeta/pbeta.html"
+  ],
+  "prefixes": [
+    "NIST: binary prefixes",
+    "https://physics.nist.gov/cuu/Units/binary.html"
+  ],
+  "process-notes": [
+    "University of Illinois Chicago: processes, scheduling and IPC",
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/3_Processes.html"
+  ],
+  "processes": [
+    "OSTEP: processes and process states",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"
+  ],
+  "replacement": [
+    "OSTEP: beyond physical memory, policies",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf"
+  ],
+  "scheduling": [
+    "OSTEP: CPU scheduling, turnaround, response, SJF and Round Robin",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"
+  ],
+  "scheduling-notes": [
+    "University of Illinois Chicago: CPU scheduling and dispatcher",
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/5_CPU_Scheduling.html"
+  ],
+  "segmentation": [
+    "OSTEP: segmentation",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"
+  ],
+  "semaphores": [
+    "OSTEP: semaphores and bounded-buffer synchronization",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"
+  ],
+  "sequential": [
+    "MIT Computation Structures: sequential logic",
+    "https://computationstructures.org/notes/sequential_logic/notes.html"
+  ],
+  "ssd": [
+    "OSTEP: flash-based solid-state drives",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf"
+  ],
+  "threads": [
+    "OSTEP: threads and concurrency",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"
+  ],
+  "tlb": [
+    "OSTEP: translation lookaside buffers",
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf"
+  ],
+  "unicode": [
+    "Unicode Consortium: UTF-8 frequently asked questions",
+    "https://www.unicode.org/faq/utf_bom.html"
+  ]
+}

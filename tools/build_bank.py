@@ -306,7 +306,9 @@ from build_dw_dm import load_dw_dm
 from build_cloud_ai_ml import load_cloud_ai_ml
 from build_se_bank import load_se_bank
 from build_programming import load_programming
-questions[:]=load_network()+load_dbms()+load_os()+load_dsa()+load_linux()+load_dw_dm()+load_cloud_ai_ml()+load_se_bank()+load_programming()+[q for q in questions if q['subject'] not in {'network','dbms','os','dsa','linux','dw_dm','cloud_ai_ml','se_bank_it','programming'}]
+from build_architecture import load_architecture
+from build_web_topic import load_web_topic
+questions[:]=load_network()+load_dbms()+load_os()+load_dsa()+load_linux()+load_dw_dm()+load_cloud_ai_ml()+load_se_bank()+load_programming()+load_architecture()+load_web_topic()+[q for q in questions if q['subject'] not in {'network','dbms','os','dsa','linux','dw_dm','cloud_ai_ml','se_bank_it','programming','architecture','web'}]
 assert not {q['id'] for q in questions}&set(retired)
 
 counts=collections.Counter(q['subject'] for q in questions)
@@ -325,7 +327,7 @@ from review_sources import references_for
 for q in questions:
     q['references']=q.get('references') or references_for(q)
     assert q['references'],q['id']
-bank={'schemaVersion':1,'version':'2.8.0','title':'Bank SO IT','subjects':[{'id':sid,'name':name} for sid,name in all_subjects],
+bank={'schemaVersion':1,'version':'2.9.0','title':'Bank SO IT','subjects':[{'id':sid,'name':name} for sid,name in all_subjects],
       'retiredQuestionIds':sorted(retired),'questions':questions}
 OUT.mkdir(parents=True,exist_ok=True)
 (ROOT/'dist').mkdir(exist_ok=True)

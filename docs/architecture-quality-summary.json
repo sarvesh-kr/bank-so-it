@@ -1,0 +1,17 @@
+{
+  "questions": 75,
+  "coverage": {
+    "Data representation & digital logic": 10,
+    "CPU, instruction cycle & I/O": 12,
+    "Memory hierarchy & storage": 10,
+    "Processes, threads & states": 12,
+    "Scheduling & performance": 9,
+    "Paging & virtual memory": 12,
+    "Deadlock & synchronization": 10
+  },
+  "conceptual_questions": 71,
+  "short_checked_cases": 4,
+  "arithmetic_cases": 3,
+  "scheduling_choice_cases": 1,
+  "review": "Every stem, five options, answer and explanation reviewed against attached references; the separate OS bank remains unchanged."
+}

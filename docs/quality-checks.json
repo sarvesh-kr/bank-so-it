@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "questions": 1034,
-  "retired": 1233,
-  "independent_answer_checks": 119,
+  "questions": 1081,
+  "retired": 1286,
+  "independent_answer_checks": 120,
   "proofs": {
     "dbms-r2-062": {
       "method": "worked-dbms",
@@ -925,6 +925,26 @@
       "independent_result": "2",
       "script": "printf 'pear\\napple\\npear\\n' | sort | uniq | wc -l"
     },
+    "architecture-r2-002": {
+      "method": "independent binary-prefix calculation",
+      "independent_result": "2048"
+    },
+    "architecture-r2-003": {
+      "method": "independent unsigned-binary conversion",
+      "independent_result": "45"
+    },
+    "architecture-r2-017": {
+      "method": "independent address-count calculation",
+      "independent_result": "4096"
+    },
+    "architecture-r2-049": {
+      "method": "independent SRTF remaining-time comparison",
+      "independent_result": "P2"
+    },
+    "web-r2-023": {
+      "method": "all five options independently parsed using JSON syntax rules",
+      "independent_result": "{\"count\": 3}"
+    },
     "network-r2-065": {
       "method": "worked-drill",
       "independent_result": "254"
@@ -984,22 +1004,6 @@
     "programming-r2-033": {
       "method": "executed-python",
       "independent_result": "child"
-    },
-    "architecture-004": {
-      "method": "independent conceptual calculation",
-      "independent_result": "10"
-    },
-    "architecture-005": {
-      "method": "independent conceptual calculation",
-      "independent_result": "1101"
-    },
-    "architecture-022": {
-      "method": "independent conceptual calculation",
-      "independent_result": "65536"
-    },
-    "architecture-023": {
-      "method": "independent conceptual calculation",
-      "independent_result": "8"
     }
   },
   "lint": []

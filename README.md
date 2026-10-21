@@ -6,7 +6,7 @@ The web version runs entirely on **GitHub Pages**: no server, database service, 
 
 ## Practice features
 
-- **1,034 curated practice MCQs**, each with five choices, a correct answer and an explanation.
+- **1,081 curated practice MCQs**, each with five choices, a correct answer and an explanation.
 - Subject-wise or mixed tests; choose 20, 40, 50, all eligible questions, or any custom count.
 - Subtopic, difficulty, unseen, wrong-answer and bookmark filters.
 - **Quick revision**: searchable answer/explanation cards, source links and an 11-subject coverage selector. Repeated and specialist-depth items have been retired.
@@ -28,15 +28,15 @@ The web version runs entirely on **GitHub Pages**: no server, database service, 
 | Cloud, AI & ML Basics | 50 |
 | Software Engineering & Banking IT | 50 |
 | Programming & OOP | 75 |
-| Computer Fundamentals & Architecture | 33 |
-| Web Technology | 20 |
-| **Total** | **1,034** |
+| Computer Fundamentals & Architecture | 75 |
+| Web Technology | 25 |
+| **Total** | **1,081** |
 
 Each retained stem, five-option set, key and explanation received a technical review, with sources and independent checks for computed answers. See the [content audit](docs/CONTENT_AUDIT.md), [per-item ledger](docs/question-audit.csv) and [retirement decisions](docs/retired-question-audit.csv). This is practice material rather than an official previous-year paper. No exact exam topic weights are asserted.
 
-**Software Engineering & Banking IT now has 50 focused questions: 45 concepts and five short banking scenarios**, covering SDLC, requirements, design/delivery, testing, incident/problem/change management, vendor due diligence/contracts/accountability/exit, recovery and core payment-system concepts. No numerical exercises are included; the concurrent Programming & OOP revision has 75 questions and all 909 records outside both topics are unchanged. See the [software/banking audit](docs/SE_BANK_IT_AUDIT.md), [coverage](docs/se-bank-quality-summary.json) and [change evidence](docs/se-bank-r2-change-evidence.json). Programming covers Python data types and initialization, Java interfaces/classes/JVM/bytecode, C/C++ inheritance and string functions; five short Python outputs are executed. See the [programming audit](docs/PROGRAMMING_AUDIT.md). Earlier [cloud/AI/ML](docs/CLOUD_AI_ML_AUDIT.md), [network protocol/API/blockchain/CDN/SSL/TLS supplement](docs/NETWORK_SERVICES_AUDIT.md), [warehousing/mining](docs/DW_DM_AUDIT.md), [Linux](docs/LINUX_AUDIT.md), [DSA](docs/DSA_AUDIT.md), [OS](docs/OS_AUDIT.md) and [DBMS](docs/DBMS_AUDIT.md) revisions remain available. Old stock imports cannot overwrite reviewed built-ins or restore retired items; use the editor for personal changes. Earlier session reviews retain their question snapshots.
+**Computer Fundamentals & Architecture now has 75 focused questions**, covering hardware/data/logic, CPU/I/O, memory hierarchy, processes/threads/states, scheduling, paging and deadlock/synchronization. The separate 100-question OS topic remains unchanged; four short architecture cases are independently checked. See the [architecture audit](docs/ARCHITECTURE_AUDIT.md). **Web Technology now has 25 questions** on HTML/forms/CSS, JavaScript/DOM, HTTP/services, browser security, formats and storage; all JSON syntax choices are parsed. See the [web audit](docs/WEB_AUDIT.md). All 981 records outside these two topics are unchanged. Earlier [programming](docs/PROGRAMMING_AUDIT.md), [software/banking/vendor management](docs/SE_BANK_IT_AUDIT.md), [cloud/AI/ML](docs/CLOUD_AI_ML_AUDIT.md), [network supplement](docs/NETWORK_SERVICES_AUDIT.md) and other topic audits document their revisions. Old stock imports cannot overwrite reviewed built-ins or restore retired items; personal edits and historical session snapshots retain their existing handling.
 
-**Android 2.8** bundles the same curated bank and quick revision. It reuses the Android 1.2 release key, so 1.2 installations can update in place. Export a progress backup before installing updates. Installations predating the 1.2 key change still need export, uninstall, reinstall and restore.
+**Android 2.9** bundles the same curated bank and quick revision. It reuses the Android 1.2 release key, so 1.2 installations can update in place. Export a progress backup before installing updates. Installations predating the 1.2 key change still need export, uninstall, reinstall and restore.
 
 ## Deploy on GitHub Pages
 
@@ -105,6 +105,8 @@ Open `http://localhost:8000/`. HTTPS or localhost is required for service worker
 
 - `app/src/main/assets/` — shared UI, pure quiz logic, browser persistence, PWA bootstrap, import validation and the generated question bank.
 - `app/src/main/java/` — Android WebView shell, private storage and system file picker.
+- `content/curated/architecture-r2.txt` — current 75-question integrated architecture/OS-foundations source with four short checked cases.
+- `content/curated/web-r2.txt` — current 25-question web source with independently checked JSON syntax.
 - `content/curated/programming-r2.txt` — current 75-question OOP/Python/Java/C/C++ source with five executed Python outputs.
 - `content/curated/se-bank-r2.txt` — current 50-question software/banking source with five short scenarios and explicit references.
 - `content/curated/cloud-ai-ml-r2.txt` — current 50-question conceptual cloud/AI/ML source with explicit IDs and references.

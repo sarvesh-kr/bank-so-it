@@ -6,7 +6,7 @@ const server=http.createServer((req,res)=>{const pathname=decodeURIComponent(new
 (async()=>{await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const origin='http://127.0.0.1:'+server.address().port,url=origin+'/bank-so-it/';const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH,args:['--no-sandbox']});let context;
 try{
  context=await browser.newContext({viewport:{width:390,height:844},acceptDownloads:true});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));const action=a=>page.locator('[data-action="'+a+'"]').first();
- await page.goto(url);await page.waitForSelector('.subjects');assert.match(await page.locator('.stats').innerText(),/1034/);
+ await page.goto(url);await page.waitForSelector('.subjects');assert.match(await page.locator('.stats').innerText(),/1081/);
  for(const id of ['network','dbms','os','dsa','linux','dw_dm','cloud_ai_ml','se_bank_it','programming','architecture','web']){
   await page.locator('[data-action="subject"][data-id="'+id+'"]').click();
   assert((await page.evaluate(()=>getPool().length))>0);
@@ -47,6 +47,14 @@ try{
    for(const [topic,count] of [['OOP foundations',8],['Python types & basics',12],['Python functions & OOP',8],['Python short output',5],['Java runtime & core types',9],['Java classes & interfaces',11],['C pointers & strings',8],['C++ classes & strings',14]]){await page.locator('#topic').selectOption(topic);assert.equal(await page.evaluate(()=>getPool().length),count);}
    await page.locator('#topic').selectOption('Python short output');
   }
+  if(id==='architecture'){
+   assert.equal(await page.evaluate(()=>getPool().length),75);
+   for(const [topic,count] of [['Data representation & digital logic',10],['CPU, instruction cycle & I/O',12],['Memory hierarchy & storage',10],['Processes, threads & states',12],['Scheduling & performance',9],['Paging & virtual memory',12],['Deadlock & synchronization',10]]){await page.locator('#topic').selectOption(topic);assert.equal(await page.evaluate(()=>getPool().length),count);}
+  }
+  if(id==='web'){
+   assert.equal(await page.evaluate(()=>getPool().length),25);
+   for(const [topic,count] of [['HTML, forms & CSS',8],['JavaScript & DOM',5],['HTTP & web services',4],['Browser security & sessions',5],['Data formats & browser storage',3]]){await page.locator('#topic').selectOption(topic);assert.equal(await page.evaluate(()=>getPool().length),count);}
+  }
   await page.locator('#count').fill('1');await action('begin').click();
   const answer=await page.evaluate(()=>state.active.questions[0].answer);
   await page.locator('[data-action="answer"][data-index="'+answer+'"]').click();
@@ -74,6 +82,18 @@ try{
  await page.waitForFunction(()=>document.querySelector('.revision-card>p>strong')?.innerText==='500');assert.match(await page.locator('.revision-card').innerText(),/stores it on the instance/);
  assert((await page.locator('.revision-card a').first().getAttribute('href')).includes('docs.python.org'));
  await page.setViewportSize({width:320,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:'test-results/programming-init-revision.png',fullPage:true});await page.setViewportSize({width:390,height:844});
+ await page.locator('#revisionSubject').selectOption('architecture');await page.locator('#revisionSearch').fill('A TLB lookup misses');
+ await page.waitForFunction(()=>document.querySelectorAll('.revision-card').length===1&&document.querySelector('.revision-card>summary').textContent.includes('resident page'));await page.locator('.revision-card>summary').click();
+ await page.waitForFunction(()=>document.querySelector('.revision-card>p>strong')?.innerText==='A page-table lookup supplies the translation without a demand-page disk read');assert.match(await page.locator('.revision-card').innerText(),/TLB caches translations/);
+ assert((await page.locator('.revision-card a').first().getAttribute('href')).includes('wisc.edu'));
+ await page.setViewportSize({width:320,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:'test-results/architecture-tlb-revision.png',fullPage:true});await page.setViewportSize({width:390,height:844});
+ await page.locator('#revisionSubject').selectOption('web');await page.locator('#revisionSearch').fill('associates an external stylesheet');
+ await page.waitForFunction(()=>document.querySelectorAll('.revision-card').length===1&&document.querySelector('.revision-card>summary').textContent.includes('stylesheet'));await page.locator('.revision-card>summary').click();
+ await page.waitForFunction(()=>document.querySelector('.revision-card>p>strong')?.innerText==='<link rel="stylesheet" href="style.css">');assert.equal(await page.locator('.revision-card link').count(),0);assert.match(await page.locator('.revision-card').innerText(),/identifies a CSS stylesheet/);
+ assert((await page.locator('.revision-card a').first().getAttribute('href')).includes('whatwg.org'));
+ await page.setViewportSize({width:320,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:'test-results/web-html-revision.png',fullPage:true});await page.setViewportSize({width:390,height:844});
+ await page.locator('#revisionSearch').fill('valid JSON object containing');await page.waitForFunction(()=>document.querySelectorAll('.revision-card').length===1&&document.querySelector('.revision-card>summary').textContent.includes('JSON object'));await page.locator('.revision-card>summary').click();
+ await page.waitForFunction(()=>document.querySelector('.revision-card>p>strong')?.innerText==='{"count": 3}');assert.match(await page.locator('.revision-card').innerText(),/double-quoted object keys/);
  await page.locator('#revisionSubject').selectOption('dbms');await page.locator('#revisionSearch').fill('NULL in the NOT IN list');
  await page.waitForFunction(()=>document.querySelectorAll('.revision-card').length===1);await page.locator('.revision-card>summary').click();assert.match(await page.locator('.revision-card').innerText(),/\(no rows\)/);
  assert((await page.locator('.revision-card a').first().getAttribute('href')).startsWith('https://'));
@@ -112,7 +132,7 @@ try{
  // A stale stock pack cannot downgrade reviewed questions or reintroduce retired IDs.
  await page.evaluate(()=>{const q={...base.questions[0],question:'Old imported wording'};receiveImport(JSON.stringify({schemaVersion:1,subjects:base.subjects,questions:[q,{...q,id:base.retiredQuestionIds[0]}]}));});
  assert.match(await page.locator('#modalBody').innerText(),/2 old built-in or retired questions skipped/);
- await action('confirm-import').click();assert.equal(await page.evaluate(()=>bank.questions.length),1034);
+ await action('confirm-import').click();assert.equal(await page.evaluate(()=>bank.questions.length),1081);
  assert.notEqual(await page.evaluate(()=>bank.questions[0].question),'Old imported wording');
  await page.locator('#nav [data-screen="home"]').click();
  // Keep the existing persistence assertions independent of these new-subject sessions.
@@ -130,14 +150,14 @@ try{
  // Identical app hosted at a second Pages path must get separate browser state.
  const sibling=await fresh.newPage();await sibling.goto(origin+'/another-practice/');await sibling.waitForSelector('.subjects');assert.equal(await sibling.evaluate(()=>state.totalSessions),0);assert.equal(await sibling.evaluate(()=>Object.keys(state.bookmarks).length),0);
  // A custom domain serves the same app at /, with a root-scoped offline cache.
- const domainContext=await browser.newContext();const domainPage=await domainContext.newPage();await domainPage.goto(origin+'/');await domainPage.waitForSelector('.subjects');assert.match(await domainPage.locator('.stats').innerText(),/1034/);
+ const domainContext=await browser.newContext();const domainPage=await domainContext.newPage();await domainPage.goto(origin+'/');await domainPage.waitForSelector('.subjects');assert.match(await domainPage.locator('.stats').innerText(),/1081/);
  assert.equal(await domainPage.evaluate(async()=>{const registration=await navigator.serviceWorker.ready;if(!navigator.serviceWorker.controller)await new Promise(r=>navigator.serviceWorker.addEventListener('controllerchange',r,{once:true}));return new URL(registration.scope).pathname;}),'/');
- await domainContext.setOffline(true);await domainPage.reload();await domainPage.waitForSelector('.subjects');assert.match(await domainPage.locator('.stats').innerText(),/1034/);await domainContext.close();
+ await domainContext.setOffline(true);await domainPage.reload();await domainPage.waitForSelector('.subjects');assert.match(await domainPage.locator('.stats').innerText(),/1081/);await domainContext.close();
  // Simulated native storage bridge consumes the same backup and UI assets.
  const native=await browser.newContext();await native.addInitScript(({raw})=>{let value=raw;window.Android={readState:()=>value,writeState:v=>{value=v;return '';},importPack:()=>{},exportPack:()=>{}};},{raw:JSON.stringify(backup.state)});const apk=await native.newPage();await apk.goto(url);await apk.waitForSelector('.subjects');assert.equal(await apk.evaluate(()=>state.totalSessions),1);await apk.locator('#nav [data-screen="library"]').click();assert.equal(await apk.locator('[data-action="install-web"]').count(),0);
  for(const width of [320,390,900]){await page.setViewportSize({width,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));}
  assert.deepEqual(errors,[]);await page.screenshot({path:'test-results/pages-library.png',fullPage:true});
- console.log('PASS: Pages subpath and custom-domain root, shared 1034-question bank, PWA scope, offline reload and quiz, score/review, IndexedDB persistence, backup/restore, path isolation, cached APK, simulated native bridge and responsive layouts.');
+ console.log('PASS: Pages subpath and custom-domain root, shared 1081-question bank, PWA scope, offline reload and quiz, score/review, IndexedDB persistence, backup/restore, path isolation, cached APK, simulated native bridge and responsive layouts.');
  await fresh.close();await native.close();
 }finally{await browser.close();server.close();}
 })().catch(error=>{console.error(error);server.close();process.exitCode=1;});

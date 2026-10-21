@@ -1,16 +1,16 @@
 {
   "previous_bank": 1150,
   "previous_items_retained": 0,
-  "retired": 1233,
+  "retired": 1286,
   "retired_from_original_baseline": 1150,
-  "retired_after_original_baseline": 83,
-  "added": 1034,
-  "current_bank": 1034,
+  "retired_after_original_baseline": 136,
+  "added": 1081,
+  "current_bank": 1081,
   "changes": {
-    "added": 1034
+    "added": 1081
   },
   "reviewer": "Codex technical content review",
-  "computed_checks_current": 119,
+  "computed_checks_current": 120,
   "computed_checks_previous": 485,
   "subjects": {
     "network": 231,
@@ -22,8 +22,8 @@
     "cloud_ai_ml": 50,
     "se_bank_it": 50,
     "programming": 75,
-    "architecture": 33,
-    "web": 20
+    "architecture": 75,
+    "web": 25
   },
   "review_limit": "Technical/model-assisted content review with cited primary documentation and authored textbooks, not independent human expert certification or an official IBPS paper."
 }

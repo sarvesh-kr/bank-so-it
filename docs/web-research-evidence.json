@@ -1,0 +1,191 @@
+{
+  "retrieved_on": "2026-10-21",
+  "used_reference_entries": 23,
+  "sources": {
+    "const": {
+      "title": "MDN: JavaScript const declaration",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const",
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const",
+      "bytes": 207503,
+      "sha256": "153b64a039281907ecee3f5a44ea7c5118811903d1c28c8c321af9bc355063d4",
+      "mime": "text/html"
+    },
+    "cookies": {
+      "title": "MDN: Set-Cookie attributes",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie",
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie",
+      "bytes": 234835,
+      "sha256": "8cd332b3a4db1bedc90561367377ab0db92b09589f35803ccc57f60668209f28",
+      "mime": "text/html"
+    },
+    "cors": {
+      "title": "MDN: cross-origin resource sharing",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+      "bytes": 259407,
+      "sha256": "9300e8ff304d04cb9b3fe1a94a96a8c0791b76eeaea453b106eee4bb578ad4ea",
+      "mime": "text/html"
+    },
+    "csrf": {
+      "title": "OWASP: cross-site request forgery prevention",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "bytes": 170674,
+      "sha256": "f12805c19f327704d021d4dcbcd7bfb5783cda4833afe7854d891836cbaa1b1d",
+      "mime": "text/html"
+    },
+    "css-box": {
+      "title": "MDN: the CSS box model",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model",
+      "final_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model",
+      "bytes": 222359,
+      "sha256": "95fa1da13a83eda9a6c3f3c4c17269d003ac2d9efd04e0fbda9222fed0111110",
+      "mime": "text/html"
+    },
+    "css-media": {
+      "title": "MDN: media queries",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries",
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using",
+      "bytes": 342100,
+      "sha256": "9f443d2ddccaf3f94af720a22b9856fe49b935ccfdd41f3394bfb80450c59b4a",
+      "mime": "text/html"
+    },
+    "css-selectors": {
+      "title": "MDN: CSS selectors",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors",
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors",
+      "bytes": 338009,
+      "sha256": "0f0e4d7426b5d0f9d143387bb93a71f395e7c1db4da694f8d94359fdb353a592",
+      "mime": "text/html"
+    },
+    "dom": {
+      "title": "WHATWG DOM Standard",
+      "url": "https://dom.spec.whatwg.org/",
+      "final_url": "https://dom.spec.whatwg.org/",
+      "bytes": 2714595,
+      "sha256": "9b797e186fca784bce79a6d627e4e7827c3d9dd1aadf529265c61768b43a2153",
+      "mime": "text/html"
+    },
+    "equality": {
+      "title": "MDN: strict equality",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality",
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality",
+      "bytes": 200833,
+      "sha256": "631a56456e36484ee3829c3cbe93036b1922e36ab2813318ba70e056db0dc3f8",
+      "mime": "text/html"
+    },
+    "forms": {
+      "title": "WHATWG HTML Standard: forms",
+      "url": "https://html.spec.whatwg.org/multipage/forms.html",
+      "final_url": "https://html.spec.whatwg.org/multipage/forms.html",
+      "bytes": 192872,
+      "sha256": "10c102a442621c52863729076315f89ba1651318b143eb289a821afde8914b18",
+      "mime": "text/html"
+    },
+    "html": {
+      "title": "WHATWG HTML Standard: semantics and forms",
+      "url": "https://html.spec.whatwg.org/multipage/semantics.html",
+      "final_url": "https://html.spec.whatwg.org/multipage/semantics.html",
+      "bytes": 333092,
+      "sha256": "fd9ae4b6a2e12472ae6f61c52b4ef32751e63f8262cea997d8c6056eba2db959",
+      "mime": "text/html"
+    },
+    "http": {
+      "title": "IETF RFC 9110: HTTP semantics",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "bytes": 1187554,
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "mime": "text/html"
+    },
+    "js": {
+      "title": "MDN: JavaScript overview",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "bytes": 203910,
+      "sha256": "69c90025f719c79a3716a1d0e34394f4790e3f43d28714ed74930cb174110e46",
+      "mime": "text/html"
+    },
+    "json": {
+      "title": "IETF RFC8259: JSON",
+      "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+      "bytes": 37946,
+      "sha256": "5302d6ccb6cf221817bdd1f8cd7221661d4519372e0ac0b4cf641e11e8037de7",
+      "mime": "text/html"
+    },
+    "links": {
+      "title": "WHATWG HTML Standard: hyperlinks",
+      "url": "https://html.spec.whatwg.org/multipage/links.html",
+      "final_url": "https://html.spec.whatwg.org/multipage/links.html",
+      "bytes": 381019,
+      "sha256": "82a81f233583716daf76ce20938a399016dfd877a9368ea2cdb1a60bcd3df6b7",
+      "mime": "text/html"
+    },
+    "origin": {
+      "title": "MDN: same-origin policy",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy",
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy",
+      "bytes": 167206,
+      "sha256": "576519b47ccf13a97de2787f13dda757a26aaa64b34892f498f7c5a51ae9a922",
+      "mime": "text/html"
+    },
+    "password": {
+      "title": "MDN: password input",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/password",
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/password",
+      "bytes": 209992,
+      "sha256": "055ecd03bf11e13e809ff84792bb94ecc92fd812ec7b5cd689842aee045a62d4",
+      "mime": "text/html"
+    },
+    "rest": {
+      "title": "Roy Fielding: REST architectural style",
+      "url": "https://roy.gbiv.com/pubs/dissertation/rest_arch_style.htm",
+      "final_url": "https://roy.gbiv.com/pubs/dissertation/rest_arch_style.htm",
+      "bytes": 53025,
+      "sha256": "81df71b62240941f8545a175869129e77c7c45a959c1a76e1eb7e37c8e340a41",
+      "mime": "text/html"
+    },
+    "soap": {
+      "title": "W3C SOAP 1.2 Part1: messaging framework",
+      "url": "https://www.w3.org/TR/soap12-part1/",
+      "final_url": "https://www.w3.org/TR/soap12-part1/",
+      "bytes": 166947,
+      "sha256": "1dd0df06385c7c18fc186feb6d7c434a7f1eb6cfc5afe1cbb41ecc0a6599d95a",
+      "mime": "text/html"
+    },
+    "storage": {
+      "title": "WHATWG HTML Standard: Web Storage",
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html",
+      "final_url": "https://html.spec.whatwg.org/multipage/webstorage.html",
+      "bytes": 70485,
+      "sha256": "f829eaadd61216c2dd0ebf71e8997be58e39bdabaa47fb517e2314bd0eadc372",
+      "mime": "text/html"
+    },
+    "xml": {
+      "title": "W3C XML1.0 Fifth Edition",
+      "url": "https://www.w3.org/TR/xml/",
+      "final_url": "https://www.w3.org/TR/xml/",
+      "bytes": 219926,
+      "sha256": "f58a4b9e1e5b8bac13fb55c4e5c7c8c5e2c176aa45ee68e2f1ab2498511927ec",
+      "mime": "text/html"
+    },
+    "xml-schema": {
+      "title": "W3C XML Schema Part1: structures",
+      "url": "https://www.w3.org/TR/xmlschema-1/",
+      "final_url": "https://www.w3.org/TR/xmlschema-1/",
+      "bytes": 903817,
+      "sha256": "92bfd116316332b1153941436430afbdb2040e036d5fb2d21d4c8fba36a7765a",
+      "mime": "text/html"
+    },
+    "xss": {
+      "title": "OWASP: cross-site scripting prevention",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+      "bytes": 119236,
+      "sha256": "cd44319ce21cf19bfb9823e52076f2705589deedee20818f6d1d576886ec6695",
+      "mime": "text/html"
+    }
+  },
+  "retrieval_notes": "Retrieved and inspected the attached WHATWG, W3C, IETF, OWASP, MDN and Fielding reference sections."
+}
