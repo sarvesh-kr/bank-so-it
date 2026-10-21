@@ -1,6 +1,6 @@
 {
   "name": "bank-so-it",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "private": true,
   "description": "Shared offline MCQ app for GitHub Pages and Android",
   "scripts": {
@@ -8,7 +8,8 @@
     "test:ui": "node tests/ui.test.js && node tests/expiry.test.js",
     "build:web": "python3 tools/build_web.py",
     "build:apk": "bash tools/build_apk.sh",
-    "test:pages": "node tests/pages.test.js && node tests/updates.test.js"
+    "test:pages": "node tests/pages.test.js && node tests/updates.test.js",
+    "test:downloads": "node tests/downloads.test.js"
   },
   "devDependencies": {
     "playwright": "1.64.1"
