@@ -420,5 +420,86 @@
       }
     ],
     "original_source_commit": "516b7b71c9530d23fb5aecb8633f9c86271ecf08"
+  },
+  "os-101": {
+    "id": "os-101",
+    "subject": "os",
+    "topic": "Scheduling",
+    "difficulty": "Moderate",
+    "question": "What is the FCFS convoy effect?",
+    "options": [
+      "The scheduler always selects the shortest remaining job",
+      "All jobs finish at the same instant",
+      "Every process receives the same fixed quantum",
+      "Short jobs wait behind a long job at the head of the queue",
+      "The CPU switches only between kernel threads"
+    ],
+    "answer": 3,
+    "explanation": "In first-come, first-served scheduling, one long CPU-bound job can delay many short jobs behind it.",
+    "kind": "concept",
+    "family": "Scheduling",
+    "studyScope": "core",
+    "studyReason": "Curated degree-level foundation or representative exam-style application",
+    "references": [
+      {
+        "title": "Operating Systems: Three Easy Pieces, by its authors",
+        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+      }
+    ],
+    "original_source_commit": "7d7afbb42e9b0a3d415c32b3c7a249e3d432c84d"
+  },
+  "os-102": {
+    "id": "os-102",
+    "subject": "os",
+    "topic": "Scheduling",
+    "difficulty": "Moderate",
+    "question": "Which policy is the preemptive form of shortest-job-first scheduling?",
+    "options": [
+      "Round robin with equal quanta",
+      "SCAN disk scheduling",
+      "Nonpreemptive FCFS",
+      "Shortest remaining time first",
+      "FIFO page replacement"
+    ],
+    "answer": 3,
+    "explanation": "SRTF can preempt a running process when another ready process has a shorter estimated remaining CPU burst.",
+    "kind": "concept",
+    "family": "Scheduling",
+    "studyScope": "core",
+    "studyReason": "Curated degree-level foundation or representative exam-style application",
+    "references": [
+      {
+        "title": "Operating Systems: Three Easy Pieces, by its authors",
+        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+      }
+    ],
+    "original_source_commit": "7d7afbb42e9b0a3d415c32b3c7a249e3d432c84d"
+  },
+  "os-103": {
+    "id": "os-103",
+    "subject": "os",
+    "topic": "OS types",
+    "difficulty": "Easy",
+    "question": "What distinguishes a real-time system's correctness requirements?",
+    "options": [
+      "Every real-time system must connect to the Internet",
+      "Only graphical response time matters",
+      "They include meeting specified timing constraints",
+      "The system can never use interrupts",
+      "Every task must have zero execution time"
+    ],
+    "answer": 2,
+    "explanation": "Real-time correctness includes timing requirements as well as logical results. Hard and soft deadlines have different consequences when missed.",
+    "kind": "concept",
+    "family": "OS types",
+    "studyScope": "core",
+    "studyReason": "Curated degree-level foundation or representative exam-style application",
+    "references": [
+      {
+        "title": "Operating Systems: Three Easy Pieces, by its authors",
+        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+      }
+    ],
+    "original_source_commit": "7d7afbb42e9b0a3d415c32b3c7a249e3d432c84d"
   }
 }

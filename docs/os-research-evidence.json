@@ -1,0 +1,309 @@
+{
+  "scope": "Technical sources attached to the OS R2 questions; not exam-frequency evidence.",
+  "sources": [
+    {
+      "referenceKey": "addressing",
+      "title": "OSTEP: address translation and protection",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 130259,
+      "sha256": "38d81af0ae91743ee39c08c71be620d244b73496536c68c22ccebc2b8a0344a7"
+    },
+    {
+      "referenceKey": "concurrency-bugs",
+      "title": "OSTEP: concurrency bugs and deadlock prevention",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 130552,
+      "sha256": "dc8c3a7b64ff35fe626838a877cc1759d33bce6104ab30a0221268b3ee9859d4"
+    },
+    {
+      "referenceKey": "conditions",
+      "title": "OSTEP: condition variables, wait and predicate loops",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 128770,
+      "sha256": "77a2fb7913c44af3864afe3dc789b3ce0d875a82df20b9690bba1eb8bee94839"
+    },
+    {
+      "referenceKey": "cpu",
+      "title": "OSTEP: limited direct execution, protection, system calls and interrupts",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 134592,
+      "sha256": "ad9c3ae46f0d695744008a0faa1dd104ebf033eb0d5a0e14411146b2d53d9054"
+    },
+    {
+      "referenceKey": "deadlocks",
+      "title": "University of Illinois Chicago: deadlocks, safety and Banker's algorithm",
+      "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/7_Deadlocks.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 31893,
+      "sha256": "37e352abaa605ae1573619869d17f5779b7734a536860313509e41f38d7c7917"
+    },
+    {
+      "referenceKey": "disk-notes",
+      "title": "University of Illinois Chicago: mass storage and disk scheduling",
+      "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/10_MassStorage.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 57608,
+      "sha256": "48c975574c9c97a01d91f595ed2b242ccdcc0cfff4ce69ed7e7fef37cf63024a"
+    },
+    {
+      "referenceKey": "disks",
+      "title": "OSTEP: hard disk drives and scheduling",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 154732,
+      "sha256": "8bebaab15858c28b7d70c72d97d685103714f423b4581b2e0d5fbb1671764e2b"
+    },
+    {
+      "referenceKey": "file-implementation",
+      "title": "OSTEP: file-system implementation and allocation structures",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 160738,
+      "sha256": "f47b3394d05648303f957234dcdc980023ef7d9e11d2b4d02fc042e7d3e3aef7"
+    },
+    {
+      "referenceKey": "files",
+      "title": "OSTEP: files, directories, permissions and links",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 212094,
+      "sha256": "35b66794d013dd6d117fba1094256ecb94a488d4c7f852b23903dbf47d987704"
+    },
+    {
+      "referenceKey": "fork",
+      "title": "Linux man-pages: fork and copy-on-write pages",
+      "url": "https://man7.org/linux/man-pages/man2/fork.2.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 28352,
+      "sha256": "6e8b1ec3479bf9061cca4007f0e89bd6d1319086e75abaf9cb4ac0dbc73c32ab"
+    },
+    {
+      "referenceKey": "free-space",
+      "title": "OSTEP: free-space management, fit policies and fragmentation",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 135110,
+      "sha256": "e843d8451f4c030ae2a7b1af0e5fb493bcfbfa9e0bd44681bda030019d974e2e"
+    },
+    {
+      "referenceKey": "intro",
+      "title": "Arpaci-Dusseau and Arpaci-Dusseau, OSTEP: introduction to operating systems",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 160075,
+      "sha256": "98e68cadc18468deed74e490b40aa6d414f1536d3ec8e5dc25b156603edf2a19"
+    },
+    {
+      "referenceKey": "io",
+      "title": "OSTEP: I/O devices, interrupts, DMA and buffering",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 119742,
+      "sha256": "08546bc068699f5a8be8df72417bd2b4e282b08f8c2a1fe056ca09bfdf0533d5"
+    },
+    {
+      "referenceKey": "io-notes",
+      "title": "University of Illinois Chicago: I/O buffering, caching and spooling",
+      "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/13_IOSystems.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 36408,
+      "sha256": "97c06bacaeea54a761d0130b61d15e1349e5d3c0e4aa212be2a10cd468c82e1e"
+    },
+    {
+      "referenceKey": "locks",
+      "title": "OSTEP: locks, mutual exclusion and spinning",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 171902,
+      "sha256": "349b3b3251a178e8bd725dc710cd2b9a4d30f34a7491390bc7c1b53c015d1515"
+    },
+    {
+      "referenceKey": "mlfq",
+      "title": "OSTEP: multilevel feedback queues",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 115638,
+      "sha256": "96241b4e6708991740560334a1f67516c3c68eb3e6a570af7b03cdb4b32918db"
+    },
+    {
+      "referenceKey": "mutex",
+      "title": "POSIX pthread_mutex_lock: mutex ownership and unlocking",
+      "url": "https://man7.org/linux/man-pages/man3/pthread_mutex_lock.3p.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 21344,
+      "sha256": "c81e626694bbfd06cfcd4cc1b45a2551a58cf317d85709a441c7c09ffd3ac289"
+    },
+    {
+      "referenceKey": "paging",
+      "title": "OSTEP: paging, page tables and internal fragmentation",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 117219,
+      "sha256": "0307d990a5638c37d59fb8ca67de75a0afc439461239fa660a7c948dce3bc6d5"
+    },
+    {
+      "referenceKey": "pipe",
+      "title": "Linux man-pages: pipes and byte-stream semantics",
+      "url": "https://man7.org/linux/man-pages/man7/pipe.7.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 21870,
+      "sha256": "22809fe16836722f0359b10b59b4c0971cf3edf6ffb26528c41bd1a383f2a58e"
+    },
+    {
+      "referenceKey": "priority-inheritance",
+      "title": "Linux kernel: RT-mutexes and priority inheritance",
+      "url": "https://docs.kernel.org/locking/rt-mutex.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 14693,
+      "sha256": "7cf4e7dd079a8f8d6bf9c250802591d6a406eaadf17476e67fc9dca54224aacf"
+    },
+    {
+      "referenceKey": "process-api",
+      "title": "OSTEP: fork, exec and the process API",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 122017,
+      "sha256": "00aa608424bbdf5e9d6ef17d47e7595a5455a42e74ad3e6c5913603aa7e8ea7b"
+    },
+    {
+      "referenceKey": "process-notes",
+      "title": "University of Illinois Chicago: processes, scheduling and IPC",
+      "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/3_Processes.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 53395,
+      "sha256": "6dcefe9e0d17a25a3e693465a86168108d15157cff2d1052c16b58e20ea83157"
+    },
+    {
+      "referenceKey": "processes",
+      "title": "OSTEP: processes and process states",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 106900,
+      "sha256": "d4c7a5200fa104f6d5af7d845dc65b99b17ea55fb1fed6a151a7c4d1353bd6e8"
+    },
+    {
+      "referenceKey": "realtime",
+      "title": "Linux kernel: deadline scheduling and hard real-time tasks",
+      "url": "https://docs.kernel.org/scheduler/sched-deadline.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 58380,
+      "sha256": "6fac706eab51acc625cde6fd754d3b12e3dba75cb17c81cc0ef91ebb9d3a1649"
+    },
+    {
+      "referenceKey": "replacement",
+      "title": "OSTEP: replacement policies, locality, thrashing and Belady's anomaly",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 199152,
+      "sha256": "a6f13af44cae11965876f652e836a1a40603be3e8dfd5336568b69a6007ca4c3"
+    },
+    {
+      "referenceKey": "schedule-notes",
+      "title": "University of Illinois Chicago: CPU scheduling and priorities",
+      "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/5_CPU_Scheduling.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 46804,
+      "sha256": "913bcf2bcb6691a1de7df4e74adeb5761f9b5fe10ab5dab5f7292a3234b0c32f"
+    },
+    {
+      "referenceKey": "scheduling",
+      "title": "OSTEP: CPU scheduling, turnaround, response, SJF and Round Robin",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 118326,
+      "sha256": "0912b1a34977a70704b921ecfdf0dd65300e038a3eb4e5e57b2d9c38f66b63c3"
+    },
+    {
+      "referenceKey": "segmentation",
+      "title": "OSTEP: segmentation",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 106854,
+      "sha256": "f9511d43148cc005e9c2d992deff04c16eecbee7269e7568e4b50ab49ddbb2e8"
+    },
+    {
+      "referenceKey": "semaphores",
+      "title": "OSTEP: semaphores and bounded-buffer synchronization",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 150277,
+      "sha256": "991a6a2edbd604c6e2c9b52c9505ff63db92fd2bca4c294a252bdfc0dbed38fb"
+    },
+    {
+      "referenceKey": "socket",
+      "title": "Linux man-pages: socket communication endpoints",
+      "url": "https://man7.org/linux/man-pages/man2/socket.2.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 24494,
+      "sha256": "4d682c3a8ee91a8397f1e73a4457cdfa2207a79e3888cba4c3aaf79ffa5c197c"
+    },
+    {
+      "referenceKey": "structures",
+      "title": "University of Illinois Chicago: operating-system structures",
+      "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/2_Structures.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 47204,
+      "sha256": "961df42dfb84429990dcb06443d51a48401e3ab10213b50f796854d2aa8426e4"
+    },
+    {
+      "referenceKey": "sync-notes",
+      "title": "University of Illinois Chicago: critical sections, synchronization and monitors",
+      "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6_Synchronization.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 51097,
+      "sha256": "0ff47f5888163a26f06052bb6f7297092d82dceab1b1f0291f7ee510b50cd8c7"
+    },
+    {
+      "referenceKey": "thread-notes",
+      "title": "University of Illinois Chicago: user/kernel threads and mapping models",
+      "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/4_Threads.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 26244,
+      "sha256": "d85b8e66e074d34c4308cd5eaa975161b3b62120f66c5f38920a2b07a71697ca"
+    },
+    {
+      "referenceKey": "threads",
+      "title": "OSTEP: threads and concurrency",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 125231,
+      "sha256": "04eebf12233463d54c6b39352bbea644241b308312cabd568b24b9aa3b7e4d1e"
+    },
+    {
+      "referenceKey": "tlb",
+      "title": "OSTEP: translation lookaside buffers",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 150670,
+      "sha256": "202953f283487b812a9a97c17f4a3cb3a9b3e80a300cc6467c3080ffb0be013e"
+    },
+    {
+      "referenceKey": "virtualization",
+      "title": "OSTEP: virtual machine monitors",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 119202,
+      "sha256": "413759240b8b7a83ddd6c333e901e365d228cf9157b9c88f998f42fd161c36b6"
+    },
+    {
+      "referenceKey": "vm",
+      "title": "OSTEP: demand paging and page-fault handling",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf",
+      "retrievedOn": "2026-10-21",
+      "bytes": 107756,
+      "sha256": "2d59f70e76be4e9a78eec457b8e20e9941c0c6ec91bb158297695900415459d3"
+    },
+    {
+      "referenceKey": "wait",
+      "title": "Linux man-pages: wait, zombies, orphans and reparenting",
+      "url": "https://man7.org/linux/man-pages/man2/wait.2.html",
+      "retrievedOn": "2026-10-21",
+      "bytes": 31979,
+      "sha256": "fe247c4fc91a2dafd978157a46fa2a91fa48b902e643d852e8352d78c4b32fd3"
+    }
+  ]
+}

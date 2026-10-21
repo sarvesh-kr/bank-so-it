@@ -6,7 +6,7 @@ The web version runs entirely on **GitHub Pages**: no server, database service, 
 
 ## Practice features
 
-- **946 curated practice MCQs**, each with five choices, a correct answer and an explanation.
+- **973 curated practice MCQs**, each with five choices, a correct answer and an explanation.
 - Subject-wise or mixed tests; choose 20, 40, 50, all eligible questions, or any custom count.
 - Subtopic, difficulty, unseen, wrong-answer and bookmark filters.
 - **Quick revision**: searchable answer/explanation cards, source links and an 11-subject coverage selector. Repeated and specialist-depth items have been retired.
@@ -21,7 +21,7 @@ The web version runs entirely on **GitHub Pages**: no server, database service, 
 |---|---:|
 | Networks & Cybersecurity | 200 |
 | DBMS & SQL | 200 |
-| Operating Systems | 73 |
+| Operating Systems | 100 |
 | Data Structures & Algorithms | 107 |
 | Linux & Shell | 86 |
 | Warehousing & Mining | 52 |
@@ -30,13 +30,13 @@ The web version runs entirely on **GitHub Pages**: no server, database service, 
 | Programming & OOP | 60 |
 | Computer Fundamentals & Architecture | 33 |
 | Web Technology | 20 |
-| **Total** | **946** |
+| **Total** | **973** |
 
 Each retained stem, five-option set, key and explanation received a technical review, with sources and independent checks for computed answers. See the [content audit](docs/CONTENT_AUDIT.md), [per-item ledger](docs/question-audit.csv) and [retirement decisions](docs/retired-question-audit.csv). This is practice material rather than an official previous-year paper. No exact exam topic weights are asserted.
 
-**DBMS & SQL now contains 200 newly curated questions** covering models, Chen ER notation, keys, normalization, relational algebra, B/B+ trees, SQL commands and outputs, transactions, recovery, backups and RAID. The previous 118 DBMS items are retired; the other 746 questions are unchanged. All 32 SQL exercises, six algebra exercises and ten further worked examples have independently checked answers. See the [DBMS review and coverage map](docs/DBMS_AUDIT.md). **Networks & Cybersecurity also has 200 curated questions**, with ten short subnet calculations; see its [coverage map](docs/NETWORK_AUDIT.md). The earlier cross-subject review is recorded separately in the content audit. Old stock imports cannot overwrite reviewed built-ins or restore retired items; use the editor for personal changes. Earlier session reviews are retained, while current-bank statistics exclude retired questions.
+**Operating Systems now contains 100 newly curated questions**, covering architecture, process states, threads/IPC, scheduling, synchronization, deadlocks, memory, virtual memory, files and I/O. Ten short worked answers are independently checked. All 73 older OS questions are retired; the other 873 questions are unchanged. See the [OS coverage and audit](docs/OS_AUDIT.md). **DBMS & SQL and Networks & Cybersecurity each contain 200 curated questions**; their [DBMS](docs/DBMS_AUDIT.md) and [network](docs/NETWORK_AUDIT.md) review records remain available. The earlier cross-subject review is recorded separately in the content audit. Old stock imports cannot overwrite reviewed built-ins or restore retired items; use the editor for personal changes. Earlier session reviews are retained, while current-bank statistics exclude retired questions.
 
-**Android 2.2** bundles the same curated bank and quick revision. It reuses the Android 1.2 release key, so 1.2 installations can update in place. Export a progress backup before installing updates. Installations predating the 1.2 key change still need export, uninstall, reinstall and restore.
+**Android 2.3** bundles the same curated bank and quick revision. It reuses the Android 1.2 release key, so 1.2 installations can update in place. Export a progress backup before installing updates. Installations predating the 1.2 key change still need export, uninstall, reinstall and restore.
 
 ## Deploy on GitHub Pages
 
